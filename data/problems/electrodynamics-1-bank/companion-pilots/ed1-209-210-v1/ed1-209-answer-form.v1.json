@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:209",
+    "internalId": "PB-ORIGINAL:ED1-209",
+    "problemVersion": "proofbound-ed1-209-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "cross-term-conjugation",
+      "label": "Select the complex product used in the definitions of S-two and S-three.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "cross:ex_conjugate_times_ey",
+          "label": "The complex conjugate of E-x times E-y"
+        },
+        {
+          "choiceId": "cross:ex_times_ey",
+          "label": "E-x times E-y, with no conjugation"
+        },
+        {
+          "choiceId": "cross:ey_conjugate_times_ex",
+          "label": "The complex conjugate of E-y times E-x"
+        }
+      ]
+    },
+    {
+      "partId": "sphere-closure",
+      "label": "Select the algebraic closure of the Stokes sphere identity after setting a equals absolute E-x squared and b equals absolute E-y squared.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "identity:a_minus_b_squared_plus_four_ab_equals_a_plus_b_squared",
+          "label": "(a - b)^2 + 4ab = (a + b)^2"
+        },
+        {
+          "choiceId": "identity:a_minus_b_squared_equals_a_plus_b_squared",
+          "label": "(a - b)^2 = (a + b)^2"
+        },
+        {
+          "choiceId": "identity:a_minus_b_squared_plus_four_ab_equals_a_squared_plus_b_squared",
+          "label": "(a - b)^2 + 4ab = a^2 + b^2"
+        }
+      ]
+    },
+    {
+      "partId": "s0",
+      "label": "S-zero for the specified Jones vector",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "volt_squared_per_metre_squared",
+          "label": "(V/m)^2"
+        }
+      ]
+    },
+    {
+      "partId": "s1",
+      "label": "S-one for the specified Jones vector",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "volt_squared_per_metre_squared",
+          "label": "(V/m)^2"
+        }
+      ]
+    },
+    {
+      "partId": "s2",
+      "label": "S-two for the specified Jones vector",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "volt_squared_per_metre_squared",
+          "label": "(V/m)^2"
+        }
+      ]
+    },
+    {
+      "partId": "s3",
+      "label": "S-three for the specified Jones vector",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "volt_squared_per_metre_squared",
+          "label": "(V/m)^2"
+        }
+      ]
+    },
+    {
+      "partId": "normalized-s1",
+      "label": "Normalized S-one coordinate",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "normalized-s2",
+      "label": "Normalized S-two coordinate",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "normalized-s3",
+      "label": "Normalized S-three coordinate",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "normalized-length",
+      "label": "Length of the normalized Stokes vector",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "polarization-classification",
+      "label": "Classify the specified polarization state.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "polarization:elliptical",
+          "label": "Elliptical"
+        },
+        {
+          "choiceId": "polarization:circular",
+          "label": "Circular"
+        },
+        {
+          "choiceId": "polarization:linear",
+          "label": "Linear"
+        }
+      ]
+    }
+  ]
+}

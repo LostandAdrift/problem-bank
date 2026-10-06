@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "proofanvil.ed1-165-166-held-companion-receipt.v1",
+  "state": "held_prospective",
+  "targets": [
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:165",
+      "internalId": "PB-ORIGINAL:ED1-165",
+      "problemVersion": "proofbound-ed1-165-v1",
+      "rubricVersion": "v1",
+      "canonicalPacketSha256": "d0869d26bcf4af65bcdefb545b0d8822013bb3ac0ed5aff8e7e66f634d1f912e"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:166",
+      "internalId": "PB-ORIGINAL:ED1-166",
+      "problemVersion": "proofbound-ed1-166-v1",
+      "rubricVersion": "v1",
+      "canonicalPacketSha256": "e96a398b9e2b6aec90d6dbccc621d13f44910c15cf0ce543699cf628daf78a03"
+    }
+  ],
+  "heldRegistrySha256": "d974646a0ce9dfd51419193b8dcf3e4186f5376f1eec4cddf5845d49d400acdb",
+  "courseReceiptBindingSha256": "b38ae3cb3669a9a40307674f84412905fc2df0e6f4a9e53d63252a2dce9b1526",
+  "recordSha256s": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:165",
+        "internalId": "PB-ORIGINAL:ED1-165",
+        "problemVersion": "proofbound-ed1-165-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "d0869d26bcf4af65bcdefb545b0d8822013bb3ac0ed5aff8e7e66f634d1f912e"
+      },
+      "recordSha256": "54f48992503a1d97f948b43ce643e0669b98b5c8a0c52478cbaca7d39b129d14"
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:166",
+        "internalId": "PB-ORIGINAL:ED1-166",
+        "problemVersion": "proofbound-ed1-166-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e96a398b9e2b6aec90d6dbccc621d13f44910c15cf0ce543699cf628daf78a03"
+      },
+      "recordSha256": "975ff30f6801aad1b9225fd456aaa27f49d6ced980bf569377c59e5808eb6e2d"
+    }
+  ],
+  "artifactRoot": {
+    "scheme": "proofanvil.ed1-165-166-held-companion-root.v1",
+    "artifactCount": 25,
+    "bindingSha256": "cc74de558b8dfd7ce0234cd701b576533deb649be8d54f947a9e0467bc32aeed"
+  },
+  "artifactBindings": [
+    {
+      "path": "data/learning/exact-packet-companion-manifest.v1.json",
+      "rawSha256": "43d103721bd9059e96dbbf6ef50b7d99d3c61c8bf3897eb6a8621b3dbe89dc90"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/accessibility-receipts.v1.json",
+      "rawSha256": "5081f765f20626642d5e896db69528baac56a359cf9e79b870a59c675b0896ca"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/batch-hold.v1.json",
+      "rawSha256": "ad66533cafec15e9da82c041d2108f960a1558daa761d443c1db54870a36b5ba"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/checker-evidence.v1.json",
+      "rawSha256": "f2f2dc95f3e739a77e2119bdb0a577e960df68a18a4f0434716eee1c68210808"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/checker-fixtures.v1.json",
+      "rawSha256": "c1978ffa77bef3e1a0d899c64cef3d4541da3bbcad0a9180870e4d52266cbc63"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/coach-grounding.v1.json",
+      "rawSha256": "d999bf8f54a431505098811986fa27bf96ac2d89dc665ebc1b351164e71382ea"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/ed1-165-answer-form.v1.json",
+      "rawSha256": "5740c1c9e2ef9339d9d0a0a9c48ec521ebbe84e47329068b72fe3cd57ff4f1ba"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/ed1-165-checker-parameters.v1.json",
+      "rawSha256": "cbca8834114498da7461f108925168fe80802bfdc707e63f2d2d0cf395ef1568"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/ed1-166-answer-form.v1.json",
+      "rawSha256": "a22eca77d372a50b4cce159a46137e00b7631a0c5dde15a0a1310bfe9f053911"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/ed1-166-checker-parameters.v1.json",
+      "rawSha256": "75429b76da7aa718d749b4e0efa5b5e9890fb3964cee458fb925dbdcf014da0e"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/exam-alignment-reviews.v1.json",
+      "rawSha256": "4aecc6befb0a70421a4f7e95703f15573e02e53445ac3011dd5f528cb49e79b1"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/held-registry.v1.json",
+      "rawSha256": "d974646a0ce9dfd51419193b8dcf3e4186f5376f1eec4cddf5845d49d400acdb"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-165-166-v1/renderer-receipts.v1.json",
+      "rawSha256": "7ae9987b6ddcddc330168b847e305f4303418645a753a1cf7a3f764f8c938b58"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/packet-companions.v1.json",
+      "rawSha256": "8534ab30ed21e3fd49d7f2f9a3d840baf4395c6ff7c9ea7951eb640a2d8dc85b"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/packets.json",
+      "rawSha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/prospective-checked-in-packet-manifest.v2.json",
+      "rawSha256": "c514dcb1e972d9417aaf07a06dcc310e65eead82754a097f7a09420d215925ee"
+    },
+    {
+      "path": "data/problems/electrodynamics-1-bank/successor-packets.v2.json",
+      "rawSha256": "76aef6e834313ac93aa35fbd5042ab64900ecf8ece4bccff7e296e0acc6ae73e"
+    },
+    {
+      "path": "lib/grading/deterministic-checkers/ed1-165-166-exact-multipart.v1.ts",
+      "rawSha256": "467c517fb42fe4847b6eed18dbc72d00641f9c640494f27b9534d480b4982d03"
+    },
+    {
+      "path": "lib/grading/exact-answer-response.ts",
+      "rawSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4"
+    },
+    {
+      "path": "lib/grading/problem-packets.ts",
+      "rawSha256": "2952b94a0bcea3c11e72287ea17f37b561d6ebdefc77737828a5feea6579b3d3"
+    },
+    {
+      "path": "lib/management/exact-packet-companion.ts",
+      "rawSha256": "a93d2b173cc41d1c1781a8b416e98d89a5298112e974598793028dfd017d2e26"
+    },
+    {
+      "path": "lib/management/schemas.ts",
+      "rawSha256": "0e157c216d4bb6a034a88ea878b55458935a8b56e56b684d6d90ff2b7f9c931c"
+    },
+    {
+      "path": "lib/server/exact-problem-companions.ts",
+      "rawSha256": "b7382382e7a40c8e38bcd3e167fbed08a3ee7d595464fad7cb59f249e51d7c17"
+    },
+    {
+      "path": "scripts/generate-ed1-165-166-held-companion-batch.mts",
+      "rawSha256": "92fb0436062c3ae096701e0c97e53f6b17b54d39f6ffa49b60e8b58114b7af61"
+    },
+    {
+      "path": "tests/ed1-165-166-held-companion-checker.test.mts",
+      "rawSha256": "fd61c5b9fa49988fd30d04d082e41a411ecc9de8747d5e947ef3f846d5e21315"
+    }
+  ],
+  "fixtureExecution": {
+    "perTarget": [
+      {
+        "publicProblemId": "ED:165",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 14
+      },
+      {
+        "publicProblemId": "ED:166",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 15
+      }
+    ],
+    "passingFixtureCount": 4,
+    "failingFixtureCount": 29,
+    "result": "passed",
+    "networkCalls": 0,
+    "providerCalls": 0
+  },
+  "deterministicCoreExecutionEvidence": true,
+  "unimplementedRuntime": [
+    "multipart renderer and browser accessibility evidence",
+    "fail-closed grading-route dispatch",
+    "deterministic no-charge attempt persistence",
+    "Coach API and protected grounding delivery",
+    "live companion registry admission"
+  ],
+  "authorityBoundary": {
+    "admissionAuthority": false,
+    "currentSelectionAuthority": false,
+    "liveRegistryAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "coachDeliveryAuthority": false,
+    "persistenceAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "uiAuthority": false,
+    "accessibilityAuthority": false,
+    "learnerBehaviorMutation": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  },
+  "digestScheme": "proofanvil.ed1-165-166-held-companion-receipt.v1",
+  "artifactSha256": "15b3e1719a03e3d95ffa7070542274cdc149e576c00cdae55b2a7bea2e3103e6"
+}

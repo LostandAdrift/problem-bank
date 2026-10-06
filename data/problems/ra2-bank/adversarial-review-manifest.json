@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "proofanvil.ra2-adversarially-reviewed-alpha.v1",
+  "bankId": "proofanvil-ra2-alpha-321-v1",
+  "reviewDate": "2026-08-08",
+  "courseId": "real-analysis-2",
+  "firstPublicProblemId": "RA:579",
+  "lastPublicProblemId": "RA:899",
+  "packetCount": 321,
+  "packetDigestBindingScheme": "proofanvil.ra2-alpha-packet-digest-binding.v1",
+  "packetDigestBindingSha256": "47aaa4b410bc0902c7b2b42e7bec560a54538ac028121db9a1a40172983c5ecd",
+  "reviewBatches": [
+    {
+      "range": "001-100",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "101-200",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "201-300",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "301-311",
+      "reviewerKind": "adversarial_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "312-321",
+      "reviewerKind": "adversarial_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    }
+  ],
+  "checks": [
+    "accuracy",
+    "redundancy",
+    "hint_quality",
+    "solution_quality"
+  ],
+  "outcome": "accepted_for_bounded_alpha",
+  "constraints": {
+    "compiledLeanRequired": false,
+    "minimumFixturesPerProblem": 2,
+    "productionQualityClaim": false
+  }
+}

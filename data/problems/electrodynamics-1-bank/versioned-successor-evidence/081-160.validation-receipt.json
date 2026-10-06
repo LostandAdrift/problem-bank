@@ -1,0 +1,1908 @@
+{
+  "schemaVersion": "proofanvil.ed1-versioned-successor-proposal-receipt.v2",
+  "status": "superseding_independently_cross_reviewed_candidate_not_admitted",
+  "proposalPath": "/private/tmp/ed1-successor-proposals-081-160.superseding.authority-rebound.v3.json",
+  "proposalSha256": "48f763e54a9488d891f1a660a3ca21ebba8d49618fd60bcde88221ba5c79cb88",
+  "crossReviewInputBindings": {
+    "baseProposalPath": "/private/tmp/ed1-successor-proposals-081-160.superseding.v2.json",
+    "baseProposalSha256": "db9b6545daac06ab253eaed75ac2de3ff78a39fef035b02045897e31ed301dc9",
+    "baseReceiptPath": "/private/tmp/ed1-successor-proposals-081-160.superseding.v2.receipt.json",
+    "baseReceiptSha256": "d015a7552de803581f6f2c30eb3a25d893253ea8e06664d8293b6f677b63900e"
+  },
+  "sourceBindings": {
+    "languageAuditPath": "data/problems/electrodynamics-1-bank/language-audit.v1.json",
+    "languageAuditSha256": "f9de3344d15f8a9ee5c366bfa36708984596032e88e73083b5d59d41dffc6591",
+    "revisionFixtureAuditPath": "data/problems/electrodynamics-1-bank/revision-fixture-audit.v1.json",
+    "revisionFixtureAuditSha256": "ac8d0db149f65db6c4a362d624fc64ae119750929919e9951fdebb363aa392a5",
+    "checkedInManifestPath": "data/problems/checked-in-packet-manifest.json",
+    "checkedInManifestSha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef",
+    "packetPath": "data/problems/electrodynamics-1-bank/packets.json",
+    "packetSha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78",
+    "reviewedSourcePath": "data/problems/electrodynamics-1-bank/part-081-160.json",
+    "reviewedSourceSha256": "a767e2a40b04bc1f8067ff22b983d97d9a1ab977d0c3167efd799cdaa0512e82",
+    "batchBindings": [
+      {
+        "range": "081-120",
+        "bindingSha256": "7e0f7c0a6df0bd9ff3c2aef30fe6cf3fe0dd3306914b580eefa82eba4286c055"
+      },
+      {
+        "range": "121-160",
+        "bindingSha256": "eec3a28fb6e3d76932f083bec2c22d8b5300a8ea9751dc0b451142fceaca9744"
+      }
+    ],
+    "scopeAuthorityPath": "data/problems/electrodynamics-1-bank/versioned-successor-scope-authority.v2.json",
+    "scopeAuthoritySha256": "bd769958c9b45c5d7738a05e2b982364ad11dafda5e81686fc99a3764b583a92",
+    "scopeAuthorityArtifactSha256": "1a36ba04ddf4ae4c3f8daa92a41cb15a9db9e87db9019a9b1279de9571dfb330"
+  },
+  "candidateBinding": {
+    "scheme": "proofanvil.ed1-successor-candidate-binding.sha256.v2",
+    "checkedInPacketDigestScheme": "proofbound.checked-in-canonical-packet.sha256.v1",
+    "sourceRecordDigestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.ed1-source-record-digest.v1',record:exact-16-field-source-record}))",
+    "canonicalization": "canonicalManagementJson",
+    "derivation": "SHA-256 over canonicalManagementJson({scheme,checkedInPacketDigestScheme,sourceRecordDigestScheme,courseId,ordinalRange,sourceBindings,recordCount,records:[{publicProblemId,internalId,inputProblemVersion,inputRubricVersion,inputCanonicalPacketSha256,baseSourceRecordSha256,candidateSourceRecordSha256,outputProblemVersion,outputRubricVersion,outputCandidateCanonicalPacketSha256}]})",
+    "recordOrder": "publicProblemId_numeric_ascending",
+    "recordCount": 43,
+    "bindingSha256": "b81d12c816dc2b6f64b6413217bce2215965d25bcc621876e87bc4de160a7bf5"
+  },
+  "counts": {
+    "affectedProblems": 43,
+    "editCount": 250,
+    "scopeCounts": {
+      "problem_version_only": 9,
+      "rubric_version_only": 2,
+      "problem_and_rubric_version": 32
+    },
+    "categoryCounts": {
+      "locale_mismatch": 3,
+      "rubric_statement_mismatch": 16,
+      "ambiguous_request": 5,
+      "synthetic_register": 9,
+      "notation_mismatch": 21,
+      "poor_part_structure": 7,
+      "literal_translation": 2,
+      "unit_or_sign_convention": 3,
+      "nonstandard_terminology": 4,
+      "unnecessary_context": 1
+    },
+    "fieldEditCounts": {
+      "statement": 37,
+      "hintTree": 52,
+      "milestones": 19,
+      "canonicalSolution": 27,
+      "graderFixtures": 33,
+      "title": 14,
+      "objective": 15,
+      "acceptableStrategies": 9,
+      "permittedResults": 10,
+      "commonErrors": 33,
+      "skillIds": 1
+    },
+    "finalSlotSuccessorsRequiringReapproval": 4
+  },
+  "gates": {
+    "exactCurrentManifestTargets": {
+      "status": "passed",
+      "checked": 43,
+      "failures": 0
+    },
+    "exactExistingLeafPathsAndTypePreservation": {
+      "status": "passed",
+      "checked": 250,
+      "failures": 0
+    },
+    "unchangedCandidateFields": {
+      "status": "passed",
+      "method": "recursive exact v1 clone plus declared JSON-pointer edits and required version fields only",
+      "allowedDifferences": "250 declared packet leaf paths plus 75 problemVersion and/or rubricVersion leaves required by the effective v1+v2 scope authority",
+      "failures": 0
+    },
+    "finalLanguageAuditParity": {
+      "status": "passed_against_immutable_v1_plus_append_only_v2",
+      "languageAuditSha256": "f9de3344d15f8a9ee5c366bfa36708984596032e88e73083b5d59d41dffc6591",
+      "scopeAuthoritySha256": "bd769958c9b45c5d7738a05e2b982364ad11dafda5e81686fc99a3764b583a92",
+      "scopeAuthorityArtifactSha256": "1a36ba04ddf4ae4c3f8daa92a41cb15a9db9e87db9019a9b1279de9571dfb330",
+      "candidateCount": 43,
+      "scopeCounts": {
+        "problem_version_only": 9,
+        "rubric_version_only": 2,
+        "problem_and_rubric_version": 32
+      },
+      "categoryCounts": {
+        "locale_mismatch": 3,
+        "rubric_statement_mismatch": 16,
+        "ambiguous_request": 5,
+        "synthetic_register": 9,
+        "notation_mismatch": 21,
+        "poor_part_structure": 7,
+        "literal_translation": 2,
+        "unit_or_sign_convention": 3,
+        "nonstandard_terminology": 4,
+        "unnecessary_context": 1
+      },
+      "scopeArrayDifferences": 0,
+      "perCandidateCategoryDifferences": 0
+    },
+    "canonicalPacketDigestTransitions": {
+      "status": "passed",
+      "digestScheme": "proofbound.checked-in-canonical-packet.sha256.v1",
+      "inputDigestsChecked": 43,
+      "outputDigestsRecomputed": 43,
+      "unchangedFromBoundInputProposal": 43,
+      "aggregateBindingSha256": "b81d12c816dc2b6f64b6413217bce2215965d25bcc621876e87bc4de160a7bf5",
+      "failures": 0
+    },
+    "productionKatexRendering": {
+      "status": "passed",
+      "checkedLearnerStrings": 2494,
+      "mathBearingStrings": 381,
+      "renderedMathStrings": 381,
+      "renderedMathExpressions": 1449,
+      "failures": 0
+    },
+    "c0ControlCharactersAndDroppedLatexCommands": {
+      "status": "passed",
+      "c0ControlDefects": 0,
+      "inlineMathControlDefects": 0,
+      "failures": 0
+    },
+    "targetedBareMathInEditedLeaves": {
+      "status": "passed",
+      "checkedLeaves": 250,
+      "findings": [],
+      "failures": 0
+    },
+    "canonicalPositiveFixtureMirror": {
+      "status": "passed",
+      "checked": 43,
+      "failures": 0
+    },
+    "revisionFixtureSemanticCensus": {
+      "status": "passed_after_successor_rewrites_under_effective_v1_plus_v2_authority",
+      "revisionFixtureAuditSha256": "ac8d0db149f65db6c4a362d624fc64ae119750929919e9951fdebb363aa392a5",
+      "scopeAuthoritySha256": "bd769958c9b45c5d7738a05e2b982364ad11dafda5e81686fc99a3764b583a92",
+      "currentV1Effective": {
+        "checked": 80,
+        "exactAOnly": 77,
+        "aPlusBOrAdditional": [
+          "ED:088",
+          "ED:100",
+          "ED:150"
+        ],
+        "bOrUnlistedWithoutA": [],
+        "neitherOrUnlisted": [],
+        "selfCorrecting": []
+      },
+      "successorCandidates": {
+        "checked": 80,
+        "exactAOnly": 80,
+        "aPlusBOrAdditional": [],
+        "bOrUnlistedWithoutA": [],
+        "neitherOrUnlisted": [],
+        "selfCorrecting": []
+      },
+      "evidence": "The bound input receipt and byte-identical inherited fixtures cover the other 79 candidates; ED150 was independently replayed against EDE150A/EDE150B and now contains only A.",
+      "failures": 0
+    },
+    "normalizedCrossBankTitleAndStatementDedupe": {
+      "status": "passed",
+      "packetBanksCompared": 10,
+      "exactMatches": [],
+      "maximumTokenJaccard": 0.5434782608695652,
+      "maximumPair": [
+        "ED:127",
+        "UPHYS:477"
+      ]
+    },
+    "finalSlotImpact": {
+      "status": "held_for_reapproval",
+      "affectedAssignments": 4,
+      "problemIds": [
+        "ED:095",
+        "ED:116",
+        "ED:134",
+        "ED:156"
+      ],
+      "finalAuthoritySha256": "58f33ed0f294ae33fc1bf5b422989874dbc233b199a380ad1e5b90265aa824db"
+    },
+    "numericalAndSymbolicOracles": {
+      "status": "candidate_recomputation_only",
+      "checkedProblemIds": [
+        "ED:084",
+        "ED:087",
+        "ED:091",
+        "ED:102",
+        "ED:104",
+        "ED:106",
+        "ED:107",
+        "ED:108",
+        "ED:109",
+        "ED:113",
+        "ED:115",
+        "ED:116",
+        "ED:117",
+        "ED:120",
+        "ED:122",
+        "ED:146",
+        "ED:150",
+        "ED:154",
+        "ED:159",
+        "ED:160"
+      ],
+      "failures": 0,
+      "runtimeFullAnswerCoverage": 0,
+      "authorityClaimed": false,
+      "ed150PressurePa": 254647.90894703259
+    },
+    "sourceRecordDigestTransitions": {
+      "status": "passed",
+      "digestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.ed1-source-record-digest.v1',record:exact-16-field-source-record}))",
+      "baseDigestsRecomputed": 43,
+      "candidateDigestsRecomputed": 43,
+      "sourceLeafPathsChecked": 223,
+      "candidateSourceRootRawSha256": "0053ac79ac717719914b12d4fad6488016cee996f0541f2383e180652e8b0c6b",
+      "aggregateBindingSha256": "9d0706cac176014ab081fdbedccbf41dbf91c83900351eee89029992e9ca4394",
+      "failures": 0
+    }
+  },
+  "independentCrossReview": {
+    "reviewedCandidates": 43,
+    "reviewedChangedLeaves": 250,
+    "reviewedPositiveFixtures": 43,
+    "reviewedFlawedFixtures": 80,
+    "allFinalAuditScopeArraysMatched": true,
+    "allTenLanguageCategoryDispositionsMatched": true,
+    "confirmedCandidateDefectsRepaired": [
+      "ED:087 tangential-displacement jump and complete answer",
+      "ED:088 exact-A-only negative fixture",
+      "ED:100 new rubric successor with exact-A-only negative fixture",
+      "ED:105 exact boundary-field notation in solution and positive fixture",
+      "ED:107 explicit surface-volume bound-charge cancellation",
+      "ED:109 signed plate potentials and exact field-reversal thresholds",
+      "ED:113 equal-host and low-permittivity limit completion",
+      "ED:115 explicit vacuum limit for fields, bound charge, and potential correction",
+      "ED:120 signed voltage, oriented boundary sheets, total-charge balance, and origin limitation",
+      "ED:122 removal of supplied formulas plus an explicit Biot-Savart derivation",
+      "ED:127 standard interior/exterior Ampere-law terminology",
+      "ED:130 closed-circuit source-completion skill identity",
+      "ED:133, ED:141, ED:142, ED:144, and ED:148 complete problem-and-rubric notation coverage",
+      "ED:139, ED:143, ED:147, and ED:149 rubric/fixture notation repairs",
+      "ED:145 bounded title and nonzero-current direction request",
+      "ED:146 complete tangential-H continuity and tangential-B material relation",
+      "ED:154 normalized eigenmode representatives and completed answer",
+      "ED:159 equality treated as the saturation threshold, not as a strictly unsaturated branch",
+      "ED:150 corrected half-factor hint plus exact-EDE150A-only revision fixture with inward traction direction retained"
+    ],
+    "specialPhysicsDerivations": [
+      {
+        "problemId": "ED:087",
+        "result": "The oriented pillbox gives D2n-D1n=sigma_f; electrostatics makes Et common and therefore D2t-D1t=(epsilon2-epsilon1)Et in linear isotropic media."
+      },
+      {
+        "problemId": "ED:095",
+        "result": "The normal-D and tangential-E boundary laws, separately oriented material-face polarization charges, and equal-permittivity and high-permittivity limits were independently rederived; final-A calibration is preserved."
+      },
+      {
+        "problemId": "ED:099",
+        "result": "Contracting the vacuum stress tensor with a purely normal field gives epsilon0 En squared over 2 along each conductor-local outward normal; final-A calibration is preserved."
+      },
+      {
+        "problemId": "ED:107",
+        "result": "P(0)=0, sigma_b(d)=D alpha/(1+alpha), and the volume integral is its exact negative, so the slab's bound-charge ledger closes."
+      },
+      {
+        "problemId": "ED:109",
+        "result": "The signed two-equation system gives E1=(epsilon2 V/d-sigma_f)/(epsilon1+epsilon2) and E2=(epsilon1 V/d+sigma_f)/(epsilon1+epsilon2), with the stated exact reversal thresholds."
+      },
+      {
+        "problemId": "ED:116",
+        "result": "Independent substitution reproduces E1=3.00 kV/m, E2=2.00 kV/m, epsilon2=5 epsilon0, the buried-sheet charge, voltage, energy, and global charge ledgers; final-B calibration is preserved."
+      },
+      {
+        "problemId": "ED:117",
+        "result": "The displacement ceilings identify material 1 as limiting and give d1=0.1667 mm; the capacitance monotonicity is unchanged."
+      },
+      {
+        "problemId": "ED:120",
+        "result": "Gauss's law fixes epsilon proportional to r^-2; direct divergence and both oriented surface sheets sum to zero total bound charge."
+      },
+      {
+        "problemId": "ED:122",
+        "result": "Direct finite-segment Biot-Savart integration yields the horizontal and vertical pair fields whose sum is mu0 I sqrt(a^2+b^2)/(pi ab)."
+      },
+      {
+        "problemId": "ED:130",
+        "result": "The centered finite segment has a symmetric but sub-mu0 I circulation; exact Ampere's law applies to the total field only after a return path completes the steady source."
+      },
+      {
+        "problemId": "ED:134",
+        "result": "The punctured-domain potential has nonzero period despite zero local curl, while the uniform potentials differ by a valid gradient; final-A calibration is preserved."
+      },
+      {
+        "problemId": "ED:146",
+        "result": "With K_f=0, tangential H is continuous and B2t=(mu2/mu1)B1t in linear isotropic media; the oriented nonzero-sheet jump remains H2y-H1y=-K."
+      },
+      {
+        "problemId": "ED:150",
+        "result": "For opposing pole-local normals, Maxwell traction points into the gap on both faces with p=B_g^2/(2mu_0)=2.54648e5 Pa. The revision fixture intentionally drops only the isotropic half term and does not reverse traction."
+      },
+      {
+        "problemId": "ED:154",
+        "result": "The normalized low/high representatives are (2.0249595,-0.9484403) A and (0.9484403,2.0249595) A; their squared norms are 5 A^2 and their energies match the two eigenvalues."
+      },
+      {
+        "problemId": "ED:156",
+        "result": "The sheet current from the field jump and the average-field Lorentz force agree with the Maxwell-traction jump; final-B calibration is preserved."
+      },
+      {
+        "problemId": "ED:159",
+        "result": "At g_sat=g_min, B equals B_sat and the saturation-limited and manufacturing-limited force formulas coincide; strict unsaturation requires g_sat<g_min."
+      }
+    ]
+  },
+  "perCandidateLeafImpact": [
+    {
+      "problemId": "ED:084",
+      "categories": [
+        "locale_mismatch",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/statement",
+        "/hints/0"
+      ],
+      "packetEditPaths": [
+        "/hintTree/0/content",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "70883c5910620f2491a1d8b40318d28f70e6572540077fbfc4c5dc644ea29c28",
+      "outputCandidateCanonicalPacketSha256": "a44f375df11f2809df90133237989ea656733cfab574586ec8157f4bc9c2634f",
+      "baseSourceRecordSha256": "b2af2ed7df7a629aaff3ce74447ed7750fc796ced37e08f62c30cb46647af3f9",
+      "candidateSourceRecordSha256": "455df4d89e6a4bc7a37dec3a9d9e9ec33808259e2bc49d4e1c8200bf7a9daeb9"
+    },
+    {
+      "problemId": "ED:087",
+      "categories": [
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/rubricCriteria/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/milestones/2/criterion",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "ce62d244c9ca286b85e99afd3722c283ff4024e0fda2adcdf102036c23f80db8",
+      "outputCandidateCanonicalPacketSha256": "8b48a9cbeb2389263434100e91ab0058970553ef41c7132b0a89cbb8853bdcde",
+      "baseSourceRecordSha256": "fdc6f818ab9825769ffbe71248da823e6975e321a8e6a9d81995537046d56d31",
+      "candidateSourceRecordSha256": "dbb20b600f047d7be01a1ab322de2abd25c2af91a6a9de8e601237976d370e27"
+    },
+    {
+      "problemId": "ED:088",
+      "categories": [
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/flawedProof"
+      ],
+      "packetEditPaths": [
+        "/graderFixtures/1/proofText",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "c9de53bac2c4d41a7e06b78febe0d13f65ad4648b9f08382918bf441eee57424",
+      "outputCandidateCanonicalPacketSha256": "32f8349c0f67ea362286a0ac671d0868511db85d41da35fe48a430e861ad3278",
+      "baseSourceRecordSha256": "3b3b95cb415da61099891b9bb7be361695eaf3902971d8bb9891aaa9812603fa",
+      "candidateSourceRecordSha256": "ea11b40f65af61955b58bd9efe23ff5e9e1a88c3bd9a6ff9d13c05717496221e"
+    },
+    {
+      "problemId": "ED:090",
+      "categories": [
+        "ambiguous_request",
+        "synthetic_register"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/strategy",
+        "/hints/2"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/hintTree/2/content",
+        "/objective",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "ec84a268fb4f3ff2e7ca9c6da07efeec7f6d3203b6f84a5bdf53d6e5ce21f8f8",
+      "outputCandidateCanonicalPacketSha256": "8bda18e6ab0c25f2e79fa277c82223fcc47ec9dd2a815877d1848e4ecd850885",
+      "baseSourceRecordSha256": "2794521fbc9f9f17ae82712f4d581cb3f7d0ffe6976a957dd83bb2c2e0e4d4a9",
+      "candidateSourceRecordSha256": "6a63c71113074d38b18282f6de0d28709d295959da87017c225cdf6c11ecb668"
+    },
+    {
+      "problemId": "ED:091",
+      "categories": [
+        "locale_mismatch",
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/permittedResults/0",
+        "/permittedResults/1",
+        "/hints/1",
+        "/hints/2",
+        "/commonErrors/1/description"
+      ],
+      "packetEditPaths": [
+        "/commonErrors/1/description",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/permittedResults/0",
+        "/permittedResults/1"
+      ],
+      "inputCanonicalPacketSha256": "19d34d3d80fd342e02174ff30ff015d94b87de1f5fe04aacb220648a64c37d96",
+      "outputCandidateCanonicalPacketSha256": "64b0c39e7754d768a103cef6208a5ab816ebceb8529bb6d0a868956f204207fd",
+      "baseSourceRecordSha256": "68ea45c4ae04778568f94eae661c2324ea637818cd85d126d297f45c33776721",
+      "candidateSourceRecordSha256": "de37c807cdaf8d7467ced2a7045e7742010a6d2a8f21821eea195565b99202ec"
+    },
+    {
+      "problemId": "ED:093",
+      "categories": [
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/statement"
+      ],
+      "packetEditPaths": [
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "d38ba9633358970c1186b104777726b2d0d9829868de1f471287239d85a3d95d",
+      "outputCandidateCanonicalPacketSha256": "791784b09272d19eb4303cd922d3d6f70815882754af135f9f34c55955e3e0c8",
+      "baseSourceRecordSha256": "6935e39ec491e13e514ec88daeb2c14336df5f36d4c9c0e5c7e34fd5775a81d8",
+      "candidateSourceRecordSha256": "6a84dacad485b24279b169a436a865da9f69d27691bd35ce5e0e452f338d7b54"
+    },
+    {
+      "problemId": "ED:095",
+      "categories": [
+        "poor_part_structure",
+        "synthetic_register"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/strategy"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/objective",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "8b5559a8868629333baa686776c7cd7b7d62769f1e3e5672deb4f2761ee1225b",
+      "outputCandidateCanonicalPacketSha256": "21439f444b942df44d879cdabb9336dde7cf87e3e78737b43f9018e43ec87fb9",
+      "baseSourceRecordSha256": "2c0ede5910ee2f1419d7a17772df7261de8935a9fa75f630a6477f0c16b166f4",
+      "candidateSourceRecordSha256": "7f493c74bd7445a8c2c88956491bdeb138719a17a9aa9f7ef0eb64e2a2226a45"
+    },
+    {
+      "problemId": "ED:099",
+      "categories": [
+        "locale_mismatch",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/statement",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "26ed2f0e58a96eaee050b7e52691b4bd46a438a4285730369d1b218ab1483dfc",
+      "outputCandidateCanonicalPacketSha256": "355172324877b656257ddd4887259923937fd1ea00a0aba9011072b7778722cb",
+      "baseSourceRecordSha256": "c638f86498c83aa600813ab9c75e6d5dcc971bc8188d7e5ccc4c63e2d6963469",
+      "candidateSourceRecordSha256": "2bfc611acb4eab1f2dc8045a3e22a7cc1c61989ecf268af7337cbba5daf4bafa"
+    },
+    {
+      "problemId": "ED:100",
+      "categories": [
+        "rubric_statement_mismatch"
+      ],
+      "scope": "rubric_version_only",
+      "sourceEditPaths": [
+        "/flawedProof"
+      ],
+      "packetEditPaths": [
+        "/graderFixtures/1/proofText"
+      ],
+      "inputCanonicalPacketSha256": "5e0435b55237117ac63a08840faecc48c927e44632f60f16e479a0e1dc6457df",
+      "outputCandidateCanonicalPacketSha256": "4b64f195ddee46d0bca253ebd75687e6ec1f61610e99aea514e4e22e857f8366",
+      "baseSourceRecordSha256": "6a72a003d9a5cc4466179656412da7fd7cc2fe7b1202298fa24083327d9e5ace",
+      "candidateSourceRecordSha256": "e5d7212b0997cba92a929d4a6e5ecc6315c308ab830f4a08c16a749a0965d83b"
+    },
+    {
+      "problemId": "ED:103",
+      "categories": [
+        "literal_translation"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/hints/0"
+      ],
+      "packetEditPaths": [
+        "/hintTree/0/content"
+      ],
+      "inputCanonicalPacketSha256": "8004e90d933250878011edf0d0b52316703ca3dc1cd110bb88c4d10b5785a6b8",
+      "outputCandidateCanonicalPacketSha256": "684c443d832a1857abbc6d0e1578a9e28a1e27d66dddf54aec9180224fee595b",
+      "baseSourceRecordSha256": "342351cdd1a195ea786572de72814b2aac587a73a736490829e865a8546ad5f5",
+      "candidateSourceRecordSha256": "4054af39ed261b428f606362b1093af1669931cc86c3c11bc78ee5c822f52c64"
+    },
+    {
+      "problemId": "ED:105",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/commonErrors/1/description",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/1/description",
+        "/graderFixtures/0/proofText"
+      ],
+      "inputCanonicalPacketSha256": "9556901c10cff4cce6463736f680bb4058ed4c855c0d3d56fba86e8a55916c58",
+      "outputCandidateCanonicalPacketSha256": "16976cd24c446067e47a90b991ac8835418afd54011baa8643bf19f36b992d79",
+      "baseSourceRecordSha256": "2f8f8f54722709a8eeda62044a7f6f30376d46feb9bce7c4f5bf14d489725bbd",
+      "candidateSourceRecordSha256": "aa07d4454b40cec44467b8d8e335f8bf243377ca9c2a95235c7bead7b7afece4"
+    },
+    {
+      "problemId": "ED:107",
+      "categories": [
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/rubricCriteria/2",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/hintTree/2/content",
+        "/milestones/2/criterion",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "d0afcdf745044e706519eccfce900ba702d1038561b1ca59909b82fddfcc200d",
+      "outputCandidateCanonicalPacketSha256": "25ed3cc7ed48e93801b5edcbc83dfc40b6570af6f9f40f603d2106771407e80f",
+      "baseSourceRecordSha256": "c38c0e5a2a241ce002abd578d92703c0d1e02e9a7f54495792d974d524d8f054",
+      "candidateSourceRecordSha256": "ed7399289aba1f1dc263c2c718144b40f6d19d778a240285a75b2317188c7610"
+    },
+    {
+      "problemId": "ED:109",
+      "categories": [
+        "ambiguous_request",
+        "unit_or_sign_convention"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/permittedResults/1",
+        "/hints/1",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/hintTree/1/content",
+        "/permittedResults/1",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "7c416da6782cad0a7b75db9dacfd8fe4f1705afc98941242cb073c1790912bf5",
+      "outputCandidateCanonicalPacketSha256": "2893d93981fc1c10d097060099531ec8287181df3c4a5148862a63fb0ffddaa7",
+      "baseSourceRecordSha256": "3acadb4f290531f8445acdaea7047f7efde981447d7a60067e9941d2ad1caeab",
+      "candidateSourceRecordSha256": "5ffe619f51785bab15b568f2305233928ab60122fa1bb7761b9cee6ccdfa928f"
+    },
+    {
+      "problemId": "ED:113",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/hints/0",
+        "/hints/1",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/hintTree/2/content"
+      ],
+      "inputCanonicalPacketSha256": "1ff36f6c79c58b280675b1c897a387ce8dff43dc4789230e704df26eb8c4a15e",
+      "outputCandidateCanonicalPacketSha256": "5b2556d7fa341dbbe60bbccabbddec16e140d607a422e038e874d0f86fcb3d7b",
+      "baseSourceRecordSha256": "69379207266a28abbb5a297c2a6a6b363d9618fa79fb437732be7d109ec1aebb",
+      "candidateSourceRecordSha256": "fa9765810f25fe55211d285d49b69262cbe2422bf70b27411655baead6f973c4"
+    },
+    {
+      "problemId": "ED:115",
+      "categories": [
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "a9b6da49e5508beb4dbc57e45e3005c7948831e20909b069ac70c9cbc21b31a3",
+      "outputCandidateCanonicalPacketSha256": "8b9b24efb02838acf4e7d895141b66fd35898997bb4a409772ebf0c53698dd26",
+      "baseSourceRecordSha256": "8edece67b569dccf34e82c487337e166531deaa6d75c01355a5c5ad0f032a085",
+      "candidateSourceRecordSha256": "e777c658432d503732bf8d843f66df39bff23989e9f47bf6f6fcdecdf60a38b0"
+    },
+    {
+      "problemId": "ED:116",
+      "categories": [
+        "poor_part_structure",
+        "synthetic_register"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/objective",
+        "/statement",
+        "/strategy",
+        "/rubricCriteria/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/milestones/2/criterion",
+        "/objective",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "7a55e60abd67243184fccb2faf699c14a3c405f9c1a5e9c612dba0177e2e4654",
+      "outputCandidateCanonicalPacketSha256": "0f7c67effdeddedf65318e977cb96efd74f25bf091e68c498aa8430424819ab4",
+      "baseSourceRecordSha256": "28478e1803d5b7f5716f24d06234ea965bc08911fd242be03240576286bfc21d",
+      "candidateSourceRecordSha256": "6c396e7bc433e55c95bb5a7ae4ab8fe95e04af984aa270e641b36b97fdf94d13"
+    },
+    {
+      "problemId": "ED:117",
+      "categories": [
+        "nonstandard_terminology"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/title",
+        "/statement"
+      ],
+      "packetEditPaths": [
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "0cc163418044e971a1846178c24d25cdf85ddb8d9ee3aa659dc4527345b01639",
+      "outputCandidateCanonicalPacketSha256": "1dd5710ab1387c1256bc4e5b80369c61f5154c8fa3223e4bf565f462a5892ebf",
+      "baseSourceRecordSha256": "a4bcf98e9db11f9dcb2465b5fb4c6108c24af0a6a209a57d129ad4f33a290fa8",
+      "candidateSourceRecordSha256": "babea1c08ec33113e5a96a8fc2b169e9adc5323970e4d8bafbe6e6c0ce967b92"
+    },
+    {
+      "problemId": "ED:120",
+      "categories": [
+        "ambiguous_request",
+        "notation_mismatch",
+        "synthetic_register",
+        "unit_or_sign_convention"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/objective",
+        "/statement",
+        "/permittedResults/0",
+        "/strategy",
+        "/hints/0",
+        "/hints/1",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/objective",
+        "/permittedResults/0",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "906a08c6d831fd9a59ae1305c3893fb770a4345fc3f26ffd350b349e3f82cb88",
+      "outputCandidateCanonicalPacketSha256": "98ef390ce07e266a84e49bd8d34b2317d0be73e3e9ab7a961b75f396aa1f5bd7",
+      "baseSourceRecordSha256": "8f5fa51c201c559f92bf2ca0907e2869531a724b7e943bf2fb192adf82096c7f",
+      "candidateSourceRecordSha256": "a4f76ebf26f7604930060fc2f58ebb0857b4b934496d008e7b936d5faa04e5ba"
+    },
+    {
+      "problemId": "ED:122",
+      "categories": [
+        "synthetic_register",
+        "unnecessary_context"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/permittedResults/0",
+        "/strategy",
+        "/rubricCriteria/0",
+        "/hints/0",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/2/content",
+        "/milestones/0/criterion",
+        "/objective",
+        "/permittedResults/0",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "cbda4e00a5db6a64b1a1d004ae95f1caafb6b485caeffe0817e2c864ad7e88fc",
+      "outputCandidateCanonicalPacketSha256": "4c9d11b4dc31e1dcf1aa38cc86891646e14864762a693d3d983936354b308e8c",
+      "baseSourceRecordSha256": "5d8329f6410918533007538f12ec13db07e9c3e379eec68e2360268f926e13ae",
+      "candidateSourceRecordSha256": "b1a43dff538862625d13866c5d7f78ad3307bba72fe42cfd2b592faa18cddd7a"
+    },
+    {
+      "problemId": "ED:126",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "rubric_version_only",
+      "sourceEditPaths": [
+        "/commonErrors/0/description"
+      ],
+      "packetEditPaths": [
+        "/commonErrors/0/description"
+      ],
+      "inputCanonicalPacketSha256": "7818098a4d8b01db76cfd2e8994a8af608aeda7a729f0b6a29e416ccdb73eabd",
+      "outputCandidateCanonicalPacketSha256": "1b5adfdc9ca09dede619910aff160ce4b68c4cdffb25b7cdcfe4b56d96279e4e",
+      "baseSourceRecordSha256": "c45e4efee7326520e0f75c924c53fd9d0e6e5ea7de88cf0d3e46c07576e8b914",
+      "candidateSourceRecordSha256": "822a93976f83d344edcda3388eded13fb8dd7461ea55dd382e7b2c2e963e762c"
+    },
+    {
+      "problemId": "ED:127",
+      "categories": [
+        "nonstandard_terminology",
+        "notation_mismatch",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/permittedResults/0",
+        "/hints/0",
+        "/hints/1",
+        "/commonErrors/0/description",
+        "/commonErrors/0/consequence",
+        "/commonErrors/1/consequence",
+        "/flawedProof"
+      ],
+      "packetEditPaths": [
+        "/commonErrors/0/consequence",
+        "/commonErrors/0/description",
+        "/commonErrors/1/consequence",
+        "/graderFixtures/1/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/objective",
+        "/permittedResults/0",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "c7dae4f581bf60f7f3d78958e99c57516a7c1021e4b549e89ba793e4b30b9e72",
+      "outputCandidateCanonicalPacketSha256": "1c4835ea41c6cc28e3216dd38f206462d65c52908ce92ff36903476df9122489",
+      "baseSourceRecordSha256": "61c87a89827ab0b3d489ecbe7056772959a11fee42a8aaea05ed49eecdf8a4db",
+      "candidateSourceRecordSha256": "5a3694c2a0693526c268721557e9f6ca02623ab8f02f04fe71920e914fcc7e1f"
+    },
+    {
+      "problemId": "ED:130",
+      "categories": [
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/strategy",
+        "/rubricCriteria/0",
+        "/rubricCriteria/2",
+        "/hints/0",
+        "/solution",
+        "/tags/2",
+        "/commonErrors/0/description"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/milestones/0/criterion",
+        "/milestones/2/criterion",
+        "/objective",
+        "/skillIds/3",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "b8ae62826b935c154a9254332e724118f1f587538ebb93eb8021acdbd5dfd4d4",
+      "outputCandidateCanonicalPacketSha256": "01b1db8f1572ff7f7d82ebfe6c17b2d50b4f8ea5b9220e6bfe197ca9d4d21456",
+      "baseSourceRecordSha256": "a7accbba136c2e47346c30fd3070e3291344ca56f1e50b08181ca5aa07ee4fbe",
+      "candidateSourceRecordSha256": "d43377a00c5d073690157036b62e6ea27bdc5ef7828ca94f99dd761cc697317a"
+    },
+    {
+      "problemId": "ED:131",
+      "categories": [
+        "literal_translation",
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/statement",
+        "/rubricCriteria/0",
+        "/commonErrors/1/consequence",
+        "/hints/1",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/1/consequence",
+        "/graderFixtures/0/proofText",
+        "/hintTree/1/content",
+        "/milestones/0/criterion",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "600ebdd3dbd9c7c48b02534707d1c8c3fd31f861e622279d6d73f32869e82b9e",
+      "outputCandidateCanonicalPacketSha256": "1a90b2c07ec015b5db0ada18d8300a99f264a6ff035b0f48dfe8938c9784b7d1",
+      "baseSourceRecordSha256": "4020dc450063a0981e752e41d125d613e1af2b4346b788d7d1de7e76bb2375f3",
+      "candidateSourceRecordSha256": "f3493ddb4a7f1e3cdbcdcd0e04bfab497d860cbba6d25c58c2454b4cae65e2b2"
+    },
+    {
+      "problemId": "ED:133",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/commonErrors/0/description",
+        "/statement",
+        "/permittedResults/1",
+        "/rubricCriteria/0",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/2/content",
+        "/milestones/0/criterion",
+        "/permittedResults/1",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "2a83b988bfd0214aa38e30416bbfbb1c5c6f63111c077dd23cb62ee00f64db58",
+      "outputCandidateCanonicalPacketSha256": "bc16e46419b25e337a33e9a52b93978a7d177a5955a15633ef1cf19554489525",
+      "baseSourceRecordSha256": "4dbf6a03b6d7db252a5a4f8f888c467fed3aa86af4d283572202655eb7bb63b7",
+      "candidateSourceRecordSha256": "0723d8b934c96185d3b1597f28dd7bd98af4b521e0aa222ee4b93889c53e6bdf"
+    },
+    {
+      "problemId": "ED:134",
+      "categories": [
+        "poor_part_structure",
+        "synthetic_register"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/objective",
+        "/statement",
+        "/hints/0",
+        "/hints/1"
+      ],
+      "packetEditPaths": [
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/objective",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "0477d82c094c2e0f98955f0dc70d7cfd96b0f129c295db0f486c96dfb3a7682a",
+      "outputCandidateCanonicalPacketSha256": "60b7d9d340627223a744bfe58072f602a95b22f62889c517e49940f064f65962",
+      "baseSourceRecordSha256": "1a5b6f87889dcaab1a24e93dc0c6c21a3aa22e77ae73f4752bcc37c9eb60ad79",
+      "candidateSourceRecordSha256": "93bc2dd4ba7fc1ab98a76c9d0b92456287654103de35543bcaec5f92cf918405"
+    },
+    {
+      "problemId": "ED:139",
+      "categories": [
+        "nonstandard_terminology",
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/permittedResults/1",
+        "/commonErrors/1/description",
+        "/hints/1",
+        "/hints/2",
+        "/solution",
+        "/flawedProof"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/1/description",
+        "/graderFixtures/0/proofText",
+        "/graderFixtures/1/proofText",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/objective",
+        "/permittedResults/1",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "df5990abd221e075f8ee5ec95204dba521ad570935e5a400d75ecd2f916938e1",
+      "outputCandidateCanonicalPacketSha256": "f438a186f1c58e8f0e405e474fe4820ffe24f3b5b14df729eea0b567865c970b",
+      "baseSourceRecordSha256": "ca5f723e14f215a73acf904a27c928b9cdea199cd03b256df3b8f0efc55da654",
+      "candidateSourceRecordSha256": "25ab5d0b8ecc83748c8f655dd91ac3d303baf8aa65ec8adb462bc325ba1abdcf"
+    },
+    {
+      "problemId": "ED:141",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/hints/0",
+        "/hints/2",
+        "/objective",
+        "/rubricCriteria/1",
+        "/rubricCriteria/2",
+        "/commonErrors/0/description",
+        "/commonErrors/0/consequence",
+        "/commonErrors/1/description",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/consequence",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/2/content",
+        "/milestones/1/criterion",
+        "/milestones/2/criterion",
+        "/objective",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "b6ac4632fbf11fdac5a6f9492bc9fe89562f7f68c8ccd37d8da2f874b7fd601a",
+      "outputCandidateCanonicalPacketSha256": "2e7ea5f1ddd53e9b04157977ca8146a17e1bb1adebed49964dcfc3a72a2a81b8",
+      "baseSourceRecordSha256": "43a374385b2cedc4514eb9a96480920fdcab94a6b62d6db31aff5bfe56134f4f",
+      "candidateSourceRecordSha256": "f039ab3b7e28baa1f189783f77ea33ecc0334063d8b03796eef7618ac7b41772"
+    },
+    {
+      "problemId": "ED:142",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/objective",
+        "/statement",
+        "/commonErrors/0/description",
+        "/commonErrors/0/consequence",
+        "/hints/0",
+        "/hints/1",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/consequence",
+        "/commonErrors/0/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/objective",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "f447e89ccde724b89cb4f92b57452ce15453a587a43466e49ee24c380db5dd43",
+      "outputCandidateCanonicalPacketSha256": "a4af703656f6bb7fa483db58819324f082832e3e0658729a56d68780baa6410d",
+      "baseSourceRecordSha256": "3d6950cc318b12e87da7890b7bde1e7da806888633a71825bb29d3a2879f4142",
+      "candidateSourceRecordSha256": "19732d16e43b552f0e05d37e3565933b87a50df278c7b7ff403ed0702ca2637e"
+    },
+    {
+      "problemId": "ED:143",
+      "categories": [
+        "notation_mismatch",
+        "rubric_statement_mismatch",
+        "synthetic_register"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/rubricCriteria/0",
+        "/rubricCriteria/1",
+        "/commonErrors/0/description",
+        "/commonErrors/0/consequence",
+        "/commonErrors/1/description",
+        "/hints/0",
+        "/hints/1",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/consequence",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/milestones/0/criterion",
+        "/milestones/1/criterion",
+        "/objective",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "8015ae71e0b64aa28f279f206a04e18c947332188dc825769ee29b4067ead95e",
+      "outputCandidateCanonicalPacketSha256": "047f25759df52499124adefa2f3a38b31207c74b0fc775b5fe245053405892dc",
+      "baseSourceRecordSha256": "ed511bf322faabf053d17bcf28247e784e923e8d0ee83c0f747ab6351710cfdd",
+      "candidateSourceRecordSha256": "827ee4639bbc37ef7f5207eb620c652f425684b4a96c5e7f0dfef7c66d78d476"
+    },
+    {
+      "problemId": "ED:144",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/hints/0",
+        "/commonErrors/0/description",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/objective",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "99693a74e2ea4495cc36c2864463c618101824975363e692f651a2e79065cf1c",
+      "outputCandidateCanonicalPacketSha256": "6a39882f3061607d6d24719bcee6965a48d97661f561c613955fa963a6c4cd96",
+      "baseSourceRecordSha256": "f258f5fa24a284e1a0d7b904fcaddb823b03a6f07daf0d518e289053a19f29a1",
+      "candidateSourceRecordSha256": "b89e8bd3ea05785bd1714b20a9fdb2d260529d8b979f3f19cb15dcad0166ae57"
+    },
+    {
+      "problemId": "ED:145",
+      "categories": [
+        "notation_mismatch",
+        "synthetic_register"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/objective",
+        "/statement",
+        "/strategy",
+        "/commonErrors/0/description",
+        "/commonErrors/1/consequence",
+        "/hints/0",
+        "/hints/1",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/commonErrors/1/consequence",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/objective",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "d1a7ff2566b8c8e28a39d191070f04c7c70d2a47ec67aa96b2fb330b3af7b2d9",
+      "outputCandidateCanonicalPacketSha256": "0aa6863b300553f1b2ebefd5edc3563cd5dc3029b9dcea62c5445095774eabf0",
+      "baseSourceRecordSha256": "ba78a2317af03c4cf376a8707297ef4a69595c1bca3d06532ac9c1fc19422ac4",
+      "candidateSourceRecordSha256": "95c9613ddfb050a91c53591c357e6625a705da178438e6a74b166311591e5875"
+    },
+    {
+      "problemId": "ED:146",
+      "categories": [
+        "notation_mismatch",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/statement",
+        "/rubricCriteria/2",
+        "/commonErrors/0/description",
+        "/hints/1",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/milestones/2/criterion",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "316b4cc04e145efaedf2a8420036edad306a418b8c78aab6544703e8c3ac3177",
+      "outputCandidateCanonicalPacketSha256": "69e9bc7e65c85d641869a2710cf91c20faf1602bde6989ed18a070c5aa88f469",
+      "baseSourceRecordSha256": "00b4a908a98da4a6b29e3d6bcdedd0fb2375918f70376c4f205e3b22dac3a668",
+      "candidateSourceRecordSha256": "5b7e184ca4a6ea48b9b3bd6072025a11c8f191bcc69b6a9f77dbcabb976874b9"
+    },
+    {
+      "problemId": "ED:147",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/rubricCriteria/0",
+        "/rubricCriteria/1",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/hints/1",
+        "/hints/2",
+        "/solution",
+        "/flawedProof"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/graderFixtures/0/proofText",
+        "/graderFixtures/1/proofText",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/milestones/0/criterion",
+        "/milestones/1/criterion",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "b9d76f44ec331860ed83fe6e9036b69756fa22ba57fc7758d6475d7c90ed3e22",
+      "outputCandidateCanonicalPacketSha256": "34fde558f1cf1da6c330affd398fb528b1913ef0f1f9a8a019a5c923fcfcd5a6",
+      "baseSourceRecordSha256": "48b80e7dfdbf82c40c045128c1092539ad585c00150b43183810e6ffbfcef889",
+      "candidateSourceRecordSha256": "178a3112965353bc3ac10eae9310d8775ac5129428f81e4d7c2f453c025af1d5"
+    },
+    {
+      "problemId": "ED:148",
+      "categories": [
+        "notation_mismatch",
+        "synthetic_register"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/objective",
+        "/statement",
+        "/rubricCriteria/2",
+        "/strategy",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/hints/0",
+        "/hints/1",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/milestones/2/criterion",
+        "/objective",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "7a3563f90f64d136de86f40e0c6375c8a9296cbc0591ff141a3453f24293a562",
+      "outputCandidateCanonicalPacketSha256": "23c4eaec3529865c445672c606195f4fc737a63d029b8ed03d24d8b084a23b77",
+      "baseSourceRecordSha256": "f9bdb996ab772a50ed18dd121e2dae23247c700618e77f4801f81170dcae10e3",
+      "candidateSourceRecordSha256": "784ada3cd16c26b236aec8ce617df5f8c9dd27bf53d0d7a408d178d90e15595f"
+    },
+    {
+      "problemId": "ED:149",
+      "categories": [
+        "nonstandard_terminology",
+        "notation_mismatch",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/title",
+        "/statement",
+        "/permittedResults/0",
+        "/permittedResults/1",
+        "/rubricCriteria/1",
+        "/rubricCriteria/2",
+        "/commonErrors/0/description",
+        "/commonErrors/0/consequence",
+        "/commonErrors/1/description",
+        "/hints/0",
+        "/hints/1",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/consequence",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/milestones/1/criterion",
+        "/milestones/2/criterion",
+        "/permittedResults/0",
+        "/permittedResults/1",
+        "/statement",
+        "/title"
+      ],
+      "inputCanonicalPacketSha256": "a988ae60d2c04ed9be188dda750b08b76af1f01c72f97861729dc600e4696b73",
+      "outputCandidateCanonicalPacketSha256": "48ad91e4e52383727543f00d2d8f01ed52d64f816530653f56f652f2c4dadb6a",
+      "baseSourceRecordSha256": "c7c613d185ab293b1492e4bfac8045c324f2179a08d5f22f7b049184baa382d3",
+      "candidateSourceRecordSha256": "9d8faa3222c138b7e4eab12be88f680f5d44ca6c43bb856109b7fae6b9be56ff"
+    },
+    {
+      "problemId": "ED:150",
+      "categories": [
+        "ambiguous_request",
+        "unit_or_sign_convention",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/strategy",
+        "/hints/0",
+        "/hints/1",
+        "/hints/2",
+        "/flawedProof"
+      ],
+      "packetEditPaths": [
+        "/acceptableStrategies/0/description",
+        "/graderFixtures/1/proofText",
+        "/hintTree/0/content",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "b190ae45a528d474416037cf5b2832607e0c171e301d7af1cb70793273bdd2a1",
+      "outputCandidateCanonicalPacketSha256": "9e0aec7d6aa67483aff061ff0c3a9aa3280595edd4ef544bf2e21eb39b4e44a2",
+      "baseSourceRecordSha256": "804642e61153f47b63a8a5e90f8fcd8be15540afbc9602c0721df0b5f50965a5",
+      "candidateSourceRecordSha256": "1898b1cd04153b4e56117b6bf06bca0a95a6bfdb73f8226b9119065346497dda"
+    },
+    {
+      "problemId": "ED:153",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/hints/2"
+      ],
+      "packetEditPaths": [
+        "/commonErrors/0/description",
+        "/commonErrors/1/description",
+        "/hintTree/2/content",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "53a8f3424db8a6304970b927e292be7e7e081a0a31357050bd3ecb2c52dfd47a",
+      "outputCandidateCanonicalPacketSha256": "115b94a3082853e1c132385f4b091f3b0afd2d83d554a8f729103988360a821a",
+      "baseSourceRecordSha256": "2d06b006f9edbf852cc9dddd5f68e11defa114ef95f0f8b95b6a865e8370c751",
+      "candidateSourceRecordSha256": "a5abbea3c541acd84562849fa80853007f8556df501a39ca2fe632d8b91f2f02"
+    },
+    {
+      "problemId": "ED:154",
+      "categories": [
+        "ambiguous_request",
+        "poor_part_structure"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "b1209d6b18e99d3bfa2198b04dd9b74ccd31c814b554737f74dd4a1fbce09c0d",
+      "outputCandidateCanonicalPacketSha256": "4417a7d65cbb1bccdb069f616f25dde0d1b40ee71828cf31c904c516656480f3",
+      "baseSourceRecordSha256": "0f6dd1c0f79ae8f69f32385b19c51d01d31e1c20b62bc207f4f3ecc2c185f302",
+      "candidateSourceRecordSha256": "9a30d1508e87b775c32d494dab855c405518e297eb4f351e778079efcd51ea55"
+    },
+    {
+      "problemId": "ED:155",
+      "categories": [
+        "notation_mismatch",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/rubricCriteria/2",
+        "/commonErrors/0/description",
+        "/hints/1",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/1/content",
+        "/hintTree/2/content",
+        "/milestones/2/criterion",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "2b67bcb41bf9df12ecaab0c8e87a18693b6bfe81ee012e728c67c805fab10f9e",
+      "outputCandidateCanonicalPacketSha256": "ab6767cefdde754f7aee822a46482943e00d2c6a3f8466780b8afe627697cf3e",
+      "baseSourceRecordSha256": "cc3391699a654381d666ae45b1d0733cf933c3d7d2aad1c1659a8d1e9c866df0",
+      "candidateSourceRecordSha256": "8297e4e208e13f5d22e5d83ca2890fef4860ab8d51db2bc907484fdd3759d338"
+    },
+    {
+      "problemId": "ED:156",
+      "categories": [
+        "poor_part_structure"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/statement"
+      ],
+      "packetEditPaths": [
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "101abaad87dc2778ada35eb3ba1270e7ad3a96f271dccd668642a0d56d417fb1",
+      "outputCandidateCanonicalPacketSha256": "a4fe4031287b0ff9e88c14b6aedcf8550e0f223c84ae22fe31d15f2685d3676f",
+      "baseSourceRecordSha256": "01b6ee579742daff5cc53f3b3914b28728560977e47cc33e41196ee86df8f732",
+      "candidateSourceRecordSha256": "888cc16f9c44c0a57631a2a08ff034fd36bceb82fb362946495ef1119938eb15"
+    },
+    {
+      "problemId": "ED:158",
+      "categories": [
+        "notation_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/commonErrors/0/description",
+        "/hints/0",
+        "/hints/2",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/commonErrors/0/description",
+        "/graderFixtures/0/proofText",
+        "/hintTree/0/content",
+        "/hintTree/2/content",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "b45b6bd845d84e131fbf41e134284fb60949ea5e1bbdc3f6394e3bdf9b2de5c7",
+      "outputCandidateCanonicalPacketSha256": "3c2c79b00eb8c49b926bdf6f944a2787943df18c610407036b07481ea4f264a4",
+      "baseSourceRecordSha256": "7e9576984f2ff5190ee5234396bc255190690bc77301f87c16dc73cb44afabf4",
+      "candidateSourceRecordSha256": "359ccd073b3a9965e1353025e6d28ab9310ffcf92c62ad4bef321f9d742aab87"
+    },
+    {
+      "problemId": "ED:159",
+      "categories": [
+        "poor_part_structure",
+        "rubric_statement_mismatch"
+      ],
+      "scope": "problem_and_rubric_version",
+      "sourceEditPaths": [
+        "/statement",
+        "/solution"
+      ],
+      "packetEditPaths": [
+        "/canonicalSolution",
+        "/graderFixtures/0/proofText",
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "4ec3ec8eb7362e7da10e156add86231cfdccf1533f3373d246688b9939acd0ba",
+      "outputCandidateCanonicalPacketSha256": "360dc06291e2cf3fab2323e9f746d57f4e902cfe733eef06ea087e829012460a",
+      "baseSourceRecordSha256": "138b7afdabb54964d35b2d93f1085ef659859f487ce71efac1852d671a9405fb",
+      "candidateSourceRecordSha256": "2298ded9bb5d8a48637808cfc9698d0c4ec6637ee3a268c09136cbb4a7a7496c"
+    },
+    {
+      "problemId": "ED:160",
+      "categories": [
+        "poor_part_structure"
+      ],
+      "scope": "problem_version_only",
+      "sourceEditPaths": [
+        "/statement"
+      ],
+      "packetEditPaths": [
+        "/statement"
+      ],
+      "inputCanonicalPacketSha256": "fabeb67968fa4112e9de3ca59add146b2e5dc54bf5ab6a275e5d7e0a05c0f820",
+      "outputCandidateCanonicalPacketSha256": "77dd0bd2c486fd99c30b99da56b92c8fdd3f9a6dde3bbd684276ac01ba4f56c1",
+      "baseSourceRecordSha256": "c3d1f157294ccdeff482395d230ff28e25b17d8d50b7e984e615081597172def",
+      "candidateSourceRecordSha256": "5b0ff3bf2913c6b83276292761bde37186050c163bef859a72e0d1b205f83faf"
+    }
+  ],
+  "admissionBlockers": [
+    "explicit admission approval of this independently cross-reviewed candidate artifact",
+    "versioned source overlay and immutable v1 historical-packet integration",
+    "canonical digest and checked-in manifest regeneration",
+    "final-slot authority reissue for ED:095, ED:116, ED:134, and ED:156",
+    "companion exact-target backfill and semantic or executable grading authority",
+    "full build, staging deployment, and live verification"
+  ],
+  "sourceRootBinding": {
+    "scheme": "proofanvil.ed1-successor-source-root-binding.sha256.v1",
+    "sourceRecordDigestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.ed1-source-record-digest.v1',record:exact-16-field-source-record}))",
+    "courseId": "electrodynamics-1",
+    "ordinalRange": "081-160",
+    "baseSourceRootRawSha256": "a767e2a40b04bc1f8067ff22b983d97d9a1ab977d0c3167efd799cdaa0512e82",
+    "candidateSourceRootRawSha256": "0053ac79ac717719914b12d4fad6488016cee996f0541f2383e180652e8b0c6b",
+    "recordCount": 43,
+    "records": [
+      {
+        "publicProblemId": "ED:084",
+        "baseSourceRecordSha256": "b2af2ed7df7a629aaff3ce74447ed7750fc796ced37e08f62c30cb46647af3f9",
+        "candidateSourceRecordSha256": "455df4d89e6a4bc7a37dec3a9d9e9ec33808259e2bc49d4e1c8200bf7a9daeb9"
+      },
+      {
+        "publicProblemId": "ED:087",
+        "baseSourceRecordSha256": "fdc6f818ab9825769ffbe71248da823e6975e321a8e6a9d81995537046d56d31",
+        "candidateSourceRecordSha256": "dbb20b600f047d7be01a1ab322de2abd25c2af91a6a9de8e601237976d370e27"
+      },
+      {
+        "publicProblemId": "ED:088",
+        "baseSourceRecordSha256": "3b3b95cb415da61099891b9bb7be361695eaf3902971d8bb9891aaa9812603fa",
+        "candidateSourceRecordSha256": "ea11b40f65af61955b58bd9efe23ff5e9e1a88c3bd9a6ff9d13c05717496221e"
+      },
+      {
+        "publicProblemId": "ED:090",
+        "baseSourceRecordSha256": "2794521fbc9f9f17ae82712f4d581cb3f7d0ffe6976a957dd83bb2c2e0e4d4a9",
+        "candidateSourceRecordSha256": "6a63c71113074d38b18282f6de0d28709d295959da87017c225cdf6c11ecb668"
+      },
+      {
+        "publicProblemId": "ED:091",
+        "baseSourceRecordSha256": "68ea45c4ae04778568f94eae661c2324ea637818cd85d126d297f45c33776721",
+        "candidateSourceRecordSha256": "de37c807cdaf8d7467ced2a7045e7742010a6d2a8f21821eea195565b99202ec"
+      },
+      {
+        "publicProblemId": "ED:093",
+        "baseSourceRecordSha256": "6935e39ec491e13e514ec88daeb2c14336df5f36d4c9c0e5c7e34fd5775a81d8",
+        "candidateSourceRecordSha256": "6a84dacad485b24279b169a436a865da9f69d27691bd35ce5e0e452f338d7b54"
+      },
+      {
+        "publicProblemId": "ED:095",
+        "baseSourceRecordSha256": "2c0ede5910ee2f1419d7a17772df7261de8935a9fa75f630a6477f0c16b166f4",
+        "candidateSourceRecordSha256": "7f493c74bd7445a8c2c88956491bdeb138719a17a9aa9f7ef0eb64e2a2226a45"
+      },
+      {
+        "publicProblemId": "ED:099",
+        "baseSourceRecordSha256": "c638f86498c83aa600813ab9c75e6d5dcc971bc8188d7e5ccc4c63e2d6963469",
+        "candidateSourceRecordSha256": "2bfc611acb4eab1f2dc8045a3e22a7cc1c61989ecf268af7337cbba5daf4bafa"
+      },
+      {
+        "publicProblemId": "ED:100",
+        "baseSourceRecordSha256": "6a72a003d9a5cc4466179656412da7fd7cc2fe7b1202298fa24083327d9e5ace",
+        "candidateSourceRecordSha256": "e5d7212b0997cba92a929d4a6e5ecc6315c308ab830f4a08c16a749a0965d83b"
+      },
+      {
+        "publicProblemId": "ED:103",
+        "baseSourceRecordSha256": "342351cdd1a195ea786572de72814b2aac587a73a736490829e865a8546ad5f5",
+        "candidateSourceRecordSha256": "4054af39ed261b428f606362b1093af1669931cc86c3c11bc78ee5c822f52c64"
+      },
+      {
+        "publicProblemId": "ED:105",
+        "baseSourceRecordSha256": "2f8f8f54722709a8eeda62044a7f6f30376d46feb9bce7c4f5bf14d489725bbd",
+        "candidateSourceRecordSha256": "aa07d4454b40cec44467b8d8e335f8bf243377ca9c2a95235c7bead7b7afece4"
+      },
+      {
+        "publicProblemId": "ED:107",
+        "baseSourceRecordSha256": "c38c0e5a2a241ce002abd578d92703c0d1e02e9a7f54495792d974d524d8f054",
+        "candidateSourceRecordSha256": "ed7399289aba1f1dc263c2c718144b40f6d19d778a240285a75b2317188c7610"
+      },
+      {
+        "publicProblemId": "ED:109",
+        "baseSourceRecordSha256": "3acadb4f290531f8445acdaea7047f7efde981447d7a60067e9941d2ad1caeab",
+        "candidateSourceRecordSha256": "5ffe619f51785bab15b568f2305233928ab60122fa1bb7761b9cee6ccdfa928f"
+      },
+      {
+        "publicProblemId": "ED:113",
+        "baseSourceRecordSha256": "69379207266a28abbb5a297c2a6a6b363d9618fa79fb437732be7d109ec1aebb",
+        "candidateSourceRecordSha256": "fa9765810f25fe55211d285d49b69262cbe2422bf70b27411655baead6f973c4"
+      },
+      {
+        "publicProblemId": "ED:115",
+        "baseSourceRecordSha256": "8edece67b569dccf34e82c487337e166531deaa6d75c01355a5c5ad0f032a085",
+        "candidateSourceRecordSha256": "e777c658432d503732bf8d843f66df39bff23989e9f47bf6f6fcdecdf60a38b0"
+      },
+      {
+        "publicProblemId": "ED:116",
+        "baseSourceRecordSha256": "28478e1803d5b7f5716f24d06234ea965bc08911fd242be03240576286bfc21d",
+        "candidateSourceRecordSha256": "6c396e7bc433e55c95bb5a7ae4ab8fe95e04af984aa270e641b36b97fdf94d13"
+      },
+      {
+        "publicProblemId": "ED:117",
+        "baseSourceRecordSha256": "a4bcf98e9db11f9dcb2465b5fb4c6108c24af0a6a209a57d129ad4f33a290fa8",
+        "candidateSourceRecordSha256": "babea1c08ec33113e5a96a8fc2b169e9adc5323970e4d8bafbe6e6c0ce967b92"
+      },
+      {
+        "publicProblemId": "ED:120",
+        "baseSourceRecordSha256": "8f5fa51c201c559f92bf2ca0907e2869531a724b7e943bf2fb192adf82096c7f",
+        "candidateSourceRecordSha256": "a4f76ebf26f7604930060fc2f58ebb0857b4b934496d008e7b936d5faa04e5ba"
+      },
+      {
+        "publicProblemId": "ED:122",
+        "baseSourceRecordSha256": "5d8329f6410918533007538f12ec13db07e9c3e379eec68e2360268f926e13ae",
+        "candidateSourceRecordSha256": "b1a43dff538862625d13866c5d7f78ad3307bba72fe42cfd2b592faa18cddd7a"
+      },
+      {
+        "publicProblemId": "ED:126",
+        "baseSourceRecordSha256": "c45e4efee7326520e0f75c924c53fd9d0e6e5ea7de88cf0d3e46c07576e8b914",
+        "candidateSourceRecordSha256": "822a93976f83d344edcda3388eded13fb8dd7461ea55dd382e7b2c2e963e762c"
+      },
+      {
+        "publicProblemId": "ED:127",
+        "baseSourceRecordSha256": "61c87a89827ab0b3d489ecbe7056772959a11fee42a8aaea05ed49eecdf8a4db",
+        "candidateSourceRecordSha256": "5a3694c2a0693526c268721557e9f6ca02623ab8f02f04fe71920e914fcc7e1f"
+      },
+      {
+        "publicProblemId": "ED:130",
+        "baseSourceRecordSha256": "a7accbba136c2e47346c30fd3070e3291344ca56f1e50b08181ca5aa07ee4fbe",
+        "candidateSourceRecordSha256": "d43377a00c5d073690157036b62e6ea27bdc5ef7828ca94f99dd761cc697317a"
+      },
+      {
+        "publicProblemId": "ED:131",
+        "baseSourceRecordSha256": "4020dc450063a0981e752e41d125d613e1af2b4346b788d7d1de7e76bb2375f3",
+        "candidateSourceRecordSha256": "f3493ddb4a7f1e3cdbcdcd0e04bfab497d860cbba6d25c58c2454b4cae65e2b2"
+      },
+      {
+        "publicProblemId": "ED:133",
+        "baseSourceRecordSha256": "4dbf6a03b6d7db252a5a4f8f888c467fed3aa86af4d283572202655eb7bb63b7",
+        "candidateSourceRecordSha256": "0723d8b934c96185d3b1597f28dd7bd98af4b521e0aa222ee4b93889c53e6bdf"
+      },
+      {
+        "publicProblemId": "ED:134",
+        "baseSourceRecordSha256": "1a5b6f87889dcaab1a24e93dc0c6c21a3aa22e77ae73f4752bcc37c9eb60ad79",
+        "candidateSourceRecordSha256": "93bc2dd4ba7fc1ab98a76c9d0b92456287654103de35543bcaec5f92cf918405"
+      },
+      {
+        "publicProblemId": "ED:139",
+        "baseSourceRecordSha256": "ca5f723e14f215a73acf904a27c928b9cdea199cd03b256df3b8f0efc55da654",
+        "candidateSourceRecordSha256": "25ab5d0b8ecc83748c8f655dd91ac3d303baf8aa65ec8adb462bc325ba1abdcf"
+      },
+      {
+        "publicProblemId": "ED:141",
+        "baseSourceRecordSha256": "43a374385b2cedc4514eb9a96480920fdcab94a6b62d6db31aff5bfe56134f4f",
+        "candidateSourceRecordSha256": "f039ab3b7e28baa1f189783f77ea33ecc0334063d8b03796eef7618ac7b41772"
+      },
+      {
+        "publicProblemId": "ED:142",
+        "baseSourceRecordSha256": "3d6950cc318b12e87da7890b7bde1e7da806888633a71825bb29d3a2879f4142",
+        "candidateSourceRecordSha256": "19732d16e43b552f0e05d37e3565933b87a50df278c7b7ff403ed0702ca2637e"
+      },
+      {
+        "publicProblemId": "ED:143",
+        "baseSourceRecordSha256": "ed511bf322faabf053d17bcf28247e784e923e8d0ee83c0f747ab6351710cfdd",
+        "candidateSourceRecordSha256": "827ee4639bbc37ef7f5207eb620c652f425684b4a96c5e7f0dfef7c66d78d476"
+      },
+      {
+        "publicProblemId": "ED:144",
+        "baseSourceRecordSha256": "f258f5fa24a284e1a0d7b904fcaddb823b03a6f07daf0d518e289053a19f29a1",
+        "candidateSourceRecordSha256": "b89e8bd3ea05785bd1714b20a9fdb2d260529d8b979f3f19cb15dcad0166ae57"
+      },
+      {
+        "publicProblemId": "ED:145",
+        "baseSourceRecordSha256": "ba78a2317af03c4cf376a8707297ef4a69595c1bca3d06532ac9c1fc19422ac4",
+        "candidateSourceRecordSha256": "95c9613ddfb050a91c53591c357e6625a705da178438e6a74b166311591e5875"
+      },
+      {
+        "publicProblemId": "ED:146",
+        "baseSourceRecordSha256": "00b4a908a98da4a6b29e3d6bcdedd0fb2375918f70376c4f205e3b22dac3a668",
+        "candidateSourceRecordSha256": "5b7e184ca4a6ea48b9b3bd6072025a11c8f191bcc69b6a9f77dbcabb976874b9"
+      },
+      {
+        "publicProblemId": "ED:147",
+        "baseSourceRecordSha256": "48b80e7dfdbf82c40c045128c1092539ad585c00150b43183810e6ffbfcef889",
+        "candidateSourceRecordSha256": "178a3112965353bc3ac10eae9310d8775ac5129428f81e4d7c2f453c025af1d5"
+      },
+      {
+        "publicProblemId": "ED:148",
+        "baseSourceRecordSha256": "f9bdb996ab772a50ed18dd121e2dae23247c700618e77f4801f81170dcae10e3",
+        "candidateSourceRecordSha256": "784ada3cd16c26b236aec8ce617df5f8c9dd27bf53d0d7a408d178d90e15595f"
+      },
+      {
+        "publicProblemId": "ED:149",
+        "baseSourceRecordSha256": "c7c613d185ab293b1492e4bfac8045c324f2179a08d5f22f7b049184baa382d3",
+        "candidateSourceRecordSha256": "9d8faa3222c138b7e4eab12be88f680f5d44ca6c43bb856109b7fae6b9be56ff"
+      },
+      {
+        "publicProblemId": "ED:150",
+        "baseSourceRecordSha256": "804642e61153f47b63a8a5e90f8fcd8be15540afbc9602c0721df0b5f50965a5",
+        "candidateSourceRecordSha256": "1898b1cd04153b4e56117b6bf06bca0a95a6bfdb73f8226b9119065346497dda"
+      },
+      {
+        "publicProblemId": "ED:153",
+        "baseSourceRecordSha256": "2d06b006f9edbf852cc9dddd5f68e11defa114ef95f0f8b95b6a865e8370c751",
+        "candidateSourceRecordSha256": "a5abbea3c541acd84562849fa80853007f8556df501a39ca2fe632d8b91f2f02"
+      },
+      {
+        "publicProblemId": "ED:154",
+        "baseSourceRecordSha256": "0f6dd1c0f79ae8f69f32385b19c51d01d31e1c20b62bc207f4f3ecc2c185f302",
+        "candidateSourceRecordSha256": "9a30d1508e87b775c32d494dab855c405518e297eb4f351e778079efcd51ea55"
+      },
+      {
+        "publicProblemId": "ED:155",
+        "baseSourceRecordSha256": "cc3391699a654381d666ae45b1d0733cf933c3d7d2aad1c1659a8d1e9c866df0",
+        "candidateSourceRecordSha256": "8297e4e208e13f5d22e5d83ca2890fef4860ab8d51db2bc907484fdd3759d338"
+      },
+      {
+        "publicProblemId": "ED:156",
+        "baseSourceRecordSha256": "01b6ee579742daff5cc53f3b3914b28728560977e47cc33e41196ee86df8f732",
+        "candidateSourceRecordSha256": "888cc16f9c44c0a57631a2a08ff034fd36bceb82fb362946495ef1119938eb15"
+      },
+      {
+        "publicProblemId": "ED:158",
+        "baseSourceRecordSha256": "7e9576984f2ff5190ee5234396bc255190690bc77301f87c16dc73cb44afabf4",
+        "candidateSourceRecordSha256": "359ccd073b3a9965e1353025e6d28ab9310ffcf92c62ad4bef321f9d742aab87"
+      },
+      {
+        "publicProblemId": "ED:159",
+        "baseSourceRecordSha256": "138b7afdabb54964d35b2d93f1085ef659859f487ce71efac1852d671a9405fb",
+        "candidateSourceRecordSha256": "2298ded9bb5d8a48637808cfc9698d0c4ec6637ee3a268c09136cbb4a7a7496c"
+      },
+      {
+        "publicProblemId": "ED:160",
+        "baseSourceRecordSha256": "c3d1f157294ccdeff482395d230ff28e25b17d8d50b7e984e615081597172def",
+        "candidateSourceRecordSha256": "5b0ff3bf2913c6b83276292761bde37186050c163bef859a72e0d1b205f83faf"
+      }
+    ],
+    "derivation": "SHA-256 over canonicalManagementJson({scheme,sourceRecordDigestScheme,courseId,ordinalRange,baseSourceRootRawSha256,candidateSourceRootRawSha256,recordCount,records:[{publicProblemId,baseSourceRecordSha256,candidateSourceRecordSha256}]})",
+    "bindingSha256": "9d0706cac176014ab081fdbedccbf41dbf91c83900351eee89029992e9ca4394"
+  },
+  "digestMaps": {
+    "inputCanonicalPacketSha256ByProblemId": {
+      "ED:084": "70883c5910620f2491a1d8b40318d28f70e6572540077fbfc4c5dc644ea29c28",
+      "ED:087": "ce62d244c9ca286b85e99afd3722c283ff4024e0fda2adcdf102036c23f80db8",
+      "ED:088": "c9de53bac2c4d41a7e06b78febe0d13f65ad4648b9f08382918bf441eee57424",
+      "ED:090": "ec84a268fb4f3ff2e7ca9c6da07efeec7f6d3203b6f84a5bdf53d6e5ce21f8f8",
+      "ED:091": "19d34d3d80fd342e02174ff30ff015d94b87de1f5fe04aacb220648a64c37d96",
+      "ED:093": "d38ba9633358970c1186b104777726b2d0d9829868de1f471287239d85a3d95d",
+      "ED:095": "8b5559a8868629333baa686776c7cd7b7d62769f1e3e5672deb4f2761ee1225b",
+      "ED:099": "26ed2f0e58a96eaee050b7e52691b4bd46a438a4285730369d1b218ab1483dfc",
+      "ED:100": "5e0435b55237117ac63a08840faecc48c927e44632f60f16e479a0e1dc6457df",
+      "ED:103": "8004e90d933250878011edf0d0b52316703ca3dc1cd110bb88c4d10b5785a6b8",
+      "ED:105": "9556901c10cff4cce6463736f680bb4058ed4c855c0d3d56fba86e8a55916c58",
+      "ED:107": "d0afcdf745044e706519eccfce900ba702d1038561b1ca59909b82fddfcc200d",
+      "ED:109": "7c416da6782cad0a7b75db9dacfd8fe4f1705afc98941242cb073c1790912bf5",
+      "ED:113": "1ff36f6c79c58b280675b1c897a387ce8dff43dc4789230e704df26eb8c4a15e",
+      "ED:115": "a9b6da49e5508beb4dbc57e45e3005c7948831e20909b069ac70c9cbc21b31a3",
+      "ED:116": "7a55e60abd67243184fccb2faf699c14a3c405f9c1a5e9c612dba0177e2e4654",
+      "ED:117": "0cc163418044e971a1846178c24d25cdf85ddb8d9ee3aa659dc4527345b01639",
+      "ED:120": "906a08c6d831fd9a59ae1305c3893fb770a4345fc3f26ffd350b349e3f82cb88",
+      "ED:122": "cbda4e00a5db6a64b1a1d004ae95f1caafb6b485caeffe0817e2c864ad7e88fc",
+      "ED:126": "7818098a4d8b01db76cfd2e8994a8af608aeda7a729f0b6a29e416ccdb73eabd",
+      "ED:127": "c7dae4f581bf60f7f3d78958e99c57516a7c1021e4b549e89ba793e4b30b9e72",
+      "ED:130": "b8ae62826b935c154a9254332e724118f1f587538ebb93eb8021acdbd5dfd4d4",
+      "ED:131": "600ebdd3dbd9c7c48b02534707d1c8c3fd31f861e622279d6d73f32869e82b9e",
+      "ED:133": "2a83b988bfd0214aa38e30416bbfbb1c5c6f63111c077dd23cb62ee00f64db58",
+      "ED:134": "0477d82c094c2e0f98955f0dc70d7cfd96b0f129c295db0f486c96dfb3a7682a",
+      "ED:139": "df5990abd221e075f8ee5ec95204dba521ad570935e5a400d75ecd2f916938e1",
+      "ED:141": "b6ac4632fbf11fdac5a6f9492bc9fe89562f7f68c8ccd37d8da2f874b7fd601a",
+      "ED:142": "f447e89ccde724b89cb4f92b57452ce15453a587a43466e49ee24c380db5dd43",
+      "ED:143": "8015ae71e0b64aa28f279f206a04e18c947332188dc825769ee29b4067ead95e",
+      "ED:144": "99693a74e2ea4495cc36c2864463c618101824975363e692f651a2e79065cf1c",
+      "ED:145": "d1a7ff2566b8c8e28a39d191070f04c7c70d2a47ec67aa96b2fb330b3af7b2d9",
+      "ED:146": "316b4cc04e145efaedf2a8420036edad306a418b8c78aab6544703e8c3ac3177",
+      "ED:147": "b9d76f44ec331860ed83fe6e9036b69756fa22ba57fc7758d6475d7c90ed3e22",
+      "ED:148": "7a3563f90f64d136de86f40e0c6375c8a9296cbc0591ff141a3453f24293a562",
+      "ED:149": "a988ae60d2c04ed9be188dda750b08b76af1f01c72f97861729dc600e4696b73",
+      "ED:150": "b190ae45a528d474416037cf5b2832607e0c171e301d7af1cb70793273bdd2a1",
+      "ED:153": "53a8f3424db8a6304970b927e292be7e7e081a0a31357050bd3ecb2c52dfd47a",
+      "ED:154": "b1209d6b18e99d3bfa2198b04dd9b74ccd31c814b554737f74dd4a1fbce09c0d",
+      "ED:155": "2b67bcb41bf9df12ecaab0c8e87a18693b6bfe81ee012e728c67c805fab10f9e",
+      "ED:156": "101abaad87dc2778ada35eb3ba1270e7ad3a96f271dccd668642a0d56d417fb1",
+      "ED:158": "b45b6bd845d84e131fbf41e134284fb60949ea5e1bbdc3f6394e3bdf9b2de5c7",
+      "ED:159": "4ec3ec8eb7362e7da10e156add86231cfdccf1533f3373d246688b9939acd0ba",
+      "ED:160": "fabeb67968fa4112e9de3ca59add146b2e5dc54bf5ab6a275e5d7e0a05c0f820"
+    },
+    "outputCandidateCanonicalPacketSha256ByProblemId": {
+      "ED:084": "a44f375df11f2809df90133237989ea656733cfab574586ec8157f4bc9c2634f",
+      "ED:087": "8b48a9cbeb2389263434100e91ab0058970553ef41c7132b0a89cbb8853bdcde",
+      "ED:088": "32f8349c0f67ea362286a0ac671d0868511db85d41da35fe48a430e861ad3278",
+      "ED:090": "8bda18e6ab0c25f2e79fa277c82223fcc47ec9dd2a815877d1848e4ecd850885",
+      "ED:091": "64b0c39e7754d768a103cef6208a5ab816ebceb8529bb6d0a868956f204207fd",
+      "ED:093": "791784b09272d19eb4303cd922d3d6f70815882754af135f9f34c55955e3e0c8",
+      "ED:095": "21439f444b942df44d879cdabb9336dde7cf87e3e78737b43f9018e43ec87fb9",
+      "ED:099": "355172324877b656257ddd4887259923937fd1ea00a0aba9011072b7778722cb",
+      "ED:100": "4b64f195ddee46d0bca253ebd75687e6ec1f61610e99aea514e4e22e857f8366",
+      "ED:103": "684c443d832a1857abbc6d0e1578a9e28a1e27d66dddf54aec9180224fee595b",
+      "ED:105": "16976cd24c446067e47a90b991ac8835418afd54011baa8643bf19f36b992d79",
+      "ED:107": "25ed3cc7ed48e93801b5edcbc83dfc40b6570af6f9f40f603d2106771407e80f",
+      "ED:109": "2893d93981fc1c10d097060099531ec8287181df3c4a5148862a63fb0ffddaa7",
+      "ED:113": "5b2556d7fa341dbbe60bbccabbddec16e140d607a422e038e874d0f86fcb3d7b",
+      "ED:115": "8b9b24efb02838acf4e7d895141b66fd35898997bb4a409772ebf0c53698dd26",
+      "ED:116": "0f7c67effdeddedf65318e977cb96efd74f25bf091e68c498aa8430424819ab4",
+      "ED:117": "1dd5710ab1387c1256bc4e5b80369c61f5154c8fa3223e4bf565f462a5892ebf",
+      "ED:120": "98ef390ce07e266a84e49bd8d34b2317d0be73e3e9ab7a961b75f396aa1f5bd7",
+      "ED:122": "4c9d11b4dc31e1dcf1aa38cc86891646e14864762a693d3d983936354b308e8c",
+      "ED:126": "1b5adfdc9ca09dede619910aff160ce4b68c4cdffb25b7cdcfe4b56d96279e4e",
+      "ED:127": "1c4835ea41c6cc28e3216dd38f206462d65c52908ce92ff36903476df9122489",
+      "ED:130": "01b1db8f1572ff7f7d82ebfe6c17b2d50b4f8ea5b9220e6bfe197ca9d4d21456",
+      "ED:131": "1a90b2c07ec015b5db0ada18d8300a99f264a6ff035b0f48dfe8938c9784b7d1",
+      "ED:133": "bc16e46419b25e337a33e9a52b93978a7d177a5955a15633ef1cf19554489525",
+      "ED:134": "60b7d9d340627223a744bfe58072f602a95b22f62889c517e49940f064f65962",
+      "ED:139": "f438a186f1c58e8f0e405e474fe4820ffe24f3b5b14df729eea0b567865c970b",
+      "ED:141": "2e7ea5f1ddd53e9b04157977ca8146a17e1bb1adebed49964dcfc3a72a2a81b8",
+      "ED:142": "a4af703656f6bb7fa483db58819324f082832e3e0658729a56d68780baa6410d",
+      "ED:143": "047f25759df52499124adefa2f3a38b31207c74b0fc775b5fe245053405892dc",
+      "ED:144": "6a39882f3061607d6d24719bcee6965a48d97661f561c613955fa963a6c4cd96",
+      "ED:145": "0aa6863b300553f1b2ebefd5edc3563cd5dc3029b9dcea62c5445095774eabf0",
+      "ED:146": "69e9bc7e65c85d641869a2710cf91c20faf1602bde6989ed18a070c5aa88f469",
+      "ED:147": "34fde558f1cf1da6c330affd398fb528b1913ef0f1f9a8a019a5c923fcfcd5a6",
+      "ED:148": "23c4eaec3529865c445672c606195f4fc737a63d029b8ed03d24d8b084a23b77",
+      "ED:149": "48ad91e4e52383727543f00d2d8f01ed52d64f816530653f56f652f2c4dadb6a",
+      "ED:150": "9e0aec7d6aa67483aff061ff0c3a9aa3280595edd4ef544bf2e21eb39b4e44a2",
+      "ED:153": "115b94a3082853e1c132385f4b091f3b0afd2d83d554a8f729103988360a821a",
+      "ED:154": "4417a7d65cbb1bccdb069f616f25dde0d1b40ee71828cf31c904c516656480f3",
+      "ED:155": "ab6767cefdde754f7aee822a46482943e00d2c6a3f8466780b8afe627697cf3e",
+      "ED:156": "a4fe4031287b0ff9e88c14b6aedcf8550e0f223c84ae22fe31d15f2685d3676f",
+      "ED:158": "3c2c79b00eb8c49b926bdf6f944a2787943df18c610407036b07481ea4f264a4",
+      "ED:159": "360dc06291e2cf3fab2323e9f746d57f4e902cfe733eef06ea087e829012460a",
+      "ED:160": "77dd0bd2c486fd99c30b99da56b92c8fdd3f9a6dde3bbd684276ac01ba4f56c1"
+    },
+    "baseSourceRecordSha256ByProblemId": {
+      "ED:084": "b2af2ed7df7a629aaff3ce74447ed7750fc796ced37e08f62c30cb46647af3f9",
+      "ED:087": "fdc6f818ab9825769ffbe71248da823e6975e321a8e6a9d81995537046d56d31",
+      "ED:088": "3b3b95cb415da61099891b9bb7be361695eaf3902971d8bb9891aaa9812603fa",
+      "ED:090": "2794521fbc9f9f17ae82712f4d581cb3f7d0ffe6976a957dd83bb2c2e0e4d4a9",
+      "ED:091": "68ea45c4ae04778568f94eae661c2324ea637818cd85d126d297f45c33776721",
+      "ED:093": "6935e39ec491e13e514ec88daeb2c14336df5f36d4c9c0e5c7e34fd5775a81d8",
+      "ED:095": "2c0ede5910ee2f1419d7a17772df7261de8935a9fa75f630a6477f0c16b166f4",
+      "ED:099": "c638f86498c83aa600813ab9c75e6d5dcc971bc8188d7e5ccc4c63e2d6963469",
+      "ED:100": "6a72a003d9a5cc4466179656412da7fd7cc2fe7b1202298fa24083327d9e5ace",
+      "ED:103": "342351cdd1a195ea786572de72814b2aac587a73a736490829e865a8546ad5f5",
+      "ED:105": "2f8f8f54722709a8eeda62044a7f6f30376d46feb9bce7c4f5bf14d489725bbd",
+      "ED:107": "c38c0e5a2a241ce002abd578d92703c0d1e02e9a7f54495792d974d524d8f054",
+      "ED:109": "3acadb4f290531f8445acdaea7047f7efde981447d7a60067e9941d2ad1caeab",
+      "ED:113": "69379207266a28abbb5a297c2a6a6b363d9618fa79fb437732be7d109ec1aebb",
+      "ED:115": "8edece67b569dccf34e82c487337e166531deaa6d75c01355a5c5ad0f032a085",
+      "ED:116": "28478e1803d5b7f5716f24d06234ea965bc08911fd242be03240576286bfc21d",
+      "ED:117": "a4bcf98e9db11f9dcb2465b5fb4c6108c24af0a6a209a57d129ad4f33a290fa8",
+      "ED:120": "8f5fa51c201c559f92bf2ca0907e2869531a724b7e943bf2fb192adf82096c7f",
+      "ED:122": "5d8329f6410918533007538f12ec13db07e9c3e379eec68e2360268f926e13ae",
+      "ED:126": "c45e4efee7326520e0f75c924c53fd9d0e6e5ea7de88cf0d3e46c07576e8b914",
+      "ED:127": "61c87a89827ab0b3d489ecbe7056772959a11fee42a8aaea05ed49eecdf8a4db",
+      "ED:130": "a7accbba136c2e47346c30fd3070e3291344ca56f1e50b08181ca5aa07ee4fbe",
+      "ED:131": "4020dc450063a0981e752e41d125d613e1af2b4346b788d7d1de7e76bb2375f3",
+      "ED:133": "4dbf6a03b6d7db252a5a4f8f888c467fed3aa86af4d283572202655eb7bb63b7",
+      "ED:134": "1a5b6f87889dcaab1a24e93dc0c6c21a3aa22e77ae73f4752bcc37c9eb60ad79",
+      "ED:139": "ca5f723e14f215a73acf904a27c928b9cdea199cd03b256df3b8f0efc55da654",
+      "ED:141": "43a374385b2cedc4514eb9a96480920fdcab94a6b62d6db31aff5bfe56134f4f",
+      "ED:142": "3d6950cc318b12e87da7890b7bde1e7da806888633a71825bb29d3a2879f4142",
+      "ED:143": "ed511bf322faabf053d17bcf28247e784e923e8d0ee83c0f747ab6351710cfdd",
+      "ED:144": "f258f5fa24a284e1a0d7b904fcaddb823b03a6f07daf0d518e289053a19f29a1",
+      "ED:145": "ba78a2317af03c4cf376a8707297ef4a69595c1bca3d06532ac9c1fc19422ac4",
+      "ED:146": "00b4a908a98da4a6b29e3d6bcdedd0fb2375918f70376c4f205e3b22dac3a668",
+      "ED:147": "48b80e7dfdbf82c40c045128c1092539ad585c00150b43183810e6ffbfcef889",
+      "ED:148": "f9bdb996ab772a50ed18dd121e2dae23247c700618e77f4801f81170dcae10e3",
+      "ED:149": "c7c613d185ab293b1492e4bfac8045c324f2179a08d5f22f7b049184baa382d3",
+      "ED:150": "804642e61153f47b63a8a5e90f8fcd8be15540afbc9602c0721df0b5f50965a5",
+      "ED:153": "2d06b006f9edbf852cc9dddd5f68e11defa114ef95f0f8b95b6a865e8370c751",
+      "ED:154": "0f6dd1c0f79ae8f69f32385b19c51d01d31e1c20b62bc207f4f3ecc2c185f302",
+      "ED:155": "cc3391699a654381d666ae45b1d0733cf933c3d7d2aad1c1659a8d1e9c866df0",
+      "ED:156": "01b6ee579742daff5cc53f3b3914b28728560977e47cc33e41196ee86df8f732",
+      "ED:158": "7e9576984f2ff5190ee5234396bc255190690bc77301f87c16dc73cb44afabf4",
+      "ED:159": "138b7afdabb54964d35b2d93f1085ef659859f487ce71efac1852d671a9405fb",
+      "ED:160": "c3d1f157294ccdeff482395d230ff28e25b17d8d50b7e984e615081597172def"
+    },
+    "candidateSourceRecordSha256ByProblemId": {
+      "ED:084": "455df4d89e6a4bc7a37dec3a9d9e9ec33808259e2bc49d4e1c8200bf7a9daeb9",
+      "ED:087": "dbb20b600f047d7be01a1ab322de2abd25c2af91a6a9de8e601237976d370e27",
+      "ED:088": "ea11b40f65af61955b58bd9efe23ff5e9e1a88c3bd9a6ff9d13c05717496221e",
+      "ED:090": "6a63c71113074d38b18282f6de0d28709d295959da87017c225cdf6c11ecb668",
+      "ED:091": "de37c807cdaf8d7467ced2a7045e7742010a6d2a8f21821eea195565b99202ec",
+      "ED:093": "6a84dacad485b24279b169a436a865da9f69d27691bd35ce5e0e452f338d7b54",
+      "ED:095": "7f493c74bd7445a8c2c88956491bdeb138719a17a9aa9f7ef0eb64e2a2226a45",
+      "ED:099": "2bfc611acb4eab1f2dc8045a3e22a7cc1c61989ecf268af7337cbba5daf4bafa",
+      "ED:100": "e5d7212b0997cba92a929d4a6e5ecc6315c308ab830f4a08c16a749a0965d83b",
+      "ED:103": "4054af39ed261b428f606362b1093af1669931cc86c3c11bc78ee5c822f52c64",
+      "ED:105": "aa07d4454b40cec44467b8d8e335f8bf243377ca9c2a95235c7bead7b7afece4",
+      "ED:107": "ed7399289aba1f1dc263c2c718144b40f6d19d778a240285a75b2317188c7610",
+      "ED:109": "5ffe619f51785bab15b568f2305233928ab60122fa1bb7761b9cee6ccdfa928f",
+      "ED:113": "fa9765810f25fe55211d285d49b69262cbe2422bf70b27411655baead6f973c4",
+      "ED:115": "e777c658432d503732bf8d843f66df39bff23989e9f47bf6f6fcdecdf60a38b0",
+      "ED:116": "6c396e7bc433e55c95bb5a7ae4ab8fe95e04af984aa270e641b36b97fdf94d13",
+      "ED:117": "babea1c08ec33113e5a96a8fc2b169e9adc5323970e4d8bafbe6e6c0ce967b92",
+      "ED:120": "a4f76ebf26f7604930060fc2f58ebb0857b4b934496d008e7b936d5faa04e5ba",
+      "ED:122": "b1a43dff538862625d13866c5d7f78ad3307bba72fe42cfd2b592faa18cddd7a",
+      "ED:126": "822a93976f83d344edcda3388eded13fb8dd7461ea55dd382e7b2c2e963e762c",
+      "ED:127": "5a3694c2a0693526c268721557e9f6ca02623ab8f02f04fe71920e914fcc7e1f",
+      "ED:130": "d43377a00c5d073690157036b62e6ea27bdc5ef7828ca94f99dd761cc697317a",
+      "ED:131": "f3493ddb4a7f1e3cdbcdcd0e04bfab497d860cbba6d25c58c2454b4cae65e2b2",
+      "ED:133": "0723d8b934c96185d3b1597f28dd7bd98af4b521e0aa222ee4b93889c53e6bdf",
+      "ED:134": "93bc2dd4ba7fc1ab98a76c9d0b92456287654103de35543bcaec5f92cf918405",
+      "ED:139": "25ab5d0b8ecc83748c8f655dd91ac3d303baf8aa65ec8adb462bc325ba1abdcf",
+      "ED:141": "f039ab3b7e28baa1f189783f77ea33ecc0334063d8b03796eef7618ac7b41772",
+      "ED:142": "19732d16e43b552f0e05d37e3565933b87a50df278c7b7ff403ed0702ca2637e",
+      "ED:143": "827ee4639bbc37ef7f5207eb620c652f425684b4a96c5e7f0dfef7c66d78d476",
+      "ED:144": "b89e8bd3ea05785bd1714b20a9fdb2d260529d8b979f3f19cb15dcad0166ae57",
+      "ED:145": "95c9613ddfb050a91c53591c357e6625a705da178438e6a74b166311591e5875",
+      "ED:146": "5b7e184ca4a6ea48b9b3bd6072025a11c8f191bcc69b6a9f77dbcabb976874b9",
+      "ED:147": "178a3112965353bc3ac10eae9310d8775ac5129428f81e4d7c2f453c025af1d5",
+      "ED:148": "784ada3cd16c26b236aec8ce617df5f8c9dd27bf53d0d7a408d178d90e15595f",
+      "ED:149": "9d8faa3222c138b7e4eab12be88f680f5d44ca6c43bb856109b7fae6b9be56ff",
+      "ED:150": "1898b1cd04153b4e56117b6bf06bca0a95a6bfdb73f8226b9119065346497dda",
+      "ED:153": "a5abbea3c541acd84562849fa80853007f8556df501a39ca2fe632d8b91f2f02",
+      "ED:154": "9a30d1508e87b775c32d494dab855c405518e297eb4f351e778079efcd51ea55",
+      "ED:155": "8297e4e208e13f5d22e5d83ca2890fef4860ab8d51db2bc907484fdd3759d338",
+      "ED:156": "888cc16f9c44c0a57631a2a08ff034fd36bceb82fb362946495ef1119938eb15",
+      "ED:158": "359ccd073b3a9965e1353025e6d28ab9310ffcf92c62ad4bef321f9d742aab87",
+      "ED:159": "2298ded9bb5d8a48637808cfc9698d0c4ec6637ee3a268c09136cbb4a7a7496c",
+      "ED:160": "5b0ff3bf2913c6b83276292761bde37186050c163bef859a72e0d1b205f83faf"
+    }
+  }
+}

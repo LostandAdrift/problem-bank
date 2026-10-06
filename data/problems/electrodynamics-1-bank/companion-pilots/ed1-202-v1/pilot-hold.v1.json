@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "proofanvil.ed1-202-held-companion-pilot-hold.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "completionDisposition": "held",
+  "deterministicCoreDisposition": "implemented_and_focused_fixture_reproduced",
+  "holdCode": "learner_runtime_not_implemented",
+  "requiredBeforeReady": [
+    "bind and browser-test an executable multipart renderer",
+    "install fail-closed deterministic dispatch before provider selection",
+    "persist deterministic attempts idempotently without reserving an AI credit",
+    "deliver Coach grounding from a protected server store",
+    "reproduce accessibility assertions against the executable renderer"
+  ],
+  "authorityBoundary": {
+    "liveRegistryAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  }
+}

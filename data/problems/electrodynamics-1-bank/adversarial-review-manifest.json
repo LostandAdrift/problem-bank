@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "proofanvil.ed1-adversarially-reviewed-alpha.v1",
+  "bankId": "proofanvil-ed1-alpha-240-v1",
+  "reviewDate": "2026-08-10",
+  "courseId": "electrodynamics-1",
+  "firstPublicProblemId": "ED:001",
+  "lastPublicProblemId": "ED:240",
+  "packetCount": 240,
+  "packetDigestBindingScheme": "proofanvil.ed1-alpha-packet-digest-binding.v1",
+  "packetDigestBindingSha256": "28147c4a679fa301dc20396afa84d329a9f4434521160e38a71fa35dd188705e",
+  "reviewBatches": [
+    {
+      "range": "001-080",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "081-160",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "161-240",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    }
+  ],
+  "checks": [
+    "physical_accuracy",
+    "numerical_recomputation",
+    "si_units_and_dimensions",
+    "sign_gauge_and_orientation_conventions",
+    "boundary_and_domain_conditions",
+    "constitutive_assumptions_and_conservation_laws",
+    "limiting_cases",
+    "redundancy",
+    "hint_quality",
+    "solution_quality"
+  ],
+  "outcome": "accepted_for_bounded_alpha",
+  "constraints": {
+    "compiledLeanRequired": false,
+    "learnerLeanDraftIncluded": false,
+    "minimumFixturesPerProblem": 2,
+    "productionQualityClaim": false
+  }
+}

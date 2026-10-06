@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "proofbound.cross-review-receipt.v1",
+  "courseId": "linear-algebra-1",
+  "range": "201-300",
+  "reviewedAt": "2026-08-10T18:08:31Z",
+  "reviewIndependence": {
+    "status": "pass",
+    "reviewerAuthoredThisShard": false,
+    "scope": "Independent adversarial review of every learner-facing field and every exact Lean draft."
+  },
+  "sourceBinding": {
+    "path": "data/problems/linear-algebra-1-bank/part-201-300.json",
+    "inputSha256": "ccce1bb37492498177c73edc92ffd36311176768ec77118e416f38b8b3358f01",
+    "finalSha256": "6e85556bbcd3e7aae80a7a2da53413f7c1cf9c7a053839daaafaa1aeffe6153b",
+    "finalBytes": 325020,
+    "problemCount": 100,
+    "schemaVersion": "proofbound.la1-source-part.v1",
+    "fieldCountPerProblem": 17
+  },
+  "boundedDelta": {
+    "status": "pass",
+    "changedOrdinals": [
+      211,
+      219,
+      226,
+      239,
+      255,
+      259,
+      279,
+      281,
+      286
+    ],
+    "changedFieldCount": 22,
+    "fieldsByOrdinal": {
+      "211": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "219": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "226": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "239": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "255": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "259": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "279": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "281": [
+        "difficulty",
+        "estimatedMinutes"
+      ],
+      "286": [
+        "strategy",
+        "permittedResults",
+        "hints",
+        "rubricCriteria",
+        "commonErrors",
+        "solution"
+      ]
+    },
+    "leanDraftChanges": 0,
+    "inputLeanDraftSetSha256": "85f7ce1ded8ae4320618b821ba0c6edf449472a519ed00be7aa23636c0670023",
+    "finalLeanDraftSetSha256": "85f7ce1ded8ae4320618b821ba0c6edf449472a519ed00be7aa23636c0670023"
+  },
+  "confirmedRepairs": {
+    "difficultyAndTimeCalibration": [
+      "211 D2/18m to D3/30m; 219 D3/30m to D2/18m",
+      "226 D3/30m to D4/44m; 239 D4/44m to D3/30m",
+      "255 D1/10m to D2/18m; 259 D2/18m to D1/10m",
+      "279 D3/28m to D4/40m; 281 D4/40m to D3/28m"
+    ],
+    "mathematicalPedagogy": [
+      "Ordinal 286 no longer invokes field-only full-rank or dimension language over an arbitrary commutative domain.",
+      "Ordinal 286 now proves the nonzero-determinant direction with both adjugate identities and proves the converse by passing to the fraction field and clearing denominators."
+    ],
+    "quotaPreservation": {
+      "201-250": [
+        5,
+        10,
+        15,
+        13,
+        7
+      ],
+      "251-300": [
+        5,
+        10,
+        15,
+        12,
+        8
+      ]
+    },
+    "finalSlotsUnchanged": {
+      "A": [
+        220,
+        235,
+        270
+      ],
+      "B": [
+        244,
+        293,
+        298
+      ]
+    },
+    "honorsOnlyOrdinalsUnchanged": [
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300
+    ]
+  },
+  "formalValidation": {
+    "environment": {
+      "leanVersion": "4.32.1",
+      "leanCommit": "f054605aea4b840552cca2e725580bffd1e1b704",
+      "mathlibManifestSha256": "6dafdb5751f46506f080506498db2ac5c0f31c5f71f44bcb3390f0a2f06538a4"
+    },
+    "individualCompile": {
+      "status": "pass",
+      "command": "lake env lean -DwarningAsError=true <exact extracted leanDraft>",
+      "passed": 100,
+      "failed": 0,
+      "ordinalStart": 201,
+      "ordinalEnd": 300
+    },
+    "aggregateCompile": {
+      "status": "pass",
+      "command": "lake env lean -DwarningAsError=true /private/tmp/la1-201-300-review-aggregate.lean",
+      "theoremCount": 100
+    },
+    "axiomAudit": {
+      "status": "pass",
+      "command": "#print axioms for all 100 exported theorems",
+      "allowedObserved": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "unexpected": []
+    },
+    "compiledDraftIdentity": {
+      "status": "pass",
+      "note": "The only post-compile source changes were learner metadata and calibration fields; all final Lean drafts are byte-identical to the compiled set."
+    }
+  },
+  "fullStatementEquivalence": {
+    "status": "pass",
+    "reviewed": 100,
+    "sixChecks": [
+      "all stated hypotheses represented",
+      "all conclusions and separate subclaims represented",
+      "all requested witnesses or constructions represented",
+      "all requested edge cases and counterexamples represented",
+      "all imperative compute, derive, identify, construct, deduce, verify, show, determine, classify, find, evaluate, establish, and exhibit clauses represented",
+      "no unenforceable narrative or method demand left in learner statements"
+    ],
+    "imperativeAudit": {
+      "statementsReviewed": 100,
+      "prove": 100,
+      "deduce": 3,
+      "construct": 1,
+      "unformalizedSubclaims": 0
+    }
+  },
+  "contentValidation": {
+    "status": "pass",
+    "allLearnerFieldsReviewed": 100,
+    "mathematicalTruthDefectsRemaining": 0,
+    "fixtureAAlignmentReviewed": 100,
+    "fixtureAAlignmentFailures": 0,
+    "cascadingHintPacketsReviewed": 100,
+    "noncircularPermittedResultPacketsReviewed": 100,
+    "problemTypeAndDifficultyReviewed": 100,
+    "strictKatexFragmentsRendered": 2310,
+    "katexFailures": 0,
+    "unbalancedMathDelimiterFailures": 0,
+    "controlCharacterFailures": 0,
+    "semanticEscapeFailures": 0,
+    "decodedDoubleBackslashLocations": [
+      "271.statement",
+      "277.statement",
+      "277.solution"
+    ],
+    "decodedDoubleBackslashClassification": "All three are intentional matrix row separators."
+  },
+  "redundancyAudit": {
+    "status": "pass",
+    "externalPartFilesScanned": 23,
+    "externalProblemsScanned": 2300,
+    "literalNormalizedExactWithinShardCollisions": 0,
+    "literalNormalizedExactCrossBankCollisions": 0,
+    "withinShardSimilarityPairsInspected": 12,
+    "crossBankPairsAtThreshold": 0,
+    "confirmedSemanticDuplicates": 0,
+    "retainedProgressions": [
+      "207/208: dual-map kernel equality versus the distinct range-annihilator inclusion",
+      "216/217/218: the two forward duality implications followed by the converse characterization",
+      "251/252/253: identity, zero, and general diagonal determinant foundations",
+      "258/281: two-factor multiplicativity and cyclic exchange followed by three-factor reassociation and exchange"
+    ]
+  },
+  "freezeHygiene": {
+    "sourceShardFrozen": true,
+    "onlyCrossReviewReceiptAdded": true,
+    "temporaryHelpersRemoved": true
+  }
+}

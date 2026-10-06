@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-accessibility-receipt-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:209",
+        "internalId": "PB-ORIGINAL:ED1-209",
+        "problemVersion": "proofbound-ed1-209-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+      },
+      "answerFormSha256": "e7f62794c4786ca22e4242ea384e30ef7cf7855bb072eb9e22557a2adb866955",
+      "rendererId": "multipart_v1",
+      "visualDependency": "none",
+      "keyboardAnswerable": true,
+      "colorIndependent": true,
+      "screenReaderMath": "both",
+      "requiredChecks": [
+        "every control has a programmatic label",
+        "all choices are operable by keyboard without pointer input",
+        "focus order follows response-part order",
+        "validation errors identify their response part in text",
+        "correctness is never communicated by color alone",
+        "mathematical labels expose MathML or equivalent spoken math"
+      ],
+      "accessibilityExecutionComplete": false,
+      "accessibilityAuthority": false,
+      "readinessAuthority": false
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:210",
+        "internalId": "PB-ORIGINAL:ED1-210",
+        "problemVersion": "proofbound-ed1-210-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+      },
+      "answerFormSha256": "f53892b119e29951d2f20d74062691ac6fb1500a2fb7cf664f3502a34d240f82",
+      "rendererId": "multipart_v1",
+      "visualDependency": "none",
+      "keyboardAnswerable": true,
+      "colorIndependent": true,
+      "screenReaderMath": "both",
+      "requiredChecks": [
+        "every control has a programmatic label",
+        "all choices are operable by keyboard without pointer input",
+        "focus order follows response-part order",
+        "validation errors identify their response part in text",
+        "correctness is never communicated by color alone",
+        "mathematical labels expose MathML or equivalent spoken math"
+      ],
+      "accessibilityExecutionComplete": false,
+      "accessibilityAuthority": false,
+      "readinessAuthority": false
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "proofbound.la1-cross-review-receipt.v1",
+  "sourcePath": "data/problems/linear-algebra-1-bank/part-001-100.json",
+  "inputSha256": "2098908338e30c247df6b5ea605075a1fc36ec47f167093a13dedd8233ebf579",
+  "finalSha256": "c515d3153234b16479facbaa560329134cb2692210d5a35c79ea824d8e9445d8",
+  "finalBytes": 387772,
+  "reviewScope": {
+    "problemCount": 100,
+    "ordinalRange": [
+      1,
+      100
+    ],
+    "allPacketFieldsReviewed": true,
+    "fullStatementEquivalenceChecks": [
+      "objects-and-hypotheses",
+      "quantifiers",
+      "every-learner-subclaim",
+      "both-iff-directions-and-cases",
+      "witness-and-uniqueness-scope",
+      "no-weakening-vacuity-or-semantic-escape"
+    ],
+    "difficultyByUnit": [
+      {
+        "unit": "Vector spaces, subspaces, sums, and direct sums",
+        "difficultyCounts": {
+          "1": 5,
+          "2": 10,
+          "3": 15,
+          "4": 13,
+          "5": 7
+        }
+      },
+      {
+        "unit": "Linear independence, bases, and dimension",
+        "difficultyCounts": {
+          "1": 5,
+          "2": 10,
+          "3": 15,
+          "4": 12,
+          "5": 8
+        }
+      }
+    ],
+    "honorsOnlyOrdinals": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "lockedFinalSlots": {
+      "A": [
+        13,
+        63
+      ],
+      "B": [
+        43,
+        92
+      ]
+    }
+  },
+  "boundedDelta": {
+    "reconstructedInputSha256": "2098908338e30c247df6b5ea605075a1fc36ec47f167093a13dedd8233ebf579",
+    "leanDraftOnlyOrdinals": [
+      8,
+      11,
+      16,
+      25,
+      28,
+      29,
+      30,
+      35,
+      39,
+      42,
+      45,
+      50,
+      71,
+      72,
+      73,
+      75
+    ],
+    "addedClosureTheorems": 17,
+    "metadataOnlyRepairs": [
+      {
+        "ordinal": 92,
+        "field": "permittedResults.0",
+        "repair": "Corrected the basis-extension seed-containment cross-reference from LA1 75 to LA1 80."
+      }
+    ],
+    "otherFieldsChanged": false
+  },
+  "semanticReview": {
+    "status": "pass",
+    "rowsAccepted": 100,
+    "rowsRejectedAfterRepair": 0,
+    "semanticClosureOrdinals": [
+      8,
+      11,
+      16,
+      25,
+      28,
+      29,
+      30,
+      35,
+      39,
+      42,
+      45,
+      50,
+      71,
+      72,
+      73,
+      75
+    ],
+    "imperativeVerbScopeScan": {
+      "status": "pass",
+      "detectedOrdinals": [
+        7,
+        8,
+        9,
+        12,
+        17,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        35,
+        36,
+        38,
+        39,
+        42,
+        43,
+        44,
+        46,
+        48,
+        49,
+        70,
+        71,
+        72,
+        73,
+        75,
+        79,
+        83,
+        93,
+        95,
+        96,
+        97
+      ],
+      "note": "Every compute, derive, identify, construct, deduce, conclude, verify, exhibit, or explicit displayed-formula clause is proposition-bound after the listed closures."
+    }
+  },
+  "contentChecks": {
+    "sourceEnvelope": "pass",
+    "exactFieldCount": 17,
+    "strictKatexSegments": 2971,
+    "strictKatexErrors": 0,
+    "permittedRuntimeDoubleEscapes": [
+      "17:permittedResults.0",
+      "17:solution",
+      "71:statement",
+      "71:solution"
+    ],
+    "withinShardExactDuplicates": 0,
+    "withinShardHighSemanticMatchesAtThreshold": 0,
+    "externalExactDuplicates": 0,
+    "externalHighSemanticMatchesAtThreshold": 0,
+    "externalJsonFilesCompared": 36,
+    "externalRowsCompared": 2321,
+    "difficultyCalibration": "pass",
+    "honorsSynthesisCalibration": "pass",
+    "lockedFinalSlotsPreserved": true,
+    "standardOmissionContractPreserved": true
+  },
+  "leanChecks": {
+    "leanVersion": "4.32.1",
+    "warningAsError": true,
+    "leanDraftSetSha256": "df6a47cbeff2a011a3eaeb1f68e403ab66fdfe39095c29440917613028759bf4",
+    "individualExactSerialized": {
+      "passed": 100,
+      "failed": 0,
+      "exactFileMismatches": 0
+    },
+    "aggregateExactSerialized": {
+      "status": "pass",
+      "theoremCount": 124,
+      "aggregateBytes": 91722,
+      "aggregateSha256": "b4a8965950b33e59f6234db9c65774653285fd3aa1ab03a71ccc5346e417bb84"
+    },
+    "forbiddenDeclarationOrPlaceholderScan": "pass",
+    "rflOnlyOrSemanticEscapeScan": "pass",
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "unexpectedAxioms": []
+  },
+  "frozenAt": "2026-08-10T18:08:34Z"
+}

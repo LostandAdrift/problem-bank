@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-future-companion-authority.v2",
+  "state": "held_shadow_zero_coverage_not_admitted",
+  "courseId": "electrodynamics-1",
+  "prospectiveAuthoritySnapshot": {
+    "checkedInManifestPath": "data/problems/checked-in-packet-manifest.json",
+    "prospectiveManifestPath": "data/problems/electrodynamics-1-bank/prospective-checked-in-packet-manifest.v2.json",
+    "prospectiveManifestRawSha256": "c514dcb1e972d9417aaf07a06dcc310e65eead82754a097f7a09420d215925ee",
+    "currentExactTargetCount": 2904,
+    "currentExactTargetBindingSha256": "12338e8f460a7085d5a45701ba7264e11d4abdc197fc1dc629d93a38a01ac03f"
+  },
+  "companionInputs": {
+    "liveManifestPath": "data/learning/exact-packet-companion-manifest.v1.json",
+    "liveManifestRawSha256": "43d103721bd9059e96dbbf6ef50b7d99d3c61c8bf3897eb6a8621b3dbe89dc90",
+    "liveRegistryPath": "data/problems/electrodynamics-1-bank/packet-companions.v1.json",
+    "liveRegistryRawSha256": "8534ab30ed21e3fd49d7f2f9a3d840baf4395c6ff7c9ea7951eb640a2d8dc85b",
+    "candidateManifestPath": "data/learning/exact-packet-companion-manifest.successor-candidate.v1.json",
+    "candidateManifestRawSha256": "ac5466e41397a6102697ec76351417d39ce629f3336b7793459566807f06e62c"
+  },
+  "ed1Policy": {
+    "enforcement": "shadow",
+    "completionAuthority": "deterministic_runtime",
+    "currentExactTargetCount": 240,
+    "registryRecordCount": 0,
+    "resolvedExactRecordCount": 0,
+    "resolvedCurrentExactRecordCount": 0,
+    "resolvedHistoricalExactRecordCount": 0,
+    "fullDeterministicAuthorityCount": 0,
+    "fullRequiredAuthorityCount": 0,
+    "readyTargetCount": 0,
+    "defectCount": 0,
+    "completionClaim": false
+  },
+  "verification": {
+    "candidateManifestStrictlyParsed": true,
+    "prospectiveExactTargetBindingRecomputed": true,
+    "fullReportValid": true,
+    "issueCount": 0,
+    "learnerBehaviorMutation": false,
+    "completionLabelMutation": false,
+    "remoteCalls": 0
+  },
+  "authorityBoundary": {
+    "admission": false,
+    "publication": false,
+    "release": false,
+    "currentVersion": false,
+    "runtime": false,
+    "grading": false,
+    "coach": false,
+    "companionCompletion": false,
+    "staging": false,
+    "remoteMutation": false
+  },
+  "artifactDigestScheme": "proofanvil.ed1-held-future-companion-authority.artifact-sha256.v2",
+  "artifactSha256": "82f8184f0b827d1681c80ba022a96b7daf83f1e782c162ebaf29e1fb0f4092ae"
+}

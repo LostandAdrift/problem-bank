@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:169",
+    "internalId": "PB-ORIGINAL:ED1-169",
+    "problemVersion": "proofbound-ed1-169-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "bded7fc1352ba9ed30f1db2cbc5f802303f4131d4566bdd9ca19cabf8e61c660"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "magnetic-residual-evolution",
+      "label": "Select the evolution equation for the magnetic Gauss residual C-B.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "evolution:partial_t_c_b_equals_zero",
+          "label": "partial-t C-B equals zero"
+        },
+        {
+          "choiceId": "evolution:partial_t_c_b_equals_negative_div_e",
+          "label": "partial-t C-B equals negative div E"
+        },
+        {
+          "choiceId": "evolution:c_b_equals_zero_without_initial_condition",
+          "label": "C-B equals zero without an initial condition"
+        }
+      ]
+    },
+    {
+      "partId": "electric-residual-evolution",
+      "label": "Select the evolution equation for C-E in terms of the continuity defect s = partial-t rho plus div J.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "evolution:partial_t_c_e_equals_negative_s_over_epsilon0",
+          "label": "partial-t C-E equals -s/epsilon-zero"
+        },
+        {
+          "choiceId": "evolution:partial_t_c_e_equals_zero_without_continuity",
+          "label": "partial-t C-E equals zero even when continuity fails"
+        },
+        {
+          "choiceId": "evolution:partial_t_c_e_equals_positive_s_over_epsilon0",
+          "label": "partial-t C-E equals +s/epsilon-zero"
+        }
+      ]
+    },
+    {
+      "partId": "constraint-propagation-dependency",
+      "label": "Select the conditions that preserve zero electric and magnetic Gauss residuals.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "propagation:continuity_and_zero_initial_residuals",
+          "label": "Continuity holds and both residuals vanish initially."
+        },
+        {
+          "choiceId": "propagation:curl_equations_alone_without_continuity",
+          "label": "The curl equations alone suffice without continuity."
+        },
+        {
+          "choiceId": "propagation:continuity_alone_without_initial_residuals",
+          "label": "Continuity alone forces both residuals to zero without initial data."
+        }
+      ]
+    },
+    {
+      "partId": "defect-curl-audit",
+      "label": "Select the correct audit for E = B = J = 0 and rho = s-zero t.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "audit:curl_equations_zero_equals_zero_continuity_defect_s0",
+          "label": "Both curl equations read zero equals zero, while the continuity defect is s-zero."
+        },
+        {
+          "choiceId": "audit:curl_equations_fail_because_rho_changes",
+          "label": "The curl equations fail solely because rho changes."
+        },
+        {
+          "choiceId": "audit:zero_e_forces_zero_c_e_despite_rho",
+          "label": "Zero E forces C-E to vanish despite nonzero rho."
+        }
+      ]
+    },
+    {
+      "partId": "defect-residual-coefficient",
+      "label": "Enter C when the defect residual is C-E(t) = C s-zero t / epsilon-zero.",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "defect-unit-audit",
+      "label": "Select the SI unit audit for s-zero and partial-t C-E.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "units:s0_coulomb_per_cubic_metre_per_second_and_rate_volt_per_square_metre_per_second",
+          "label": "s-zero is C m^-3 s^-1 and s-zero/epsilon-zero is V m^-2 s^-1."
+        },
+        {
+          "choiceId": "units:s0_coulomb_per_cubic_metre_and_rate_volt_per_square_metre",
+          "label": "s-zero is C m^-3 and s-zero/epsilon-zero is V m^-2."
+        },
+        {
+          "choiceId": "units:s0_coulomb_per_cubic_metre_per_second_and_rate_volt_per_metre",
+          "label": "s-zero is C m^-3 s^-1 and s-zero/epsilon-zero is V m^-1."
+        }
+      ]
+    }
+  ]
+}

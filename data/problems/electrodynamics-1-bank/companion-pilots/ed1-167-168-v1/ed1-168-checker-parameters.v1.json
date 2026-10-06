@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v3",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:168",
+    "internalId": "PB-ORIGINAL:ED1-168",
+    "problemVersion": "proofbound-ed1-168-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "31ba390caa0ce8289ad123b1b9e284b315a0ac06f31a31eb3dbc6f976fd57210"
+  },
+  "answerFormSha256": "c1a96311823aee3f4be58a00d57a467b59e041b8b12f2a72f0f38e89709cfc2a",
+  "inputParserSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4",
+  "checkerId": "checker.ed1.168.piecewise-radial-continuity",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "interior-alpha-coefficient",
+      "expected": 1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "boundary-current-coefficient",
+      "expected": 1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "flux-loss-ratio",
+      "expected": 1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "global-linear-audit",
+      "expectedChoiceIds": [
+        "audit:inside_alpha_rho_over_3tau_outside_alpha_zero_incompatible"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "audit:inside_alpha_rho_over_3tau_outside_alpha_zero_incompatible",
+          "errorCode": null
+        },
+        {
+          "choiceId": "audit:inside_alpha_rho_over_3tau_valid_everywhere",
+          "errorCode": "EDE168A"
+        },
+        {
+          "choiceId": "audit:alpha_zero_valid_everywhere",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "piecewise-current-construction",
+      "expectedChoiceIds": [
+        "construction:jin_rho_r_over_3tau_jout_rho_R3_over_3tau_r2"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "construction:jin_rho_r_over_3tau_jout_rho_R3_over_3tau_r2",
+          "errorCode": null
+        },
+        {
+          "choiceId": "construction:single_linear_rho_r_over_3tau_everywhere",
+          "errorCode": "EDE168A"
+        },
+        {
+          "choiceId": "construction:jin_rho_r_over_3tau_jout_zero",
+          "errorCode": "EDE168B"
+        }
+      ]
+    },
+    {
+      "partId": "boundary-flux-audit",
+      "expectedChoiceIds": [
+        "ledger:jr_continuous_flux_Q_over_tau_equals_negative_dQdt"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "ledger:jr_continuous_flux_Q_over_tau_equals_negative_dQdt",
+          "errorCode": null
+        },
+        {
+          "choiceId": "ledger:outside_zero_normal_jump_ignored",
+          "errorCode": "EDE168B"
+        },
+        {
+          "choiceId": "ledger:jr_continuous_flux_equals_positive_dQdt",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-168-M1",
+      "partIds": [
+        "interior-alpha-coefficient",
+        "global-linear-audit"
+      ]
+    },
+    {
+      "milestoneId": "ED1-168-M2",
+      "partIds": [
+        "piecewise-current-construction"
+      ]
+    },
+    {
+      "milestoneId": "ED1-168-M3",
+      "partIds": [
+        "boundary-current-coefficient",
+        "flux-loss-ratio",
+        "boundary-flux-audit"
+      ]
+    }
+  ]
+}

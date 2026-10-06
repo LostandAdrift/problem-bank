@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v2",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:170",
+    "internalId": "PB-ORIGINAL:ED1-170",
+    "problemVersion": "proofbound-ed1-170-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "0985987c8d8c30491c680f2a4e0fe44091d9cbc63bf2542e00f633ae7b87b150"
+  },
+  "answerFormSha256": "06c767b3436de3a69de6db31d2f119f90adfc74cf96c8e91eebe922ff508ea43",
+  "checkerId": "checker.ed1.170.moving-interface-charge",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "current-density-jump",
+      "expected": 6,
+      "absoluteTolerance": 0.005,
+      "relativeTolerance": 0,
+      "unitId": "microampere_per_square_metre",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "swept-charge-current",
+      "expected": 6,
+      "absoluteTolerance": 0.005,
+      "relativeTolerance": 0,
+      "unitId": "microampere_per_square_metre",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "surface-charge-rate",
+      "expected": 1,
+      "absoluteTolerance": 0.005,
+      "relativeTolerance": 0,
+      "unitId": "microampere_per_square_metre",
+      "defaultErrorCode": null,
+      "misconceptions": [
+        {
+          "expected": -5,
+          "absoluteTolerance": 0.005,
+          "relativeTolerance": 0,
+          "errorCode": "EDE170A"
+        },
+        {
+          "expected": -11,
+          "absoluteTolerance": 0.005,
+          "relativeTolerance": 0,
+          "errorCode": "EDE170B"
+        }
+      ]
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "relative-face-flux-pair",
+      "expectedChoiceIds": [
+        "flux:upper_jplus_minus_u_rhoplus_lower_minus_jminus_plus_u_rhominus"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "flux:upper_jplus_minus_u_rhoplus_lower_minus_jminus_plus_u_rhominus",
+          "errorCode": null
+        },
+        {
+          "choiceId": "flux:upper_jplus_lower_minus_jminus_laboratory_only",
+          "errorCode": "EDE170A"
+        },
+        {
+          "choiceId": "flux:upper_jplus_plus_u_rhoplus_lower_minus_jminus_minus_u_rhominus",
+          "errorCode": "EDE170B"
+        },
+        {
+          "choiceId": "flux:upper_jplus_minus_u_rhoplus_lower_plus_jminus_minus_u_rhominus",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "moving-interface-jump-law",
+      "expectedChoiceIds": [
+        "law:dt_sigma_plus_div_k_plus_jump_jz_minus_u_jump_rho_equals_zero"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "law:dt_sigma_plus_div_k_plus_jump_jz_minus_u_jump_rho_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "law:dt_sigma_plus_div_k_plus_jump_jz_equals_zero",
+          "errorCode": "EDE170A"
+        },
+        {
+          "choiceId": "law:dt_sigma_plus_div_k_plus_jump_jz_plus_u_jump_rho_equals_zero",
+          "errorCode": "EDE170B"
+        }
+      ]
+    },
+    {
+      "partId": "stationary-interface-limit",
+      "expectedChoiceIds": [
+        "limit:dt_sigma_plus_div_k_plus_jump_jz_equals_zero"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "limit:dt_sigma_plus_div_k_plus_jump_jz_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "limit:dt_sigma_plus_div_k_minus_jump_rho_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "limit:dt_sigma_plus_div_k_equals_zero",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "moving-interface-unit-audit",
+      "expectedChoiceIds": [
+        "units:all_terms_ampere_per_square_metre_and_u_rho_matches"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "units:all_terms_ampere_per_square_metre_and_u_rho_matches",
+          "errorCode": null
+        },
+        {
+          "choiceId": "units:u_rho_coulomb_per_square_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "units:dt_sigma_coulomb_per_square_metre",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-170-M1",
+      "partIds": [
+        "relative-face-flux-pair",
+        "moving-interface-jump-law"
+      ]
+    },
+    {
+      "milestoneId": "ED1-170-M2",
+      "partIds": [
+        "current-density-jump",
+        "swept-charge-current",
+        "surface-charge-rate"
+      ]
+    },
+    {
+      "milestoneId": "ED1-170-M3",
+      "partIds": [
+        "stationary-interface-limit",
+        "moving-interface-unit-audit"
+      ]
+    }
+  ]
+}

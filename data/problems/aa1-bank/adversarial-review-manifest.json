@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "proofanvil.aa1-adversarially-reviewed-alpha.v1",
+  "bankId": "proofanvil-aa1-alpha-300-v1",
+  "reviewDate": "2026-08-09",
+  "courseId": "abstract-algebra-1",
+  "firstPublicProblemId": "AA:001",
+  "lastPublicProblemId": "AA:300",
+  "packetCount": 300,
+  "packetDigestBindingScheme": "proofanvil.aa1-alpha-packet-digest-binding.v1",
+  "packetDigestBindingSha256": "084835102b0609262e189463fc64d5c2d8340378526d89bf7416706041552ecc",
+  "reviewBatches": [
+    {
+      "range": "001-100",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "101-200",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "201-300",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    }
+  ],
+  "checks": [
+    "accuracy",
+    "redundancy",
+    "hint_quality",
+    "solution_quality"
+  ],
+  "outcome": "accepted_for_bounded_alpha",
+  "constraints": {
+    "compiledLeanRequired": false,
+    "minimumFixturesPerProblem": 2,
+    "productionQualityClaim": false
+  }
+}

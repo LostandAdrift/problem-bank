@@ -1,0 +1,537 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-fixture-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:165",
+        "internalId": "PB-ORIGINAL:ED1-165",
+        "problemVersion": "proofbound-ed1-165-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "d0869d26bcf4af65bcdefb545b0d8822013bb3ac0ed5aff8e7e66f634d1f912e"
+      },
+      "answerFormSha256": "5740c1c9e2ef9339d9d0a0a9c48ec521ebbe84e47329068b72fe3cd57ff4f1ba",
+      "baseParts": [
+        {
+          "partId": "local-continuity-sign",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "continuity:partial_t_sigma_plus_surface_divergence_equals_zero"
+          ]
+        },
+        {
+          "partId": "current-prefactor-ratio",
+          "responseKind": "numeric",
+          "decimal": "1",
+          "unitId": "dimensionless"
+        },
+        {
+          "partId": "current-shape",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "current:sin_kx_sin_omega_t_x_hat"
+          ]
+        },
+        {
+          "partId": "divergence-verification",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "verification:positive_a_omega_cos_kx_sin_omega_t"
+          ]
+        },
+        {
+          "partId": "divergence-free-freedom",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "freedom:uniform_k0_t_y_is_allowed"
+          ]
+        },
+        {
+          "partId": "surface-current-unit",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "unit:ampere_per_metre"
+          ]
+        }
+      ],
+      "passing": [
+        {
+          "fixtureId": "ED:165-canonical",
+          "partOverrides": []
+        },
+        {
+          "fixtureId": "ED:165-stated-precision",
+          "partOverrides": [
+            {
+              "partId": "current-prefactor-ratio",
+              "decimal": "1.000000000000"
+            }
+          ]
+        }
+      ],
+      "failing": [
+        {
+          "fixtureId": "ED:165-common-error-a",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE165A",
+          "partOverrides": [
+            {
+              "partId": "local-continuity-sign",
+              "choiceIds": [
+                "continuity:partial_t_sigma_minus_surface_divergence_equals_zero"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-common-error-b",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE165B",
+          "partOverrides": [
+            {
+              "partId": "divergence-free-freedom",
+              "choiceIds": [
+                "freedom:divergence_uniquely_fixes_both_components"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-1",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE165A",
+          "partOverrides": [
+            {
+              "partId": "current-prefactor-ratio",
+              "decimal": "-1"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-2",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE165A",
+          "partOverrides": [
+            {
+              "partId": "divergence-verification",
+              "choiceIds": [
+                "verification:negative_a_omega_cos_kx_sin_omega_t"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-3",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "local-continuity-sign",
+              "choiceIds": [
+                "continuity:surface_divergence_equals_zero_for_every_sigma"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-4",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "current-shape",
+              "choiceIds": [
+                "current:cos_kx_sin_omega_t_x_hat"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-5",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "current-shape",
+              "choiceIds": [
+                "current:sin_kx_cos_omega_t_x_hat"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-6",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "divergence-verification",
+              "choiceIds": [
+                "verification:zero"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-7",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "divergence-free-freedom",
+              "choiceIds": [
+                "freedom:uniform_k0_t_y_changes_charge_evolution"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-diagnostic-8",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "surface-current-unit",
+              "choiceIds": [
+                "unit:ampere_per_square_metre"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-wrong-unit",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [
+            {
+              "partId": "current-prefactor-ratio",
+              "unitId": "microtesla"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:165-stale-target",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "replace_canonical_packet_sha256",
+            "value": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "fixtureId": "ED:165-missing-part",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "remove_last_part",
+            "value": null
+          }
+        },
+        {
+          "fixtureId": "ED:165-extra-envelope-key",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "add_extra_envelope_key",
+            "value": true
+          }
+        }
+      ]
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:166",
+        "internalId": "PB-ORIGINAL:ED1-166",
+        "problemVersion": "proofbound-ed1-166-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e96a398b9e2b6aec90d6dbccc621d13f44910c15cf0ce543699cf628daf78a03"
+      },
+      "answerFormSha256": "a22eca77d372a50b4cce159a46137e00b7631a0c5dde15a0a1310bfe9f053911",
+      "baseParts": [
+        {
+          "partId": "ampere-maxwell-divergence",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "derivation:zero_equals_mu0_div_j_plus_mu0_epsilon0_dt_div_e"
+          ]
+        },
+        {
+          "partId": "local-continuity-sign",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "continuity:partial_t_rho_plus_div_j_equals_zero"
+          ]
+        },
+        {
+          "partId": "charge-time-coefficient",
+          "responseKind": "numeric",
+          "decimal": "-1",
+          "unitId": "dimensionless"
+        },
+        {
+          "partId": "sine-derivative-factor",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "derivative:d_dx_sin_kx_equals_k_cos_kx"
+          ]
+        },
+        {
+          "partId": "current-divergence-coefficient",
+          "responseKind": "numeric",
+          "decimal": "1",
+          "unitId": "dimensionless"
+        },
+        {
+          "partId": "continuity-sum-coefficient",
+          "responseKind": "numeric",
+          "decimal": "0",
+          "unitId": "dimensionless"
+        },
+        {
+          "partId": "volume-current-unit",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "unit:ampere_per_square_metre"
+          ]
+        },
+        {
+          "partId": "maxwell-consistency",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "consistency:cannot_satisfy_both_displayed_maxwell_equations"
+          ]
+        }
+      ],
+      "passing": [
+        {
+          "fixtureId": "ED:166-canonical",
+          "partOverrides": []
+        },
+        {
+          "fixtureId": "ED:166-stated-precision",
+          "partOverrides": [
+            {
+              "partId": "charge-time-coefficient",
+              "decimal": "-1.000000000000"
+            },
+            {
+              "partId": "current-divergence-coefficient",
+              "decimal": "1.000000000000"
+            },
+            {
+              "partId": "continuity-sum-coefficient",
+              "decimal": "0.000000000000"
+            }
+          ]
+        }
+      ],
+      "failing": [
+        {
+          "fixtureId": "ED:166-common-error-a",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE166A",
+          "partOverrides": [
+            {
+              "partId": "ampere-maxwell-divergence",
+              "choiceIds": [
+                "derivation:zero_equals_mu0_div_j_after_dropping_displacement"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-common-error-b",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE166B",
+          "partOverrides": [
+            {
+              "partId": "sine-derivative-factor",
+              "choiceIds": [
+                "derivative:d_dx_sin_kx_equals_cos_kx"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-1",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE166A",
+          "partOverrides": [
+            {
+              "partId": "maxwell-consistency",
+              "choiceIds": [
+                "consistency:may_satisfy_both_because_gauss_law_is_unrelated"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-2",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "local-continuity-sign",
+              "choiceIds": [
+                "continuity:partial_t_rho_minus_div_j_equals_zero"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-3",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "local-continuity-sign",
+              "choiceIds": [
+                "continuity:partial_t_rho_equals_zero"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-4",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "sine-derivative-factor",
+              "choiceIds": [
+                "derivative:d_dx_sin_kx_equals_k_sin_kx"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-5",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "charge-time-coefficient",
+              "decimal": "1"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-6",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "current-divergence-coefficient",
+              "decimal": "0.9"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-7",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "continuity-sum-coefficient",
+              "decimal": "1"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-8",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "volume-current-unit",
+              "choiceIds": [
+                "unit:ampere_per_metre"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-diagnostic-9",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "maxwell-consistency",
+              "choiceIds": [
+                "consistency:may_satisfy_both_if_div_j_is_zero"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-wrong-unit",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [
+            {
+              "partId": "charge-time-coefficient",
+              "unitId": "microtesla"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:166-stale-target",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "replace_canonical_packet_sha256",
+            "value": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "fixtureId": "ED:166-missing-part",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "remove_last_part",
+            "value": null
+          }
+        },
+        {
+          "fixtureId": "ED:166-extra-envelope-key",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "add_extra_envelope_key",
+            "value": true
+          }
+        }
+      ]
+    }
+  ]
+}

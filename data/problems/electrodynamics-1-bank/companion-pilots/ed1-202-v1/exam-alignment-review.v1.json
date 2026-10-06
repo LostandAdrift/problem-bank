@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "proofanvil.exam-alignment-independent-review.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "disposition": "reviewed_not_applicable",
+  "rationale": "No versioned external examination syllabus is part of the checked-in ED1 authority. This course-bank item must not claim an exam-family mapping without a separately reviewed source.",
+  "publicationAuthority": false
+}

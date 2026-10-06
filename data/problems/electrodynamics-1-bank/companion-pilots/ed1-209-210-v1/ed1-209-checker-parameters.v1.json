@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v2",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:209",
+    "internalId": "PB-ORIGINAL:ED1-209",
+    "problemVersion": "proofbound-ed1-209-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+  },
+  "answerFormSha256": "e7f62794c4786ca22e4242ea384e30ef7cf7855bb072eb9e22557a2adb866955",
+  "checkerId": "checker.ed1.209.stokes-sphere",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "s0",
+      "expected": 5,
+      "absoluteTolerance": 0.005,
+      "relativeTolerance": 0,
+      "unitId": "volt_squared_per_metre_squared",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "s1",
+      "expected": 3,
+      "absoluteTolerance": 0.005,
+      "relativeTolerance": 0,
+      "unitId": "volt_squared_per_metre_squared",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "s2",
+      "expected": 0,
+      "absoluteTolerance": 0.005,
+      "relativeTolerance": 0,
+      "unitId": "volt_squared_per_metre_squared",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "s3",
+      "expected": 4,
+      "absoluteTolerance": 0.005,
+      "relativeTolerance": 0,
+      "unitId": "volt_squared_per_metre_squared",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "normalized-s1",
+      "expected": 0.6,
+      "absoluteTolerance": 5e-7,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "normalized-s2",
+      "expected": 0,
+      "absoluteTolerance": 5e-7,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "normalized-s3",
+      "expected": 0.8,
+      "absoluteTolerance": 5e-7,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "normalized-length",
+      "expected": 1,
+      "absoluteTolerance": 5e-7,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "cross-term-conjugation",
+      "expectedChoiceIds": [
+        "cross:ex_conjugate_times_ey"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "cross:ex_conjugate_times_ey",
+          "errorCode": null
+        },
+        {
+          "choiceId": "cross:ex_times_ey",
+          "errorCode": "EDE209A"
+        },
+        {
+          "choiceId": "cross:ey_conjugate_times_ex",
+          "errorCode": "EDE209A"
+        }
+      ]
+    },
+    {
+      "partId": "sphere-closure",
+      "expectedChoiceIds": [
+        "identity:a_minus_b_squared_plus_four_ab_equals_a_plus_b_squared"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "identity:a_minus_b_squared_plus_four_ab_equals_a_plus_b_squared",
+          "errorCode": null
+        },
+        {
+          "choiceId": "identity:a_minus_b_squared_equals_a_plus_b_squared",
+          "errorCode": null
+        },
+        {
+          "choiceId": "identity:a_minus_b_squared_plus_four_ab_equals_a_squared_plus_b_squared",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "polarization-classification",
+      "expectedChoiceIds": [
+        "polarization:elliptical"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "polarization:elliptical",
+          "errorCode": null
+        },
+        {
+          "choiceId": "polarization:circular",
+          "errorCode": "EDE209B"
+        },
+        {
+          "choiceId": "polarization:linear",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-209-M1",
+      "partIds": [
+        "cross-term-conjugation",
+        "sphere-closure"
+      ]
+    },
+    {
+      "milestoneId": "ED1-209-M2",
+      "partIds": [
+        "s0",
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "milestoneId": "ED1-209-M3",
+      "partIds": [
+        "normalized-s1",
+        "normalized-s2",
+        "normalized-s3",
+        "normalized-length",
+        "polarization-classification"
+      ]
+    }
+  ]
+}

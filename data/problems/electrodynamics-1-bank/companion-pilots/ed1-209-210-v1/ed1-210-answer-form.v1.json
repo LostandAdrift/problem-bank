@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:210",
+    "internalId": "PB-ORIGINAL:ED1-210",
+    "problemVersion": "proofbound-ed1-210-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "s0-law",
+      "label": "Select S-zero for the real linear Jones vector.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "law:s0_equals_e0_squared",
+          "label": "S-zero equals E-zero squared"
+        },
+        {
+          "choiceId": "law:s0_equals_two_e0_squared",
+          "label": "S-zero equals twice E-zero squared"
+        },
+        {
+          "choiceId": "law:s0_equals_e0",
+          "label": "S-zero equals E-zero"
+        }
+      ]
+    },
+    {
+      "partId": "s1-law",
+      "label": "Select the normalized S-one coordinate.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "law:s1_over_s0_equals_cos_two_psi",
+          "label": "S-one divided by S-zero equals cosine of two psi"
+        },
+        {
+          "choiceId": "law:s1_over_s0_equals_cos_psi",
+          "label": "S-one divided by S-zero equals cosine of psi"
+        },
+        {
+          "choiceId": "law:s1_over_s0_equals_sin_two_psi",
+          "label": "S-one divided by S-zero equals sine of two psi"
+        }
+      ]
+    },
+    {
+      "partId": "s2-law",
+      "label": "Select the normalized S-two coordinate.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "law:s2_over_s0_equals_sin_two_psi",
+          "label": "S-two divided by S-zero equals sine of two psi"
+        },
+        {
+          "choiceId": "law:s2_over_s0_equals_sin_psi",
+          "label": "S-two divided by S-zero equals sine of psi"
+        },
+        {
+          "choiceId": "law:s2_over_s0_equals_cos_two_psi",
+          "label": "S-two divided by S-zero equals cosine of two psi"
+        }
+      ]
+    },
+    {
+      "partId": "s3-law",
+      "label": "Select S-three for the real linear Jones vector.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "law:s3_equals_zero",
+          "label": "S-three equals zero"
+        },
+        {
+          "choiceId": "law:s3_over_s0_equals_sin_two_psi",
+          "label": "S-three divided by S-zero equals sine of two psi"
+        },
+        {
+          "choiceId": "law:s3_over_s0_equals_cos_two_psi",
+          "label": "S-three divided by S-zero equals cosine of two psi"
+        }
+      ]
+    },
+    {
+      "partId": "coordinate-angle-transform",
+      "label": "Select the coordinate angle after the axes rotate counterclockwise by theta.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "rotation:psi_prime_equals_psi_minus_theta",
+          "label": "psi-prime equals psi minus theta"
+        },
+        {
+          "choiceId": "rotation:psi_prime_equals_psi_plus_theta",
+          "label": "psi-prime equals psi plus theta"
+        },
+        {
+          "choiceId": "rotation:psi_prime_equals_theta_minus_psi",
+          "label": "psi-prime equals theta minus psi"
+        }
+      ]
+    },
+    {
+      "partId": "equatorial-angle-transform",
+      "label": "Select the transformed Stokes equatorial angle.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "rotation:two_psi_prime_equals_two_psi_minus_two_theta",
+          "label": "two psi-prime equals two psi minus two theta"
+        },
+        {
+          "choiceId": "rotation:two_psi_prime_equals_two_psi_plus_two_theta",
+          "label": "two psi-prime equals two psi plus two theta"
+        },
+        {
+          "choiceId": "rotation:equatorial_angle_equals_psi_minus_theta",
+          "label": "the equatorial angle equals psi minus theta"
+        }
+      ]
+    },
+    {
+      "partId": "rotated-normalized-s1",
+      "label": "S-one-prime divided by S-zero for psi equals 40.0 degrees and theta equals 15.0 degrees",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "rotated-normalized-s2",
+      "label": "S-two-prime divided by S-zero for psi equals 40.0 degrees and theta equals 15.0 degrees",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "rotated-invariant",
+      "label": "The quadratic invariant (S-one-prime divided by S-zero)^2 plus (S-two-prime divided by S-zero)^2",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    }
+  ]
+}

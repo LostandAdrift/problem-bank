@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:164",
+    "internalId": "PB-ORIGINAL:ED1-164",
+    "problemVersion": "proofbound-ed1-164-v2",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "e2-x",
+      "label": "x component of E2",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "volt_per_metre",
+          "label": "V m^-1"
+        }
+      ]
+    },
+    {
+      "partId": "e2-z",
+      "label": "z component of E2",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "volt_per_metre",
+          "label": "V m^-1"
+        }
+      ]
+    },
+    {
+      "partId": "normal-electric-jump",
+      "label": "Select the normal electric boundary calculation.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "jump:epsilon2_e2z_minus_epsilon1_e1z_equals_sigma_f",
+          "label": "epsilon-two E2z minus epsilon-one E1z equals sigma-free"
+        },
+        {
+          "choiceId": "jump:e2z_minus_e1z_equals_sigma_f_over_epsilon0",
+          "label": "E2z minus E1z equals sigma-free divided by epsilon-zero"
+        },
+        {
+          "choiceId": "jump:epsilon2_e2z_plus_epsilon1_e1z_equals_sigma_f",
+          "label": "epsilon-two E2z plus epsilon-one E1z equals sigma-free"
+        }
+      ]
+    },
+    {
+      "partId": "h2-y",
+      "label": "y component of H2",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "ampere_per_metre",
+          "label": "A m^-1"
+        }
+      ]
+    },
+    {
+      "partId": "h2-z",
+      "label": "z component of H2",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "ampere_per_metre",
+          "label": "A m^-1"
+        }
+      ]
+    },
+    {
+      "partId": "tangential-magnetic-jump",
+      "label": "Select the tangential magnetic-field increment.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "jump:h2_parallel_minus_h1_parallel_equals_kf_cross_n",
+          "label": "H2-parallel minus H1-parallel equals K-free cross n"
+        },
+        {
+          "choiceId": "jump:h2_parallel_minus_h1_parallel_equals_n_cross_kf",
+          "label": "H2-parallel minus H1-parallel equals n cross K-free"
+        },
+        {
+          "choiceId": "jump:h2_parallel_plus_h1_parallel_equals_kf_cross_n",
+          "label": "H2-parallel plus H1-parallel equals K-free cross n"
+        }
+      ]
+    },
+    {
+      "partId": "vector-four-jump-audit",
+      "label": "Select the complete vector and four-jump verification ledger.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "audit:e2_3000x_0y_2000z_h2_0x_1y_minus2z_all_four_jumps",
+          "label": "E2=(3000,0,2000) V/m and H2=(0,1,-2) A/m satisfy all four stated jumps"
+        },
+        {
+          "choiceId": "audit:e2_3000x_0y_6000z_h2_0x_1y_minus2z_uses_e_jump",
+          "label": "E2=(3000,0,6000) V/m and H2=(0,1,-2) A/m satisfy an E-normal jump in place of the D-normal jump"
+        },
+        {
+          "choiceId": "audit:e2_3000x_0y_2000z_h2_0x_3y_minus2z_reversed_cross",
+          "label": "E2=(3000,0,2000) V/m and H2=(0,3,-2) A/m follow from n cross K-free"
+        }
+      ]
+    },
+    {
+      "partId": "source-convention",
+      "label": "Select why sigma-free and K-free are the interface sources in these macroscopic jumps.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "source:free_with_material_response_in_d_h_epsilon_mu",
+          "label": "They are free sources because material polarization and magnetization are represented by D, H, epsilon, and mu"
+        },
+        {
+          "choiceId": "source:total_microscopic_sources",
+          "label": "They are the total microscopic surface charge and current, including all bound response"
+        },
+        {
+          "choiceId": "source:free_only_when_media_match",
+          "label": "They are free sources only when both media have identical epsilon and mu"
+        }
+      ]
+    }
+  ]
+}

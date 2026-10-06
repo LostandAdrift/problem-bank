@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "proofanvil.uphys3-adversarially-reviewed-alpha.v1",
+  "bankId": "proofanvil-uphys3-alpha-300-v1",
+  "reviewDate": "2026-08-10",
+  "courseId": "university-physics-3",
+  "firstPublicProblemId": "UPHYS:601",
+  "lastPublicProblemId": "UPHYS:900",
+  "packetCount": 300,
+  "packetDigestBindingScheme": "proofanvil.uphys3-alpha-packet-digest-binding.v1",
+  "packetDigestBindingSha256": "d20fdaf56613e2e624e69518316b1763b057de9683b3551694aa382bdce6eb39",
+  "reviewBatches": [
+    {
+      "range": "001-100",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "101-200",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "201-300",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    }
+  ],
+  "checks": [
+    "physical_accuracy",
+    "numerical_recomputation",
+    "si_units_and_dimensions",
+    "sign_and_axis_conventions",
+    "boundary_and_initial_conditions",
+    "limiting_cases",
+    "redundancy",
+    "hint_quality",
+    "solution_quality"
+  ],
+  "outcome": "accepted_for_bounded_alpha",
+  "constraints": {
+    "compiledLeanRequired": false,
+    "learnerLeanDraftIncluded": false,
+    "minimumFixturesPerProblem": 2,
+    "productionQualityClaim": false
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-coach-grounding-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:209",
+        "internalId": "PB-ORIGINAL:ED1-209",
+        "problemVersion": "proofbound-ed1-209-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-209-grounding-v1",
+      "skillIds": [
+        "elementary-electromagnetic-waves",
+        "stokes-parameters",
+        "poincare-sphere",
+        "jones-state"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:209:sphere-identity",
+          "description": "Prove the Stokes sphere identity using the correctly conjugated cross term."
+        },
+        {
+          "objectiveRef": "objective:ed1:209:stokes-tuple",
+          "description": "Compute all four dimensioned Stokes parameters for the specified Jones vector."
+        },
+        {
+          "objectiveRef": "objective:ed1:209:normalized-classification",
+          "description": "Normalize the Stokes vector, verify unit length, and classify the state."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:209:missing-conjugation",
+          "sourceErrorCode": "EDE209A",
+          "description": "Replacing the conjugated Jones cross term with an unconjugated or oppositely conjugated product."
+        },
+        {
+          "conceptRef": "misconception:ed1:209:nonzero-s3-is-circular",
+          "sourceErrorCode": "EDE209B",
+          "description": "Calling every state with nonzero S-three circular without checking its magnitude against S-zero."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-209-hint-1",
+        "ed1-209-hint-2",
+        "ed1-209-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-209-M1",
+        "ED1-209-M2",
+        "ED1-209-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:210",
+        "internalId": "PB-ORIGINAL:ED1-210",
+        "problemVersion": "proofbound-ed1-210-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-210-grounding-v1",
+      "skillIds": [
+        "elementary-electromagnetic-waves",
+        "stokes-double-angle",
+        "axis-rotation",
+        "linear-polarization"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:210:linear-stokes-laws",
+          "description": "Derive all four Stokes parameters for a real linear Jones vector."
+        },
+        {
+          "objectiveRef": "objective:ed1:210:rotated-coordinate-angle",
+          "description": "Transform the coordinate angle under a counterclockwise rotation and explain the doubled Stokes angle."
+        },
+        {
+          "objectiveRef": "objective:ed1:210:numeric-invariant",
+          "description": "Compute the rotated normalized coordinates and verify their quadratic invariant."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:210:add-axis-angle",
+          "sourceErrorCode": "EDE210A",
+          "description": "Adding the counterclockwise axis rotation to the fixed physical polarization angle."
+        },
+        {
+          "conceptRef": "misconception:ed1:210:single-angle-stokes",
+          "sourceErrorCode": "EDE210B",
+          "description": "Using the Jones-vector angle instead of twice that angle in the Stokes coordinates."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-210-hint-1",
+        "ed1-210-hint-2",
+        "ed1-210-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-210-M1",
+        "ED1-210-M2",
+        "ED1-210-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    }
+  ]
+}

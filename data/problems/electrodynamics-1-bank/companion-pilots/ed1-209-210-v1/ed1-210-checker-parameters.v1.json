@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v2",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:210",
+    "internalId": "PB-ORIGINAL:ED1-210",
+    "problemVersion": "proofbound-ed1-210-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+  },
+  "answerFormSha256": "f53892b119e29951d2f20d74062691ac6fb1500a2fb7cf664f3502a34d240f82",
+  "checkerId": "checker.ed1.210.rotated-stokes-angle",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "rotated-normalized-s1",
+      "expected": 0.6427876096865394,
+      "absoluteTolerance": 5e-7,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": [
+        {
+          "expected": -0.3420201433256687,
+          "absoluteTolerance": 5e-7,
+          "relativeTolerance": 0,
+          "errorCode": "EDE210A"
+        },
+        {
+          "expected": 0.9063077870366499,
+          "absoluteTolerance": 5e-7,
+          "relativeTolerance": 0,
+          "errorCode": "EDE210B"
+        }
+      ]
+    },
+    {
+      "partId": "rotated-normalized-s2",
+      "expected": 0.766044443118978,
+      "absoluteTolerance": 5e-7,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": [
+        {
+          "expected": 0.9396926207859084,
+          "absoluteTolerance": 5e-7,
+          "relativeTolerance": 0,
+          "errorCode": "EDE210A"
+        },
+        {
+          "expected": 0.42261826174069944,
+          "absoluteTolerance": 5e-7,
+          "relativeTolerance": 0,
+          "errorCode": "EDE210B"
+        }
+      ]
+    },
+    {
+      "partId": "rotated-invariant",
+      "expected": 1,
+      "absoluteTolerance": 5e-7,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "s0-law",
+      "expectedChoiceIds": [
+        "law:s0_equals_e0_squared"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "law:s0_equals_e0_squared",
+          "errorCode": null
+        },
+        {
+          "choiceId": "law:s0_equals_two_e0_squared",
+          "errorCode": null
+        },
+        {
+          "choiceId": "law:s0_equals_e0",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "s1-law",
+      "expectedChoiceIds": [
+        "law:s1_over_s0_equals_cos_two_psi"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "law:s1_over_s0_equals_cos_two_psi",
+          "errorCode": null
+        },
+        {
+          "choiceId": "law:s1_over_s0_equals_cos_psi",
+          "errorCode": "EDE210B"
+        },
+        {
+          "choiceId": "law:s1_over_s0_equals_sin_two_psi",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "s2-law",
+      "expectedChoiceIds": [
+        "law:s2_over_s0_equals_sin_two_psi"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "law:s2_over_s0_equals_sin_two_psi",
+          "errorCode": null
+        },
+        {
+          "choiceId": "law:s2_over_s0_equals_sin_psi",
+          "errorCode": "EDE210B"
+        },
+        {
+          "choiceId": "law:s2_over_s0_equals_cos_two_psi",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "s3-law",
+      "expectedChoiceIds": [
+        "law:s3_equals_zero"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "law:s3_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "law:s3_over_s0_equals_sin_two_psi",
+          "errorCode": null
+        },
+        {
+          "choiceId": "law:s3_over_s0_equals_cos_two_psi",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "coordinate-angle-transform",
+      "expectedChoiceIds": [
+        "rotation:psi_prime_equals_psi_minus_theta"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "rotation:psi_prime_equals_psi_minus_theta",
+          "errorCode": null
+        },
+        {
+          "choiceId": "rotation:psi_prime_equals_psi_plus_theta",
+          "errorCode": "EDE210A"
+        },
+        {
+          "choiceId": "rotation:psi_prime_equals_theta_minus_psi",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "equatorial-angle-transform",
+      "expectedChoiceIds": [
+        "rotation:two_psi_prime_equals_two_psi_minus_two_theta"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "rotation:two_psi_prime_equals_two_psi_minus_two_theta",
+          "errorCode": null
+        },
+        {
+          "choiceId": "rotation:two_psi_prime_equals_two_psi_plus_two_theta",
+          "errorCode": "EDE210A"
+        },
+        {
+          "choiceId": "rotation:equatorial_angle_equals_psi_minus_theta",
+          "errorCode": "EDE210B"
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-210-M1",
+      "partIds": [
+        "s0-law",
+        "s1-law",
+        "s2-law",
+        "s3-law"
+      ]
+    },
+    {
+      "milestoneId": "ED1-210-M2",
+      "partIds": [
+        "coordinate-angle-transform",
+        "equatorial-angle-transform"
+      ]
+    },
+    {
+      "milestoneId": "ED1-210-M3",
+      "partIds": [
+        "rotated-normalized-s1",
+        "rotated-normalized-s2",
+        "rotated-invariant"
+      ]
+    }
+  ]
+}

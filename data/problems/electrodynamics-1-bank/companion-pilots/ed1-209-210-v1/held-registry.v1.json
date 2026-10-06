@@ -1,0 +1,603 @@
+{
+  "schemaVersion": "proofanvil.exact-packet-companion-course-registry.v1",
+  "courseId": "electrodynamics-1",
+  "records": [
+    {
+      "schemaVersion": "proofanvil.exact-packet-companion.v1",
+      "courseId": "electrodynamics-1",
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:209",
+        "internalId": "PB-ORIGINAL:ED1-209",
+        "problemVersion": "proofbound-ed1-209-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+      },
+      "examAlignment": {
+        "applicability": "not_applicable",
+        "entries": null,
+        "reviewedNotApplicableRationale": "No versioned external examination syllabus is part of the checked-in ED1 authority, so this course-bank item makes no exam-family claim.",
+        "evidenceRefs": [
+          {
+            "kind": "independent_review",
+            "referenceId": "review:ed1:209:exam-alignment-v1",
+            "sha256": "38895eed9d51e526e876739a11a731ce66d86128854ebda689787b48ff1e7a13"
+          }
+        ]
+      },
+      "answerType": {
+        "kind": "multipart_mixed",
+        "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+        "rendererId": "multipart_v1",
+        "parts": [
+          {
+            "partId": "cross-term-conjugation",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "sphere-closure",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "s0",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "s1",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "s2",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "s3",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "normalized-s1",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "normalized-s2",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "normalized-s3",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "normalized-length",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "polarization-classification",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          }
+        ]
+      },
+      "accessibility": {
+        "visualDependency": "none",
+        "visuals": [],
+        "keyboardAnswerable": true,
+        "colorIndependent": true,
+        "screenReaderMath": "both"
+      },
+      "prerequisiteProblemIds": [],
+      "prerequisiteSkillIds": [
+        "elementary-electromagnetic-waves",
+        "stokes-parameters"
+      ],
+      "verificationAuthority": {
+        "mode": "deterministic_runtime",
+        "deterministicRuntime": {
+          "checkerId": "checker.ed1.209.stokes-sphere",
+          "checkerVersion": "v1",
+          "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+          "implementationSha256": "0eaf850bf5c5427a1ff5238d62f0e6b5f31632e4086f7e8c317b5b5189da1deb",
+          "parameterSha256": "c8818c9a97df1bc49b75021381c0cc55b4e5a539623ddcb512df51d2c9748de3",
+          "fixtureSetSha256": "1c96506b2bdca868722919bdb93f97fc6949af204eb5b351ab85912c6392d470",
+          "sourcePacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd",
+          "passingFixtureCount": 2,
+          "failingFixtureCount": 11,
+          "evidenceSha256": "7a1387f05b5b1173b0b89f2dfe975e7d64a3dcee0d42497faabbc0bfb7b3bc36",
+          "executionAuthority": "server_only_deterministic_runtime",
+          "coverage": "full",
+          "requiredResponsePartIds": [
+            "cross-term-conjugation",
+            "sphere-closure",
+            "s0",
+            "s1",
+            "s2",
+            "s3",
+            "normalized-s1",
+            "normalized-s2",
+            "normalized-s3",
+            "normalized-length",
+            "polarization-classification"
+          ],
+          "coveredResponsePartIds": [
+            "cross-term-conjugation",
+            "sphere-closure",
+            "s0",
+            "s1",
+            "s2",
+            "s3",
+            "normalized-s1",
+            "normalized-s2",
+            "normalized-s3",
+            "normalized-length",
+            "polarization-classification"
+          ]
+        },
+        "lean": null,
+        "reviewedSemanticRemainder": null,
+        "reviewedSemanticException": null
+      },
+      "completionDisposition": "held",
+      "coach": {
+        "delivery": "server_only",
+        "policyVersion": "proofanvil-coach-policy-v1",
+        "groundingVersion": "ed1-209-grounding-v1",
+        "groundingSha256": "f4302a6fbf9b3ebc2cdb840fe87c202b2575922f299692cca2c4aa2f1214789e",
+        "packetFieldSelectors": [
+          {
+            "field": "objective",
+            "access": "always"
+          },
+          {
+            "field": "statement",
+            "access": "always"
+          },
+          {
+            "field": "permittedResults",
+            "access": "always"
+          },
+          {
+            "field": "revealedHints",
+            "access": "revealed_only"
+          }
+        ],
+        "permittedHintRefs": [
+          "ed1-209-hint-1",
+          "ed1-209-hint-2",
+          "ed1-209-hint-3"
+        ],
+        "milestoneRefs": [
+          "ED1-209-M1",
+          "ED1-209-M2",
+          "ED1-209-M3"
+        ],
+        "misconceptionConceptRefs": [
+          "misconception:ed1:209:missing-conjugation",
+          "misconception:ed1:209:nonzero-s3-is-circular"
+        ],
+        "scaffoldStages": [
+          {
+            "stageId": "stage-1",
+            "objectiveRef": "objective:ed1:209:sphere-identity",
+            "allowedMoves": [
+              "orient",
+              "ask_diagnostic",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-2",
+            "objectiveRef": "objective:ed1:209:stokes-tuple",
+            "allowedMoves": [
+              "request_justification",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-3",
+            "objectiveRef": "objective:ed1:209:normalized-classification",
+            "allowedMoves": [
+              "ask_diagnostic",
+              "address_misconception",
+              "check_milestone",
+              "summarize_progress",
+              "escalate"
+            ]
+          }
+        ],
+        "allowedMoves": [
+          "orient",
+          "ask_diagnostic",
+          "request_justification",
+          "offer_hint",
+          "check_milestone",
+          "address_misconception",
+          "summarize_progress",
+          "escalate"
+        ],
+        "maxTurns": 12,
+        "nudgeAfterTurns": 3,
+        "terminalRules": [
+          "learner_solved",
+          "max_turns_reached",
+          "solution_access_authorized",
+          "safety_stop"
+        ],
+        "escalationRules": [
+          "repeated_blocker",
+          "suspected_content_defect",
+          "ambiguous_response",
+          "accessibility_blocker"
+        ],
+        "protectedFieldDelivery": "server_only",
+        "protectedPayloadIncluded": false
+      },
+      "digestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.record-digest.v1',record:record-without-recordSha256}))",
+      "recordSha256": "1dc4c6cce63eb04bb890ee429d96fa1e8b61b00ec7b15302a79f807209dc509a"
+    },
+    {
+      "schemaVersion": "proofanvil.exact-packet-companion.v1",
+      "courseId": "electrodynamics-1",
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:210",
+        "internalId": "PB-ORIGINAL:ED1-210",
+        "problemVersion": "proofbound-ed1-210-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+      },
+      "examAlignment": {
+        "applicability": "not_applicable",
+        "entries": null,
+        "reviewedNotApplicableRationale": "No versioned external examination syllabus is part of the checked-in ED1 authority, so this course-bank item makes no exam-family claim.",
+        "evidenceRefs": [
+          {
+            "kind": "independent_review",
+            "referenceId": "review:ed1:210:exam-alignment-v1",
+            "sha256": "38895eed9d51e526e876739a11a731ce66d86128854ebda689787b48ff1e7a13"
+          }
+        ]
+      },
+      "answerType": {
+        "kind": "multipart_mixed",
+        "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+        "rendererId": "multipart_v1",
+        "parts": [
+          {
+            "partId": "s0-law",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "s1-law",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "s2-law",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "s3-law",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "coordinate-angle-transform",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "equatorial-angle-transform",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "rotated-normalized-s1",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "rotated-normalized-s2",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "rotated-invariant",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          }
+        ]
+      },
+      "accessibility": {
+        "visualDependency": "none",
+        "visuals": [],
+        "keyboardAnswerable": true,
+        "colorIndependent": true,
+        "screenReaderMath": "both"
+      },
+      "prerequisiteProblemIds": [],
+      "prerequisiteSkillIds": [
+        "elementary-electromagnetic-waves",
+        "stokes-double-angle"
+      ],
+      "verificationAuthority": {
+        "mode": "deterministic_runtime",
+        "deterministicRuntime": {
+          "checkerId": "checker.ed1.210.rotated-stokes-angle",
+          "checkerVersion": "v1",
+          "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+          "implementationSha256": "0eaf850bf5c5427a1ff5238d62f0e6b5f31632e4086f7e8c317b5b5189da1deb",
+          "parameterSha256": "98d3ae6480359f48845392f1bb504b9687c88505f704a5604734b0c962e6ef1d",
+          "fixtureSetSha256": "1c96506b2bdca868722919bdb93f97fc6949af204eb5b351ab85912c6392d470",
+          "sourcePacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7",
+          "passingFixtureCount": 2,
+          "failingFixtureCount": 15,
+          "evidenceSha256": "7a1387f05b5b1173b0b89f2dfe975e7d64a3dcee0d42497faabbc0bfb7b3bc36",
+          "executionAuthority": "server_only_deterministic_runtime",
+          "coverage": "full",
+          "requiredResponsePartIds": [
+            "s0-law",
+            "s1-law",
+            "s2-law",
+            "s3-law",
+            "coordinate-angle-transform",
+            "equatorial-angle-transform",
+            "rotated-normalized-s1",
+            "rotated-normalized-s2",
+            "rotated-invariant"
+          ],
+          "coveredResponsePartIds": [
+            "s0-law",
+            "s1-law",
+            "s2-law",
+            "s3-law",
+            "coordinate-angle-transform",
+            "equatorial-angle-transform",
+            "rotated-normalized-s1",
+            "rotated-normalized-s2",
+            "rotated-invariant"
+          ]
+        },
+        "lean": null,
+        "reviewedSemanticRemainder": null,
+        "reviewedSemanticException": null
+      },
+      "completionDisposition": "held",
+      "coach": {
+        "delivery": "server_only",
+        "policyVersion": "proofanvil-coach-policy-v1",
+        "groundingVersion": "ed1-210-grounding-v1",
+        "groundingSha256": "03a0dfa4b20e6778da44add457574e5635d92dcfacda66739426daa0a4e00c97",
+        "packetFieldSelectors": [
+          {
+            "field": "objective",
+            "access": "always"
+          },
+          {
+            "field": "statement",
+            "access": "always"
+          },
+          {
+            "field": "permittedResults",
+            "access": "always"
+          },
+          {
+            "field": "revealedHints",
+            "access": "revealed_only"
+          }
+        ],
+        "permittedHintRefs": [
+          "ed1-210-hint-1",
+          "ed1-210-hint-2",
+          "ed1-210-hint-3"
+        ],
+        "milestoneRefs": [
+          "ED1-210-M1",
+          "ED1-210-M2",
+          "ED1-210-M3"
+        ],
+        "misconceptionConceptRefs": [
+          "misconception:ed1:210:add-axis-angle",
+          "misconception:ed1:210:single-angle-stokes"
+        ],
+        "scaffoldStages": [
+          {
+            "stageId": "stage-1",
+            "objectiveRef": "objective:ed1:210:linear-stokes-laws",
+            "allowedMoves": [
+              "orient",
+              "ask_diagnostic",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-2",
+            "objectiveRef": "objective:ed1:210:rotated-coordinate-angle",
+            "allowedMoves": [
+              "request_justification",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-3",
+            "objectiveRef": "objective:ed1:210:numeric-invariant",
+            "allowedMoves": [
+              "ask_diagnostic",
+              "address_misconception",
+              "check_milestone",
+              "summarize_progress",
+              "escalate"
+            ]
+          }
+        ],
+        "allowedMoves": [
+          "orient",
+          "ask_diagnostic",
+          "request_justification",
+          "offer_hint",
+          "check_milestone",
+          "address_misconception",
+          "summarize_progress",
+          "escalate"
+        ],
+        "maxTurns": 12,
+        "nudgeAfterTurns": 3,
+        "terminalRules": [
+          "learner_solved",
+          "max_turns_reached",
+          "solution_access_authorized",
+          "safety_stop"
+        ],
+        "escalationRules": [
+          "repeated_blocker",
+          "suspected_content_defect",
+          "ambiguous_response",
+          "accessibility_blocker"
+        ],
+        "protectedFieldDelivery": "server_only",
+        "protectedPayloadIncluded": false
+      },
+      "digestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.record-digest.v1',record:record-without-recordSha256}))",
+      "recordSha256": "52307b10de700ed7ff0e11d7adc1b7ce37f2228f9121e2bd7bf1cf0ff963830b"
+    }
+  ],
+  "courseReceipt": {
+    "scheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.course-receipt.v1',courseId,records:sorted-{target,recordSha256}}))",
+    "recordCount": 2,
+    "bindingSha256": "3f736452a17ba1206064e453e92829a8f516b1299de36ecd2b4386fcf3851d87"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "proofanvil.ed1-209-210-held-companion-batch-hold.v1",
+  "state": "held_prospective",
+  "targets": [
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:209",
+      "internalId": "PB-ORIGINAL:ED1-209",
+      "problemVersion": "proofbound-ed1-209-v1",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:210",
+      "internalId": "PB-ORIGINAL:ED1-210",
+      "problemVersion": "proofbound-ed1-210-v1",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+    }
+  ],
+  "deterministicCoreExecutionEvidence": true,
+  "completionDisposition": "held",
+  "holdCode": "learner_runtime_not_implemented",
+  "requiredBeforeReady": [
+    "bind and browser-test an executable multipart renderer",
+    "install fail-closed deterministic dispatch before provider selection",
+    "persist deterministic attempts idempotently without reserving an AI credit",
+    "deliver Coach grounding from a protected server store",
+    "reproduce accessibility assertions against the executable renderer",
+    "append exact companion records to the live registry through a separately authorized admission"
+  ],
+  "authorityBoundary": {
+    "admissionAuthority": false,
+    "currentSelectionAuthority": false,
+    "liveRegistryAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "coachDeliveryAuthority": false,
+    "persistenceAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "uiAuthority": false,
+    "accessibilityAuthority": false,
+    "learnerBehaviorMutation": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  }
+}

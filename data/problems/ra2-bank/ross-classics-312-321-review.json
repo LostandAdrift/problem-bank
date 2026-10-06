@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "proofbound.ra2-adversarial-review.v1",
+  "batch": "ross-classics-312-321",
+  "candidateSha256": "53eb6046650b9b03c9e79ca47788010077070cbdb31e7572048e0e67f23ada71",
+  "reviewedAt": "2026-08-09T03:55:00Z",
+  "reviewer": {
+    "kind": "ai_adversarial_review",
+    "modelFamily": "OpenAI Codex Sol",
+    "independentContext": false
+  },
+  "checklist": ["mathematical_accuracy", "lhospital_hypotheses", "classic_exam_value", "cross_bank_redundancy", "hint_progression", "solution_completeness", "lean_draft_structure"],
+  "summary": {
+    "problemsReviewed": 10,
+    "accepted": 10,
+    "releaseBlockers": 0,
+    "manualReviewWarnings": 0,
+    "exactCrossBankDuplicates": 0,
+    "examClassics": 7,
+    "deliberateTraps": 3,
+    "uniqueTitles": 10,
+    "uniqueErrorCodes": 20
+  },
+  "coverage": {
+    "classicForms": ["trigonometric_third_order", "cosine_quadratic", "polynomial_over_exponential", "one_to_infinity", "infinity_to_zero", "zero_times_infinity", "variable_power_at_infinity"],
+    "trapForms": ["non_indeterminate_negative_infinity_over_zero", "zero_over_zero_with_divergent_derivative_ratio", "infinity_over_infinity_with_divergent_derivative_ratio"]
+  },
+  "redundancyDecisions": [
+    {"ordinals": [308, 315], "decision": "retain", "reason": "Both are one-to-infinity forms, but the new item is the canonical large-x exam form and provides deliberate retrieval variation."},
+    {"ordinals": [306, 317], "decision": "retain", "reason": "The power-times-logarithm variant tests whether the learner can generalize the quotient conversion beyond the memorized x log x case."},
+    {"ordinals": [311, 320], "decision": "retain", "reason": "The new item is the simplest canonical demonstration that L'Hospital is not a converse; the earlier item is a harder oscillatory construction."},
+    {"ordinals": [33, 319], "decision": "retain", "reason": "The older problem studies derivative discontinuity; the new problem uses the same function family to audit a failed L'Hospital hypothesis."}
+  ],
+  "items": [
+    {"ordinal": 312, "disposition": "accepted", "accuracy": "Three derivative stages give 1/3.", "hypotheses": "Every intermediate zero-over-zero form is identified.", "hintAudit": "Cascades through derivative checkpoints without stating the answer.", "solutionAudit": "Complete."},
+    {"ordinal": 313, "disposition": "accepted", "accuracy": "Two applications give 1/2.", "hypotheses": "Punctured nonvanishing of 2x and then 2 is explicit.", "hintAudit": "Appropriate for difficulty two.", "solutionAudit": "Complete."},
+    {"ordinal": 314, "disposition": "accepted", "accuracy": "Four applications reduce x^4/e^x to 24/e^x and then zero.", "hypotheses": "The infinity-over-infinity form and nonzero exponential derivative are explicit.", "hintAudit": "Emphasizes the stopping rule.", "solutionAudit": "Complete."},
+    {"ordinal": 315, "disposition": "accepted", "accuracy": "The logarithmic limit is four, hence the answer is e^4.", "hypotheses": "Positive base and zero-over-zero logarithmic quotient are addressed.", "hintAudit": "Transformation, derivative, recovery.", "solutionAudit": "Complete."},
+    {"ordinal": 316, "disposition": "accepted", "accuracy": "The logarithmic quotient tends to zero, hence the answer is one.", "hypotheses": "Positive domain and infinity-over-infinity form are explicit.", "hintAudit": "Does not conflate the log limit with the original limit.", "solutionAudit": "Complete."},
+    {"ordinal": 317, "disposition": "accepted", "accuracy": "The derivative quotient is -x^2/2 and tends to zero.", "hypotheses": "The product is converted before the theorem is used.", "hintAudit": "Specifically guards against differentiating factors separately.", "solutionAudit": "Complete."},
+    {"ordinal": 318, "disposition": "accepted", "accuracy": "The limit is negative infinity by t=1/x and comparison.", "hypotheses": "Correctly rejects L'Hospital because the form is negative infinity over zero, not an admitted indeterminate quotient.", "hintAudit": "Form classification comes before computation.", "solutionAudit": "Complete."},
+    {"ordinal": 319, "disposition": "accepted", "accuracy": "The original ratio is squeezed to zero while derivative subsequences tend to -1 and 1.", "hypotheses": "Correctly shows the derivative-ratio limit is missing.", "hintAudit": "Separates direct evaluation from theorem audit.", "solutionAudit": "Complete."},
+    {"ordinal": 320, "disposition": "accepted", "accuracy": "The original ratio tends to two while derivative subsequences equal three and one.", "hypotheses": "Correctly teaches that the theorem is not a converse.", "hintAudit": "Uses the shortest direct estimate.", "solutionAudit": "Complete."},
+    {"ordinal": 321, "disposition": "accepted", "accuracy": "The logarithmic limit is negative one, hence the answer is e^-1.", "hypotheses": "Positive domain and zero-over-zero logarithmic form are explicit.", "hintAudit": "Preserves the final exponentiation step.", "solutionAudit": "Complete."}
+  ],
+  "admission": {
+    "status": "reviewed_candidate",
+    "runtimeIncluded": false,
+    "reason": "Mathematics and pedagogy are accepted; exact public bindings require the already completed collision preflight and regenerated bank receipt."
+  }
+}

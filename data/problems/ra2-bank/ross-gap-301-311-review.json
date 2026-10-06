@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "proofbound.ra2-adversarial-review.v1",
+  "batch": "ross-gap-301-311",
+  "candidateSha256": "fed36badcfd4f02bd86dc4aa37b1b006952d4e95c7c6c72b457a9ed28703b19c",
+  "reviewedAt": "2026-08-09T03:18:00Z",
+  "reviewer": {
+    "kind": "ai_adversarial_review",
+    "modelFamily": "OpenAI Codex Sol",
+    "independentContext": false
+  },
+  "checklist": ["mathematical_accuracy", "theorem_hypotheses", "cross_bank_redundancy", "hint_progression", "solution_completeness", "student_facing_clarity", "lean_draft_structure"],
+  "summary": {
+    "problemsReviewed": 11,
+    "accepted": 11,
+    "releaseBlockers": 0,
+    "manualReviewWarnings": 0,
+    "exactCrossBankDuplicates": 0,
+    "uniqueTitles": 11,
+    "uniqueErrorCodes": 22,
+    "section28Analogues": 3,
+    "section30LHospital": 8
+  },
+  "redundancyDecisions": [
+    {
+      "ordinals": [304, 310],
+      "decision": "retain",
+      "reason": "The first problem teaches a necessary second application; the second deliberately tests third-order bookkeeping and repeated hypothesis checks."
+    },
+    {
+      "ordinals": [306, 309],
+      "decision": "retain",
+      "reason": "The shared logarithmic sublimit is intentional retrieval practice; ordinal 309 adds the separate zero-to-zero power transformation."
+    },
+    {
+      "ordinals": [302, 303],
+      "decision": "retain",
+      "reason": "The first separates continuity from differentiability through oscillation; the second uses two dense sets and has a derivative despite discontinuity everywhere else."
+    }
+  ],
+  "items": [
+    {"ordinal": 301, "disposition": "accepted", "accuracy": "Difference quotient simplifies to -3/[2(2+h)] and tends to -3/4.", "hypotheses": "Domain restriction and h nonzero are explicit.", "hints": "Three-step cascade preserves the final limit for the learner.", "solution": "Complete."},
+    {"ordinal": 302, "disposition": "accepted", "accuracy": "Continuity squeeze and the two cosine subsequences are correct.", "hypotheses": "Both sequences are nonzero and tend to zero.", "hints": "Orientation, quotient, then construction.", "solution": "Complete."},
+    {"ordinal": 303, "disposition": "accepted", "accuracy": "The dense-set continuity argument and derivative bound by |h|^3 are correct.", "hypotheses": "The nonzero-point argument uses a^4 nonzero.", "hints": "Progresses from squeeze to density to derivative.", "solution": "Complete."},
+    {"ordinal": 304, "disposition": "accepted", "accuracy": "Two L'Hospital applications yield 1/2.", "hypotheses": "Both zero-over-zero forms and punctured nonzero denominator derivatives are stated.", "hints": "Each hint reveals only the next derivative stage.", "solution": "Complete."},
+    {"ordinal": 305, "disposition": "accepted", "accuracy": "The derivative ratio is 2/sqrt(x), tending to zero.", "hypotheses": "Positive domain and infinity-over-infinity form are explicit.", "hints": "Appropriately short for difficulty 2.", "solution": "Complete."},
+    {"ordinal": 306, "disposition": "accepted", "accuracy": "The product rewrite gives derivative ratio -x and limit zero.", "hypotheses": "The right-hand domain and nonzero denominator derivative are explicit.", "hints": "Requires the learner to perform the quotient conversion.", "solution": "Complete."},
+    {"ordinal": 307, "disposition": "accepted", "accuracy": "The combined quotient and both derivatives are correct; the limit is one.", "hypotheses": "Local nonvanishing is asserted on a sufficiently small punctured neighborhood.", "hints": "The final hint supplies a checkpoint, not the answer.", "solution": "Complete."},
+    {"ordinal": 308, "disposition": "accepted", "accuracy": "The logarithmic limit is six, hence the original limit is e^6.", "hypotheses": "Positive-base restriction is in the statement.", "hints": "Separates transformation, theorem use, and recovery.", "solution": "Complete."},
+    {"ordinal": 309, "disposition": "accepted", "accuracy": "x log x tends to zero, so x^x tends to one.", "hypotheses": "The right-hand positive domain permits logarithms.", "hints": "The final exponentiation remains for the student.", "solution": "Complete."},
+    {"ordinal": 310, "disposition": "accepted", "accuracy": "Three successive derivative quotients yield 1/6.", "hypotheses": "Every intermediate zero-over-zero form and punctured nonvanishing condition is addressed.", "hints": "Provides auditable checkpoints for repeated differentiation.", "solution": "Complete."},
+    {"ordinal": 311, "disposition": "accepted", "accuracy": "The original ratio is squeezed to one while derivative ratios equal three and negative one on two sequences.", "hypotheses": "Correctly teaches that L'Hospital is sufficient, not a converse.", "hints": "Direct estimate precedes the counterexample sequences.", "solution": "Complete."}
+  ],
+  "admission": {
+    "status": "reviewed_candidate",
+    "runtimeIncluded": false,
+    "reason": "Content is accepted; public IDs and runtime packet bindings require collision preflight and a separate exact admission receipt."
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-coach-grounding-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:161",
+        "internalId": "PB-ORIGINAL:ED1-161",
+        "problemVersion": "proofbound-ed1-161-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-161-grounding-v1",
+      "skillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "gaussian-pillbox",
+        "surface-charge-jump",
+        "sheet-field-sign"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:161:jump",
+          "description": "Derive the oriented normal electric-field jump from the pillbox flux."
+        },
+        {
+          "objectiveRef": "objective:ed1:161:isolated-sheet",
+          "description": "Apply isolated-sheet symmetry to determine both one-sided field vectors."
+        },
+        {
+          "objectiveRef": "objective:ed1:161:numeric-audit",
+          "description": "Check the numerical magnitude, sign, and SI field units."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:161:pillbox-orientation",
+          "sourceErrorCode": "EDE161A",
+          "description": "Using the declared interface normal on both pillbox faces."
+        },
+        {
+          "conceptRef": "misconception:ed1:161:full-jump-per-side",
+          "sourceErrorCode": "EDE161B",
+          "description": "Assigning the full jump magnitude to each one-sided field."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-161-hint-1",
+        "ed1-161-hint-2",
+        "ed1-161-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-161-M1",
+        "ED1-161-M2",
+        "ED1-161-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:162",
+        "internalId": "PB-ORIGINAL:ED1-162",
+        "problemVersion": "proofbound-ed1-162-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-162-grounding-v1",
+      "skillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "amperian-rectangle",
+        "sheet-current-orientation",
+        "magnetic-jump-sign"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:162:circulation",
+          "description": "Derive the signed Amperian circulation from the declared surface orientation."
+        },
+        {
+          "objectiveRef": "objective:ed1:162:jump",
+          "description": "Apply the magnetic jump to obtain the upper one-sided field."
+        },
+        {
+          "objectiveRef": "objective:ed1:162:invariance",
+          "description": "Verify orientation-reversal invariance and SI dimensions."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:162:loop-orientation",
+          "sourceErrorCode": "EDE162A",
+          "description": "Traversing the upper segment in the direction incompatible with the surface normal."
+        },
+        {
+          "conceptRef": "misconception:ed1:162:missing-length",
+          "sourceErrorCode": "EDE162B",
+          "description": "Treating surface-current density as enclosed current without the segment length."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-162-hint-1",
+        "ed1-162-hint-2",
+        "ed1-162-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-162-M1",
+        "ED1-162-M2",
+        "ED1-162-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:201",
+        "internalId": "PB-ORIGINAL:ED1-201",
+        "problemVersion": "proofbound-ed1-201-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-201-grounding-v1",
+      "skillIds": [
+        "elementary-electromagnetic-waves",
+        "faraday-wave-audit",
+        "plane-wave-sign",
+        "poynting-direction"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:201:faraday-sign",
+          "description": "Match the two signed derivatives in Faraday's law."
+        },
+        {
+          "objectiveRef": "objective:ed1:201:amplitude-phase",
+          "description": "Compute the magnetic amplitude and identify the in-phase relation."
+        },
+        {
+          "objectiveRef": "objective:ed1:201:energy-units",
+          "description": "Check forward Poynting direction and the dimensionally valid amplitude ratio."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:201:time-derivative-sign",
+          "sourceErrorCode": "EDE201A",
+          "description": "Losing the sign from differentiating the time-dependent cosine."
+        },
+        {
+          "conceptRef": "misconception:ed1:201:b-equals-c-e",
+          "sourceErrorCode": "EDE201B",
+          "description": "Using the dimensionally invalid relation B equals c times E."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-201-hint-1",
+        "ed1-201-hint-2",
+        "ed1-201-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-201-M1",
+        "ED1-201-M2",
+        "ED1-201-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    }
+  ]
+}

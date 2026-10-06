@@ -1,0 +1,590 @@
+{
+  "schemaVersion": "proofanvil.ed1-versioned-successor-release-closure.v2",
+  "state": "held_release_closure_not_admitted",
+  "courseId": "electrodynamics-1",
+  "reviewedBankIdentity": "proofanvil-ed1-current-240-versioned-successors-v2",
+  "exactAuthority": {
+    "prospectiveManifestRawSha256": "c514dcb1e972d9417aaf07a06dcc310e65eead82754a097f7a09420d215925ee",
+    "currentReviewRawSha256": "cb76f420a0e2813261f06ac72be7d8c6a78a859fff2bf362d742abb636aa9bd6",
+    "currentReviewArtifactSha256": "02b7864b88e6d40c64e52fe5e40c3131c2c5be5066e8adc06b8af9ed762a7d26",
+    "currentPacketBindingSha256": "126400bb35ad3ac2a861677bdbcfade0cf2985b93d48d8c38ae1fa830618c901",
+    "currentExactTargetCount": 2904,
+    "currentExactTargetBindingSha256": "12338e8f460a7085d5a45701ba7264e11d4abdc197fc1dc629d93a38a01ac03f",
+    "ed1CurrentPacketCount": 240,
+    "ed1SuccessorPacketCount": 167,
+    "ed1HistoricalPredecessorCount": 167,
+    "ed1SnapshotCount": 407,
+    "rubricOmissionAmbiguityCount": 109
+  },
+  "dataBindings": [
+    {
+      "role": "sealed_predecessor",
+      "path": "data/problems/electrodynamics-1-bank/predecessor-authority.v1.json",
+      "rawSha256": "a3923654e5a96d04a1cd39b64c0e977700f1e71a0ddcd1805a227ece2c739821",
+      "artifactSha256": "8f33fc4666682dbc98307593a04c3ce5c7612b34c18d1b63926d719720fabacb"
+    },
+    {
+      "role": "predecessor_manifest",
+      "path": "data/problems/electrodynamics-1-bank/predecessor-checked-in-packet-manifest.v1.json",
+      "rawSha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef",
+      "artifactSha256": null
+    },
+    {
+      "role": "predecessor_packets",
+      "path": "data/problems/electrodynamics-1-bank/packets.json",
+      "rawSha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78",
+      "artifactSha256": null
+    },
+    {
+      "role": "predecessor_catalog",
+      "path": "data/problems/electrodynamics-1-bank/catalog.json",
+      "rawSha256": "d60236424e1ee76cdf7012b461abba55371685ae0387180e9c3706eab46320fc",
+      "artifactSha256": null
+    },
+    {
+      "role": "fixed_successor_registry",
+      "path": "data/problems/electrodynamics-1-bank/versioned-successors.v2.json",
+      "rawSha256": "c6430fdae6349ca33ab792ff4ef9e053216056330526aef4dff90df35f7bd239",
+      "artifactSha256": null
+    },
+    {
+      "role": "successor_evidence_manifest",
+      "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/manifest.v1.json",
+      "rawSha256": "8089c26d409434cdcb6e3fda13630e7ffe2b4c2d6877621ae2ece801d36eded2",
+      "artifactSha256": "658b1356e9969550bc6cd45a6893447dd86a2f5030c0c12db1e8ca251d9d0c1d"
+    },
+    {
+      "role": "successor_scope_authority",
+      "path": "data/problems/electrodynamics-1-bank/versioned-successor-scope-authority.v2.json",
+      "rawSha256": "bd769958c9b45c5d7738a05e2b982364ad11dafda5e81686fc99a3764b583a92",
+      "artifactSha256": "1a36ba04ddf4ae4c3f8daa92a41cb15a9db9e87db9019a9b1279de9571dfb330"
+    },
+    {
+      "role": "independent_review",
+      "path": "data/problems/electrodynamics-1-bank/versioned-successors-independent-review.v2.json",
+      "rawSha256": "e3396edb78843f5465df57bde7ee95251242d0c73f675cd31e22e285dbfb6200",
+      "artifactSha256": "32785efd7874a6903f16cb69c7d0647c65f794e1160d21ff842df9c6cc521f0c"
+    },
+    {
+      "role": "successor_packets",
+      "path": "data/problems/electrodynamics-1-bank/successor-packets.v2.json",
+      "rawSha256": "76aef6e834313ac93aa35fbd5042ab64900ecf8ece4bccff7e296e0acc6ae73e",
+      "artifactSha256": null
+    },
+    {
+      "role": "successor_catalog",
+      "path": "data/problems/electrodynamics-1-bank/successor-catalog.v2.json",
+      "rawSha256": "b38b1719a8461068c7918b44d86d9bb80e51a41e8f34325433fa9dfad05ba30b",
+      "artifactSha256": null
+    },
+    {
+      "role": "successor_overlay_receipt",
+      "path": "data/problems/electrodynamics-1-bank/successor-overlay-receipt.v2.json",
+      "rawSha256": "e9439d3cd10bad07133353073d504cb62235e6896db63e3fbc223101996b58b2",
+      "artifactSha256": "23ab714a752baa11afa3b6534988aad78bbfea4ba24e33cbc6d76642df449930"
+    },
+    {
+      "role": "prospective_manifest",
+      "path": "data/problems/electrodynamics-1-bank/prospective-checked-in-packet-manifest.v2.json",
+      "rawSha256": "c514dcb1e972d9417aaf07a06dcc310e65eead82754a097f7a09420d215925ee",
+      "artifactSha256": null
+    },
+    {
+      "role": "current_review",
+      "path": "data/problems/electrodynamics-1-bank/successor-current-review-authority.v2.json",
+      "rawSha256": "cb76f420a0e2813261f06ac72be7d8c6a78a859fff2bf362d742abb636aa9bd6",
+      "artifactSha256": "02b7864b88e6d40c64e52fe5e40c3131c2c5be5066e8adc06b8af9ed762a7d26"
+    },
+    {
+      "role": "atomic_admission_plan",
+      "path": "data/problems/electrodynamics-1-bank/successor-atomic-admission-plan.v2.json",
+      "rawSha256": "7a007dc7cea7b63e6c48b47cd2879f915ef961d95e319a892351818094813016",
+      "artifactSha256": "0325a6550c35e4401f5489ebbe64e44c6d1fe5c085cc2883fb7c4e1d7e347544"
+    },
+    {
+      "role": "held_successor_final",
+      "path": "data/test-finals/electrodynamics-1-slot-authority.successor-current.v2.json",
+      "rawSha256": "a487127982b44a98e3a7002d1b8f61792020d72bf73c39117c0f727865b1bef2",
+      "artifactSha256": "7acd701356b88c944b96cba7f0af3f6f4a8c74a964798a61130c000bfbc67052"
+    },
+    {
+      "role": "successor_lean_authority",
+      "path": "data/problems/electrodynamics-1-bank/successor-lean-snapshot-authority.v1.json",
+      "rawSha256": "c7fbe16f049b6ed5887ac0be0b016afdbfe990d8218a6608b50767efae619872",
+      "artifactSha256": "11524e6336e3449c540aaa3143159907e287b5912e88e64488e5ace115f13fcf"
+    },
+    {
+      "role": "predecessor_final_history",
+      "path": "data/test-finals/electrodynamics-1-slot-authority-history.v1.json",
+      "rawSha256": "822249d98c5e42397781735b66f0bf0bd0c6cf99267fa438645b0729731003cf",
+      "artifactSha256": "90e6cf93e8e4924dd5368f9dcf0a710365e6d1f658b84410760efda645be190e"
+    },
+    {
+      "role": "dormant_live_final",
+      "path": "data/test-finals/electrodynamics-1-slot-authority.successor-live.v2.json",
+      "rawSha256": "c5335bd2dcd8c9f006663745e1a24270c44c6801ede36a64af3ab053d5ff98b0",
+      "artifactSha256": "08c1c80d4cc08bdfcf39a121f011600a0de0e515fc9354cf2932c0648c6cb438"
+    }
+  ],
+  "productionBindings": [
+    {
+      "path": "app/api/grade/route.ts",
+      "rawSha256": "e7a0a8c3791ad0f24e4ec8d8cbb36aa3f2df95e07ca7a4bfbf64ce2f1b9fba4b"
+    },
+    {
+      "path": "lib/catalog.ts",
+      "rawSha256": "2eeae5263f6f7daf96368330928b6d8953056554a08ea28081456b04407ffda6"
+    },
+    {
+      "path": "lib/grading/problem-packets.ts",
+      "rawSha256": "2952b94a0bcea3c11e72287ea17f37b561d6ebdefc77737828a5feea6579b3d3"
+    },
+    {
+      "path": "lib/learning/lean-verification.ts",
+      "rawSha256": "60435ac52efdf3ed8c07b42c8f03fa59add70d53351e0e3b0cbc7000b81d8076"
+    },
+    {
+      "path": "lib/learning/runtime-version-reference.ts",
+      "rawSha256": "8144dbb32dfac98975fcdc73ca149961469e7a8b7d229bcd62ac429863b8dadf"
+    },
+    {
+      "path": "lib/management/ed1-current-version-pointer.ts",
+      "rawSha256": "f697d25b2021bd909d35253db0d391d380e207045263afac0bb7381e79c91998"
+    },
+    {
+      "path": "lib/management/ed1-reviewed-alpha-bank.ts",
+      "rawSha256": "fc43dff53a7743f2b827b30d3530795a66f90a5e613e535fbfd7a815296f50ce"
+    },
+    {
+      "path": "lib/management/ed1-successor-current-final-authority.ts",
+      "rawSha256": "0a7f74c02a7697134ecd64e4c1697edc410f54c98b62647f6462765478a1e298"
+    },
+    {
+      "path": "lib/management/ed1-successor-lean-snapshot-authority.ts",
+      "rawSha256": "5b38320cfb296e764096b1254927cb7090ec5393fd29e86a0dd7a91ac6db8b36"
+    },
+    {
+      "path": "lib/management/exact-packet-companion.ts",
+      "rawSha256": "a93d2b173cc41d1c1781a8b416e98d89a5298112e974598793028dfd017d2e26"
+    },
+    {
+      "path": "lib/server/exact-problem-companions.ts",
+      "rawSha256": "b7382382e7a40c8e38bcd3e167fbed08a3ee7d595464fad7cb59f249e51d7c17"
+    },
+    {
+      "path": "lib/server/mock-exam-blueprint.ts",
+      "rawSha256": "9d12d115e7b5f7d81a834b63b12a5e223b70643cb2994aeefdc1d1dda1c85fac"
+    },
+    {
+      "path": "lib/server/mock-exam-store.ts",
+      "rawSha256": "3cd009ecc4f130c4a3c7a8bc38125d428119e7dd76b4bde31726cf59abd5dc40"
+    },
+    {
+      "path": "lib/server/runtime-problems.ts",
+      "rawSha256": "ae5b1531ebe2b2581f4823362d0e18edada30e8782cfd63fa487cf4f5fde3535"
+    },
+    {
+      "path": "lib/server/test-final-slot-authority.ts",
+      "rawSha256": "9354ebb0d16315b32f90a9aabacd92c86c5626c7c8c23bb6510214ffa5a12ce5"
+    },
+    {
+      "path": "scripts/admit-electrodynamics-1-versioned-successors.mts",
+      "rawSha256": "45e86ff7593b6080f6cfc3079e719614eba728ac3bfb491db3346108b9a20c80"
+    },
+    {
+      "path": "scripts/generate-electrodynamics-1-successor-admission-authority.mts",
+      "rawSha256": "02f66139d89a9a77f6c20ae1d54334397af7c5570ff3025a9bd21b410a429413"
+    },
+    {
+      "path": "scripts/generate-electrodynamics-1-successor-current-final-authority.mts",
+      "rawSha256": "7f33f3f7b7cfcbfea6960047e69517f98aab470019057ca8ca8f831a608782f8"
+    },
+    {
+      "path": "scripts/generate-electrodynamics-1-successor-lean-snapshot-authority.mts",
+      "rawSha256": "e40e42e393faa132368809a8263deeca2182c3bb996a07034a756d886c3887b4"
+    },
+    {
+      "path": "scripts/generate-electrodynamics-1-successor-overlay.mts",
+      "rawSha256": "11da5467bb44358fac52ac34fa50a90952bd39479837f5251e220ceff31c4759"
+    },
+    {
+      "path": "scripts/generate-electrodynamics-1-versioned-successors-independent-review.mts",
+      "rawSha256": "bd84e89c0fe61869a7be48576dfca86a88d1c6fe8e70d14c7fff7e275c69d32c"
+    },
+    {
+      "path": "scripts/lib/electrodynamics-1-successor-admission-authority-loader.mts",
+      "rawSha256": "da9d2de49702fe426482dc5d4b0e75936efa9ce42bd8e9178d7fdd734d06aaee"
+    },
+    {
+      "path": "scripts/lib/electrodynamics-1-versioned-successor-registry-loader.mts",
+      "rawSha256": "f03af7999c1e72ce83b9b48d8edc2819c4790a94732641b467c463c0f2fc7bfe"
+    },
+    {
+      "path": "scripts/verify-checked-in-problem-bank-stability.mts",
+      "rawSha256": "06f0d2f558c16e0cb96b20169a75b6df83216944d065f9138615fe36b55021ec"
+    },
+    {
+      "path": "scripts/verify-electrodynamics-1-current-version-state.mts",
+      "rawSha256": "6412cb8300aedd3d017f61a5227e0a4cb2008484715a463c90d07eb6c18ca2a8"
+    },
+    {
+      "path": "scripts/verify-exact-packet-companions.mts",
+      "rawSha256": "348b6faac3b710d94840a8e766d9bcfe1aa3516b78abae14e9f01d27abced544"
+    },
+    {
+      "path": "scripts/verify-lean-pilot.mjs",
+      "rawSha256": "edf744e1e4aa4286402e250bd4db74c3c6c6225761ff6ae45ee56370bed39d05"
+    }
+  ],
+  "companionClosure": {
+    "candidateManifestPath": "data/learning/exact-packet-companion-manifest.successor-candidate.v1.json",
+    "candidateManifestRawSha256": "ac5466e41397a6102697ec76351417d39ce629f3336b7793459566807f06e62c",
+    "heldAuthorityPath": "data/problems/electrodynamics-1-bank/held-future-companion-authority.v2.json",
+    "heldAuthorityRawSha256": "2a968b79687058ba0fcc6b86e834131d6b37a13f0d0d85db5021e1d57e3b2c88",
+    "heldAuthorityArtifactSha256": "82f8184f0b827d1681c80ba022a96b7daf83f1e782c162ebaf29e1fb0f4092ae",
+    "enforcement": "shadow",
+    "ed1RecordCount": 0,
+    "ed1ResolvedCurrentCount": 0,
+    "ed1CompletionClaim": false
+  },
+  "finalClosure": {
+    "heldArtifactPath": "data/test-finals/electrodynamics-1-slot-authority.successor-current.v2.json",
+    "heldArtifactRawSha256": "a487127982b44a98e3a7002d1b8f61792020d72bf73c39117c0f727865b1bef2",
+    "heldArtifactSha256": "7acd701356b88c944b96cba7f0af3f6f4a8c74a964798a61130c000bfbc67052",
+    "dormantLivePath": "data/test-finals/electrodynamics-1-slot-authority.successor-live.v2.json",
+    "dormantLiveRawSha256": "c5335bd2dcd8c9f006663745e1a24270c44c6801ede36a64af3ab053d5ff98b0",
+    "dormantLiveArtifactSha256": "08c1c80d4cc08bdfcf39a121f011600a0de0e515fc9354cf2932c0648c6cb438",
+    "contentProjectionBindingScheme": "proofanvil.ed1-successor-live-final-content-projection.v2",
+    "contentProjectionSha256": "1527660b79d46875facfe867d2655cddfe753c98acdc905a91f11e0b69ad4100",
+    "contentProjection": {
+      "schemaVersion": "proofanvil.ed1-final-slot-authority.v2",
+      "state": "candidate_requires_atomic_admission",
+      "courseId": "electrodynamics-1",
+      "heldArtifactSha256": "7acd701356b88c944b96cba7f0af3f6f4a8c74a964798a61130c000bfbc67052",
+      "currentReviewArtifactSha256": "02b7864b88e6d40c64e52fe5e40c3131c2c5be5066e8adc06b8af9ed762a7d26",
+      "currentPacketBindingSha256": "126400bb35ad3ac2a861677bdbcfade0cf2985b93d48d8c38ae1fa830618c901",
+      "blueprints": [
+        {
+          "blueprintKey": "ed1-final-a-on-level-v1",
+          "durationMinutes": 330,
+          "authorityAsOf": "55c1fa04f6adeb1dcbdeea132b884f70e8e231dfc8617df39f5fc6d3ba6ead34",
+          "selectionSha256": "351a2f0c519eb4fed836a460654e5cf38b61554e842b00941d540d01053b41c6",
+          "assignments": [
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 1,
+              "publicProblemId": "ED:006",
+              "internalId": "PB-ORIGINAL:ED1-006",
+              "problemVersion": "proofbound-ed1-006-v1",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "35c36efd689b495d9dfc616accbf4b5f25c02e7ec1f8169eb1fe5993ac158836",
+              "versionReference": "prv1_e44b9c75a03bef776be5fcfec709ebc0c0e5eb492e4b2f4a55c0f765ab8a089b",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "478f88baeaec7de41f9292f21de74693f894161503a1d083cbbfecb18aa0f785",
+              "fixedSuccessorRecordSha256": "849a16933f50d0705dcf576a5ea20ffe98d724ef3eafcb0a444b6ef715adf069",
+              "approvalEvidenceSha256": "478f88baeaec7de41f9292f21de74693f894161503a1d083cbbfecb18aa0f785"
+            },
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 2,
+              "publicProblemId": "ED:029",
+              "internalId": "PB-ORIGINAL:ED1-029",
+              "problemVersion": "proofbound-ed1-029-v1",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "1f3cef95c734ce832cde054fa421687a495b6228a7c4a9e6765861804fda5683",
+              "versionReference": "prv1_a4a55e4e63fbc34c73050dd61567637cf663d2daa0e143df8a07c085b600e481",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "7d03211a9047776a06d0c5edd421562d813a663530d0294512d870a6d1e4a063",
+              "fixedSuccessorRecordSha256": "7a80006047252c135eecb55e77d2cc2abf4a6ba9e9f6034b197885afa42de0c1",
+              "approvalEvidenceSha256": "7d03211a9047776a06d0c5edd421562d813a663530d0294512d870a6d1e4a063"
+            },
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 3,
+              "publicProblemId": "ED:047",
+              "internalId": "PB-ORIGINAL:ED1-047",
+              "problemVersion": "proofbound-ed1-047-v2",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "752a24390a12762feebad8e5236b208793a4084680b8fd3fb75ecf5f5aefccf1",
+              "versionReference": "prv1_26a5cc523628aa98abe7eb40fd2bc02c41ce2bf13968f8f1b81ad3861745a84f",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "f21a7da20e1438cdb6cce6b95e82406c8c4a012f14ca830abf52140ab7fa2b5b",
+              "fixedSuccessorRecordSha256": "73e0f4a3ec19ff39e4a7563ec639f8e1e7a2555605929e01d0933fc7e7cfa97e",
+              "approvalEvidenceSha256": "f21a7da20e1438cdb6cce6b95e82406c8c4a012f14ca830abf52140ab7fa2b5b"
+            },
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 4,
+              "publicProblemId": "ED:095",
+              "internalId": "PB-ORIGINAL:ED1-095",
+              "problemVersion": "proofbound-ed1-095-v2",
+              "rubricVersion": "v1",
+              "canonicalPacketSha256": "21439f444b942df44d879cdabb9336dde7cf87e3e78737b43f9018e43ec87fb9",
+              "versionReference": "prv1_7950466e8468da60e996ff0a6f0dc65dd35e19b671f5d27472b5afa640252e6b",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "7b284540f2dc34f1932c871f8148cd4c9c4713f9c8d06c1de52698ebc63d9b14",
+              "fixedSuccessorRecordSha256": "4322eded3509b1e75877272265a423ed233717ebb3349662745fd3a9c22a8e52",
+              "approvalEvidenceSha256": "7b284540f2dc34f1932c871f8148cd4c9c4713f9c8d06c1de52698ebc63d9b14"
+            },
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 5,
+              "publicProblemId": "ED:134",
+              "internalId": "PB-ORIGINAL:ED1-134",
+              "problemVersion": "proofbound-ed1-134-v2",
+              "rubricVersion": "v1",
+              "canonicalPacketSha256": "60b7d9d340627223a744bfe58072f602a95b22f62889c517e49940f064f65962",
+              "versionReference": "prv1_478fbbdc10276d0f074c845f7974c21fa8481bbc0b3dd404bb2dc6b62e14d342",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "65f0e911d3daa2de3e2ac5d7578983eeca295d3e24da6fc59e32c3a1d18feb07",
+              "fixedSuccessorRecordSha256": "bce7f23cf72121217d68e7cec27825fb6e1d9996e28f2d226f0a6ce679b2cc79",
+              "approvalEvidenceSha256": "65f0e911d3daa2de3e2ac5d7578983eeca295d3e24da6fc59e32c3a1d18feb07"
+            },
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 6,
+              "publicProblemId": "ED:174",
+              "internalId": "PB-ORIGINAL:ED1-174",
+              "problemVersion": "proofbound-ed1-174-v1",
+              "rubricVersion": "v1",
+              "canonicalPacketSha256": "f51927738af4fea7b07ab00900a1c25b36324a6389ac682268db1c494278957a",
+              "versionReference": "prv1_948853751b03a3f509b1fdd756c822e2119ab00aef717c56d1e54ffc6dd25d23",
+              "changeKind": "unchanged_predecessor",
+              "currentReviewRecordSha256": "e4b10e773e27dd843e91d83cacd14340faa7c094d553657ed3675f2ee455768f",
+              "fixedSuccessorRecordSha256": null,
+              "approvalEvidenceSha256": "e4b10e773e27dd843e91d83cacd14340faa7c094d553657ed3675f2ee455768f"
+            },
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 7,
+              "publicProblemId": "ED:189",
+              "internalId": "PB-ORIGINAL:ED1-189",
+              "problemVersion": "proofbound-ed1-189-v1",
+              "rubricVersion": "v1",
+              "canonicalPacketSha256": "d5eb9781457e055247a84476d55dbdfef410eb42ec7bbbc953d98c1ab0420798",
+              "versionReference": "prv1_37048cec64983d979f2bbef14ae9412e1960f8999b77f2dd035f523ad9a816e2",
+              "changeKind": "unchanged_predecessor",
+              "currentReviewRecordSha256": "fbdc9e1f42edc66c92c2f02fce96ab5cafd368b438f1d376ccc69dd0e1846364",
+              "fixedSuccessorRecordSha256": null,
+              "approvalEvidenceSha256": "fbdc9e1f42edc66c92c2f02fce96ab5cafd368b438f1d376ccc69dd0e1846364"
+            },
+            {
+              "blueprintKey": "ed1-final-a-on-level-v1",
+              "position": 8,
+              "publicProblemId": "ED:215",
+              "internalId": "PB-ORIGINAL:ED1-215",
+              "problemVersion": "proofbound-ed1-215-v2",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "68e23e8e3b8f6f518ad30850af6fe24ce1ac51560b3e22fccf07345fbc84f81d",
+              "versionReference": "prv1_ecd6eb776601476b54549f9a06e8d1387b8accd6abea124d3a756c1d9b86dc84",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "f91f22841b8dbfce004e677e226ef4ac5ab892dc283c126c5ab549b95babffd9",
+              "fixedSuccessorRecordSha256": "7062916ee5334255fe00f4beff8ff43dfd2892628800d1da6fa71cd4b9264aa4",
+              "approvalEvidenceSha256": "f91f22841b8dbfce004e677e226ef4ac5ab892dc283c126c5ab549b95babffd9"
+            }
+          ]
+        },
+        {
+          "blueprintKey": "ed1-final-b-severe-challenge-v1",
+          "durationMinutes": 480,
+          "authorityAsOf": "ce1ea0eb97ab159e04fe33737529b7dc5ce9f264f31019bf6d0d8798966c1bf1",
+          "selectionSha256": "239bb923438d2488c2e2038bb28b56446d99fe6025f14d80f9c40d9ad6dd169a",
+          "assignments": [
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 1,
+              "publicProblemId": "ED:035",
+              "internalId": "PB-ORIGINAL:ED1-035",
+              "problemVersion": "proofbound-ed1-035-v1",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "da08065df1bdd7f48c5284809c26e3b6deb16099754d076631e0eefc4ad7c95e",
+              "versionReference": "prv1_c224d78bc3c42346fb2eafd993c3c4fb239ca4f89cac695c8987c383388a1ffb",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "7fe9d0eb6a90d27a46e572848149ea8f39043316635c6db2cbee0491297d7b8d",
+              "fixedSuccessorRecordSha256": "f8ef4a3f8080d479ed7a85d29cb57826b63f4e41bd7af282abdafc1e1c6ae993",
+              "approvalEvidenceSha256": "7fe9d0eb6a90d27a46e572848149ea8f39043316635c6db2cbee0491297d7b8d"
+            },
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 2,
+              "publicProblemId": "ED:077",
+              "internalId": "PB-ORIGINAL:ED1-077",
+              "problemVersion": "proofbound-ed1-077-v1",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "a455eacd3bea29da46a809eeaac74dfa059fb5695c08b3a6cc0939ada2836cb9",
+              "versionReference": "prv1_c38f141221a0ac401ffebdc13717ccfe000265ea6348d0761f4eca28821368a0",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "a4361358723ac928fc8d6a0a633f9394e74c9872befb40a7fe73646513190e96",
+              "fixedSuccessorRecordSha256": "8744d1ba16fbf3898f6151c23e11f5c7f50707597ea199d44ad13e5eede25795",
+              "approvalEvidenceSha256": "a4361358723ac928fc8d6a0a633f9394e74c9872befb40a7fe73646513190e96"
+            },
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 3,
+              "publicProblemId": "ED:079",
+              "internalId": "PB-ORIGINAL:ED1-079",
+              "problemVersion": "proofbound-ed1-079-v1",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "ee576d4822dd1b61dd0660806ba35e313ad057971706d4cf81854f612862d5af",
+              "versionReference": "prv1_c991f519efe8ddd04eb92818a3a7da692696a511aee9c7f7527c9a204669a4b9",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "47becbdb9432a1802d55404744df2900b526fb1f95a1f8559e55c6fa6ea6de3d",
+              "fixedSuccessorRecordSha256": "b0bbd2ab92aaa4cd612a8b79a139142a3d003ecb0046a1fc95a74614f1665798",
+              "approvalEvidenceSha256": "47becbdb9432a1802d55404744df2900b526fb1f95a1f8559e55c6fa6ea6de3d"
+            },
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 4,
+              "publicProblemId": "ED:116",
+              "internalId": "PB-ORIGINAL:ED1-116",
+              "problemVersion": "proofbound-ed1-116-v2",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "0f7c67effdeddedf65318e977cb96efd74f25bf091e68c498aa8430424819ab4",
+              "versionReference": "prv1_0471f7dd127f57ab519b7479d351036182b5abfd506a704129b2c30f600a6bfc",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "67c317f2b396cdec6b76b57306617c5781af5db9eb2c0dcc5709afd8edde7973",
+              "fixedSuccessorRecordSha256": "59714603a702199031f999ddd8d2317ba01528ec605ed5c61a3e53d320cb2caf",
+              "approvalEvidenceSha256": "67c317f2b396cdec6b76b57306617c5781af5db9eb2c0dcc5709afd8edde7973"
+            },
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 5,
+              "publicProblemId": "ED:156",
+              "internalId": "PB-ORIGINAL:ED1-156",
+              "problemVersion": "proofbound-ed1-156-v2",
+              "rubricVersion": "v1",
+              "canonicalPacketSha256": "a4fe4031287b0ff9e88c14b6aedcf8550e0f223c84ae22fe31d15f2685d3676f",
+              "versionReference": "prv1_f8b791a9a06aec53e928825070d7aeba3c275bfd429ff234f7dad6cc92197608",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "b4d103185d08e4e5ed3d2d2865c44264aaae5a0a05218b519046fed7a51763bf",
+              "fixedSuccessorRecordSha256": "ddae526b87664f2dfadd22a05df798b2eb47ad0bd0a5fe3d147430e11d25c8d5",
+              "approvalEvidenceSha256": "b4d103185d08e4e5ed3d2d2865c44264aaae5a0a05218b519046fed7a51763bf"
+            },
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 6,
+              "publicProblemId": "ED:196",
+              "internalId": "PB-ORIGINAL:ED1-196",
+              "problemVersion": "proofbound-ed1-196-v1",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "8efe415ddfbc882d1e2f72d1af3ab3e9b9d50d3f6bac68ebaca4104b38aff6e6",
+              "versionReference": "prv1_4cb352e1ac2cd71226dc09704af1fa2c6ed09465a2d3fb1b1f5607116bee16ea",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "dcb76a88a214666f9b2b81fc26dab4f7d79bb3c1ef33709b89173c5c9b9b26b6",
+              "fixedSuccessorRecordSha256": "88632b5cd3fbe7768c1f54cb958440b13266d83249af2e2d6a1a74ab9d83f108",
+              "approvalEvidenceSha256": "dcb76a88a214666f9b2b81fc26dab4f7d79bb3c1ef33709b89173c5c9b9b26b6"
+            },
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 7,
+              "publicProblemId": "ED:237",
+              "internalId": "PB-ORIGINAL:ED1-237",
+              "problemVersion": "proofbound-ed1-237-v1",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "6d55b241f4bc4c09b445f4856632cd6842378ff540435f0ead5ec8a3eb237fd8",
+              "versionReference": "prv1_8aabf79c6498e32934eeb9e7ff75d065ed519895e8b8a395d724cfddd5e800ac",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "cc1031738a069950e18d90887a9909259e8abf394a10726dbcb3e79cb5815e40",
+              "fixedSuccessorRecordSha256": "afc731020883af73e9fee41eb99bf605fca91a81123881c7ed16acf4e47467b3",
+              "approvalEvidenceSha256": "cc1031738a069950e18d90887a9909259e8abf394a10726dbcb3e79cb5815e40"
+            },
+            {
+              "blueprintKey": "ed1-final-b-severe-challenge-v1",
+              "position": 8,
+              "publicProblemId": "ED:240",
+              "internalId": "PB-ORIGINAL:ED1-240",
+              "problemVersion": "proofbound-ed1-240-v2",
+              "rubricVersion": "v2",
+              "canonicalPacketSha256": "6be2d9621430150083bc8361b20b1113f3b483be00046349901746365cddbb83",
+              "versionReference": "prv1_a1438f25769aea62d3b5be86815fa3770ed17ec587bc80fcba2e5cf5cf82390a",
+              "changeKind": "versioned_successor",
+              "currentReviewRecordSha256": "53c9cd4b0c649547f60c63d8928d4654c98da9a7af64d881f613d91238cf197e",
+              "fixedSuccessorRecordSha256": "c1096eb540dbd762ae93f925d2ab15208d627f48d976e04587237c1eaaa54a29",
+              "approvalEvidenceSha256": "53c9cd4b0c649547f60c63d8928d4654c98da9a7af64d881f613d91238cf197e"
+            }
+          ]
+        }
+      ],
+      "authorityBoundary": {
+        "admission": false,
+        "publication": false,
+        "currentAuthority": false,
+        "newStartsAllowed": false,
+        "runtime": false,
+        "grading": false
+      }
+    },
+    "admittedLiveRawSha256Bound": false,
+    "admittedLiveArtifactSha256Bound": false
+  },
+  "atomicProtocol": {
+    "predecessorReceiptRawSha256": "0eb1fd8c8b9abaa4a49a672b86d60a83db69c87dcb2a2dc328ead50c04e41d98",
+    "predecessorManifestRawSha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef",
+    "predecessorCompanionManifestRawSha256": "43d103721bd9059e96dbbf6ef50b7d99d3c61c8bf3897eb6a8621b3dbe89dc90",
+    "predecessorDormantFinalRawSha256": "c5335bd2dcd8c9f006663745e1a24270c44c6801ede36a64af3ab053d5ff98b0",
+    "predecessorPointerRawSha256": "e864e8effa535a24c522ac099355defd7f1dc366aaa83ca35309401308f4778e",
+    "writeOrder": [
+      "data/problems/electrodynamics-1-bank/successor-admission-receipt.v2.json",
+      "data/problems/checked-in-packet-manifest.json",
+      "data/learning/exact-packet-companion-manifest.v1.json",
+      "data/test-finals/electrodynamics-1-slot-authority.successor-live.v2.json",
+      "data/problems/electrodynamics-1-bank/current-version-pointer.v1.json"
+    ],
+    "pointerLast": true,
+    "preflightAllOrNothing": true,
+    "rollbackAllCommittedWrites": true,
+    "idempotentCheckRequired": true,
+    "symlinksRejected": true
+  },
+  "holds": {
+    "admissionReady": false,
+    "admittedReceiptAvailable": false,
+    "admittedLiveFinalAvailable": false,
+    "successorPointerAvailable": false,
+    "liveV2FinalRuntimeParserAdmitted": false,
+    "rawStateVerifierBuildHookInstalled": false,
+    "liveWritesExecuted": false,
+    "reasons": [
+      "admitted_receipt_bytes_require_this_release_closure_digest",
+      "admitted_live_final_bytes_require_receipt_and_release_closure",
+      "successor_pointer_bytes_require_admitted_receipt_and_pointer_last_install",
+      "live_v2_final_runtime_parser_is_not_yet_an_admitted_authority",
+      "raw_current_version_state_verifier_is_not_yet_a_package_build_hook"
+    ]
+  },
+  "invariants": {
+    "prospectiveAdmissionAuthorityVerified": true,
+    "exactDataAuthoritiesBound": true,
+    "exactProductionSourcesBound": true,
+    "finalContentProjectionExactBound": true,
+    "finalDigestCycleAvoided": true,
+    "companionShadowCoverageVerified": true,
+    "predecessorLiveStatePreserved": true,
+    "liveManifestMutated": false,
+    "liveCompanionMutated": false,
+    "liveFinalMutated": false,
+    "livePointerMutated": false,
+    "liveReceiptMutated": false,
+    "stagingMutated": false,
+    "remoteMutation": false
+  },
+  "authorityBoundary": {
+    "admission": false,
+    "publication": false,
+    "release": false,
+    "currentVersion": false,
+    "runtimePackets": false,
+    "runtimeCatalog": false,
+    "grading": false,
+    "finalSlot": false,
+    "lean": false,
+    "companion": false,
+    "recovery": false,
+    "buildHook": false,
+    "staging": false,
+    "deployment": false,
+    "remoteMutation": false
+  },
+  "artifactDigestScheme": "proofanvil.ed1-versioned-successor-release-closure.artifact-sha256.v2",
+  "artifactSha256": "33bd2432e41691199bc94f3e7645d88ab3f3e448290d9831a592b8700d9e7f3f"
+}

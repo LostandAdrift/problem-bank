@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "proofanvil.ed1-versioned-successor-admission-receipt.v2",
+  "courseId": "electrodynamics-1",
+  "state": "not_admitted",
+  "artifactDigestScheme": "proofanvil.ed1-versioned-successor-admission-receipt.digest.v2",
+  "artifactSha256": "bb0af63201e7b30255816cf7d027019325cf157742bb9613437eb856c4a0e11a",
+  "authorityBoundary": {
+    "admission": false,
+    "currentVersion": false,
+    "runtimePackets": false,
+    "runtimeCatalog": false,
+    "grading": false,
+    "finalSlot": false,
+    "lean": false,
+    "companion": false,
+    "recovery": false,
+    "staging": false,
+    "deployment": false,
+    "remoteMutation": false
+  }
+}

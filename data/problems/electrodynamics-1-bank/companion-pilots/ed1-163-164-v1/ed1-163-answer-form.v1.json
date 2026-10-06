@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:163",
+    "internalId": "PB-ORIGINAL:ED1-163",
+    "problemVersion": "proofbound-ed1-163-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "distributional-coefficient",
+      "label": "Coefficient multiplying (sigma divided by epsilon-zero) delta(z) in div E",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "distributional-source",
+      "label": "Select the charge density recovered from distributional Gauss's law.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "source:rho_equals_sigma_delta_z",
+          "label": "rho equals sigma times delta(z)"
+        },
+        {
+          "choiceId": "source:rho_equals_half_sigma_delta_z",
+          "label": "rho equals one-half sigma times delta(z)"
+        },
+        {
+          "choiceId": "source:rho_equals_zero",
+          "label": "rho equals zero on all space"
+        }
+      ]
+    },
+    {
+      "partId": "slab-face-orientations",
+      "label": "Select the field and outward-normal orientation ledger for the slab faces.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "orientation:top_e_plus_n_plus_bottom_e_minus_n_minus",
+          "label": "Top field and normal point +z; bottom field and normal point -z"
+        },
+        {
+          "choiceId": "orientation:top_e_plus_n_plus_bottom_e_minus_n_plus",
+          "label": "Top field and normal point +z; bottom field points -z while its normal points +z"
+        },
+        {
+          "choiceId": "orientation:top_e_minus_n_plus_bottom_e_plus_n_minus",
+          "label": "Top field points -z and bottom field points +z, with outward slab normals"
+        }
+      ]
+    },
+    {
+      "partId": "slab-flux-ledger",
+      "label": "Select how the two flat-face flux contributions combine.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "flux:top_positive_plus_bottom_positive",
+          "label": "The two positive contributions add to sigma A divided by epsilon-zero"
+        },
+        {
+          "choiceId": "flux:top_positive_minus_bottom_positive",
+          "label": "The bottom contribution is subtracted, so the flat-face flux vanishes"
+        },
+        {
+          "choiceId": "flux:top_positive_only",
+          "label": "Only the top face contributes, giving one-half sigma A divided by epsilon-zero"
+        }
+      ]
+    },
+    {
+      "partId": "unit-audit",
+      "label": "Select the SI units of delta(z) and rho.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "units:delta_per_metre_rho_coulomb_per_cubic_metre",
+          "label": "delta(z): m^-1; rho: C m^-3"
+        },
+        {
+          "choiceId": "units:delta_dimensionless_rho_coulomb_per_square_metre",
+          "label": "delta(z): dimensionless; rho: C m^-2"
+        },
+        {
+          "choiceId": "units:delta_per_metre_rho_coulomb_per_square_metre",
+          "label": "delta(z): m^-1; rho: C m^-2"
+        }
+      ]
+    },
+    {
+      "partId": "punctured-space-audit",
+      "label": "Select the correct relation between the punctured-space and distributional calculations.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "audit:zero_away_from_sheet_singular_on_full_space",
+          "label": "The pointwise divergence is zero for nonzero z, but the full-space distribution has the sheet source"
+        },
+        {
+          "choiceId": "audit:zero_away_from_sheet_implies_zero_distribution",
+          "label": "Zero divergence for nonzero z proves that the full-space distribution is zero"
+        },
+        {
+          "choiceId": "audit:nonzero_constant_away_from_sheet",
+          "label": "The divergence is a nonzero constant on each side of the sheet"
+        }
+      ]
+    }
+  ]
+}

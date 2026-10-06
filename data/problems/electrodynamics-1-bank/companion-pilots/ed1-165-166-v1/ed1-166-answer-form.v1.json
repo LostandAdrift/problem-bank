@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:166",
+    "internalId": "PB-ORIGINAL:ED1-166",
+    "problemVersion": "proofbound-ed1-166-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "e96a398b9e2b6aec90d6dbccc621d13f44910c15cf0ce543699cf628daf78a03"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "ampere-maxwell-divergence",
+      "label": "Select the divergence equation obtained before substituting Gauss's law.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "derivation:zero_equals_mu0_div_j_plus_mu0_epsilon0_dt_div_e",
+          "label": "0 = mu-zero div J + mu-zero epsilon-zero partial-t(div E)"
+        },
+        {
+          "choiceId": "derivation:zero_equals_mu0_div_j_after_dropping_displacement",
+          "label": "0 = mu-zero div J after dropping the displacement-current term"
+        },
+        {
+          "choiceId": "derivation:div_b_equals_mu0_div_j_plus_mu0_epsilon0_dt_div_e",
+          "label": "div B = mu-zero div J + mu-zero epsilon-zero partial-t(div E)"
+        }
+      ]
+    },
+    {
+      "partId": "local-continuity-sign",
+      "label": "Select the local charge-continuity equation implied by the two displayed Maxwell equations.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "continuity:partial_t_rho_plus_div_j_equals_zero",
+          "label": "partial-t rho plus div J equals zero"
+        },
+        {
+          "choiceId": "continuity:partial_t_rho_minus_div_j_equals_zero",
+          "label": "partial-t rho minus div J equals zero"
+        },
+        {
+          "choiceId": "continuity:partial_t_rho_equals_zero",
+          "label": "partial-t rho equals zero"
+        }
+      ]
+    },
+    {
+      "partId": "charge-time-coefficient",
+      "label": "Enter C-rho when partial-t rho = C-rho (rho-zero/tau) exp(-t/tau) cos(kx).",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "sine-derivative-factor",
+      "label": "Select the x derivative needed to compute div J.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "derivative:d_dx_sin_kx_equals_k_cos_kx",
+          "label": "d/dx sin(kx) = k cos(kx)"
+        },
+        {
+          "choiceId": "derivative:d_dx_sin_kx_equals_cos_kx",
+          "label": "d/dx sin(kx) = cos(kx)"
+        },
+        {
+          "choiceId": "derivative:d_dx_sin_kx_equals_k_sin_kx",
+          "label": "d/dx sin(kx) = k sin(kx)"
+        }
+      ]
+    },
+    {
+      "partId": "current-divergence-coefficient",
+      "label": "Enter C-J when div J = C-J (rho-zero/tau) exp(-t/tau) cos(kx).",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "continuity-sum-coefficient",
+      "label": "Enter C-sum for the coefficient of the common factor in partial-t rho plus div J.",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "volume-current-unit",
+      "label": "Select the SI unit of rho-zero/(k tau) and of J.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "unit:ampere_per_square_metre",
+          "label": "ampere per square metre"
+        },
+        {
+          "choiceId": "unit:ampere_per_metre",
+          "label": "ampere per metre"
+        },
+        {
+          "choiceId": "unit:coulomb_per_cubic_metre",
+          "label": "coulomb per cubic metre"
+        }
+      ]
+    },
+    {
+      "partId": "maxwell-consistency",
+      "label": "Select the consequence when a proposed rho and J violate continuity.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "consistency:cannot_satisfy_both_displayed_maxwell_equations",
+          "label": "They cannot satisfy both displayed Maxwell equations."
+        },
+        {
+          "choiceId": "consistency:may_satisfy_both_because_gauss_law_is_unrelated",
+          "label": "They may satisfy both because Gauss's law is unrelated."
+        },
+        {
+          "choiceId": "consistency:may_satisfy_both_if_div_j_is_zero",
+          "label": "They may satisfy both whenever div J is zero."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:162",
+    "internalId": "PB-ORIGINAL:ED1-162",
+    "problemVersion": "proofbound-ed1-162-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "loop-circulation",
+      "label": "Select the signed long-side circulation for the stated loop orientation.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "circulation:minus_b_plus_y_plus_b_minus_y",
+          "label": "Minus B-plus-y plus B-minus-y, each times L"
+        },
+        {
+          "choiceId": "circulation:plus_b_plus_y_minus_b_minus_y",
+          "label": "Plus B-plus-y minus B-minus-y, each times L"
+        },
+        {
+          "choiceId": "circulation:plus_b_plus_y_plus_b_minus_y",
+          "label": "Plus B-plus-y plus B-minus-y, each times L"
+        }
+      ]
+    },
+    {
+      "partId": "vector-jump",
+      "label": "Select the interface jump relation.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "jump:z_cross_b_plus_minus_b_minus_equals_mu0_k",
+          "label": "z cross (B-plus minus B-minus) equals mu-zero K"
+        },
+        {
+          "choiceId": "jump:z_cross_b_minus_minus_b_plus_equals_mu0_k",
+          "label": "z cross (B-minus minus B-plus) equals mu-zero K"
+        },
+        {
+          "choiceId": "jump:z_dot_b_plus_minus_b_minus_equals_mu0_k",
+          "label": "z dot (B-plus minus B-minus) equals mu-zero K"
+        }
+      ]
+    },
+    {
+      "partId": "jump-magnitude",
+      "label": "Magnitude mu-zero K",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microtesla",
+          "label": "microtesla"
+        }
+      ]
+    },
+    {
+      "partId": "upper-field-y",
+      "label": "Signed y component B-plus-y",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microtesla",
+          "label": "microtesla"
+        }
+      ]
+    },
+    {
+      "partId": "upper-field-direction",
+      "label": "Direction of B-plus",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "direction:negative_y",
+          "label": "-y"
+        },
+        {
+          "choiceId": "direction:positive_y",
+          "label": "+y"
+        },
+        {
+          "choiceId": "direction:positive_x",
+          "label": "+x"
+        }
+      ]
+    },
+    {
+      "partId": "orientation-reversal",
+      "label": "What happens when both surface normal and boundary traversal are reversed?",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "invariance:reverse_surface_and_traversal_preserves_jump",
+          "label": "Both sides reverse sign and the physical jump is preserved"
+        },
+        {
+          "choiceId": "invariance:reverse_surface_only_preserves_jump",
+          "label": "Reversing only the surface normal preserves every signed term"
+        },
+        {
+          "choiceId": "invariance:reversal_changes_physical_jump",
+          "label": "The physical magnetic jump changes"
+        }
+      ]
+    },
+    {
+      "partId": "unit-audit",
+      "label": "Select the SI unit consequence of mu-zero times K.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "unit_relation:mu0_k_is_tesla",
+          "label": "It has units tesla"
+        },
+        {
+          "choiceId": "unit_relation:mu0_k_is_tesla_metre",
+          "label": "It has units tesla metre"
+        },
+        {
+          "choiceId": "unit_relation:mu0_k_is_ampere_per_metre",
+          "label": "It has units ampere per metre"
+        }
+      ]
+    }
+  ]
+}

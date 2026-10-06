@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-checker-evidence.v1",
+  "state": "held_prospective",
+  "targets": [
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:209",
+      "internalId": "PB-ORIGINAL:ED1-209",
+      "problemVersion": "proofbound-ed1-209-v1",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:210",
+      "internalId": "PB-ORIGINAL:ED1-210",
+      "problemVersion": "proofbound-ed1-210-v1",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+    }
+  ],
+  "checker": {
+    "responseParserSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4",
+    "implementationSha256": "0eaf850bf5c5427a1ff5238d62f0e6b5f31632e4086f7e8c317b5b5189da1deb",
+    "focusedTestSha256": "028e4f932b5f81dba04b0290a5ec2541ba4bac1b1378eafd601848ab827ba557",
+    "checkerIds": [
+      "checker.ed1.209.stokes-sphere",
+      "checker.ed1.210.rotated-stokes-angle"
+    ],
+    "checkerVersion": "v1",
+    "inputSchemaVersion": "proofanvil.exact-answer-response.v1"
+  },
+  "artifactBindings": {
+    "answerForms": [
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:209",
+          "internalId": "PB-ORIGINAL:ED1-209",
+          "problemVersion": "proofbound-ed1-209-v1",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-209-210-v1/ed1-209-answer-form.v1.json",
+        "rawSha256": "e7f62794c4786ca22e4242ea384e30ef7cf7855bb072eb9e22557a2adb866955"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:210",
+          "internalId": "PB-ORIGINAL:ED1-210",
+          "problemVersion": "proofbound-ed1-210-v1",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-209-210-v1/ed1-210-answer-form.v1.json",
+        "rawSha256": "f53892b119e29951d2f20d74062691ac6fb1500a2fb7cf664f3502a34d240f82"
+      }
+    ],
+    "parameters": [
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:209",
+          "internalId": "PB-ORIGINAL:ED1-209",
+          "problemVersion": "proofbound-ed1-209-v1",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-209-210-v1/ed1-209-checker-parameters.v1.json",
+        "rawSha256": "c8818c9a97df1bc49b75021381c0cc55b4e5a539623ddcb512df51d2c9748de3"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:210",
+          "internalId": "PB-ORIGINAL:ED1-210",
+          "problemVersion": "proofbound-ed1-210-v1",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-209-210-v1/ed1-210-checker-parameters.v1.json",
+        "rawSha256": "98d3ae6480359f48845392f1bb504b9687c88505f704a5604734b0c962e6ef1d"
+      }
+    ],
+    "fixturesSha256": "1c96506b2bdca868722919bdb93f97fc6949af204eb5b351ab85912c6392d470",
+    "coachGroundingSha256": "03df8d159eb68b03ca4357f9de602cc11105a5fb6537243a4b5f8675d30498f7",
+    "accessibilityReceiptsSha256": "8aa5053ffc5bd56bc42ab1a40a271a28418eb6c871b909a29bc87a9222c12772",
+    "examAlignmentReviewsSha256": "38895eed9d51e526e876739a11a731ce66d86128854ebda689787b48ff1e7a13",
+    "rendererReceiptsSha256": "f3fb4da6b1ec4e69b76826ad8613137db683f18311ee8d71b496ac7bae9c2f3f",
+    "batchHoldSha256": "a847e3ed4e549b6f011acde1d1bf3e4a5951a321508235809b2eb9c5bb7d2710"
+  },
+  "execution": {
+    "perTarget": [
+      {
+        "publicProblemId": "ED:209",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 11
+      },
+      {
+        "publicProblemId": "ED:210",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 15
+      }
+    ],
+    "passingFixtureCount": 4,
+    "failingFixtureCount": 26,
+    "result": "passed",
+    "networkCalls": 0,
+    "providerCalls": 0
+  },
+  "authorityBoundary": {
+    "admissionAuthority": false,
+    "currentSelectionAuthority": false,
+    "liveRegistryAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "coachDeliveryAuthority": false,
+    "persistenceAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "uiAuthority": false,
+    "accessibilityAuthority": false,
+    "learnerBehaviorMutation": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  }
+}

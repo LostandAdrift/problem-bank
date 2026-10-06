@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:201",
+    "internalId": "PB-ORIGINAL:ED1-201",
+    "problemVersion": "proofbound-ed1-201-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "curl-e-sign",
+      "label": "Select the curl of the proposed electric field.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "derivative:curl_e_negative_y_sine",
+          "label": "Negative y-directed sine term"
+        },
+        {
+          "choiceId": "derivative:curl_e_positive_y_sine",
+          "label": "Positive y-directed sine term"
+        },
+        {
+          "choiceId": "derivative:curl_e_negative_x_sine",
+          "label": "Negative x-directed sine term"
+        }
+      ]
+    },
+    {
+      "partId": "minus-dt-b-sign",
+      "label": "Select minus the time derivative of the proposed magnetic field.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "derivative:minus_dt_b_negative_y_sine",
+          "label": "Negative y-directed sine term"
+        },
+        {
+          "choiceId": "derivative:minus_dt_b_positive_y_sine",
+          "label": "Positive y-directed sine term"
+        },
+        {
+          "choiceId": "derivative:minus_dt_b_negative_x_sine",
+          "label": "Negative x-directed sine term"
+        }
+      ]
+    },
+    {
+      "partId": "magnetic-amplitude",
+      "label": "Positive magnetic amplitude B-zero",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microtesla",
+          "label": "microtesla"
+        }
+      ]
+    },
+    {
+      "partId": "relative-phase",
+      "label": "Relative phase of E and B",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "phase:in_phase",
+          "label": "In phase"
+        },
+        {
+          "choiceId": "phase:pi_out_of_phase",
+          "label": "Pi radians out of phase"
+        },
+        {
+          "choiceId": "phase:quarter_cycle",
+          "label": "One quarter cycle apart"
+        }
+      ]
+    },
+    {
+      "partId": "poynting-direction",
+      "label": "Direction of E cross B",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "direction:positive_z",
+          "label": "+z"
+        },
+        {
+          "choiceId": "direction:negative_z",
+          "label": "-z"
+        },
+        {
+          "choiceId": "direction:positive_y",
+          "label": "+y"
+        }
+      ]
+    },
+    {
+      "partId": "dimensional-relation",
+      "label": "Select the dimensionally valid vacuum amplitude relation.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "relation:e_over_b_equals_c",
+          "label": "E divided by B equals c"
+        },
+        {
+          "choiceId": "relation:b_equals_c_times_e",
+          "label": "B equals c times E"
+        },
+        {
+          "choiceId": "relation:e_times_b_equals_c",
+          "label": "E times B equals c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "proofanvil.deterministic-checker-execution-evidence.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "checker": {
+    "checkerId": "checker.ed1.202.field-ratios",
+    "checkerVersion": "v1",
+    "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+    "responseParserPath": "lib/grading/exact-answer-response.ts",
+    "responseParserSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4",
+    "implementationPath": "lib/grading/deterministic-checkers/ed1-202-field-ratios.v1.ts",
+    "implementationSha256": "2019739bb7bd4e66aed0534233cc00ab4bfacd6ccfc599aad7bae0d728bcbb47",
+    "parameterPath": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-202-v1/checker-parameters.v1.json",
+    "parameterSha256": "865b81ebdf6270437c84f04f2801c251a617dd0829761dc57bef35d6e8181d10",
+    "fixturePath": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-202-v1/checker-fixtures.v1.json",
+    "fixtureSetSha256": "9859186cd234330cb9da4b8cf6d840945ce192f50150e8fe31fde7bb0ff4a19d"
+  },
+  "publicResponse": {
+    "answerFormPath": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-202-v1/answer-form.v1.json",
+    "answerFormSha256": "70f427aba0438c28e6dfbb1d390f2241826a8259c9ebc58bcc4451745e83d6b7",
+    "rendererReceiptPath": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-202-v1/renderer-receipt.v1.json",
+    "rendererReceiptSha256": "9986ab91bb6b5809650b8d9f900bd4540c363752ed95122088d6c08ea567cb0a",
+    "accessibilityReceiptPath": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-202-v1/accessibility-receipt.v1.json",
+    "accessibilityReceiptSha256": "88bada9ce73c370ef7983e1849dba855d9af4433e59fa4d8345e538159c88c0c"
+  },
+  "execution": {
+    "networkCalls": 0,
+    "providerCalls": 0,
+    "passingFixtureCount": 6,
+    "failingFixtureCount": 12,
+    "result": "passed",
+    "reproductionCommand": "node --import ./tests/network-tripwire.mjs --import tsx --test tests/ed1-202-held-companion-pilot.test.mts"
+  },
+  "authorityBoundary": {
+    "registrationAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  }
+}

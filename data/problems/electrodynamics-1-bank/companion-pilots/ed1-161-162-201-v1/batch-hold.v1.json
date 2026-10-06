@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "proofanvil.ed1-161-162-201-held-companion-batch-hold.v1",
+  "state": "held_prospective",
+  "targets": [
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:161",
+      "internalId": "PB-ORIGINAL:ED1-161",
+      "problemVersion": "proofbound-ed1-161-v2",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:162",
+      "internalId": "PB-ORIGINAL:ED1-162",
+      "problemVersion": "proofbound-ed1-162-v1",
+      "rubricVersion": "v1",
+      "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:201",
+      "internalId": "PB-ORIGINAL:ED1-201",
+      "problemVersion": "proofbound-ed1-201-v1",
+      "rubricVersion": "v1",
+      "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+    }
+  ],
+  "deterministicCoreExecutionEvidence": true,
+  "completionDisposition": "held",
+  "holdCode": "learner_runtime_not_implemented",
+  "requiredBeforeReady": [
+    "bind and browser-test an executable multipart renderer",
+    "install fail-closed deterministic dispatch before provider selection",
+    "persist deterministic attempts idempotently without reserving an AI credit",
+    "deliver Coach grounding from a protected server store",
+    "reproduce accessibility assertions against the executable renderer",
+    "append exact companion records to the live registry through a separately authorized admission"
+  ],
+  "authorityBoundary": {
+    "admissionAuthority": false,
+    "currentSelectionAuthority": false,
+    "liveRegistryAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "coachDeliveryAuthority": false,
+    "persistenceAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "uiAuthority": false,
+    "accessibilityAuthority": false,
+    "learnerBehaviorMutation": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  }
+}

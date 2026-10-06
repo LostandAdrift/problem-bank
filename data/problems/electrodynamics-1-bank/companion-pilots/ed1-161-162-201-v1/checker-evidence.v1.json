@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-checker-evidence.v1",
+  "state": "held_prospective",
+  "targets": [
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:161",
+      "internalId": "PB-ORIGINAL:ED1-161",
+      "problemVersion": "proofbound-ed1-161-v2",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:162",
+      "internalId": "PB-ORIGINAL:ED1-162",
+      "problemVersion": "proofbound-ed1-162-v1",
+      "rubricVersion": "v1",
+      "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:201",
+      "internalId": "PB-ORIGINAL:ED1-201",
+      "problemVersion": "proofbound-ed1-201-v1",
+      "rubricVersion": "v1",
+      "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+    }
+  ],
+  "checker": {
+    "responseParserSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4",
+    "implementationSha256": "79fe2c22f47dc0e717f25f050640fa7981689bfea28b59d9cd2ca8cf439fffdc",
+    "focusedTestSha256": "b7b3a06404940db764744bf306f1b14ec30a77e348d297b9266a7af3c25a4f70",
+    "checkerIds": [
+      "checker.ed1.161.charged-sheet-jump",
+      "checker.ed1.162.sheet-current-jump",
+      "checker.ed1.201.faraday-wave-sign"
+    ],
+    "checkerVersion": "v1",
+    "inputSchemaVersion": "proofanvil.exact-answer-response.v1"
+  },
+  "artifactBindings": {
+    "answerForms": [
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:161",
+          "internalId": "PB-ORIGINAL:ED1-161",
+          "problemVersion": "proofbound-ed1-161-v2",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-161-162-201-v1/ed1-161-answer-form.v1.json",
+        "rawSha256": "27553a746437b68916466567d5e404ab11c8f14c919fe09a12c8ef5a0394322c"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:162",
+          "internalId": "PB-ORIGINAL:ED1-162",
+          "problemVersion": "proofbound-ed1-162-v1",
+          "rubricVersion": "v1",
+          "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-161-162-201-v1/ed1-162-answer-form.v1.json",
+        "rawSha256": "03186917c3b35603011a684fbdc1c61f3c78de2d4e0d07f5ad1583b39d72c22f"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:201",
+          "internalId": "PB-ORIGINAL:ED1-201",
+          "problemVersion": "proofbound-ed1-201-v1",
+          "rubricVersion": "v1",
+          "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-161-162-201-v1/ed1-201-answer-form.v1.json",
+        "rawSha256": "2462e26126b6beb74068b2d9979aceb8356c98d653084e40e2f8e218dee3f07e"
+      }
+    ],
+    "parameters": [
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:161",
+          "internalId": "PB-ORIGINAL:ED1-161",
+          "problemVersion": "proofbound-ed1-161-v2",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-161-162-201-v1/ed1-161-checker-parameters.v1.json",
+        "rawSha256": "3f1345ef0dbb1238f7c00697e7e16b67673782a1e4fcb20f6afbc5a98800a5e4"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:162",
+          "internalId": "PB-ORIGINAL:ED1-162",
+          "problemVersion": "proofbound-ed1-162-v1",
+          "rubricVersion": "v1",
+          "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-161-162-201-v1/ed1-162-checker-parameters.v1.json",
+        "rawSha256": "2d609b3601a480ba268e4b576ac751cd95b94196764efff562b37a848100aa83"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:201",
+          "internalId": "PB-ORIGINAL:ED1-201",
+          "problemVersion": "proofbound-ed1-201-v1",
+          "rubricVersion": "v1",
+          "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-161-162-201-v1/ed1-201-checker-parameters.v1.json",
+        "rawSha256": "82f7c72347826fcbb279b7699c1119f7a94ec4e2f9b06f636e04f8289cf4d0df"
+      }
+    ],
+    "fixturesSha256": "2458cbcdc908a87e0c052da04f491d8dc88fea691c5d12ba5512067cc81d7f62",
+    "coachGroundingSha256": "fb077ff6b09adda0a52a06b897fdeaa7341b7d8fb1cf4f3b9163f6c6eadce43c",
+    "accessibilityReceiptsSha256": "900d085b90fdcfe8c7dcf3dd29f72377f46c9f807d825936f0e18ad659fbe3f6",
+    "examAlignmentReviewsSha256": "763faa5649dcb73c20ee512203c68d65768b457b2745a01f0e7291ce755d10ca",
+    "rendererReceiptsSha256": "a343b820db9ab68266099bdd9a0bc434cfa152c95e85e045d4f67b0cd3db3ae7",
+    "batchHoldSha256": "bee8d570a0c086956be6b067358022a6dcf240819783331fe748c2af46116d4b"
+  },
+  "execution": {
+    "perTarget": [
+      {
+        "publicProblemId": "ED:161",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 9
+      },
+      {
+        "publicProblemId": "ED:162",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 7
+      },
+      {
+        "publicProblemId": "ED:201",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 7
+      }
+    ],
+    "passingFixtureCount": 6,
+    "failingFixtureCount": 23,
+    "result": "passed",
+    "networkCalls": 0,
+    "providerCalls": 0
+  },
+  "authorityBoundary": {
+    "admissionAuthority": false,
+    "currentSelectionAuthority": false,
+    "liveRegistryAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "coachDeliveryAuthority": false,
+    "persistenceAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "uiAuthority": false,
+    "accessibilityAuthority": false,
+    "learnerBehaviorMutation": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  }
+}

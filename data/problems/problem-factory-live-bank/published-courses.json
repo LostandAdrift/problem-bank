@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "proofanvil.problem-factory-published-courses.v1",
+  "targetPerCourse": 300,
+  "courses": [
+    {
+      "courseId": "algorithms",
+      "problemCount": 300
+    },
+    {
+      "courseId": "ap-calculus-ab",
+      "problemCount": 300
+    },
+    {
+      "courseId": "ap-calculus-bc",
+      "problemCount": 300
+    },
+    {
+      "courseId": "calculus-1",
+      "problemCount": 300
+    },
+    {
+      "courseId": "calculus-2",
+      "problemCount": 300
+    },
+    {
+      "courseId": "circuits-1",
+      "problemCount": 300
+    },
+    {
+      "courseId": "circuits-2",
+      "problemCount": 300
+    },
+    {
+      "courseId": "computer-architecture",
+      "problemCount": 300
+    },
+    {
+      "courseId": "continuum-mechanics",
+      "problemCount": 99
+    },
+    {
+      "courseId": "control-systems",
+      "problemCount": 300
+    },
+    {
+      "courseId": "data-structures",
+      "problemCount": 300
+    },
+    {
+      "courseId": "differential-equations-for-engineers",
+      "problemCount": 300
+    },
+    {
+      "courseId": "digital-logic",
+      "problemCount": 300
+    },
+    {
+      "courseId": "discrete-mathematics",
+      "problemCount": 300
+    },
+    {
+      "courseId": "dynamics",
+      "problemCount": 300
+    },
+    {
+      "courseId": "electronics-1",
+      "problemCount": 300
+    },
+    {
+      "courseId": "embedded-systems",
+      "problemCount": 300
+    },
+    {
+      "courseId": "finite-element-methods",
+      "problemCount": 100
+    },
+    {
+      "courseId": "fluid-mechanics",
+      "problemCount": 300
+    },
+    {
+      "courseId": "heat-transfer",
+      "problemCount": 300
+    },
+    {
+      "courseId": "mechanics-of-materials",
+      "problemCount": 300
+    },
+    {
+      "courseId": "multivariable-vector-calculus",
+      "problemCount": 300
+    },
+    {
+      "courseId": "numerical-methods",
+      "problemCount": 300
+    },
+    {
+      "courseId": "signals-and-systems",
+      "problemCount": 300
+    },
+    {
+      "courseId": "statics",
+      "problemCount": 300
+    },
+    {
+      "courseId": "thermodynamics",
+      "problemCount": 300
+    },
+    {
+      "courseId": "transport-phenomena",
+      "problemCount": 94
+    }
+  ]
+}

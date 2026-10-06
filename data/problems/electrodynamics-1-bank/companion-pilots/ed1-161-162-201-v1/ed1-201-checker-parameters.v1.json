@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:201",
+    "internalId": "PB-ORIGINAL:ED1-201",
+    "problemVersion": "proofbound-ed1-201-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+  },
+  "answerFormSha256": "2462e26126b6beb74068b2d9979aceb8356c98d653084e40e2f8e218dee3f07e",
+  "checkerId": "checker.ed1.201.faraday-wave-sign",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "magnetic-amplitude",
+      "expected": 1.000692285594456,
+      "absoluteTolerance": 0.00001,
+      "relativeTolerance": 0,
+      "unitId": "microtesla",
+      "errorCode": "EDE201B",
+      "negativeErrorCode": "EDE201A"
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "curl-e-sign",
+      "expectedChoiceIds": [
+        "derivative:curl_e_negative_y_sine"
+      ],
+      "errorCode": "EDE201A"
+    },
+    {
+      "partId": "minus-dt-b-sign",
+      "expectedChoiceIds": [
+        "derivative:minus_dt_b_negative_y_sine"
+      ],
+      "errorCode": "EDE201A"
+    },
+    {
+      "partId": "relative-phase",
+      "expectedChoiceIds": [
+        "phase:in_phase"
+      ],
+      "errorCode": "EDE201A"
+    },
+    {
+      "partId": "poynting-direction",
+      "expectedChoiceIds": [
+        "direction:positive_z"
+      ],
+      "errorCode": "EDE201A"
+    },
+    {
+      "partId": "dimensional-relation",
+      "expectedChoiceIds": [
+        "relation:e_over_b_equals_c"
+      ],
+      "errorCode": "EDE201B"
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-201-M1",
+      "partIds": [
+        "curl-e-sign",
+        "minus-dt-b-sign",
+        "magnetic-amplitude"
+      ]
+    },
+    {
+      "milestoneId": "ED1-201-M2",
+      "partIds": [
+        "magnetic-amplitude",
+        "relative-phase"
+      ]
+    },
+    {
+      "milestoneId": "ED1-201-M3",
+      "partIds": [
+        "poynting-direction",
+        "dimensional-relation"
+      ]
+    }
+  ]
+}

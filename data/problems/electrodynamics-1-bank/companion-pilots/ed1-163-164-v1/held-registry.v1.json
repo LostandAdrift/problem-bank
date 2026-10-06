@@ -1,0 +1,525 @@
+{
+  "schemaVersion": "proofanvil.exact-packet-companion-course-registry.v1",
+  "courseId": "electrodynamics-1",
+  "records": [
+    {
+      "schemaVersion": "proofanvil.exact-packet-companion.v1",
+      "courseId": "electrodynamics-1",
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:163",
+        "internalId": "PB-ORIGINAL:ED1-163",
+        "problemVersion": "proofbound-ed1-163-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+      },
+      "examAlignment": {
+        "applicability": "not_applicable",
+        "entries": null,
+        "reviewedNotApplicableRationale": "No versioned external examination syllabus is part of the checked-in ED1 authority, so this course-bank item makes no exam-family claim.",
+        "evidenceRefs": [
+          {
+            "kind": "independent_review",
+            "referenceId": "review:ed1:163:exam-alignment-v1",
+            "sha256": "44aacf85e7faeceb51836268152246267612bf1a81f69606ad6b5f25dc96c352"
+          }
+        ]
+      },
+      "answerType": {
+        "kind": "multipart_mixed",
+        "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+        "rendererId": "multipart_v1",
+        "parts": [
+          {
+            "partId": "distributional-coefficient",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "distributional-source",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "slab-face-orientations",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "slab-flux-ledger",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "unit-audit",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "punctured-space-audit",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          }
+        ]
+      },
+      "accessibility": {
+        "visualDependency": "none",
+        "visuals": [],
+        "keyboardAnswerable": true,
+        "colorIndependent": true,
+        "screenReaderMath": "both"
+      },
+      "prerequisiteProblemIds": [],
+      "prerequisiteSkillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "distributional-gauss-law"
+      ],
+      "verificationAuthority": {
+        "mode": "deterministic_runtime",
+        "deterministicRuntime": {
+          "checkerId": "checker.ed1.163.distributional-sheet-source",
+          "checkerVersion": "v1",
+          "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+          "implementationSha256": "3e5c027e854878a6480e61728adbe9106f00f5429cdcf896a1f62716f1038e2b",
+          "parameterSha256": "d92b63392921b28e7bbb527109d3de52b3190b9288b4b38fb1cb69ad8789a8cb",
+          "fixtureSetSha256": "29d32d109c2f10333bd75444559a1b45998159d6ab4f65deff364596ceea0f58",
+          "sourcePacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996",
+          "passingFixtureCount": 2,
+          "failingFixtureCount": 10,
+          "evidenceSha256": "49d82e37e6b5ec819fad3e5c5f50dc8e1c90bc4c83e5c7bdea54401eb44d1c9e",
+          "executionAuthority": "server_only_deterministic_runtime",
+          "coverage": "full",
+          "requiredResponsePartIds": [
+            "distributional-coefficient",
+            "distributional-source",
+            "slab-face-orientations",
+            "slab-flux-ledger",
+            "unit-audit",
+            "punctured-space-audit"
+          ],
+          "coveredResponsePartIds": [
+            "distributional-coefficient",
+            "distributional-source",
+            "slab-face-orientations",
+            "slab-flux-ledger",
+            "unit-audit",
+            "punctured-space-audit"
+          ]
+        },
+        "lean": null,
+        "reviewedSemanticRemainder": null,
+        "reviewedSemanticException": null
+      },
+      "completionDisposition": "held",
+      "coach": {
+        "delivery": "server_only",
+        "policyVersion": "proofanvil-coach-policy-v1",
+        "groundingVersion": "ed1-163-grounding-v1",
+        "groundingSha256": "3a7116526279ee8e5d3dca757270dd03ef69b2d747bb5771026b2bd8360c85e7",
+        "packetFieldSelectors": [
+          {
+            "field": "objective",
+            "access": "always"
+          },
+          {
+            "field": "statement",
+            "access": "always"
+          },
+          {
+            "field": "permittedResults",
+            "access": "always"
+          },
+          {
+            "field": "revealedHints",
+            "access": "revealed_only"
+          }
+        ],
+        "permittedHintRefs": [
+          "ed1-163-hint-1",
+          "ed1-163-hint-2",
+          "ed1-163-hint-3"
+        ],
+        "milestoneRefs": [
+          "ED1-163-M1",
+          "ED1-163-M2",
+          "ED1-163-M3"
+        ],
+        "misconceptionConceptRefs": [
+          "misconception:ed1:163:half-delta-derivative",
+          "misconception:ed1:163:subtract-bottom-flux"
+        ],
+        "scaffoldStages": [
+          {
+            "stageId": "stage-1",
+            "objectiveRef": "objective:ed1:163:distributional-source",
+            "allowedMoves": [
+              "orient",
+              "ask_diagnostic",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-2",
+            "objectiveRef": "objective:ed1:163:slab-flux",
+            "allowedMoves": [
+              "request_justification",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-3",
+            "objectiveRef": "objective:ed1:163:units-domain",
+            "allowedMoves": [
+              "ask_diagnostic",
+              "address_misconception",
+              "check_milestone",
+              "summarize_progress",
+              "escalate"
+            ]
+          }
+        ],
+        "allowedMoves": [
+          "orient",
+          "ask_diagnostic",
+          "request_justification",
+          "offer_hint",
+          "check_milestone",
+          "address_misconception",
+          "summarize_progress",
+          "escalate"
+        ],
+        "maxTurns": 12,
+        "nudgeAfterTurns": 3,
+        "terminalRules": [
+          "learner_solved",
+          "max_turns_reached",
+          "solution_access_authorized",
+          "safety_stop"
+        ],
+        "escalationRules": [
+          "repeated_blocker",
+          "suspected_content_defect",
+          "ambiguous_response",
+          "accessibility_blocker"
+        ],
+        "protectedFieldDelivery": "server_only",
+        "protectedPayloadIncluded": false
+      },
+      "digestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.record-digest.v1',record:record-without-recordSha256}))",
+      "recordSha256": "785bf76d242fe2d8fb7d161c27143915016818c8fe1dc06cc4782fd8366d343c"
+    },
+    {
+      "schemaVersion": "proofanvil.exact-packet-companion.v1",
+      "courseId": "electrodynamics-1",
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:164",
+        "internalId": "PB-ORIGINAL:ED1-164",
+        "problemVersion": "proofbound-ed1-164-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+      },
+      "examAlignment": {
+        "applicability": "not_applicable",
+        "entries": null,
+        "reviewedNotApplicableRationale": "No versioned external examination syllabus is part of the checked-in ED1 authority, so this course-bank item makes no exam-family claim.",
+        "evidenceRefs": [
+          {
+            "kind": "independent_review",
+            "referenceId": "review:ed1:164:exam-alignment-v1",
+            "sha256": "44aacf85e7faeceb51836268152246267612bf1a81f69606ad6b5f25dc96c352"
+          }
+        ]
+      },
+      "answerType": {
+        "kind": "multipart_mixed",
+        "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+        "rendererId": "multipart_v1",
+        "parts": [
+          {
+            "partId": "e2-x",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "e2-z",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "normal-electric-jump",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "h2-y",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "h2-z",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "tangential-magnetic-jump",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "vector-four-jump-audit",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "source-convention",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          }
+        ]
+      },
+      "accessibility": {
+        "visualDependency": "none",
+        "visuals": [],
+        "keyboardAnswerable": true,
+        "colorIndependent": true,
+        "screenReaderMath": "both"
+      },
+      "prerequisiteProblemIds": [],
+      "prerequisiteSkillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "macroscopic-interface-jumps"
+      ],
+      "verificationAuthority": {
+        "mode": "deterministic_runtime",
+        "deterministicRuntime": {
+          "checkerId": "checker.ed1.164.macroscopic-interface-jumps",
+          "checkerVersion": "v1",
+          "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+          "implementationSha256": "3e5c027e854878a6480e61728adbe9106f00f5429cdcf896a1f62716f1038e2b",
+          "parameterSha256": "ead074bc4e30435a96c76c2a6380f0b8f26d7a991babfe1e5cc1487b5bea78ee",
+          "fixtureSetSha256": "29d32d109c2f10333bd75444559a1b45998159d6ab4f65deff364596ceea0f58",
+          "sourcePacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada",
+          "passingFixtureCount": 2,
+          "failingFixtureCount": 13,
+          "evidenceSha256": "49d82e37e6b5ec819fad3e5c5f50dc8e1c90bc4c83e5c7bdea54401eb44d1c9e",
+          "executionAuthority": "server_only_deterministic_runtime",
+          "coverage": "full",
+          "requiredResponsePartIds": [
+            "e2-x",
+            "e2-z",
+            "normal-electric-jump",
+            "h2-y",
+            "h2-z",
+            "tangential-magnetic-jump",
+            "vector-four-jump-audit",
+            "source-convention"
+          ],
+          "coveredResponsePartIds": [
+            "e2-x",
+            "e2-z",
+            "normal-electric-jump",
+            "h2-y",
+            "h2-z",
+            "tangential-magnetic-jump",
+            "vector-four-jump-audit",
+            "source-convention"
+          ]
+        },
+        "lean": null,
+        "reviewedSemanticRemainder": null,
+        "reviewedSemanticException": null
+      },
+      "completionDisposition": "held",
+      "coach": {
+        "delivery": "server_only",
+        "policyVersion": "proofanvil-coach-policy-v1",
+        "groundingVersion": "ed1-164-grounding-v1",
+        "groundingSha256": "6f4d404107d5d66afc55cad84abc3fae4b5d6a75cf520ba19a80004075fee92d",
+        "packetFieldSelectors": [
+          {
+            "field": "objective",
+            "access": "always"
+          },
+          {
+            "field": "statement",
+            "access": "always"
+          },
+          {
+            "field": "permittedResults",
+            "access": "always"
+          },
+          {
+            "field": "revealedHints",
+            "access": "revealed_only"
+          }
+        ],
+        "permittedHintRefs": [
+          "ed1-164-hint-1",
+          "ed1-164-hint-2",
+          "ed1-164-hint-3"
+        ],
+        "milestoneRefs": [
+          "ED1-164-M1",
+          "ED1-164-M2",
+          "ED1-164-M3"
+        ],
+        "misconceptionConceptRefs": [
+          "misconception:ed1:164:reversed-k-cross-n",
+          "misconception:ed1:164:e-instead-of-d"
+        ],
+        "scaffoldStages": [
+          {
+            "stageId": "stage-1",
+            "objectiveRef": "objective:ed1:164:electric-interface",
+            "allowedMoves": [
+              "orient",
+              "ask_diagnostic",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-2",
+            "objectiveRef": "objective:ed1:164:magnetic-interface",
+            "allowedMoves": [
+              "request_justification",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "stage-3",
+            "objectiveRef": "objective:ed1:164:four-jump-source-audit",
+            "allowedMoves": [
+              "ask_diagnostic",
+              "address_misconception",
+              "check_milestone",
+              "summarize_progress",
+              "escalate"
+            ]
+          }
+        ],
+        "allowedMoves": [
+          "orient",
+          "ask_diagnostic",
+          "request_justification",
+          "offer_hint",
+          "check_milestone",
+          "address_misconception",
+          "summarize_progress",
+          "escalate"
+        ],
+        "maxTurns": 12,
+        "nudgeAfterTurns": 3,
+        "terminalRules": [
+          "learner_solved",
+          "max_turns_reached",
+          "solution_access_authorized",
+          "safety_stop"
+        ],
+        "escalationRules": [
+          "repeated_blocker",
+          "suspected_content_defect",
+          "ambiguous_response",
+          "accessibility_blocker"
+        ],
+        "protectedFieldDelivery": "server_only",
+        "protectedPayloadIncluded": false
+      },
+      "digestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.record-digest.v1',record:record-without-recordSha256}))",
+      "recordSha256": "70de8997d3033c4f35b54f3cbee0df05982b4cdea7404f765afdc2238cb22f38"
+    }
+  ],
+  "courseReceipt": {
+    "scheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.course-receipt.v1',courseId,records:sorted-{target,recordSha256}}))",
+    "recordCount": 2,
+    "bindingSha256": "2dc98c6997eedd7ef6edcdd14b17380af9b12c28fca31865e6e72e0d49fb8dec"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v2",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:166",
+    "internalId": "PB-ORIGINAL:ED1-166",
+    "problemVersion": "proofbound-ed1-166-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "e96a398b9e2b6aec90d6dbccc621d13f44910c15cf0ce543699cf628daf78a03"
+  },
+  "answerFormSha256": "a22eca77d372a50b4cce159a46137e00b7631a0c5dde15a0a1310bfe9f053911",
+  "checkerId": "checker.ed1.166.ampere-maxwell-continuity",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "charge-time-coefficient",
+      "expected": -1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "current-divergence-coefficient",
+      "expected": 1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "continuity-sum-coefficient",
+      "expected": 0,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "ampere-maxwell-divergence",
+      "expectedChoiceIds": [
+        "derivation:zero_equals_mu0_div_j_plus_mu0_epsilon0_dt_div_e"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "derivation:zero_equals_mu0_div_j_plus_mu0_epsilon0_dt_div_e",
+          "errorCode": null
+        },
+        {
+          "choiceId": "derivation:zero_equals_mu0_div_j_after_dropping_displacement",
+          "errorCode": "EDE166A"
+        },
+        {
+          "choiceId": "derivation:div_b_equals_mu0_div_j_plus_mu0_epsilon0_dt_div_e",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "local-continuity-sign",
+      "expectedChoiceIds": [
+        "continuity:partial_t_rho_plus_div_j_equals_zero"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "continuity:partial_t_rho_plus_div_j_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "continuity:partial_t_rho_minus_div_j_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "continuity:partial_t_rho_equals_zero",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "sine-derivative-factor",
+      "expectedChoiceIds": [
+        "derivative:d_dx_sin_kx_equals_k_cos_kx"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "derivative:d_dx_sin_kx_equals_k_cos_kx",
+          "errorCode": null
+        },
+        {
+          "choiceId": "derivative:d_dx_sin_kx_equals_cos_kx",
+          "errorCode": "EDE166B"
+        },
+        {
+          "choiceId": "derivative:d_dx_sin_kx_equals_k_sin_kx",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "volume-current-unit",
+      "expectedChoiceIds": [
+        "unit:ampere_per_square_metre"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "unit:ampere_per_square_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "unit:ampere_per_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "unit:coulomb_per_cubic_metre",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "maxwell-consistency",
+      "expectedChoiceIds": [
+        "consistency:cannot_satisfy_both_displayed_maxwell_equations"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "consistency:cannot_satisfy_both_displayed_maxwell_equations",
+          "errorCode": null
+        },
+        {
+          "choiceId": "consistency:may_satisfy_both_because_gauss_law_is_unrelated",
+          "errorCode": "EDE166A"
+        },
+        {
+          "choiceId": "consistency:may_satisfy_both_if_div_j_is_zero",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-166-M1",
+      "partIds": [
+        "ampere-maxwell-divergence",
+        "local-continuity-sign"
+      ]
+    },
+    {
+      "milestoneId": "ED1-166-M2",
+      "partIds": [
+        "charge-time-coefficient",
+        "sine-derivative-factor",
+        "current-divergence-coefficient",
+        "continuity-sum-coefficient"
+      ]
+    },
+    {
+      "milestoneId": "ED1-166-M3",
+      "partIds": [
+        "volume-current-unit",
+        "maxwell-consistency"
+      ]
+    }
+  ]
+}

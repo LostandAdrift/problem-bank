@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-coach-grounding-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:163",
+        "internalId": "PB-ORIGINAL:ED1-163",
+        "problemVersion": "proofbound-ed1-163-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-163-grounding-v1",
+      "skillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "distributional-gauss-law",
+        "sheet-delta-source",
+        "slab-flux-check"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:163:distributional-source",
+          "description": "Recover the full delta-function charge density from the supplied derivative identity."
+        },
+        {
+          "objectiveRef": "objective:ed1:163:slab-flux",
+          "description": "Verify the source with the two correctly oriented slab-face fluxes."
+        },
+        {
+          "objectiveRef": "objective:ed1:163:units-domain",
+          "description": "Audit the delta and charge-density units and distinguish punctured-space from full-space divergence."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:163:half-delta-derivative",
+          "sourceErrorCode": "EDE163A",
+          "description": "Using one delta instead of two when differentiating the sign distribution."
+        },
+        {
+          "conceptRef": "misconception:ed1:163:subtract-bottom-flux",
+          "sourceErrorCode": "EDE163B",
+          "description": "Subtracting the bottom-face contribution after both its field and outward normal reverse."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-163-hint-1",
+        "ed1-163-hint-2",
+        "ed1-163-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-163-M1",
+        "ED1-163-M2",
+        "ED1-163-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:164",
+        "internalId": "PB-ORIGINAL:ED1-164",
+        "problemVersion": "proofbound-ed1-164-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-164-grounding-v1",
+      "skillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "macroscopic-interface-jumps",
+        "free-surface-sources",
+        "constitutive-application"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:164:electric-interface",
+          "description": "Use tangential E continuity and the normal D jump to reconstruct E2."
+        },
+        {
+          "objectiveRef": "objective:ed1:164:magnetic-interface",
+          "description": "Use the oriented tangential H jump and normal B continuity to reconstruct H2."
+        },
+        {
+          "objectiveRef": "objective:ed1:164:four-jump-source-audit",
+          "description": "Verify the complete vectors against all four jumps and identify the macroscopic free-source convention."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:164:reversed-k-cross-n",
+          "sourceErrorCode": "EDE164A",
+          "description": "Using n cross K-free in place of K-free cross n for the tangential H increment."
+        },
+        {
+          "conceptRef": "misconception:ed1:164:e-instead-of-d",
+          "sourceErrorCode": "EDE164B",
+          "description": "Applying the normal electric jump to E instead of D across unequal permittivities."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-164-hint-1",
+        "ed1-164-hint-2",
+        "ed1-164-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-164-M1",
+        "ED1-164-M2",
+        "ED1-164-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v2",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:169",
+    "internalId": "PB-ORIGINAL:ED1-169",
+    "problemVersion": "proofbound-ed1-169-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "bded7fc1352ba9ed30f1db2cbc5f802303f4131d4566bdd9ca19cabf8e61c660"
+  },
+  "answerFormSha256": "9ad8655a7dce88bd3a0c40a1dbb228168c30376c1b626ee39864bc4e18d0c366",
+  "checkerId": "checker.ed1.169.gauss-constraint-propagation",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "defect-residual-coefficient",
+      "expected": -1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": [
+        {
+          "expected": 1,
+          "absoluteTolerance": 1e-12,
+          "relativeTolerance": 0,
+          "errorCode": "EDE169B"
+        }
+      ]
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "magnetic-residual-evolution",
+      "expectedChoiceIds": [
+        "evolution:partial_t_c_b_equals_zero"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "evolution:partial_t_c_b_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "evolution:partial_t_c_b_equals_negative_div_e",
+          "errorCode": null
+        },
+        {
+          "choiceId": "evolution:c_b_equals_zero_without_initial_condition",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "electric-residual-evolution",
+      "expectedChoiceIds": [
+        "evolution:partial_t_c_e_equals_negative_s_over_epsilon0"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "evolution:partial_t_c_e_equals_negative_s_over_epsilon0",
+          "errorCode": null
+        },
+        {
+          "choiceId": "evolution:partial_t_c_e_equals_zero_without_continuity",
+          "errorCode": "EDE169A"
+        },
+        {
+          "choiceId": "evolution:partial_t_c_e_equals_positive_s_over_epsilon0",
+          "errorCode": "EDE169B"
+        }
+      ]
+    },
+    {
+      "partId": "constraint-propagation-dependency",
+      "expectedChoiceIds": [
+        "propagation:continuity_and_zero_initial_residuals"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "propagation:continuity_and_zero_initial_residuals",
+          "errorCode": null
+        },
+        {
+          "choiceId": "propagation:curl_equations_alone_without_continuity",
+          "errorCode": "EDE169A"
+        },
+        {
+          "choiceId": "propagation:continuity_alone_without_initial_residuals",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "defect-curl-audit",
+      "expectedChoiceIds": [
+        "audit:curl_equations_zero_equals_zero_continuity_defect_s0"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "audit:curl_equations_zero_equals_zero_continuity_defect_s0",
+          "errorCode": null
+        },
+        {
+          "choiceId": "audit:curl_equations_fail_because_rho_changes",
+          "errorCode": null
+        },
+        {
+          "choiceId": "audit:zero_e_forces_zero_c_e_despite_rho",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "defect-unit-audit",
+      "expectedChoiceIds": [
+        "units:s0_coulomb_per_cubic_metre_per_second_and_rate_volt_per_square_metre_per_second"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "units:s0_coulomb_per_cubic_metre_per_second_and_rate_volt_per_square_metre_per_second",
+          "errorCode": null
+        },
+        {
+          "choiceId": "units:s0_coulomb_per_cubic_metre_and_rate_volt_per_square_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "units:s0_coulomb_per_cubic_metre_per_second_and_rate_volt_per_metre",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-169-M1",
+      "partIds": [
+        "magnetic-residual-evolution",
+        "electric-residual-evolution"
+      ]
+    },
+    {
+      "milestoneId": "ED1-169-M2",
+      "partIds": [
+        "constraint-propagation-dependency"
+      ]
+    },
+    {
+      "milestoneId": "ED1-169-M3",
+      "partIds": [
+        "defect-curl-audit",
+        "defect-residual-coefficient",
+        "defect-unit-audit"
+      ]
+    }
+  ]
+}

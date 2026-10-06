@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "proofanvil.cm-adversarially-reviewed-alpha.v1",
+  "bankId": "proofanvil-cm-alpha-240-v1",
+  "reviewDate": "2026-08-10",
+  "courseId": "classical-mechanics",
+  "firstPublicProblemId": "CM:001",
+  "lastPublicProblemId": "CM:240",
+  "packetCount": 240,
+  "packetDigestBindingScheme": "proofanvil.cm-alpha-packet-digest-binding.v1",
+  "packetDigestBindingSha256": "96091e8d254c92c7583ccf23861e60c3920566f90e0cda5078a9f44882a81308",
+  "reviewBatches": [
+    {
+      "range": "001-080",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "081-160",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    },
+    {
+      "range": "161-240",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review"
+    }
+  ],
+  "checks": [
+    "physical_accuracy",
+    "numerical_recomputation",
+    "si_units_and_dimensions",
+    "sign_and_axis_conventions",
+    "boundary_and_initial_conditions",
+    "limiting_cases",
+    "redundancy",
+    "hint_quality",
+    "solution_quality"
+  ],
+  "outcome": "accepted_for_bounded_alpha",
+  "constraints": {
+    "compiledLeanRequired": false,
+    "learnerLeanDraftIncluded": false,
+    "minimumFixturesPerProblem": 2,
+    "productionQualityClaim": false
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:165",
+    "internalId": "PB-ORIGINAL:ED1-165",
+    "problemVersion": "proofbound-ed1-165-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "d0869d26bcf4af65bcdefb545b0d8822013bb3ac0ed5aff8e7e66f634d1f912e"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "local-continuity-sign",
+      "label": "Select the localized surface continuity equation for the stated outward in-plane normal.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "continuity:partial_t_sigma_plus_surface_divergence_equals_zero",
+          "label": "partial-t sigma-s plus surface divergence of K-s equals zero"
+        },
+        {
+          "choiceId": "continuity:partial_t_sigma_minus_surface_divergence_equals_zero",
+          "label": "partial-t sigma-s minus surface divergence of K-s equals zero"
+        },
+        {
+          "choiceId": "continuity:surface_divergence_equals_zero_for_every_sigma",
+          "label": "surface divergence of K-s equals zero for every time-dependent sigma-s"
+        }
+      ]
+    },
+    {
+      "partId": "current-prefactor-ratio",
+      "label": "Enter C when K-x = C (A omega/k) sin(kx) sin(omega t).",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "current-shape",
+      "label": "Select the spatial, temporal, and vector shape of one compatible current before its scalar prefactor.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "current:sin_kx_sin_omega_t_x_hat",
+          "label": "sin(kx) sin(omega t) in the x direction"
+        },
+        {
+          "choiceId": "current:cos_kx_sin_omega_t_x_hat",
+          "label": "cos(kx) sin(omega t) in the x direction"
+        },
+        {
+          "choiceId": "current:sin_kx_cos_omega_t_x_hat",
+          "label": "sin(kx) cos(omega t) in the x direction"
+        }
+      ]
+    },
+    {
+      "partId": "divergence-verification",
+      "label": "Select the x derivative of the compatible K-x.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "verification:positive_a_omega_cos_kx_sin_omega_t",
+          "label": "+A omega cos(kx) sin(omega t)"
+        },
+        {
+          "choiceId": "verification:negative_a_omega_cos_kx_sin_omega_t",
+          "label": "-A omega cos(kx) sin(omega t)"
+        },
+        {
+          "choiceId": "verification:zero",
+          "label": "zero"
+        }
+      ]
+    },
+    {
+      "partId": "divergence-free-freedom",
+      "label": "Select the correct conclusion about adding K-zero(t) in the y direction.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "freedom:uniform_k0_t_y_is_allowed",
+          "label": "It is allowed because its surface divergence is zero."
+        },
+        {
+          "choiceId": "freedom:divergence_uniquely_fixes_both_components",
+          "label": "It is forbidden because the divergence uniquely fixes both current components."
+        },
+        {
+          "choiceId": "freedom:uniform_k0_t_y_changes_charge_evolution",
+          "label": "It is forbidden because it changes the charge evolution."
+        }
+      ]
+    },
+    {
+      "partId": "surface-current-unit",
+      "label": "Select the SI unit of A omega/k and of a surface current K-s.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "unit:ampere_per_metre",
+          "label": "ampere per metre"
+        },
+        {
+          "choiceId": "unit:coulomb_per_square_metre",
+          "label": "coulomb per square metre"
+        },
+        {
+          "choiceId": "unit:ampere_per_square_metre",
+          "label": "ampere per square metre"
+        }
+      ]
+    }
+  ]
+}

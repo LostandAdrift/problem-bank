@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exam-alignment-review-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:165",
+        "internalId": "PB-ORIGINAL:ED1-165",
+        "problemVersion": "proofbound-ed1-165-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "d0869d26bcf4af65bcdefb545b0d8822013bb3ac0ed5aff8e7e66f634d1f912e"
+      },
+      "disposition": "reviewed_not_applicable",
+      "rationale": "No versioned external examination syllabus is part of the checked-in ED1 authority, so this item makes no exam-family claim.",
+      "publicationAuthority": false
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:166",
+        "internalId": "PB-ORIGINAL:ED1-166",
+        "problemVersion": "proofbound-ed1-166-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e96a398b9e2b6aec90d6dbccc621d13f44910c15cf0ce543699cf628daf78a03"
+      },
+      "disposition": "reviewed_not_applicable",
+      "rationale": "No versioned external examination syllabus is part of the checked-in ED1 authority, so this item makes no exam-family claim.",
+      "publicationAuthority": false
+    }
+  ]
+}

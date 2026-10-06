@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "proofanvil.ed1-versioned-successor-scope-authority.v2",
+  "digestScheme": "proofanvil.ed1-versioned-successor-scope-authority.artifact-sha256.v2",
+  "status": "held_non_admission_scope_supersession",
+  "courseId": "electrodynamics-1",
+  "authorityDate": "2026-08-11",
+  "immutableInputs": {
+    "languageAuditV1": {
+      "path": "data/problems/electrodynamics-1-bank/language-audit.v1.json",
+      "rawSha256": "f9de3344d15f8a9ee5c366bfa36708984596032e88e73083b5d59d41dffc6591"
+    },
+    "revisionFixtureAuditV1": {
+      "path": "data/problems/electrodynamics-1-bank/revision-fixture-audit.v1.json",
+      "rawSha256": "ac8d0db149f65db6c4a362d624fc64ae119750929919e9951fdebb363aa392a5"
+    },
+    "checkedInManifest": {
+      "path": "data/problems/checked-in-packet-manifest.json",
+      "rawSha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef"
+    },
+    "packetFile": {
+      "path": "data/problems/electrodynamics-1-bank/packets.json",
+      "rawSha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78"
+    },
+    "allPacketTupleSha256": "488c623371227f2a1e8d4db5d032e8a02a196638c4448b776eb235e9dece0251"
+  },
+  "supersession": {
+    "publicProblemId": "ED:150",
+    "exactTarget": {
+      "source": "checked_in",
+      "publicProblemId": "ED:150",
+      "internalId": "PB-ORIGINAL:ED1-150",
+      "problemVersion": "proofbound-ed1-150-v1",
+      "rubricVersion": "v1",
+      "canonicalPacketSha256": "b190ae45a528d474416037cf5b2832607e0c171e301d7af1cb70793273bdd2a1"
+    },
+    "revisionFixtureClassification": {
+      "from": "exactAOnly",
+      "to": "aPlusBOrAdditional",
+      "requiredErrorCode": "EDE150A",
+      "rationale": "The revision fixture omits the isotropic Maxwell-stress term, which instantiates EDE150A, and then independently reverses the traction direction by claiming that the field pushes the pole faces out of the gap. The second mistake is an additional unlisted error, so the fixture is not exact-A-only."
+    },
+    "versionScope": {
+      "from": "problem_only",
+      "to": "problem_and_rubric",
+      "rationale": "The existing problem-language repairs remain required, while the newly established revision-fixture mismatch also requires a rubric successor."
+    },
+    "findings": {
+      "retained": [
+        "ambiguous_request",
+        "unit_or_sign_convention"
+      ],
+      "added": [
+        "rubric_statement_mismatch"
+      ]
+    }
+  },
+  "effectiveCounts": {
+    "revisionFixtureCensus": {
+      "exactAOnly": 117,
+      "aPlusBOrAdditional": 103,
+      "bOrUnlistedWithoutA": 18,
+      "neitherOrUnlisted": 2,
+      "selfCorrecting": 0,
+      "nonconforming": 123
+    },
+    "languageFindings": {
+      "overlappingFindings": 208,
+      "rubricStatementMismatch": 136,
+      "successorUnionProblems": 167
+    },
+    "versionScopes": {
+      "problem_only": 10,
+      "rubric_only": 109,
+      "problem_and_rubric": 48
+    }
+  },
+  "authorityBoundary": {
+    "admissionAuthority": false,
+    "publicationAuthority": false,
+    "releaseAuthority": false,
+    "currentVersionAuthority": false,
+    "packetMutationAuthority": false,
+    "sourceMutationAuthority": false,
+    "manifestMutationAuthority": false,
+    "stagingAuthority": false
+  },
+  "artifactSha256": "1a36ba04ddf4ae4c3f8daa92a41cb15a9db9e87db9019a9b1279de9571dfb330"
+}

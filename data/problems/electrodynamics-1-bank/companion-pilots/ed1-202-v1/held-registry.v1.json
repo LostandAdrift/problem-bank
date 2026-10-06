@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "proofanvil.exact-packet-companion-course-registry.v1",
+  "courseId": "electrodynamics-1",
+  "records": [
+    {
+      "schemaVersion": "proofanvil.exact-packet-companion.v1",
+      "courseId": "electrodynamics-1",
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:202",
+        "internalId": "PB-ORIGINAL:ED1-202",
+        "problemVersion": "proofbound-ed1-202-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+      },
+      "examAlignment": {
+        "applicability": "not_applicable",
+        "entries": null,
+        "reviewedNotApplicableRationale": "No versioned external examination syllabus is part of the checked-in ED1 authority, so this course-bank item makes no exam-family claim.",
+        "evidenceRefs": [
+          {
+            "kind": "independent_review",
+            "referenceId": "review/ed1/202/exam-alignment-v1",
+            "sha256": "ea7ecfbab26a253be2e7755cc79c5f89051a2172fd0d26659c019a909f2f124d"
+          }
+        ]
+      },
+      "answerType": {
+        "kind": "multipart_mixed",
+        "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+        "rendererId": "multipart_v1",
+        "parts": [
+          {
+            "partId": "measured-e-over-b",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "measured-e-over-b-role",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "measured-e-over-h",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "measured-e-over-h-role",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "predicted-v",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "predicted-eta",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "comparison",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          },
+          {
+            "partId": "constitutive-b",
+            "required": true,
+            "schema": {
+              "responseKind": "numeric",
+              "format": "decimal",
+              "unitPolicy": "required",
+              "minimumSelections": null,
+              "maximumSelections": null
+            }
+          },
+          {
+            "partId": "why-b-and-h-differ",
+            "required": true,
+            "schema": {
+              "responseKind": "choice_ids",
+              "format": "choice_ids",
+              "unitPolicy": null,
+              "minimumSelections": 1,
+              "maximumSelections": 1
+            }
+          }
+        ]
+      },
+      "accessibility": {
+        "visualDependency": "none",
+        "visuals": [],
+        "keyboardAnswerable": true,
+        "colorIndependent": true,
+        "screenReaderMath": "both"
+      },
+      "prerequisiteProblemIds": [
+        "ED:201"
+      ],
+      "prerequisiteSkillIds": [
+        "elementary-electromagnetic-waves",
+        "plane-wave-sign"
+      ],
+      "verificationAuthority": {
+        "mode": "deterministic_runtime",
+        "deterministicRuntime": {
+          "checkerId": "checker.ed1.202.field-ratios",
+          "checkerVersion": "v1",
+          "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+          "implementationSha256": "2019739bb7bd4e66aed0534233cc00ab4bfacd6ccfc599aad7bae0d728bcbb47",
+          "parameterSha256": "865b81ebdf6270437c84f04f2801c251a617dd0829761dc57bef35d6e8181d10",
+          "fixtureSetSha256": "9859186cd234330cb9da4b8cf6d840945ce192f50150e8fe31fde7bb0ff4a19d",
+          "sourcePacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a",
+          "passingFixtureCount": 6,
+          "failingFixtureCount": 12,
+          "evidenceSha256": "aa42515d100c6baf3b877b55fd2512372fad31a76d83e325cc7ccaef0ae2db29",
+          "executionAuthority": "server_only_deterministic_runtime",
+          "coverage": "full",
+          "requiredResponsePartIds": [
+            "measured-e-over-b",
+            "measured-e-over-b-role",
+            "measured-e-over-h",
+            "measured-e-over-h-role",
+            "predicted-v",
+            "predicted-eta",
+            "comparison",
+            "constitutive-b",
+            "why-b-and-h-differ"
+          ],
+          "coveredResponsePartIds": [
+            "measured-e-over-b",
+            "measured-e-over-b-role",
+            "measured-e-over-h",
+            "measured-e-over-h-role",
+            "predicted-v",
+            "predicted-eta",
+            "comparison",
+            "constitutive-b",
+            "why-b-and-h-differ"
+          ]
+        },
+        "lean": null,
+        "reviewedSemanticRemainder": null,
+        "reviewedSemanticException": null
+      },
+      "completionDisposition": "held",
+      "coach": {
+        "delivery": "server_only",
+        "policyVersion": "proofanvil-coach-policy-v1",
+        "groundingVersion": "ed1-202-grounding-v1",
+        "groundingSha256": "f4fe54f97d3af5e60d9d15656bbbb3b2a2dfafe442c48fe7c479e47a2cebb589",
+        "packetFieldSelectors": [
+          {
+            "field": "objective",
+            "access": "always"
+          },
+          {
+            "field": "statement",
+            "access": "always"
+          },
+          {
+            "field": "permittedResults",
+            "access": "always"
+          },
+          {
+            "field": "revealedHints",
+            "access": "revealed_only"
+          }
+        ],
+        "permittedHintRefs": [
+          "ed1-202-hint-1",
+          "ed1-202-hint-2",
+          "ed1-202-hint-3"
+        ],
+        "milestoneRefs": [
+          "ED1-202-M1",
+          "ED1-202-M2",
+          "ED1-202-M3"
+        ],
+        "misconceptionConceptRefs": [
+          "misconception:ed1:202:e-over-b-impedance",
+          "misconception:ed1:202:b-h-interchange"
+        ],
+        "scaffoldStages": [
+          {
+            "stageId": "ratios",
+            "objectiveRef": "objective:ed1:202:ratios",
+            "allowedMoves": [
+              "orient",
+              "ask_diagnostic",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "predictions",
+            "objectiveRef": "objective:ed1:202:predictions",
+            "allowedMoves": [
+              "request_justification",
+              "offer_hint",
+              "check_milestone"
+            ]
+          },
+          {
+            "stageId": "constitutive",
+            "objectiveRef": "objective:ed1:202:constitutive",
+            "allowedMoves": [
+              "ask_diagnostic",
+              "address_misconception",
+              "check_milestone",
+              "summarize_progress",
+              "escalate"
+            ]
+          }
+        ],
+        "allowedMoves": [
+          "orient",
+          "ask_diagnostic",
+          "request_justification",
+          "offer_hint",
+          "check_milestone",
+          "address_misconception",
+          "summarize_progress",
+          "escalate"
+        ],
+        "maxTurns": 12,
+        "nudgeAfterTurns": 3,
+        "terminalRules": [
+          "learner_solved",
+          "max_turns_reached",
+          "solution_access_authorized",
+          "safety_stop"
+        ],
+        "escalationRules": [
+          "repeated_blocker",
+          "suspected_content_defect",
+          "ambiguous_response",
+          "accessibility_blocker"
+        ],
+        "protectedFieldDelivery": "server_only",
+        "protectedPayloadIncluded": false
+      },
+      "digestScheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.record-digest.v1',record:record-without-recordSha256}))",
+      "recordSha256": "bbe776202108729d7e03161083ffd7fdf4fc5718c1c049fcf2b320265a853e6b"
+    }
+  ],
+  "courseReceipt": {
+    "scheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.course-receipt.v1',courseId,records:sorted-{target,recordSha256}}))",
+    "recordCount": 1,
+    "bindingSha256": "5a7f4cbfc8355399fb9395774515b14a737a59cefe25af3984482c642d492d80"
+  }
+}

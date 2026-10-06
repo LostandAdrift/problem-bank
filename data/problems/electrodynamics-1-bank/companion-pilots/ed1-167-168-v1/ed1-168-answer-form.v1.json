@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:168",
+    "internalId": "PB-ORIGINAL:ED1-168",
+    "problemVersion": "proofbound-ed1-168-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "31ba390caa0ce8289ad123b1b9e284b315a0ac06f31a31eb3dbc6f976fd57210"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "interior-alpha-coefficient",
+      "label": "Normalized coefficient 3c when the interior requirement is alpha(t) = c rho(t) / tau",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "global-linear-audit",
+      "label": "Select the continuity audit of one global alpha(t) r r-hat current.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "audit:inside_alpha_rho_over_3tau_outside_alpha_zero_incompatible",
+          "label": "Inside requires alpha = rho/(3 tau), while outside requires alpha = 0, so one nonzero global alpha is impossible"
+        },
+        {
+          "choiceId": "audit:inside_alpha_rho_over_3tau_valid_everywhere",
+          "label": "The interior value alpha = rho/(3 tau) remains valid everywhere because the exterior charge density is zero"
+        },
+        {
+          "choiceId": "audit:alpha_zero_valid_everywhere",
+          "label": "Alpha = 0 satisfies continuity in both regions while the interior charge decays"
+        }
+      ]
+    },
+    {
+      "partId": "piecewise-current-construction",
+      "label": "Select the regular piecewise radial current with continuous normal current at R.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "construction:jin_rho_r_over_3tau_jout_rho_R3_over_3tau_r2",
+          "label": "J_in = rho(t) r r-hat/(3 tau) and J_out = rho(t) R^3 r-hat/(3 tau r^2)"
+        },
+        {
+          "choiceId": "construction:single_linear_rho_r_over_3tau_everywhere",
+          "label": "Use J = rho(t) r r-hat/(3 tau) both inside and outside"
+        },
+        {
+          "choiceId": "construction:jin_rho_r_over_3tau_jout_zero",
+          "label": "Use J_in = rho(t) r r-hat/(3 tau) and set J_out = 0"
+        }
+      ]
+    },
+    {
+      "partId": "boundary-current-coefficient",
+      "label": "Normalized coefficient 3c when J_r(R) = c rho(t) R / tau on either side",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "flux-loss-ratio",
+      "label": "Ratio of outward boundary flux to -dQ/dt",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "boundary-flux-audit",
+      "label": "Select the boundary-continuity and total-charge-loss ledger.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "ledger:jr_continuous_flux_Q_over_tau_equals_negative_dQdt",
+          "label": "J_r is continuous at R, and the outward flux is Q/tau = -dQ/dt"
+        },
+        {
+          "choiceId": "ledger:outside_zero_normal_jump_ignored",
+          "label": "The exterior current may be zero; the resulting normal-current jump needs no surface accumulation"
+        },
+        {
+          "choiceId": "ledger:jr_continuous_flux_equals_positive_dQdt",
+          "label": "J_r is continuous at R, and the outward flux is +dQ/dt"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "proofanvil.exact-coach-grounding.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "policyVersion": "proofanvil-coach-policy-v1",
+  "groundingVersion": "ed1-202-grounding-v1",
+  "objectiveRefs": [
+    {
+      "objectiveRef": "objective:ed1:202:ratios",
+      "description": "Distinguish the measured E-to-B and E-to-H ratios by SI dimensions before substituting material formulas."
+    },
+    {
+      "objectiveRef": "objective:ed1:202:predictions",
+      "description": "Compute the independent speed and impedance predictions and compare them with the measured ratios."
+    },
+    {
+      "objectiveRef": "objective:ed1:202:constitutive",
+      "description": "Check B0 = mu0 mu_r H0 and identify permeability as a dimensional constitutive factor."
+    }
+  ],
+  "misconceptionConceptRefs": [
+    {
+      "conceptRef": "misconception:ed1:202:e-over-b-impedance",
+      "description": "Treating E/B as an impedance instead of a speed."
+    },
+    {
+      "conceptRef": "misconception:ed1:202:b-h-interchange",
+      "description": "Treating B and H as numerically or dimensionally interchangeable."
+    }
+  ],
+  "protectedPayloadIncluded": false,
+  "deliveryDisposition": "held_not_implemented"
+}

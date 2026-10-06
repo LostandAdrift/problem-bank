@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "proofbound.la1-independent-cross-review.v1",
+  "courseId": "linear-algebra-1",
+  "range": "101-200",
+  "reviewDate": "2026-08-10",
+  "source": {
+    "path": "data/problems/linear-algebra-1-bank/part-101-200.json",
+    "inputSha256": "c5a077fa76ae2218be9e613f49230929c01b34bfaefe77d1b56a7a90e8cf782e",
+    "finalSha256": "804000f4840524fa0fa7626d7ea8d25a9a99367852117864ed1072d7e57026e9",
+    "schemaVersion": "proofbound.la1-source-part.v1",
+    "problemCount": 100
+  },
+  "boundedDelta": {
+    "status": "pass",
+    "envelopeUnchanged": true,
+    "changedOrdinals": [
+      117,
+      133,
+      165,
+      187,
+      193
+    ],
+    "untouchedProblemCount": 95,
+    "repairs": [
+      {
+        "ordinal": 117,
+        "reason": "Replaced a definitional range-witness exercise that was under-calibrated for difficulty 3 with the range inclusion and rank-subadditivity theorem for a sum of maps."
+      },
+      {
+        "ordinal": 133,
+        "reason": "Replaced a repeat of LA74's Grassmann identity with restricted-domain rank-nullity and its quotient-to-image equivalence."
+      },
+      {
+        "ordinal": 165,
+        "reason": "Replaced an exact bundle of LA154 and LA155 with the nonzero-scalar criterion for a quotient class to vanish."
+      },
+      {
+        "ordinal": 187,
+        "reason": "Removed an unspoken finite-dimensional hypothesis from the Lean theorem so it matches the dimension-free learner statement."
+      },
+      {
+        "ordinal": 193,
+        "reason": "Made uniqueness quantify over the quotient factorization equation itself and stated the invariant package separately for the canonical unique factor."
+      }
+    ]
+  },
+  "independentSemanticReview": {
+    "status": "pass",
+    "problemsReviewed": 100,
+    "fullStatementEquivalenceReviewed": 100,
+    "sixChecks": [
+      "objects, scalar structures, hypotheses, domains, and codomains",
+      "quantifier scope and dependency",
+      "every requested conjunction and subtask",
+      "both directions of equivalences and all named cases",
+      "witness, construction, and uniqueness scope",
+      "absence of weakening, vacuity, disclaimers, and semantic escape"
+    ],
+    "mathematicalFalsehoodsRemaining": 0,
+    "statementLeanMismatchesRemaining": 0,
+    "difficultyCalibrationFailuresRemaining": 0,
+    "errorAFlawedProofMisalignmentsRemaining": 0
+  },
+  "formalEnvironment": {
+    "leanVersion": "4.32.1",
+    "leanCommit": "f054605aea4b840552cca2e725580bffd1e1b704",
+    "formalRepositoryCommit": "3bfdc4a342f8be420631ca2f763af6481d7e3321",
+    "leanToolchainSha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lakeManifestSha256": "6dafdb5751f46506f080506498db2ac5c0f31c5f71f44bcb3390f0a2f06538a4"
+  },
+  "formalValidation": {
+    "individualCompile": {
+      "command": "lake env lean -DwarningAsError=true <exact extracted leanDraft>",
+      "status": "pass",
+      "passed": 100,
+      "failed": 0
+    },
+    "aggregateCompile": {
+      "command": "lake env lean -DwarningAsError=true <generated 101-200 aggregate>",
+      "status": "pass",
+      "theoremCount": 100
+    },
+    "axiomAudit": {
+      "command": "#print axioms proofanvil_la1_<ordinal>_v1",
+      "status": "pass",
+      "theoremCount": 100,
+      "used": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "unexpected": []
+    }
+  },
+  "sourceValidation": {
+    "status": "pass",
+    "difficultyCounts": {
+      "1": 10,
+      "2": 20,
+      "3": 30,
+      "4": 25,
+      "5": 15
+    },
+    "strictKatexFragmentsRendered": 2874,
+    "katexFailures": 0,
+    "schemaFailures": 0,
+    "escapeFailures": 0,
+    "forbiddenLeanTokens": 0,
+    "exactTitleCollisions": 0,
+    "exactStatementCollisions": 0,
+    "sourcePartFilesScanned": 24,
+    "problemsScanned": 2400,
+    "confirmedSemanticDuplicatesRemaining": 0
+  }
+}

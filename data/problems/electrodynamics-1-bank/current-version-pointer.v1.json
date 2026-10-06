@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "proofanvil.ed1-current-version-pointer.v1",
+  "courseId": "electrodynamics-1",
+  "mode": "predecessor",
+  "activeSetId": "proofanvil-ed1-alpha-240-v1",
+  "artifactDigestScheme": "proofanvil.ed1-current-version-pointer.digest.v1",
+  "artifactSha256": "802d990ab73c655d978874e4da5bd4fa689fc85bafe4ff7dce95658181653fca",
+  "activation": {
+    "kind": "sealed_predecessor",
+    "predecessorAuthorityPath": "data/problems/electrodynamics-1-bank/predecessor-authority.v1.json",
+    "predecessorAuthorityRawSha256": "a3923654e5a96d04a1cd39b64c0e977700f1e71a0ddcd1805a227ece2c739821",
+    "predecessorAuthorityArtifactSha256": "8f33fc4666682dbc98307593a04c3ce5c7612b34c18d1b63926d719720fabacb",
+    "admissionReceiptPath": "data/problems/electrodynamics-1-bank/successor-admission-receipt.v2.json",
+    "admissionReceiptRawSha256": "0eb1fd8c8b9abaa4a49a672b86d60a83db69c87dcb2a2dc328ead50c04e41d98",
+    "admissionReceiptArtifactSha256": "bb0af63201e7b30255816cf7d027019325cf157742bb9613437eb856c4a0e11a",
+    "liveManifestPath": "data/problems/checked-in-packet-manifest.json",
+    "liveManifestSha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef",
+    "packetSetPath": "data/problems/electrodynamics-1-bank/packets.json",
+    "packetSetSha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78",
+    "catalogSetPath": "data/problems/electrodynamics-1-bank/catalog.json",
+    "catalogSetSha256": "d60236424e1ee76cdf7012b461abba55371685ae0387180e9c3706eab46320fc",
+    "currentPacketBindingScheme": "proofanvil.ed1-language-audit-binding.v1",
+    "currentPacketBindingSha256": "488c623371227f2a1e8d4db5d032e8a02a196638c4448b776eb235e9dece0251",
+    "counts": {
+      "currentPacketCount": 240,
+      "snapshotCount": 240,
+      "historicalPacketCount": 0,
+      "successorPacketCount": 0
+    }
+  }
+}

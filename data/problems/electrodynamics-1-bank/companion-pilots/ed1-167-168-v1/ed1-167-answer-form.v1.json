@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:167",
+    "internalId": "PB-ORIGINAL:ED1-167",
+    "problemVersion": "proofbound-ed1-167-v2",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "2ff6818e4a99b61223e025fe5910682be96a6815e77d64b2093096ad80a8121e"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "electric-field-coefficient",
+      "label": "Coefficient c in E = c V(t) r-hat / [r ln(b/a)]",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "dimensionless",
+          "label": "dimensionless"
+        }
+      ]
+    },
+    {
+      "partId": "electric-field-form",
+      "label": "Select the electric field in the coaxial gap.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "field:V_over_r_log_radial",
+          "label": "V(t) r-hat / [r ln(b/a)]"
+        },
+        {
+          "choiceId": "field:V_over_b_minus_a_radial",
+          "label": "V(t) r-hat / (b-a)"
+        },
+        {
+          "choiceId": "field:V_over_r_radial",
+          "label": "V(t) r-hat / r"
+        }
+      ]
+    },
+    {
+      "partId": "displacement-current-ledger",
+      "label": "Select the displacement-current density and cylindrical-cut integration ledger.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "ledger:jd_epsilon0_vdot_over_r_log_area_r0_full_cut_independent",
+          "label": "J_D = epsilon-zero V-dot r-hat / [r ln(b/a)]; the r0 area factor cancels 1/r0, giving 2 pi epsilon-zero ell V-dot / ln(b/a)"
+        },
+        {
+          "choiceId": "ledger:uniform_jd_parallel_plate_current_proportional_r0",
+          "label": "J_D = epsilon-zero V-dot r-hat / (b-a); integrating the cylindrical cut makes the current proportional to r0"
+        },
+        {
+          "choiceId": "ledger:correct_jd_flat_area_current_inverse_r0",
+          "label": "Use the 1/r displacement-current density but omit r0 from the area element, leaving the current proportional to 1/r0"
+        }
+      ]
+    },
+    {
+      "partId": "current-microampere",
+      "label": "Displacement current through the full cylindrical cut",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microampere",
+          "label": "microampere"
+        }
+      ]
+    },
+    {
+      "partId": "current-density",
+      "label": "Magnitude of J_D at r0 = 2.00 mm",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "ampere_per_square_metre",
+          "label": "A m^-2"
+        }
+      ]
+    },
+    {
+      "partId": "sign-unit-audit",
+      "label": "Select the sign, direction, and units of the numerical results.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "audit:positive_rhat_current_microampere_jd_ampere_per_square_metre",
+          "label": "Positive along +r-hat; current in microamperes and J_D in amperes per square metre"
+        },
+        {
+          "choiceId": "audit:negative_rhat_current_microampere_jd_ampere_per_square_metre",
+          "label": "Negative along +r-hat; current in microamperes and J_D in amperes per square metre"
+        },
+        {
+          "choiceId": "audit:positive_rhat_current_ampere_jd_ampere_per_metre",
+          "label": "Positive along +r-hat; current in amperes and J_D in amperes per metre"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "proofanvil.ed1-revision-fixture-audit.v1",
+  "courseId": "electrodynamics-1",
+  "auditDate": "2026-08-11",
+  "status": "exact_bound_successors_required",
+  "policy": {
+    "expectedErrorCodesMeaning": "exhaustive",
+    "revisionFixtureRequiredError": "commonErrors[0]",
+    "acceptedRevisionFixtureShape": "instantiates_error_A_exactly_and_only",
+    "multiCodeExceptions": 0,
+    "selfCorrectingFixturesAccepted": false
+  },
+  "binding": {
+    "checkedInManifestSha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef",
+    "packetFileSha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78",
+    "allPacketTupleSha256": "488c623371227f2a1e8d4db5d032e8a02a196638c4448b776eb235e9dece0251",
+    "batchTupleSha256": {
+      "001-040": "160047e0afea9d7166f1dcc4969435102d4296a91ad57581d3640a2851800037",
+      "041-080": "5bb2941ccc54766187b0111819f9168f4088396a70013ea44d62010c2f562e61",
+      "081-120": "7e0f7c0a6df0bd9ff3c2aef30fe6cf3fe0dd3306914b580eefa82eba4286c055",
+      "121-160": "eec3a28fb6e3d76932f083bec2c22d8b5300a8ea9751dc0b451142fceaca9744",
+      "161-200": "5ce48fc32c22dedab77d0cac68afc79872f3bd8fdb65b9ab40b3c4f69ee096ed",
+      "201-240": "cf82c0dd591fb409cbd2eb328607314e8b943400b94840b0db80a221ebe9278d"
+    }
+  },
+  "mechanicalPreconditions": {
+    "problemCount": 240,
+    "positiveFixtureEqualsCanonicalSolution": 240,
+    "revisionFixtureVerdictIsRevisionRequired": 240,
+    "revisionFixtureExpectedCodeCountIsOne": 240,
+    "revisionFixtureExpectedCodeEqualsErrorA": 240
+  },
+  "counts": {
+    "exactAOnly": 118,
+    "aPlusBOrAdditional": 102,
+    "bOrUnlistedWithoutA": 18,
+    "neitherOrUnlisted": 2,
+    "selfCorrecting": 0,
+    "nonconforming": 122
+  },
+  "classifications": {
+    "exactAOnly": ["ED:003", "ED:021", "ED:025", "ED:049", "ED:081", "ED:082", "ED:083", "ED:084", "ED:085", "ED:086", "ED:087", "ED:089", "ED:090", "ED:091", "ED:092", "ED:093", "ED:094", "ED:095", "ED:096", "ED:097", "ED:098", "ED:099", "ED:101", "ED:102", "ED:103", "ED:104", "ED:105", "ED:106", "ED:107", "ED:108", "ED:109", "ED:110", "ED:111", "ED:112", "ED:113", "ED:114", "ED:115", "ED:116", "ED:117", "ED:118", "ED:119", "ED:120", "ED:121", "ED:122", "ED:123", "ED:124", "ED:125", "ED:126", "ED:127", "ED:128", "ED:129", "ED:130", "ED:131", "ED:132", "ED:133", "ED:134", "ED:135", "ED:136", "ED:137", "ED:138", "ED:139", "ED:140", "ED:141", "ED:142", "ED:143", "ED:144", "ED:145", "ED:146", "ED:147", "ED:148", "ED:149", "ED:150", "ED:151", "ED:152", "ED:153", "ED:154", "ED:155", "ED:156", "ED:157", "ED:158", "ED:159", "ED:160", "ED:162", "ED:165", "ED:166", "ED:167", "ED:168", "ED:169", "ED:170", "ED:171", "ED:172", "ED:173", "ED:174", "ED:176", "ED:177", "ED:178", "ED:181", "ED:182", "ED:189", "ED:190", "ED:192", "ED:198", "ED:201", "ED:203", "ED:205", "ED:211", "ED:215", "ED:216", "ED:217", "ED:219", "ED:220", "ED:221", "ED:223", "ED:224", "ED:225", "ED:226", "ED:231", "ED:232"],
+    "aPlusBOrAdditional": ["ED:002", "ED:004", "ED:005", "ED:006", "ED:007", "ED:008", "ED:009", "ED:010", "ED:011", "ED:012", "ED:013", "ED:014", "ED:015", "ED:016", "ED:017", "ED:018", "ED:019", "ED:022", "ED:023", "ED:024", "ED:026", "ED:027", "ED:028", "ED:029", "ED:030", "ED:032", "ED:033", "ED:034", "ED:035", "ED:036", "ED:037", "ED:038", "ED:039", "ED:040", "ED:041", "ED:042", "ED:043", "ED:046", "ED:047", "ED:048", "ED:050", "ED:051", "ED:052", "ED:053", "ED:054", "ED:055", "ED:056", "ED:057", "ED:058", "ED:059", "ED:060", "ED:061", "ED:062", "ED:063", "ED:064", "ED:065", "ED:067", "ED:068", "ED:069", "ED:070", "ED:071", "ED:072", "ED:074", "ED:075", "ED:076", "ED:077", "ED:078", "ED:079", "ED:080", "ED:088", "ED:100", "ED:161", "ED:179", "ED:180", "ED:183", "ED:185", "ED:186", "ED:187", "ED:188", "ED:191", "ED:193", "ED:194", "ED:195", "ED:196", "ED:197", "ED:199", "ED:200", "ED:202", "ED:206", "ED:207", "ED:208", "ED:212", "ED:213", "ED:214", "ED:218", "ED:222", "ED:228", "ED:234", "ED:235", "ED:236", "ED:237", "ED:238"],
+    "bOrUnlistedWithoutA": ["ED:001", "ED:020", "ED:031", "ED:044", "ED:045", "ED:066", "ED:073", "ED:175", "ED:184", "ED:204", "ED:209", "ED:210", "ED:227", "ED:229", "ED:230", "ED:233", "ED:239", "ED:240"],
+    "neitherOrUnlisted": ["ED:163", "ED:164"],
+    "selfCorrecting": []
+  },
+  "nonconformingProblemIds": ["ED:001", "ED:002", "ED:004", "ED:005", "ED:006", "ED:007", "ED:008", "ED:009", "ED:010", "ED:011", "ED:012", "ED:013", "ED:014", "ED:015", "ED:016", "ED:017", "ED:018", "ED:019", "ED:020", "ED:022", "ED:023", "ED:024", "ED:026", "ED:027", "ED:028", "ED:029", "ED:030", "ED:031", "ED:032", "ED:033", "ED:034", "ED:035", "ED:036", "ED:037", "ED:038", "ED:039", "ED:040", "ED:041", "ED:042", "ED:043", "ED:044", "ED:045", "ED:046", "ED:047", "ED:048", "ED:050", "ED:051", "ED:052", "ED:053", "ED:054", "ED:055", "ED:056", "ED:057", "ED:058", "ED:059", "ED:060", "ED:061", "ED:062", "ED:063", "ED:064", "ED:065", "ED:066", "ED:067", "ED:068", "ED:069", "ED:070", "ED:071", "ED:072", "ED:073", "ED:074", "ED:075", "ED:076", "ED:077", "ED:078", "ED:079", "ED:080", "ED:088", "ED:100", "ED:161", "ED:163", "ED:164", "ED:175", "ED:179", "ED:180", "ED:183", "ED:184", "ED:185", "ED:186", "ED:187", "ED:188", "ED:191", "ED:193", "ED:194", "ED:195", "ED:196", "ED:197", "ED:199", "ED:200", "ED:202", "ED:204", "ED:206", "ED:207", "ED:208", "ED:209", "ED:210", "ED:212", "ED:213", "ED:214", "ED:218", "ED:222", "ED:227", "ED:228", "ED:229", "ED:230", "ED:233", "ED:234", "ED:235", "ED:236", "ED:237", "ED:238", "ED:239", "ED:240"],
+  "independentReview": {
+    "semanticCensusesAgreed": 2,
+    "exactProblemSetAgreement": true,
+    "exactSubstanceCorrections": [
+      "ED:066 is B plus an unlisted radial-potential error, not A.",
+      "ED:204 is B plus an unlisted longitudinal-wave error, not A."
+    ]
+  },
+  "assurances": {
+    "packetBytesMutated": false,
+    "manifestMutated": false,
+    "admissionMutated": false,
+    "stagingMutated": false
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "proofanvil.deterministic-checker-fixtures.v1",
+  "checkerId": "checker.ed1.202.field-ratios",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "answerFormSha256": "70f427aba0438c28e6dfbb1d390f2241826a8259c9ebc58bcc4451745e83d6b7",
+  "baseParts": [
+    {
+      "partId": "measured-e-over-b",
+      "responseKind": "numeric",
+      "decimal": "149895753.75604787",
+      "unitId": "metre_per_second"
+    },
+    {
+      "partId": "measured-e-over-b-role",
+      "responseKind": "choice_ids",
+      "choiceIds": [
+        "quantity:speed"
+      ]
+    },
+    {
+      "partId": "measured-e-over-h",
+      "responseKind": "numeric",
+      "decimal": "188.365",
+      "unitId": "ohm"
+    },
+    {
+      "partId": "measured-e-over-h-role",
+      "responseKind": "choice_ids",
+      "choiceIds": [
+        "quantity:impedance"
+      ]
+    },
+    {
+      "partId": "predicted-v",
+      "responseKind": "numeric",
+      "decimal": "149896229",
+      "unitId": "metre_per_second"
+    },
+    {
+      "partId": "predicted-eta",
+      "responseKind": "numeric",
+      "decimal": "188.36515685",
+      "unitId": "ohm"
+    },
+    {
+      "partId": "comparison",
+      "responseKind": "choice_ids",
+      "choiceIds": [
+        "comparison:both_match_stated_precision"
+      ]
+    },
+    {
+      "partId": "constitutive-b",
+      "responseKind": "numeric",
+      "decimal": "1.2566370614359172",
+      "unitId": "microtesla"
+    },
+    {
+      "partId": "why-b-and-h-differ",
+      "responseKind": "choice_ids",
+      "choiceIds": [
+        "reason:b_equals_mu_h_dimensional_factor"
+      ]
+    }
+  ],
+  "passing": [
+    {
+      "fixtureId": "canonical-values",
+      "partOverrides": []
+    },
+    {
+      "fixtureId": "canonical-solution-rounding",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-b",
+          "decimal": "149896000"
+        },
+        {
+          "partId": "predicted-eta",
+          "decimal": "188.3651569"
+        },
+        {
+          "partId": "constitutive-b",
+          "decimal": "1.25664"
+        }
+      ]
+    },
+    {
+      "fixtureId": "scientific-notation",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-b",
+          "decimal": "1.49896e8"
+        },
+        {
+          "partId": "predicted-v",
+          "decimal": "1.49896229e8"
+        }
+      ]
+    },
+    {
+      "fixtureId": "measured-speed-lower-tolerance",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-b",
+          "decimal": "149894255"
+        }
+      ]
+    },
+    {
+      "fixtureId": "measured-speed-upper-tolerance",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-b",
+          "decimal": "149897252"
+        }
+      ]
+    },
+    {
+      "fixtureId": "rounded-material-checks",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-h",
+          "decimal": "188.3650"
+        },
+        {
+          "partId": "predicted-eta",
+          "decimal": "188.365"
+        },
+        {
+          "partId": "constitutive-b",
+          "decimal": "1.256637"
+        }
+      ]
+    }
+  ],
+  "failing": [
+    {
+      "fixtureId": "wrong-speed-unit",
+      "expectedErrorCode": "response_contract_mismatch",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-b",
+          "unitId": "ohm"
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "wrong-speed-value",
+      "expectedErrorCode": "EDE202A",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-b",
+          "decimal": "188.365"
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "e-over-b-called-impedance",
+      "expectedErrorCode": "EDE202A",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-b-role",
+          "choiceIds": [
+            "quantity:impedance"
+          ]
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "wrong-measured-impedance",
+      "expectedErrorCode": "EDE202B",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-h",
+          "decimal": "149895753.756"
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "e-over-h-called-speed",
+      "expectedErrorCode": "EDE202B",
+      "partOverrides": [
+        {
+          "partId": "measured-e-over-h-role",
+          "choiceIds": [
+            "quantity:speed"
+          ]
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "wrong-predicted-speed",
+      "expectedErrorCode": "EDE202A",
+      "partOverrides": [
+        {
+          "partId": "predicted-v",
+          "decimal": "299792458"
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "wrong-predicted-impedance",
+      "expectedErrorCode": "EDE202B",
+      "partOverrides": [
+        {
+          "partId": "predicted-eta",
+          "decimal": "376.7303137"
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "wrong-comparison",
+      "expectedErrorCode": "EDE202A",
+      "partOverrides": [
+        {
+          "partId": "comparison",
+          "choiceIds": [
+            "comparison:only_speed_matches"
+          ]
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "wrong-constitutive-b",
+      "expectedErrorCode": "EDE202B",
+      "partOverrides": [
+        {
+          "partId": "constitutive-b",
+          "decimal": "1"
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "b-h-interchange",
+      "expectedErrorCode": "EDE202B",
+      "partOverrides": [
+        {
+          "partId": "why-b-and-h-differ",
+          "choiceIds": [
+            "reason:b_and_h_same_quantity"
+          ]
+        }
+      ],
+      "envelopeMutation": null
+    },
+    {
+      "fixtureId": "missing-required-part",
+      "expectedErrorCode": "response_contract_mismatch",
+      "partOverrides": [],
+      "envelopeMutation": {
+        "kind": "remove_last_part"
+      }
+    },
+    {
+      "fixtureId": "stale-target",
+      "expectedErrorCode": "response_contract_mismatch",
+      "partOverrides": [],
+      "envelopeMutation": {
+        "kind": "replace_canonical_packet_sha256",
+        "value": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ]
+}

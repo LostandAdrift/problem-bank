@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "proofanvil.ed1-versioned-successor-evidence-manifest.v1",
+  "digestScheme": "proofanvil.ed1-versioned-successor-evidence-manifest.artifact-sha256.v1",
+  "status": "held_non_admission_durable_proposal_evidence",
+  "courseId": "electrodynamics-1",
+  "registry": {
+    "path": "data/problems/electrodynamics-1-bank/versioned-successors.v2.json",
+    "rawSha256": "c6430fdae6349ca33ab792ff4ef9e053216056330526aef4dff90df35f7bd239",
+    "recordCount": 167,
+    "receiptSha256": "a708b69ea68bfcbcf4d45f025f553ac9b535185cb4c3fd5d03a26e415fd5e505"
+  },
+  "evidence": [
+    {
+      "range": "001-040",
+      "proposal": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/001-040.proposal.json",
+        "rawSha256": "92865e37017e4dc733208e4a5cb8f17f83246674d1d5beaa9af72e83d0f9ad6a",
+        "schemaVersion": "proofanvil.ed1-exhaustive-fixture-successor-proposal.v2"
+      },
+      "validationReceipt": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/001-040.validation-receipt.json",
+        "rawSha256": "d63baec17a376a3a4307eb34299a3d9aca34f2723d059fd22f93e98363ab6fb8",
+        "schemaVersion": "proofanvil.ed1-exhaustive-fixture-successor-validation-receipt.v2"
+      },
+      "recordCount": 37,
+      "recordProjection": {
+        "scheme": "proofanvil.ed1-versioned-successor-durable-evidence-range-projection.v1",
+        "sha256": "1eb460fe31cbc1c94a552c1fde3eda8406f239f652fcdc62861c643a813fd84c",
+        "canonicalByteCount": 25265
+      }
+    },
+    {
+      "range": "041-080",
+      "proposal": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/041-080.proposal.json",
+        "rawSha256": "07d3a773adbc5ebbeba81337932f3864094bc0f5f0e556ca44464bbb956d9e88",
+        "schemaVersion": "proofanvil.ed1-exhaustive-fixture-successor-proposal.v2"
+      },
+      "validationReceipt": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/041-080.validation-receipt.json",
+        "rawSha256": "99332b5d247b224e86f13543612726f3a81c6447d77253dd576f90b82837edb4",
+        "schemaVersion": "proofanvil.ed1-exhaustive-fixture-successor-validation-receipt.v2"
+      },
+      "recordCount": 39,
+      "recordProjection": {
+        "scheme": "proofanvil.ed1-versioned-successor-durable-evidence-range-projection.v1",
+        "sha256": "4c7d51412af2e390d84a72e6f1cf8c03f0053d6dfcf216e9d043104bcec27449",
+        "canonicalByteCount": 26623
+      }
+    },
+    {
+      "range": "081-160",
+      "proposal": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/081-160.proposal.json",
+        "rawSha256": "48f763e54a9488d891f1a660a3ca21ebba8d49618fd60bcde88221ba5c79cb88",
+        "schemaVersion": "proofanvil.ed1-versioned-successor-proposals.v2"
+      },
+      "validationReceipt": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/081-160.validation-receipt.json",
+        "rawSha256": "3cc5188cd393dd35a1acb8eb6a203a800dac2a08a4f05bbfce78d865f707730d",
+        "schemaVersion": "proofanvil.ed1-versioned-successor-proposal-receipt.v2"
+      },
+      "recordCount": 43,
+      "recordProjection": {
+        "scheme": "proofanvil.ed1-versioned-successor-durable-evidence-range-projection.v1",
+        "sha256": "3a52373872ad00b88bf36b468600e5d227d8800de4ce8b1021343093f2ec6a55",
+        "canonicalByteCount": 29584
+      }
+    },
+    {
+      "range": "161-240",
+      "proposal": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/161-240.proposal.json",
+        "rawSha256": "c4d9920c8c2bef3c224eb5a9398b9daccc20c74ebbf2bc621ddf6e85c32600b5",
+        "schemaVersion": "proofanvil.ed1-versioned-successor-proposal.v2"
+      },
+      "validationReceipt": {
+        "path": "data/problems/electrodynamics-1-bank/versioned-successor-evidence/161-240.validation-receipt.json",
+        "rawSha256": "c056959beaf93a928444042b2a3217f6c74bd8149d421ce7da2e5d58ea4a39fe",
+        "schemaVersion": "proofanvil.ed1-successor-proposal-cross-review-receipt.v4"
+      },
+      "recordCount": 48,
+      "recordProjection": {
+        "scheme": "proofanvil.ed1-versioned-successor-durable-evidence-range-projection.v1",
+        "sha256": "955f1af5f316b1477e69d96027f584c68fb336e741fda898d235bace54ad1bae",
+        "canonicalByteCount": 32838
+      }
+    }
+  ],
+  "union": {
+    "recordCount": 167,
+    "uniquePublicProblemIds": 167,
+    "duplicatePublicProblemIds": [],
+    "missingPublicProblemIds": [],
+    "orphanPublicProblemIds": [],
+    "scopeCounts": {
+      "problem_only": 10,
+      "rubric_only": 109,
+      "problem_and_rubric": 48
+    }
+  },
+  "authorityBoundary": {
+    "admission": false,
+    "publication": false,
+    "release": false,
+    "currentVersion": false,
+    "packetMutation": false,
+    "sourceMutation": false,
+    "manifestMutation": false,
+    "staging": false
+  },
+  "artifactSha256": "658b1356e9969550bc6cd45a6893447dd86a2f5030c0c12db1e8ca251d9d0c1d"
+}

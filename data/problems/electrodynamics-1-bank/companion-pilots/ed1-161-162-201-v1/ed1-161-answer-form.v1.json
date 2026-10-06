@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:161",
+    "internalId": "PB-ORIGINAL:ED1-161",
+    "problemVersion": "proofbound-ed1-161-v2",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "pillbox-flux-orientation",
+      "label": "Which signed pair of flat-face flux terms follows from the stated outward normals?",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "flux:top_e_plus_minus_bottom_e_minus",
+          "label": "Top E-plus contribution minus bottom E-minus contribution"
+        },
+        {
+          "choiceId": "flux:top_e_plus_plus_bottom_e_minus",
+          "label": "Top E-plus contribution plus bottom E-minus contribution"
+        },
+        {
+          "choiceId": "flux:top_e_minus_minus_bottom_e_plus",
+          "label": "Top E-minus contribution minus bottom E-plus contribution"
+        }
+      ]
+    },
+    {
+      "partId": "jump-relation",
+      "label": "Select the signed normal-field jump relation.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "jump:n_dot_e_plus_minus_e_minus_equals_sigma_over_epsilon0",
+          "label": "n dot (E-plus minus E-minus) equals sigma divided by epsilon-zero"
+        },
+        {
+          "choiceId": "jump:n_dot_e_plus_plus_e_minus_equals_sigma_over_epsilon0",
+          "label": "n dot (E-plus plus E-minus) equals sigma divided by epsilon-zero"
+        },
+        {
+          "choiceId": "jump:n_dot_e_plus_minus_e_minus_equals_two_sigma_over_epsilon0",
+          "label": "n dot (E-plus minus E-minus) equals twice sigma divided by epsilon-zero"
+        }
+      ]
+    },
+    {
+      "partId": "symmetry-relation",
+      "label": "Which relation is supplied by isolated-sheet reflection symmetry before using the jump?",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "symmetry:equal_magnitude_opposite_normal_directions",
+          "label": "The one-sided fields have equal magnitude and opposite normal directions"
+        },
+        {
+          "choiceId": "symmetry:full_jump_magnitude_each_opposite_normal_directions",
+          "label": "Each one-sided field has the full jump magnitude, with opposite normal directions"
+        },
+        {
+          "choiceId": "symmetry:equal_magnitude_same_normal_direction",
+          "label": "The one-sided fields have equal magnitude and the same normal direction"
+        }
+      ]
+    },
+    {
+      "partId": "field-magnitude",
+      "label": "Magnitude of either one-sided electric field",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "volt_per_metre",
+          "label": "V m^-1"
+        }
+      ]
+    },
+    {
+      "partId": "upper-field-direction",
+      "label": "Direction of E-plus above the positive sheet",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "direction:positive_z",
+          "label": "+z"
+        },
+        {
+          "choiceId": "direction:negative_z",
+          "label": "-z"
+        },
+        {
+          "choiceId": "direction:tangential",
+          "label": "Tangential to the sheet"
+        }
+      ]
+    },
+    {
+      "partId": "lower-field-direction",
+      "label": "Direction of E-minus below the positive sheet",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "direction:negative_z",
+          "label": "-z"
+        },
+        {
+          "choiceId": "direction:positive_z",
+          "label": "+z"
+        },
+        {
+          "choiceId": "direction:tangential",
+          "label": "Tangential to the sheet"
+        }
+      ]
+    },
+    {
+      "partId": "unit-audit",
+      "label": "Select the SI unit consequence of sigma divided by epsilon-zero.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "unit_relation:sigma_over_epsilon0_is_volt_per_metre",
+          "label": "It has units V m^-1"
+        },
+        {
+          "choiceId": "unit_relation:sigma_over_epsilon0_is_volt",
+          "label": "It has units V"
+        },
+        {
+          "choiceId": "unit_relation:sigma_over_epsilon0_is_coulomb_per_square_metre",
+          "label": "It has units C m^-2"
+        }
+      ]
+    }
+  ]
+}

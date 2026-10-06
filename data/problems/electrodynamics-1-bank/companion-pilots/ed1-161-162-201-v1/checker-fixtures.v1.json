@@ -1,0 +1,507 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-fixture-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:161",
+        "internalId": "PB-ORIGINAL:ED1-161",
+        "problemVersion": "proofbound-ed1-161-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+      },
+      "answerFormSha256": "27553a746437b68916466567d5e404ab11c8f14c919fe09a12c8ef5a0394322c",
+      "baseParts": [
+        {
+          "partId": "pillbox-flux-orientation",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "flux:top_e_plus_minus_bottom_e_minus"
+          ]
+        },
+        {
+          "partId": "jump-relation",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "jump:n_dot_e_plus_minus_e_minus_equals_sigma_over_epsilon0"
+          ]
+        },
+        {
+          "partId": "symmetry-relation",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "symmetry:equal_magnitude_opposite_normal_directions"
+          ]
+        },
+        {
+          "partId": "field-magnitude",
+          "responseKind": "numeric",
+          "decimal": "225.88181347460383",
+          "unitId": "volt_per_metre"
+        },
+        {
+          "partId": "upper-field-direction",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "direction:positive_z"
+          ]
+        },
+        {
+          "partId": "lower-field-direction",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "direction:negative_z"
+          ]
+        },
+        {
+          "partId": "unit-audit",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "unit_relation:sigma_over_epsilon0_is_volt_per_metre"
+          ]
+        }
+      ],
+      "passing": [
+        {
+          "fixtureId": "ED:161-canonical",
+          "partOverrides": []
+        },
+        {
+          "fixtureId": "ED:161-stated-precision",
+          "partOverrides": [
+            {
+              "partId": "field-magnitude",
+              "decimal": "226"
+            }
+          ]
+        }
+      ],
+      "failing": [
+        {
+          "fixtureId": "ED:161-common-error-a",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE161A",
+          "partOverrides": [
+            {
+              "partId": "pillbox-flux-orientation",
+              "choiceIds": [
+                "flux:top_e_plus_plus_bottom_e_minus"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:161-common-error-b",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE161B",
+          "partOverrides": [
+            {
+              "partId": "field-magnitude",
+              "decimal": "451.764"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:161-diagnostic-1",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE161B",
+          "partOverrides": [
+            {
+              "partId": "symmetry-relation",
+              "choiceIds": [
+                "symmetry:full_jump_magnitude_each_opposite_normal_directions"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:161-diagnostic-2",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE161A",
+          "partOverrides": [
+            {
+              "partId": "upper-field-direction",
+              "choiceIds": [
+                "direction:negative_z"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:161-diagnostic-3",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "unit-audit",
+              "choiceIds": [
+                "unit_relation:sigma_over_epsilon0_is_volt"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:161-wrong-unit",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [
+            {
+              "partId": "field-magnitude",
+              "unitId": "microtesla"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:161-stale-target",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "replace_canonical_packet_sha256",
+            "value": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "fixtureId": "ED:161-missing-part",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "remove_last_part",
+            "value": null
+          }
+        },
+        {
+          "fixtureId": "ED:161-extra-envelope-key",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "add_extra_envelope_key",
+            "value": true
+          }
+        }
+      ]
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:162",
+        "internalId": "PB-ORIGINAL:ED1-162",
+        "problemVersion": "proofbound-ed1-162-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+      },
+      "answerFormSha256": "03186917c3b35603011a684fbdc1c61f3c78de2d4e0d07f5ad1583b39d72c22f",
+      "baseParts": [
+        {
+          "partId": "loop-circulation",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "circulation:minus_b_plus_y_plus_b_minus_y"
+          ]
+        },
+        {
+          "partId": "vector-jump",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "jump:z_cross_b_plus_minus_b_minus_equals_mu0_k"
+          ]
+        },
+        {
+          "partId": "jump-magnitude",
+          "responseKind": "numeric",
+          "decimal": "15.079644737231007",
+          "unitId": "microtesla"
+        },
+        {
+          "partId": "upper-field-y",
+          "responseKind": "numeric",
+          "decimal": "-11.079644737231007",
+          "unitId": "microtesla"
+        },
+        {
+          "partId": "upper-field-direction",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "direction:negative_y"
+          ]
+        },
+        {
+          "partId": "orientation-reversal",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "invariance:reverse_surface_and_traversal_preserves_jump"
+          ]
+        },
+        {
+          "partId": "unit-audit",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "unit_relation:mu0_k_is_tesla"
+          ]
+        }
+      ],
+      "passing": [
+        {
+          "fixtureId": "ED:162-canonical",
+          "partOverrides": []
+        },
+        {
+          "fixtureId": "ED:162-stated-precision",
+          "partOverrides": [
+            {
+              "partId": "jump-magnitude",
+              "decimal": "15.08"
+            },
+            {
+              "partId": "upper-field-y",
+              "decimal": "-11.08"
+            }
+          ]
+        }
+      ],
+      "failing": [
+        {
+          "fixtureId": "ED:162-common-error-a",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE162A",
+          "partOverrides": [
+            {
+              "partId": "loop-circulation",
+              "choiceIds": [
+                "circulation:plus_b_plus_y_minus_b_minus_y"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:162-common-error-b",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE162B",
+          "partOverrides": [
+            {
+              "partId": "jump-magnitude",
+              "decimal": "30.1593"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:162-diagnostic-1",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE162A",
+          "partOverrides": [
+            {
+              "partId": "vector-jump",
+              "choiceIds": [
+                "jump:z_cross_b_minus_minus_b_plus_equals_mu0_k"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:162-wrong-unit",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [
+            {
+              "partId": "jump-magnitude",
+              "unitId": "volt_per_metre"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:162-stale-target",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "replace_canonical_packet_sha256",
+            "value": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "fixtureId": "ED:162-missing-part",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "remove_last_part",
+            "value": null
+          }
+        },
+        {
+          "fixtureId": "ED:162-extra-envelope-key",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "add_extra_envelope_key",
+            "value": true
+          }
+        }
+      ]
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:201",
+        "internalId": "PB-ORIGINAL:ED1-201",
+        "problemVersion": "proofbound-ed1-201-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+      },
+      "answerFormSha256": "2462e26126b6beb74068b2d9979aceb8356c98d653084e40e2f8e218dee3f07e",
+      "baseParts": [
+        {
+          "partId": "curl-e-sign",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "derivative:curl_e_negative_y_sine"
+          ]
+        },
+        {
+          "partId": "minus-dt-b-sign",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "derivative:minus_dt_b_negative_y_sine"
+          ]
+        },
+        {
+          "partId": "magnetic-amplitude",
+          "responseKind": "numeric",
+          "decimal": "1.000692285594456",
+          "unitId": "microtesla"
+        },
+        {
+          "partId": "relative-phase",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "phase:in_phase"
+          ]
+        },
+        {
+          "partId": "poynting-direction",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "direction:positive_z"
+          ]
+        },
+        {
+          "partId": "dimensional-relation",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "relation:e_over_b_equals_c"
+          ]
+        }
+      ],
+      "passing": [
+        {
+          "fixtureId": "ED:201-canonical",
+          "partOverrides": []
+        },
+        {
+          "fixtureId": "ED:201-stated-precision",
+          "partOverrides": [
+            {
+              "partId": "magnetic-amplitude",
+              "decimal": "1.00069"
+            }
+          ]
+        }
+      ],
+      "failing": [
+        {
+          "fixtureId": "ED:201-common-error-a",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE201A",
+          "partOverrides": [
+            {
+              "partId": "curl-e-sign",
+              "choiceIds": [
+                "derivative:curl_e_positive_y_sine"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:201-common-error-b",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE201B",
+          "partOverrides": [
+            {
+              "partId": "magnetic-amplitude",
+              "decimal": "9.0e16"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:201-diagnostic-1",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE201A",
+          "partOverrides": [
+            {
+              "partId": "magnetic-amplitude",
+              "decimal": "-1.000692285594456"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:201-wrong-unit",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [
+            {
+              "partId": "magnetic-amplitude",
+              "unitId": "volt_per_metre"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:201-stale-target",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "replace_canonical_packet_sha256",
+            "value": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "fixtureId": "ED:201-missing-part",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "remove_last_part",
+            "value": null
+          }
+        },
+        {
+          "fixtureId": "ED:201-extra-envelope-key",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "add_extra_envelope_key",
+            "value": true
+          }
+        }
+      ]
+    }
+  ]
+}

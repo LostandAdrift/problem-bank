@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "proofanvil.la1-adversarially-reviewed-alpha.v1",
+  "bankId": "proofanvil-la1-alpha-300-v1",
+  "reviewDate": "2026-08-10",
+  "courseId": "linear-algebra-1",
+  "firstPublicProblemId": "LA:001",
+  "lastPublicProblemId": "LA:300",
+  "packetCount": 300,
+  "packetDigestBindingScheme": "proofanvil.la1-alpha-packet-digest-binding.v1",
+  "packetDigestBindingSha256": "edc511d99403f4265662a3ea58e58831996edcb9e155ff5a495e0155a82c0cbb",
+  "reviewBatches": [
+    {
+      "range": "001-100",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review",
+      "sourceExactSha256": "c515d3153234b16479facbaa560329134cb2692210d5a35c79ea824d8e9445d8"
+    },
+    {
+      "range": "101-200",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review",
+      "sourceExactSha256": "804000f4840524fa0fa7626d7ea8d25a9a99367852117864ed1072d7e57026e9"
+    },
+    {
+      "range": "201-300",
+      "reviewerKind": "independent_ai_agent",
+      "reviewerModel": "openai-gpt-5.6-sol",
+      "outcome": "accepted_after_adversarial_review",
+      "sourceExactSha256": "6e85556bbcd3e7aae80a7a2da53413f7c1cf9c7a053839daaafaa1aeffe6153b"
+    }
+  ],
+  "checks": [
+    "mathematical_accuracy",
+    "wording",
+    "permitted_results",
+    "hint_quality",
+    "solution_quality",
+    "problem_type_and_difficulty_calibration",
+    "error_and_flawed_proof_alignment",
+    "semantic_redundancy",
+    "statement_lean_full_equivalence",
+    "strict_math_rendering",
+    "lean_werror_compile",
+    "lean_axiom_allowlist"
+  ],
+  "outcome": "accepted_for_bounded_alpha",
+  "constraints": {
+    "compiledLeanRequired": true,
+    "strictFormalVerificationRequired": true,
+    "strictFormalVerificationState": "pending_checked_manifest_promotion",
+    "learnerLeanDraftIncluded": true,
+    "minimumFixturesPerProblem": 2,
+    "productionQualityClaim": false
+  }
+}

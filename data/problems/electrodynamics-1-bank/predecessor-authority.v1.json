@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "proofanvil.ed1-predecessor-authority.v1",
+  "courseId": "electrodynamics-1",
+  "state": "sealed_predecessor_snapshot",
+  "bindingScheme": "proofanvil.ed1-predecessor-authority.binding.v1",
+  "sourceArtifacts": [
+    {
+      "role": "source_part_001_080",
+      "path": "data/problems/electrodynamics-1-bank/part-001-080.json",
+      "sha256": "95f0b074972bc4ba8d12d321d043444b3774df4485d1619c32a494f95fad9aa8"
+    },
+    {
+      "role": "source_part_081_160",
+      "path": "data/problems/electrodynamics-1-bank/part-081-160.json",
+      "sha256": "a767e2a40b04bc1f8067ff22b983d97d9a1ab977d0c3167efd799cdaa0512e82"
+    },
+    {
+      "role": "source_part_161_240",
+      "path": "data/problems/electrodynamics-1-bank/part-161-240.json",
+      "sha256": "7f6568bbd6a4edf627000458b857ed1858a3ef9a93329b8e27e404b6e2ce6075"
+    },
+    {
+      "role": "base_packets",
+      "path": "data/problems/electrodynamics-1-bank/packets.json",
+      "sha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78"
+    },
+    {
+      "role": "base_catalog",
+      "path": "data/problems/electrodynamics-1-bank/catalog.json",
+      "sha256": "d60236424e1ee76cdf7012b461abba55371685ae0387180e9c3706eab46320fc"
+    },
+    {
+      "role": "adversarial_review",
+      "path": "data/problems/electrodynamics-1-bank/adversarial-review-manifest.json",
+      "sha256": "59d1d54a555d89e7a380963c526720b36ef422a029d2825a5406ba25109ece5f"
+    },
+    {
+      "role": "language_audit",
+      "path": "data/problems/electrodynamics-1-bank/language-audit.v1.json",
+      "sha256": "f9de3344d15f8a9ee5c366bfa36708984596032e88e73083b5d59d41dffc6591"
+    },
+    {
+      "role": "revision_fixture_audit",
+      "path": "data/problems/electrodynamics-1-bank/revision-fixture-audit.v1.json",
+      "sha256": "ac8d0db149f65db6c4a362d624fc64ae119750929919e9951fdebb363aa392a5"
+    }
+  ],
+  "snapshotArtifacts": [
+    {
+      "role": "checked_in_packet_manifest",
+      "sourcePath": "data/problems/checked-in-packet-manifest.json",
+      "snapshotPath": "data/problems/electrodynamics-1-bank/predecessor-checked-in-packet-manifest.v1.json",
+      "sha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef"
+    },
+    {
+      "role": "final_slot_authority",
+      "sourcePath": "data/test-finals/electrodynamics-1-slot-authority.json",
+      "snapshotPath": "data/test-finals/electrodynamics-1-slot-authority.predecessor.v1.json",
+      "sha256": "58f33ed0f294ae33fc1bf5b422989874dbc233b199a380ad1e5b90265aa824db"
+    }
+  ],
+  "tupleBinding": {
+    "scheme": "proofanvil.ed1-language-audit-binding.v1",
+    "packetCount": 240,
+    "sha256": "488c623371227f2a1e8d4db5d032e8a02a196638c4448b776eb235e9dece0251"
+  },
+  "finalAuthorityBinding": {
+    "evidenceScheme": "proofanvil.public-test-final-slot-authority-evidence.v1",
+    "reviewedBankId": "proofanvil-ed1-alpha-240-v1",
+    "reviewedPacketDigestBindingSha256": "28147c4a679fa301dc20396afa84d329a9f4434521160e38a71fa35dd188705e",
+    "blueprintAuthorityAsOf": [
+      {
+        "blueprintKey": "ed1-final-a-on-level-v1",
+        "sha256": "ee879e70fbc5abccd9ecf9694daef82c3671ff57fc8c2a833138aa9d44141542"
+      },
+      {
+        "blueprintKey": "ed1-final-b-severe-challenge-v1",
+        "sha256": "ee41122502415e8c8800ffbb7da0946d1a78719bfb8ab8f550113dc49abc0509"
+      }
+    ]
+  },
+  "authoritySha256": "8f33fc4666682dbc98307593a04c3ce5c7612b34c18d1b63926d719720fabacb"
+}

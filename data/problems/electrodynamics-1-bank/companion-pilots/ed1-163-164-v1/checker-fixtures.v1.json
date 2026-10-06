@@ -1,0 +1,454 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-fixture-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:163",
+        "internalId": "PB-ORIGINAL:ED1-163",
+        "problemVersion": "proofbound-ed1-163-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+      },
+      "answerFormSha256": "c86ffbc8f986361456434ac775ff2549dd7135ce60e496e41e72c81e3cce9572",
+      "baseParts": [
+        {
+          "partId": "distributional-coefficient",
+          "responseKind": "numeric",
+          "decimal": "1",
+          "unitId": "dimensionless"
+        },
+        {
+          "partId": "distributional-source",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "source:rho_equals_sigma_delta_z"
+          ]
+        },
+        {
+          "partId": "slab-face-orientations",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "orientation:top_e_plus_n_plus_bottom_e_minus_n_minus"
+          ]
+        },
+        {
+          "partId": "slab-flux-ledger",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "flux:top_positive_plus_bottom_positive"
+          ]
+        },
+        {
+          "partId": "unit-audit",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "units:delta_per_metre_rho_coulomb_per_cubic_metre"
+          ]
+        },
+        {
+          "partId": "punctured-space-audit",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "audit:zero_away_from_sheet_singular_on_full_space"
+          ]
+        }
+      ],
+      "passing": [
+        {
+          "fixtureId": "ED:163-canonical",
+          "partOverrides": []
+        },
+        {
+          "fixtureId": "ED:163-stated-precision",
+          "partOverrides": [
+            {
+              "partId": "distributional-coefficient",
+              "decimal": "1.000000000000"
+            }
+          ]
+        }
+      ],
+      "failing": [
+        {
+          "fixtureId": "ED:163-common-error-a",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE163A",
+          "partOverrides": [
+            {
+              "partId": "distributional-coefficient",
+              "decimal": "0.5"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:163-common-error-b",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE163B",
+          "partOverrides": [
+            {
+              "partId": "slab-flux-ledger",
+              "choiceIds": [
+                "flux:top_positive_minus_bottom_positive"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:163-diagnostic-1",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE163A",
+          "partOverrides": [
+            {
+              "partId": "distributional-source",
+              "choiceIds": [
+                "source:rho_equals_half_sigma_delta_z"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:163-diagnostic-2",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE163B",
+          "partOverrides": [
+            {
+              "partId": "slab-face-orientations",
+              "choiceIds": [
+                "orientation:top_e_plus_n_plus_bottom_e_minus_n_plus"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:163-diagnostic-3",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "unit-audit",
+              "choiceIds": [
+                "units:delta_dimensionless_rho_coulomb_per_square_metre"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:163-diagnostic-4",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "punctured-space-audit",
+              "choiceIds": [
+                "audit:zero_away_from_sheet_implies_zero_distribution"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:163-wrong-unit",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [
+            {
+              "partId": "distributional-coefficient",
+              "unitId": "unauthorized_unit"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:163-stale-target",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "replace_canonical_packet_sha256",
+            "value": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "fixtureId": "ED:163-missing-part",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "remove_last_part",
+            "value": null
+          }
+        },
+        {
+          "fixtureId": "ED:163-extra-envelope-key",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "add_extra_envelope_key",
+            "value": true
+          }
+        }
+      ]
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:164",
+        "internalId": "PB-ORIGINAL:ED1-164",
+        "problemVersion": "proofbound-ed1-164-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+      },
+      "answerFormSha256": "cb9035c5f28e629dc7692abe2dead6550711cb9c358800678f9c548d45352b49",
+      "baseParts": [
+        {
+          "partId": "e2-x",
+          "responseKind": "numeric",
+          "decimal": "3000",
+          "unitId": "volt_per_metre"
+        },
+        {
+          "partId": "e2-z",
+          "responseKind": "numeric",
+          "decimal": "2000",
+          "unitId": "volt_per_metre"
+        },
+        {
+          "partId": "normal-electric-jump",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "jump:epsilon2_e2z_minus_epsilon1_e1z_equals_sigma_f"
+          ]
+        },
+        {
+          "partId": "h2-y",
+          "responseKind": "numeric",
+          "decimal": "1",
+          "unitId": "ampere_per_metre"
+        },
+        {
+          "partId": "h2-z",
+          "responseKind": "numeric",
+          "decimal": "-2",
+          "unitId": "ampere_per_metre"
+        },
+        {
+          "partId": "tangential-magnetic-jump",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "jump:h2_parallel_minus_h1_parallel_equals_kf_cross_n"
+          ]
+        },
+        {
+          "partId": "vector-four-jump-audit",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "audit:e2_3000x_0y_2000z_h2_0x_1y_minus2z_all_four_jumps"
+          ]
+        },
+        {
+          "partId": "source-convention",
+          "responseKind": "choice_ids",
+          "choiceIds": [
+            "source:free_with_material_response_in_d_h_epsilon_mu"
+          ]
+        }
+      ],
+      "passing": [
+        {
+          "fixtureId": "ED:164-canonical",
+          "partOverrides": []
+        },
+        {
+          "fixtureId": "ED:164-stated-precision",
+          "partOverrides": [
+            {
+              "partId": "e2-x",
+              "decimal": "3e3"
+            },
+            {
+              "partId": "e2-z",
+              "decimal": "2e3"
+            },
+            {
+              "partId": "h2-y",
+              "decimal": "1.0"
+            },
+            {
+              "partId": "h2-z",
+              "decimal": "-2.0"
+            }
+          ]
+        }
+      ],
+      "failing": [
+        {
+          "fixtureId": "ED:164-common-error-a",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE164A",
+          "partOverrides": [
+            {
+              "partId": "h2-y",
+              "decimal": "3"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-common-error-b",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE164B",
+          "partOverrides": [
+            {
+              "partId": "e2-z",
+              "decimal": "6000"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-diagnostic-1",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE164B",
+          "partOverrides": [
+            {
+              "partId": "normal-electric-jump",
+              "choiceIds": [
+                "jump:e2z_minus_e1z_equals_sigma_f_over_epsilon0"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-diagnostic-2",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE164A",
+          "partOverrides": [
+            {
+              "partId": "tangential-magnetic-jump",
+              "choiceIds": [
+                "jump:h2_parallel_minus_h1_parallel_equals_n_cross_kf"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-diagnostic-3",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE164B",
+          "partOverrides": [
+            {
+              "partId": "vector-four-jump-audit",
+              "choiceIds": [
+                "audit:e2_3000x_0y_6000z_h2_0x_1y_minus2z_uses_e_jump"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-diagnostic-4",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": "EDE164A",
+          "partOverrides": [
+            {
+              "partId": "vector-four-jump-audit",
+              "choiceIds": [
+                "audit:e2_3000x_0y_2000z_h2_0x_3y_minus2z_reversed_cross"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-diagnostic-5",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "source-convention",
+              "choiceIds": [
+                "source:total_microscopic_sources"
+              ]
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-diagnostic-6",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "e2-x",
+              "decimal": "2999"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-diagnostic-7",
+          "expectedDisposition": "checked",
+          "expectedErrorCode": null,
+          "partOverrides": [
+            {
+              "partId": "h2-z",
+              "decimal": "2"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-wrong-unit",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [
+            {
+              "partId": "e2-x",
+              "unitId": "unauthorized_unit"
+            }
+          ],
+          "envelopeMutation": null
+        },
+        {
+          "fixtureId": "ED:164-stale-target",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "replace_canonical_packet_sha256",
+            "value": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "fixtureId": "ED:164-missing-part",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "remove_last_part",
+            "value": null
+          }
+        },
+        {
+          "fixtureId": "ED:164-extra-envelope-key",
+          "expectedDisposition": "invalid_response",
+          "expectedErrorCode": "response_contract_mismatch",
+          "partOverrides": [],
+          "envelopeMutation": {
+            "kind": "add_extra_envelope_key",
+            "value": true
+          }
+        }
+      ]
+    }
+  ]
+}

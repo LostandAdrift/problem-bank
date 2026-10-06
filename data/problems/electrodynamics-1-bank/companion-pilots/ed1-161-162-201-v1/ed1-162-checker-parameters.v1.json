@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:162",
+    "internalId": "PB-ORIGINAL:ED1-162",
+    "problemVersion": "proofbound-ed1-162-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+  },
+  "answerFormSha256": "03186917c3b35603011a684fbdc1c61f3c78de2d4e0d07f5ad1583b39d72c22f",
+  "checkerId": "checker.ed1.162.sheet-current-jump",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "jump-magnitude",
+      "expected": 15.079644737231007,
+      "absoluteTolerance": 0.05,
+      "relativeTolerance": 0,
+      "unitId": "microtesla",
+      "errorCode": "EDE162B",
+      "negativeErrorCode": null
+    },
+    {
+      "partId": "upper-field-y",
+      "expected": -11.079644737231007,
+      "absoluteTolerance": 0.05,
+      "relativeTolerance": 0,
+      "unitId": "microtesla",
+      "errorCode": "EDE162A",
+      "negativeErrorCode": null
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "loop-circulation",
+      "expectedChoiceIds": [
+        "circulation:minus_b_plus_y_plus_b_minus_y"
+      ],
+      "errorCode": "EDE162A"
+    },
+    {
+      "partId": "vector-jump",
+      "expectedChoiceIds": [
+        "jump:z_cross_b_plus_minus_b_minus_equals_mu0_k"
+      ],
+      "errorCode": "EDE162A"
+    },
+    {
+      "partId": "upper-field-direction",
+      "expectedChoiceIds": [
+        "direction:negative_y"
+      ],
+      "errorCode": "EDE162A"
+    },
+    {
+      "partId": "orientation-reversal",
+      "expectedChoiceIds": [
+        "invariance:reverse_surface_and_traversal_preserves_jump"
+      ],
+      "errorCode": "EDE162A"
+    },
+    {
+      "partId": "unit-audit",
+      "expectedChoiceIds": [
+        "unit_relation:mu0_k_is_tesla"
+      ],
+      "errorCode": "EDE162B"
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-162-M1",
+      "partIds": [
+        "loop-circulation",
+        "vector-jump"
+      ]
+    },
+    {
+      "milestoneId": "ED1-162-M2",
+      "partIds": [
+        "vector-jump",
+        "jump-magnitude",
+        "upper-field-y",
+        "upper-field-direction"
+      ]
+    },
+    {
+      "milestoneId": "ED1-162-M3",
+      "partIds": [
+        "orientation-reversal",
+        "unit-audit"
+      ]
+    }
+  ]
+}

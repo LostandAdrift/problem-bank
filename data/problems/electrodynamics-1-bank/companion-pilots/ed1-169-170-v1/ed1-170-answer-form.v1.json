@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:170",
+    "internalId": "PB-ORIGINAL:ED1-170",
+    "problemVersion": "proofbound-ed1-170-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "0985987c8d8c30491c680f2a4e0fe44091d9cbc63bf2542e00f633ae7b87b150"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "relative-face-flux-pair",
+      "label": "Select the two outward relative-current fluxes for the moving pillbox faces.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "flux:upper_jplus_minus_u_rhoplus_lower_minus_jminus_plus_u_rhominus",
+          "label": "Upper: J-plus-z - u rho-plus; lower: -J-minus-z + u rho-minus"
+        },
+        {
+          "choiceId": "flux:upper_jplus_lower_minus_jminus_laboratory_only",
+          "label": "Upper: J-plus-z; lower: -J-minus-z"
+        },
+        {
+          "choiceId": "flux:upper_jplus_plus_u_rhoplus_lower_minus_jminus_minus_u_rhominus",
+          "label": "Upper: J-plus-z + u rho-plus; lower: -J-minus-z - u rho-minus"
+        },
+        {
+          "choiceId": "flux:upper_jplus_minus_u_rhoplus_lower_plus_jminus_minus_u_rhominus",
+          "label": "Upper: J-plus-z - u rho-plus; lower: +J-minus-z - u rho-minus"
+        }
+      ]
+    },
+    {
+      "partId": "moving-interface-jump-law",
+      "label": "Select the moving-interface surface-charge balance for [f] = f-plus minus f-minus.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "law:dt_sigma_plus_div_k_plus_jump_jz_minus_u_jump_rho_equals_zero",
+          "label": "partial-t sigma-s + div-s K-s + [J-z] - u[rho] = 0"
+        },
+        {
+          "choiceId": "law:dt_sigma_plus_div_k_plus_jump_jz_equals_zero",
+          "label": "partial-t sigma-s + div-s K-s + [J-z] = 0"
+        },
+        {
+          "choiceId": "law:dt_sigma_plus_div_k_plus_jump_jz_plus_u_jump_rho_equals_zero",
+          "label": "partial-t sigma-s + div-s K-s + [J-z] + u[rho] = 0"
+        }
+      ]
+    },
+    {
+      "partId": "current-density-jump",
+      "label": "Enter [J-z] = J-plus-z minus J-minus-z for the stated data.",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microampere_per_square_metre",
+          "label": "microampere per square metre"
+        }
+      ]
+    },
+    {
+      "partId": "swept-charge-current",
+      "label": "Enter u[rho] for the stated data.",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microampere_per_square_metre",
+          "label": "microampere per square metre"
+        }
+      ]
+    },
+    {
+      "partId": "surface-charge-rate",
+      "label": "Enter partial-t sigma-s for the stated data.",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microampere_per_square_metre",
+          "label": "microampere per square metre"
+        }
+      ]
+    },
+    {
+      "partId": "stationary-interface-limit",
+      "label": "Select the balance that remains when u equals zero.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "limit:dt_sigma_plus_div_k_plus_jump_jz_equals_zero",
+          "label": "partial-t sigma-s + div-s K-s + [J-z] = 0"
+        },
+        {
+          "choiceId": "limit:dt_sigma_plus_div_k_minus_jump_rho_equals_zero",
+          "label": "partial-t sigma-s + div-s K-s - [rho] = 0"
+        },
+        {
+          "choiceId": "limit:dt_sigma_plus_div_k_equals_zero",
+          "label": "partial-t sigma-s + div-s K-s = 0"
+        }
+      ]
+    },
+    {
+      "partId": "moving-interface-unit-audit",
+      "label": "Select the SI unit audit for the moving-interface balance.",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "units:all_terms_ampere_per_square_metre_and_u_rho_matches",
+          "label": "Every term is A m^-2, including u rho = (m s^-1)(C m^-3)."
+        },
+        {
+          "choiceId": "units:u_rho_coulomb_per_square_metre",
+          "label": "u rho has units C m^-2."
+        },
+        {
+          "choiceId": "units:dt_sigma_coulomb_per_square_metre",
+          "label": "partial-t sigma-s has units C m^-2."
+        }
+      ]
+    }
+  ]
+}

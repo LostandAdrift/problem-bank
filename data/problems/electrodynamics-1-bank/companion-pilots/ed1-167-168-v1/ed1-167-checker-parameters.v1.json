@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v3",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:167",
+    "internalId": "PB-ORIGINAL:ED1-167",
+    "problemVersion": "proofbound-ed1-167-v2",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "2ff6818e4a99b61223e025fe5910682be96a6815e77d64b2093096ad80a8121e"
+  },
+  "answerFormSha256": "bdc6130d0fe60b255f4e6f4019d89df52abe802d997be2bdce11ffcd29de39d2",
+  "inputParserSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4",
+  "checkerId": "checker.ed1.167.coaxial-displacement-current",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "electric-field-coefficient",
+      "expected": 1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "current-microampere",
+      "expected": 50.2,
+      "absoluteTolerance": 0.05,
+      "relativeTolerance": 0,
+      "unitId": "microampere",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    },
+    {
+      "partId": "current-density",
+      "expected": 0.00798,
+      "absoluteTolerance": 0.000005,
+      "relativeTolerance": 0,
+      "unitId": "ampere_per_square_metre",
+      "defaultErrorCode": null,
+      "misconceptions": []
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "electric-field-form",
+      "expectedChoiceIds": [
+        "field:V_over_r_log_radial"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "field:V_over_r_log_radial",
+          "errorCode": null
+        },
+        {
+          "choiceId": "field:V_over_b_minus_a_radial",
+          "errorCode": "EDE167A"
+        },
+        {
+          "choiceId": "field:V_over_r_radial",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "displacement-current-ledger",
+      "expectedChoiceIds": [
+        "ledger:jd_epsilon0_vdot_over_r_log_area_r0_full_cut_independent"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "ledger:jd_epsilon0_vdot_over_r_log_area_r0_full_cut_independent",
+          "errorCode": null
+        },
+        {
+          "choiceId": "ledger:uniform_jd_parallel_plate_current_proportional_r0",
+          "errorCode": "EDE167A"
+        },
+        {
+          "choiceId": "ledger:correct_jd_flat_area_current_inverse_r0",
+          "errorCode": "EDE167B"
+        }
+      ]
+    },
+    {
+      "partId": "sign-unit-audit",
+      "expectedChoiceIds": [
+        "audit:positive_rhat_current_microampere_jd_ampere_per_square_metre"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "audit:positive_rhat_current_microampere_jd_ampere_per_square_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "audit:negative_rhat_current_microampere_jd_ampere_per_square_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "audit:positive_rhat_current_ampere_jd_ampere_per_metre",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-167-M1",
+      "partIds": [
+        "electric-field-coefficient",
+        "electric-field-form"
+      ]
+    },
+    {
+      "milestoneId": "ED1-167-M2",
+      "partIds": [
+        "displacement-current-ledger"
+      ]
+    },
+    {
+      "milestoneId": "ED1-167-M3",
+      "partIds": [
+        "current-microampere",
+        "current-density",
+        "sign-unit-audit"
+      ]
+    }
+  ]
+}

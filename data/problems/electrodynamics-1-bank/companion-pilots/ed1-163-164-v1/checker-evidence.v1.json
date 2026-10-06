@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-checker-evidence.v1",
+  "state": "held_prospective",
+  "targets": [
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:163",
+      "internalId": "PB-ORIGINAL:ED1-163",
+      "problemVersion": "proofbound-ed1-163-v1",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+    },
+    {
+      "source": "checked_in",
+      "publicProblemId": "ED:164",
+      "internalId": "PB-ORIGINAL:ED1-164",
+      "problemVersion": "proofbound-ed1-164-v2",
+      "rubricVersion": "v2",
+      "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+    }
+  ],
+  "checker": {
+    "responseParserSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4",
+    "implementationSha256": "3e5c027e854878a6480e61728adbe9106f00f5429cdcf896a1f62716f1038e2b",
+    "focusedTestSha256": "544736c6f53ea70e7df6e6bb7b1ad6c0aeb2e71d5d1ea36604df6575715eec93",
+    "checkerIds": [
+      "checker.ed1.163.distributional-sheet-source",
+      "checker.ed1.164.macroscopic-interface-jumps"
+    ],
+    "checkerVersion": "v1",
+    "inputSchemaVersion": "proofanvil.exact-answer-response.v1"
+  },
+  "artifactBindings": {
+    "answerForms": [
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:163",
+          "internalId": "PB-ORIGINAL:ED1-163",
+          "problemVersion": "proofbound-ed1-163-v1",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-163-164-v1/ed1-163-answer-form.v1.json",
+        "rawSha256": "c86ffbc8f986361456434ac775ff2549dd7135ce60e496e41e72c81e3cce9572"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:164",
+          "internalId": "PB-ORIGINAL:ED1-164",
+          "problemVersion": "proofbound-ed1-164-v2",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-163-164-v1/ed1-164-answer-form.v1.json",
+        "rawSha256": "cb9035c5f28e629dc7692abe2dead6550711cb9c358800678f9c548d45352b49"
+      }
+    ],
+    "parameters": [
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:163",
+          "internalId": "PB-ORIGINAL:ED1-163",
+          "problemVersion": "proofbound-ed1-163-v1",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-163-164-v1/ed1-163-checker-parameters.v1.json",
+        "rawSha256": "d92b63392921b28e7bbb527109d3de52b3190b9288b4b38fb1cb69ad8789a8cb"
+      },
+      {
+        "target": {
+          "source": "checked_in",
+          "publicProblemId": "ED:164",
+          "internalId": "PB-ORIGINAL:ED1-164",
+          "problemVersion": "proofbound-ed1-164-v2",
+          "rubricVersion": "v2",
+          "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+        },
+        "path": "data/problems/electrodynamics-1-bank/companion-pilots/ed1-163-164-v1/ed1-164-checker-parameters.v1.json",
+        "rawSha256": "ead074bc4e30435a96c76c2a6380f0b8f26d7a991babfe1e5cc1487b5bea78ee"
+      }
+    ],
+    "fixturesSha256": "29d32d109c2f10333bd75444559a1b45998159d6ab4f65deff364596ceea0f58",
+    "coachGroundingSha256": "e8769442ded158b69417e80d2efac7528e44d77ae4be5bd666e62e34c7485a15",
+    "accessibilityReceiptsSha256": "e85ae8abf4d21b37458e3738b136a260b245d42d97172e5289e47dbb03e8f3d2",
+    "examAlignmentReviewsSha256": "44aacf85e7faeceb51836268152246267612bf1a81f69606ad6b5f25dc96c352",
+    "rendererReceiptsSha256": "1a4b8ce5ae995154c2ac2375f4514fee34c75d9802ae2033bb4c79c6a035bca3",
+    "batchHoldSha256": "a4d306d0a7f7ccf5ad7aa8b439317056750b3125c387a51d365df0d57e924544"
+  },
+  "execution": {
+    "perTarget": [
+      {
+        "publicProblemId": "ED:163",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 10
+      },
+      {
+        "publicProblemId": "ED:164",
+        "passingFixtureCount": 2,
+        "failingFixtureCount": 13
+      }
+    ],
+    "passingFixtureCount": 4,
+    "failingFixtureCount": 23,
+    "result": "passed",
+    "networkCalls": 0,
+    "providerCalls": 0
+  },
+  "authorityBoundary": {
+    "admissionAuthority": false,
+    "currentSelectionAuthority": false,
+    "liveRegistryAuthority": false,
+    "runtimeDispatchAuthority": false,
+    "coachDeliveryAuthority": false,
+    "persistenceAuthority": false,
+    "readinessAuthority": false,
+    "publicationAuthority": false,
+    "uiAuthority": false,
+    "accessibilityAuthority": false,
+    "learnerBehaviorMutation": false,
+    "stagingMutation": false,
+    "remoteCalls": false
+  }
+}

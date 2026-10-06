@@ -1,0 +1,1022 @@
+{
+  "DE:9901265": {
+    "problemId": "DE:9901265",
+    "internalId": "problem-factory:differential-equations-for-engineers:265",
+    "courseId": "differential-equations-for-engineers",
+    "title": "A separately excited DC motor has armature inductance 0.50\\,\\mathrm{H}, resistance 2.0\\,\\Omega, back-emf constant 0…",
+    "objective": "Solve the stated Differential Equations for Engineers problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 265,
+    "difficulty": 5,
+    "estimatedMinutes": 35,
+    "skillIds": [
+      "boundary-pde",
+      "differential-equations-for-engineers-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-differential-equations-for-engineers-265-v1",
+    "rubricId": "proofanvil-factory-differential-equations-for-engineers-265-rubric",
+    "rubricVersion": "v1",
+    "statement": "A separately excited DC motor has armature inductance \\(0.50\\,\\mathrm{H}\\), resistance \\(2.0\\,\\Omega\\), back-emf constant \\(0.10\\,\\mathrm{V\\,s/rad}\\), torque constant \\(0.10\\,\\mathrm{N\\,m/A}\\), rotor inertia \\(0.020\\,\\mathrm{kg\\,m^2}\\), and viscous friction \\(0.0020\\,\\mathrm{N\\,m\\,s/rad}\\). A \\(24\\,\\mathrm{V}\\) step is applied at \\(t=0\\), and a resisting load torque of \\(0.20\\,\\mathrm{N\\,m}\\) is applied at \\(t=0.50\\,\\mathrm{s}\\). From zero current and speed, solve the coupled electrical–mechanical equations piecewise and find the minimum speed after the load step and the final current and speed.",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "differential-equations-for-engineers-265-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "differential-equations-for-engineers-265-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "differential-equations-for-engineers-265-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "differential-equations-for-engineers-265-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "DEF265",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "differential-equations-for-engineers-265-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "The armature and rotor give a linear \\(2\\times 2\\) system; solve it with \\(T_L=0\\) up to \\(t=0.50\\,\\mathrm{s}\\), then with \\(T_L=0.20\\,\\mathrm{N\\,m}\\)."
+      },
+      {
+        "id": "differential-equations-for-engineers-265-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "At the load instant compare motor torque \\(K_t i\\) with friction plus load; if the net torque is still positive, speed does not dip."
+      },
+      {
+        "id": "differential-equations-for-engineers-265-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "The final state is the algebraic equilibrium of the loaded circuit, \\(R_a i+K_b\\omega=V_a\\) and \\(K_t i=b\\omega+T_L\\)."
+      }
+    ],
+    "canonicalSolution": "The coupled linear system is\n\\[\n\\begin{aligned}\n0.50\\,i'+2.0\\,i+0.10\\,\\omega&=v_a(t),\\\\\n0.020\\,\\omega'+0.0020\\,\\omega&=0.10\\,i-T_L(t),\n\\end{aligned}\n\\]\nwith \\(i(0)=\\omega(0)=0\\), \\(v_a=24\\,u(t)\\), and \\(T_L=0.20\\,u(t-0.50)\\). Equivalently\n\\[\n\\mathbf{x}'=A\\mathbf{x}+\\mathbf{b}(t),\\qquad\nA=\\begin{pmatrix}-4&-0.2\\\\ 5&-0.1\\end{pmatrix},\\qquad\n\\mathbf{x}=\\begin{pmatrix}i\\\\\\omega\\end{pmatrix},\n\\]\nand \\(\\mathbf{b}=(48,0)^T\\) on \\([0,0.50)\\) while \\(\\mathbf{b}=(48,-10)^T\\) for \\(t>0.50\\). The characteristic polynomial is \\(\\lambda^2+4.1\\lambda+1.4=0\\), so\n\\[\n\\lambda_\\pm=-2.05\\pm\\sqrt{2.8025},\\qquad\\lambda_1=-3.724,\\qquad\\lambda_2=-0.376.\n\\]\nEigenvectors may be taken as \\(\\mathbf{v}_j=(\\lambda_j+0.1,\\,5)^T\\). Thus \\(A=PDP^{-1}\\) with \\(D=\\operatorname{diag}(\\lambda_1,\\lambda_2)\\) and \\(e^{tA}=P e^{tD}P^{-1}\\).\n\nOn \\(0\\le t<0.50\\), \\(T_L=0\\) and the no-load equilibrium is \\(\\mathbf{x}_{\\mathrm{nl}}=-A^{-1}(48,0)^T=(24/7,\\,1200/7)^T\\). Starting from the origin,\n\\[\n\\mathbf{x}(t)=\\mathbf{x}_{\\mathrm{nl}}-e^{tA}\\mathbf{x}_{\\mathrm{nl}}.\n\\]\nEvaluating the exponential at the switching time gives\n\\[\ne^{0.50 A}\\approx\\begin{pmatrix}0.09987&-0.04022\\\\ 1.0055&0.88413\\end{pmatrix},\n\\]\nand therefore\n\\[\ni(0.50)=9.981\\,\\mathrm{A},\\qquad\\omega(0.50)=16.416\\,\\mathrm{rad/s}.\n\\]\nAt \\(t=0.50^+\\) the load \\(T_L=0.20\\,\\mathrm{N\\,m}\\) is applied. Motor torque is \\(K_t i=0.998\\,\\mathrm{N\\,m}\\), so\n\\[\n\\omega'(0.50^+)=\\bigl(0.10\\,i-0.0020\\,\\omega-0.20\\bigr)/0.020=+38.26\\,\\mathrm{rad/s^2}>0.\n\\]\nSpeed therefore continues to increase after the load step; it never dips. The minimum speed after the load step is the value at the switching instant,\n\\[\n\\omega_{\\min}=\\omega(0.50^+)=16.42\\,\\mathrm{rad/s}.\n\\]\nThe loaded equilibrium (final state) solves \\(2i+0.10\\omega=24\\) and \\(0.10 i-0.0020\\omega=0.20\\):\n\\[\ni_\\infty=\\frac{34}{7}=4.857\\,\\mathrm{A},\\qquad\\omega_\\infty=\\frac{1000}{7}=142.86\\,\\mathrm{rad/s}.\n\\]\n\nFinal answer\nMinimum speed after the load step is \\(\\omega(0.50)=16.42\\,\\mathrm{rad/s}\\) (speed never decreases); final current \\(i_\\infty=4.857\\,\\mathrm{A}\\) and speed \\(\\omega_\\infty=142.86\\,\\mathrm{rad/s}\\).",
+    "graderFixtures": [
+      {
+        "id": "differential-equations-for-engineers-265-reviewed-correct",
+        "proofText": "The coupled linear system is\n\\[\n\\begin{aligned}\n0.50\\,i'+2.0\\,i+0.10\\,\\omega&=v_a(t),\\\\\n0.020\\,\\omega'+0.0020\\,\\omega&=0.10\\,i-T_L(t),\n\\end{aligned}\n\\]\nwith \\(i(0)=\\omega(0)=0\\), \\(v_a=24\\,u(t)\\), and \\(T_L=0.20\\,u(t-0.50)\\). Equivalently\n\\[\n\\mathbf{x}'=A\\mathbf{x}+\\mathbf{b}(t),\\qquad\nA=\\begin{pmatrix}-4&-0.2\\\\ 5&-0.1\\end{pmatrix},\\qquad\n\\mathbf{x}=\\begin{pmatrix}i\\\\\\omega\\end{pmatrix},\n\\]\nand \\(\\mathbf{b}=(48,0)^T\\) on \\([0,0.50)\\) while \\(\\mathbf{b}=(48,-10)^T\\) for \\(t>0.50\\). The characteristic polynomial is \\(\\lambda^2+4.1\\lambda+1.4=0\\), so\n\\[\n\\lambda_\\pm=-2.05\\pm\\sqrt{2.8025},\\qquad\\lambda_1=-3.724,\\qquad\\lambda_2=-0.376.\n\\]\nEigenvectors may be taken as \\(\\mathbf{v}_j=(\\lambda_j+0.1,\\,5)^T\\). Thus \\(A=PDP^{-1}\\) with \\(D=\\operatorname{diag}(\\lambda_1,\\lambda_2)\\) and \\(e^{tA}=P e^{tD}P^{-1}\\).\n\nOn \\(0\\le t<0.50\\), \\(T_L=0\\) and the no-load equilibrium is \\(\\mathbf{x}_{\\mathrm{nl}}=-A^{-1}(48,0)^T=(24/7,\\,1200/7)^T\\). Starting from the origin,\n\\[\n\\mathbf{x}(t)=\\mathbf{x}_{\\mathrm{nl}}-e^{tA}\\mathbf{x}_{\\mathrm{nl}}.\n\\]\nEvaluating the exponential at the switching time gives\n\\[\ne^{0.50 A}\\approx\\begin{pmatrix}0.09987&-0.04022\\\\ 1.0055&0.88413\\end{pmatrix},\n\\]\nand therefore\n\\[\ni(0.50)=9.981\\,\\mathrm{A},\\qquad\\omega(0.50)=16.416\\,\\mathrm{rad/s}.\n\\]\nAt \\(t=0.50^+\\) the load \\(T_L=0.20\\,\\mathrm{N\\,m}\\) is applied. Motor torque is \\(K_t i=0.998\\,\\mathrm{N\\,m}\\), so\n\\[\n\\omega'(0.50^+)=\\bigl(0.10\\,i-0.0020\\,\\omega-0.20\\bigr)/0.020=+38.26\\,\\mathrm{rad/s^2}>0.\n\\]\nSpeed therefore continues to increase after the load step; it never dips. The minimum speed after the load step is the value at the switching instant,\n\\[\n\\omega_{\\min}=\\omega(0.50^+)=16.42\\,\\mathrm{rad/s}.\n\\]\nThe loaded equilibrium (final state) solves \\(2i+0.10\\omega=24\\) and \\(0.10 i-0.0020\\omega=0.20\\):\n\\[\ni_\\infty=\\frac{34}{7}=4.857\\,\\mathrm{A},\\qquad\\omega_\\infty=\\frac{1000}{7}=142.86\\,\\mathrm{rad/s}.\n\\]\n\nFinal answer\nMinimum speed after the load step is \\(\\omega(0.50)=16.42\\,\\mathrm{rad/s}\\) (speed never decreases); final current \\(i_\\infty=4.857\\,\\mathrm{A}\\) and speed \\(\\omega_\\infty=142.86\\,\\mathrm{rad/s}\\).",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "differential-equations-for-engineers-265-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "DEF265"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "de-100-problems/reviewed/reviewed-151-300.md#problem-275",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "APAB:9913211": {
+    "problemId": "APAB:9913211",
+    "internalId": "problem-factory:ap-calculus-ab:211",
+    "courseId": "ap-calculus-ab",
+    "title": "A continuous function g is defined on [0,10].",
+    "objective": "Solve the stated AP Calculus AB problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 211,
+    "difficulty": 4,
+    "estimatedMinutes": 25,
+    "skillIds": [
+      "integration-accumulation",
+      "ap-calculus-ab-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-ap-calculus-ab-211-v1",
+    "rubricId": "proofanvil-factory-ap-calculus-ab-211-rubric",
+    "rubricVersion": "v1",
+    "statement": "A continuous function \\(g\\) is defined on \\([0,10]\\). Selected values of \\(g\\) are given in the table. The partition of \\([0,10]\\) determined by the \\(x\\)-values in the table does not have equal subinterval widths.\n\n\\[\n\\begin{array}{c|ccccc}\nx & 0 & 1 & 4 & 6 & 10 \\\\\n\\hline\ng(x) & 8 & 6 & 5 & 9 & 3\n\\end{array}\n\\]\n\nLet \\(I=\\displaystyle\\int_0^{10} g(x)\\,dx\\).\n\n(a) Approximate \\(I\\) using a left Riemann sum for the four subintervals determined by the table.\n\n(b) Approximate \\(I\\) using a right Riemann sum for the same four subintervals.\n\n(c) Approximate \\(I\\) using a trapezoidal sum for the same four subintervals.\n\n(d) Write an explicit numerical expression for a midpoint Riemann sum that uses the two subintervals \\([0,4]\\) and \\([4,10]\\) and the sample values supplied by the table.",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "ap-calculus-ab-211-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "ap-calculus-ab-211-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "ap-calculus-ab-211-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "ap-calculus-ab-211-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "APABF211",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "ap-calculus-ab-211-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "The widths are not equal: read each \\(\\Delta x\\) from consecutive \\(x\\)-values in the table, then multiply by the left (or right) height of that piece."
+      },
+      {
+        "id": "ap-calculus-ab-211-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "Widths \\(1,3,2,4\\). Left heights are the first four \\(g\\)-values; right heights are the last four. Trapezoids average the two endpoints of each piece."
+      },
+      {
+        "id": "ap-calculus-ab-211-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "For (d), the true midpoints of \\([0,4]\\) and \\([4,10]\\) are missing from the table; fall back to the interior table nodes of those two coarse intervals."
+      },
+      {
+        "id": "ap-calculus-ab-211-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "(i) Write \\(\\Delta x_i\\) from the \\(x\\)-row. (ii) Pair each width with the left endpoint value, then with the right. (iii) Average pairwise for \\(T\\). (iv) For two coarse intervals of lengths \\(4\\) and \\(6\\), name the midpoints \\(2\\) and \\(7\\), then use the interior table nodes \\(1\\) and \\(6\\)."
+      }
+    ],
+    "canonicalSolution": "The four subintervals determined by the table are \\([0,1]\\), \\([1,4]\\), \\([4,6]\\), and \\([6,10]\\), of widths \\(1\\), \\(3\\), \\(2\\), and \\(4\\).\n\n(a) Left Riemann sum:\n\\[\n1\\cdot g(0)+3\\cdot g(1)+2\\cdot g(4)+4\\cdot g(6)=1\\cdot 8+3\\cdot 6+2\\cdot 5+4\\cdot 9=8+18+10+36=72.\n\\]\n\n(b) Right Riemann sum:\n\\[\n1\\cdot g(1)+3\\cdot g(4)+2\\cdot g(6)+4\\cdot g(10)=6+15+18+12=51.\n\\]\n\n(c) Trapezoidal sum, averaging left and right heights on each subinterval:\n\\[\nT=\\frac12\\bigl(1(8+6)+3(6+5)+2(5+9)+4(9+3)\\bigr)=\\frac12(14+33+28+48)=\\frac{123}{2}=61.5.\n\\]\n(Equivalently \\(T=(72+51)/2=61.5\\).)\n\n(d) The geometric midpoints of \\([0,4]\\) and \\([4,10]\\) are \\(x=2\\) and \\(x=7\\), neither of which appears in the table, so the true midpoint sum \\(4g(2)+6g(7)\\) cannot be evaluated from the given sample values. The unique interior tabulated abscissae of those two subintervals are \\(x=1\\) and \\(x=6\\). Using those table values as sample points produces the Riemann sum\n\\[\n4\\cdot g(1)+6\\cdot g(6)=4(6)+6(9)=24+54=78.\n\\]\n(The expression \\(4(6)+6(9)\\) is the explicit numerical form requested by the table; it is a Riemann sum on the two named subintervals, not the geometric-midpoint sum.)\n\nFinal answer: \\(L=72\\); \\(R=51\\); \\(T=61.5\\); \\(4(6)+6(9)=78\\)",
+    "graderFixtures": [
+      {
+        "id": "ap-calculus-ab-211-reviewed-correct",
+        "proofText": "The four subintervals determined by the table are \\([0,1]\\), \\([1,4]\\), \\([4,6]\\), and \\([6,10]\\), of widths \\(1\\), \\(3\\), \\(2\\), and \\(4\\).\n\n(a) Left Riemann sum:\n\\[\n1\\cdot g(0)+3\\cdot g(1)+2\\cdot g(4)+4\\cdot g(6)=1\\cdot 8+3\\cdot 6+2\\cdot 5+4\\cdot 9=8+18+10+36=72.\n\\]\n\n(b) Right Riemann sum:\n\\[\n1\\cdot g(1)+3\\cdot g(4)+2\\cdot g(6)+4\\cdot g(10)=6+15+18+12=51.\n\\]\n\n(c) Trapezoidal sum, averaging left and right heights on each subinterval:\n\\[\nT=\\frac12\\bigl(1(8+6)+3(6+5)+2(5+9)+4(9+3)\\bigr)=\\frac12(14+33+28+48)=\\frac{123}{2}=61.5.\n\\]\n(Equivalently \\(T=(72+51)/2=61.5\\).)\n\n(d) The geometric midpoints of \\([0,4]\\) and \\([4,10]\\) are \\(x=2\\) and \\(x=7\\), neither of which appears in the table, so the true midpoint sum \\(4g(2)+6g(7)\\) cannot be evaluated from the given sample values. The unique interior tabulated abscissae of those two subintervals are \\(x=1\\) and \\(x=6\\). Using those table values as sample points produces the Riemann sum\n\\[\n4\\cdot g(1)+6\\cdot g(6)=4(6)+6(9)=24+54=78.\n\\]\n(The expression \\(4(6)+6(9)\\) is the explicit numerical form requested by the table; it is a Riemann sum on the two named subintervals, not the geometric-midpoint sum.)\n\nFinal answer: \\(L=72\\); \\(R=51\\); \\(T=61.5\\); \\(4(6)+6(9)=78\\)",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "ap-calculus-ab-211-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "APABF211"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/ap-calculus-ab/reviewed/reviewed-211-240.md#problem-215",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "APAB:9913253": {
+    "problemId": "APAB:9913253",
+    "internalId": "problem-factory:ap-calculus-ab:253",
+    "courseId": "ap-calculus-ab",
+    "title": "A solid has base in the xy-plane equal to the region bounded by y=\\sin x and y=0 for 0\\le x\\le\\pi.",
+    "objective": "Solve the stated AP Calculus AB problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 253,
+    "difficulty": 5,
+    "estimatedMinutes": 35,
+    "skillIds": [
+      "differential-equations",
+      "ap-calculus-ab-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-ap-calculus-ab-253-v1",
+    "rubricId": "proofanvil-factory-ap-calculus-ab-253-rubric",
+    "rubricVersion": "v1",
+    "statement": "A solid has base in the \\(xy\\)-plane equal to the region bounded by \\(y=\\sin x\\) and \\(y=0\\) for \\(0\\le x\\le\\pi\\). Cross-sections perpendicular to the \\(x\\)-axis are rectangles with base in the given region and height \\(2+\\cos x\\).\n\n(a) Give the area of a typical rectangular cross-section as a function of \\(x\\).\n\n(b) Find the exact volume of the solid. Split or rewrite the integrand if needed so that every term has an elementary antiderivative available in AP Calculus AB.\n\n(c) Find the average height of the rectangles on \\([0,\\pi]\\), that is, the average value of \\(2+\\cos x\\) on \\([0,\\pi]\\). Then find the average value of the base length \\(\\sin x\\) on \\([0,\\pi]\\). Explain why the product of these two averages is not equal to the volume divided by the length of the interval.",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "ap-calculus-ab-253-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "ap-calculus-ab-253-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "ap-calculus-ab-253-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "ap-calculus-ab-253-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "APABF253",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "ap-calculus-ab-253-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "Cross-section area is the product of the two given lengths; split the product so each term integrates by a standard rule."
+      },
+      {
+        "id": "ap-calculus-ab-253-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "Volume is the integral of base times height. Rewrite the cross term as a multiple of \\(\\sin 2x\\), or use \\(u=\\sin x\\)."
+      },
+      {
+        "id": "ap-calculus-ab-253-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "The cross term \\(\\sin x\\cos x\\) over a full hump of sine may vanish. That vanishing is what decides whether \\(\\mathrm{avg}(hb)\\) equals \\(\\mathrm{avg}(h)\\,\\mathrm{avg}(b)\\). Compute both sides before assuming they differ."
+      },
+      {
+        "id": "ap-calculus-ab-253-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "(i) Expand the product. (ii) Evaluate each term on \\([0,\\pi]\\). (iii) Compute the two averages. (iv) Compare their product with \\(V/\\pi\\) and name the cancellation \\(\\int\\sin x\\cos x=0\\)."
+      }
+    ],
+    "canonicalSolution": "(a) Rectangular area \\(=\\) (base in the given region)\\(\\times\\)(height) \\(=\\sin x\\cdot(2+\\cos x)\\).\n\n(b)\n\\[\nV=\\int_{0}^{\\pi}(2\\sin x+\\sin x\\cos x)\\,dx.\n\\]\nThe first term has antiderivative \\(-2\\cos x\\). For the second, either \\(\\frac12\\int\\sin 2x\\,dx\\) or the substitution \\(u=\\sin x\\):\n\\[\n\\int_{0}^{\\pi}2\\sin x\\,dx=\\bigl[-2\\cos x\\bigr]_{0}^{\\pi}=4,\\qquad\n\\int_{0}^{\\pi}\\sin x\\cos x\\,dx=\\frac12\\sin^{2}x\\Big|_{0}^{\\pi}=0.\n\\]\nThus \\(V=4\\). (Both pieces are elementary AB antiderivatives.)\n\n(c) The prompt asks why the product of the two averages fails to equal \\(V/\\pi\\). Compute both quantities and compare. The averages are\n\\[\n\\frac{1}{\\pi}\\int_{0}^{\\pi}(2+\\cos x)\\,dx=\\frac{1}{\\pi}\\bigl[2x+\\sin x\\bigr]_{0}^{\\pi}=2,\n\\]\n\\[\n\\frac{1}{\\pi}\\int_{0}^{\\pi}\\sin x\\,dx=\\frac{1}{\\pi}\\bigl[-\\cos x\\bigr]_{0}^{\\pi}=\\frac{2}{\\pi}.\n\\]\nTheir product is \\(2\\cdot(2/\\pi)=4/\\pi\\). The volume divided by the length of the interval is \\(V/\\pi=4/\\pi\\). In this particular model the two quantities *are* equal, so the claimed inequality does not hold. Writing \\(h(x)=2+\\cos x\\) and \\(b(x)=\\sin x\\), one has \\(\\mathrm{avg}(hb)=\\mathrm{avg}(h)\\,\\mathrm{avg}(b)\\) because \\(\\int_{0}^{\\pi}\\cos x\\sin x\\,dx=0\\) and the average of \\(\\cos x\\) on \\([0,\\pi]\\) is \\(0\\), so the covariance of height and base vanishes. In general \\(\\mathrm{avg}(hb)\\ne\\mathrm{avg}(h)\\,\\mathrm{avg}(b)\\); the equality here is a special cancellation, not a general rule. The prompt’s wording is the generic expectation; the integrand was chosen so that the expectation fails.\n\nFinal answer: area \\(\\sin x(2+\\cos x)\\); volume \\(4\\); avg height \\(2\\), avg base \\(2/\\pi\\); product \\(=V/\\pi=4/\\pi\\) in this special case (covariance of \\(\\sin x\\) and \\(\\cos x\\) on \\([0,\\pi]\\) is \\(0\\))",
+    "graderFixtures": [
+      {
+        "id": "ap-calculus-ab-253-reviewed-correct",
+        "proofText": "(a) Rectangular area \\(=\\) (base in the given region)\\(\\times\\)(height) \\(=\\sin x\\cdot(2+\\cos x)\\).\n\n(b)\n\\[\nV=\\int_{0}^{\\pi}(2\\sin x+\\sin x\\cos x)\\,dx.\n\\]\nThe first term has antiderivative \\(-2\\cos x\\). For the second, either \\(\\frac12\\int\\sin 2x\\,dx\\) or the substitution \\(u=\\sin x\\):\n\\[\n\\int_{0}^{\\pi}2\\sin x\\,dx=\\bigl[-2\\cos x\\bigr]_{0}^{\\pi}=4,\\qquad\n\\int_{0}^{\\pi}\\sin x\\cos x\\,dx=\\frac12\\sin^{2}x\\Big|_{0}^{\\pi}=0.\n\\]\nThus \\(V=4\\). (Both pieces are elementary AB antiderivatives.)\n\n(c) The prompt asks why the product of the two averages fails to equal \\(V/\\pi\\). Compute both quantities and compare. The averages are\n\\[\n\\frac{1}{\\pi}\\int_{0}^{\\pi}(2+\\cos x)\\,dx=\\frac{1}{\\pi}\\bigl[2x+\\sin x\\bigr]_{0}^{\\pi}=2,\n\\]\n\\[\n\\frac{1}{\\pi}\\int_{0}^{\\pi}\\sin x\\,dx=\\frac{1}{\\pi}\\bigl[-\\cos x\\bigr]_{0}^{\\pi}=\\frac{2}{\\pi}.\n\\]\nTheir product is \\(2\\cdot(2/\\pi)=4/\\pi\\). The volume divided by the length of the interval is \\(V/\\pi=4/\\pi\\). In this particular model the two quantities *are* equal, so the claimed inequality does not hold. Writing \\(h(x)=2+\\cos x\\) and \\(b(x)=\\sin x\\), one has \\(\\mathrm{avg}(hb)=\\mathrm{avg}(h)\\,\\mathrm{avg}(b)\\) because \\(\\int_{0}^{\\pi}\\cos x\\sin x\\,dx=0\\) and the average of \\(\\cos x\\) on \\([0,\\pi]\\) is \\(0\\), so the covariance of height and base vanishes. In general \\(\\mathrm{avg}(hb)\\ne\\mathrm{avg}(h)\\,\\mathrm{avg}(b)\\); the equality here is a special cancellation, not a general rule. The prompt’s wording is the generic expectation; the integrand was chosen so that the expectation fails.\n\nFinal answer: area \\(\\sin x(2+\\cos x)\\); volume \\(4\\); avg height \\(2\\), avg base \\(2/\\pi\\); product \\(=V/\\pi=4/\\pi\\) in this special case (covariance of \\(\\sin x\\) and \\(\\cos x\\) on \\([0,\\pi]\\) is \\(0\\))",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "ap-calculus-ab-253-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "APABF253"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/ap-calculus-ab/reviewed/reviewed-241-270.md#problem-257",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "CALC1:9915173": {
+    "problemId": "CALC1:9915173",
+    "internalId": "problem-factory:calculus-1:173",
+    "courseId": "calculus-1",
+    "title": "Newton's method applied to f(x)=x^{2}-10 produces the Babylonian (Heron) recurrence for \\sqrt{10}.",
+    "objective": "Solve the stated Calculus I problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 173,
+    "difficulty": 3,
+    "estimatedMinutes": 25,
+    "skillIds": [
+      "integration-ftc",
+      "calculus-1-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-calculus-1-173-v1",
+    "rubricId": "proofanvil-factory-calculus-1-173-rubric",
+    "rubricVersion": "v1",
+    "statement": "Newton's method applied to \\(f(x)=x^{2}-10\\) produces the Babylonian (Heron) recurrence for \\(\\sqrt{10}\\). (a) Starting from \\(x_{0}=3\\), compute the first two Newton iterates \\(x_{1}\\) and \\(x_{2}\\) as exact rational numbers. (b) Show that the Newton update for this \\(f\\) is algebraically identical to\n\\[\nx_{n+1}=\\frac12\\left(x_{n}+\\frac{10}{x_{n}}\\right)\n\\]\nwhenever \\(x_{n}\\ne 0\\). (c) Prove that if \\(x_{n}>\\sqrt{10}\\), then \\(\\sqrt{10}<x_{n+1}<x_{n}\\). Conclude that the sequence starting at \\(x_{0}=3\\) is strictly decreasing and bounded below by \\(\\sqrt{10}\\), hence converges to some limit \\(L\\ge\\sqrt{10}\\), and identify \\(L\\) by passing to the limit in the recurrence. Do not merely quote a general Newton-method convergence theorem.",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "calculus-1-173-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "calculus-1-173-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-1-173-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-1-173-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "CALC1F173",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "calculus-1-173-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "Combine the Newton update over a common denominator and simplify the numerator."
+      },
+      {
+        "id": "calculus-1-173-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "Compute two iterates from \\(x_{0}=3\\) as rationals, then rewrite \\(x_{n}-f(x_{n})/f'(x_{n})\\) algebraically."
+      },
+      {
+        "id": "calculus-1-173-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "From the hypothesis \\(x_{n}>\\sqrt{10}\\) deduce both \\(x_{n+1}<x_{n}\\) (compare with \\(x_{n}\\)) and \\(x_{n+1}>\\sqrt{10}\\) (complete the square, or compare the AM–GM gap), then pass to the limit in the recurrence. Before claiming that the *whole* sequence from \\(x_{0}\\) is monotone, check whether that hypothesis actually applies at \\(n=0\\)."
+      },
+      {
+        "id": "calculus-1-173-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "(i) \\(x_{1}=19/6\\), \\(x_{2}=721/228\\). (ii) Algebra: \\(x- (x^{2}-10)/(2x)=\\frac12(x+10/x)\\). (iii) If \\(x_{n}>\\sqrt{10}\\) then \\(x_{n+1}-x_{n}=(10-x_{n}^{2})/(2x_{n})<0\\) and \\(x_{n+1}-\\sqrt{10}=(x_{n}-\\sqrt{10})^{2}/(2x_{n})>0\\). (iv) \\(x_{1}>\\sqrt{10}\\), so \\((x_{n})_{n\\ge 1}\\) decreases and is bounded below. (v) Limit \\(L\\) satisfies \\(L=\\frac12(L+10/L)\\), hence \\(L=\\sqrt{10}\\).\n\n---"
+      }
+    ],
+    "canonicalSolution": "(a) \\(f'(x)=2x\\). With \\(x_{0}=3\\),\n\\[\nx_{1}=3-\\frac{9-10}{6}=3+\\frac16=\\frac{19}{6}.\n\\]\nThen\n\\[\nx_{2}=\\frac{19}{6}-\\frac{\\bigl((19/6)^{2}-10\\bigr)}{19/3}=\\frac{19}{6}-\\frac{1/36}{19/3}=\\frac{19}{6}-\\frac{1}{228}=\\frac{722-1}{228}=\\frac{721}{228}.\n\\]\n\n(b) For \\(x_{n}\\ne 0\\),\n\\[\nx_{n+1}=x_{n}-\\frac{x_{n}^{2}-10}{2x_{n}}=\\frac{2x_{n}^{2}-(x_{n}^{2}-10)}{2x_{n}}=\\frac{x_{n}^{2}+10}{2x_{n}}=\\frac12\\Bigl(x_{n}+\\frac{10}{x_{n}}\\Bigr).\n\\]\n\n(c) Assume \\(x_{n}>\\sqrt{10}\\) (hence \\(x_{n}>0\\)). Then \\(10/x_{n}<\\sqrt{10}<x_{n}\\), so the average \\(x_{n+1}\\) satisfies \\(x_{n+1}<x_{n}\\). For the lower bound,\n\\[\nx_{n+1}-\\sqrt{10}=\\frac{x_{n}+10/x_{n}}{2}-\\sqrt{10}=\\frac{(x_{n}-\\sqrt{10})^{2}}{2x_{n}}>0,\n\\]\nhence \\(x_{n+1}>\\sqrt{10}\\). This proves the claimed implication.\n\nThe opening claim that the sequence *from \\(x_{0}=3\\)* is strictly decreasing and bounded below by \\(\\sqrt{10}\\) needs a one-step correction: \\(x_{0}=3<\\sqrt{10}\\), so the hypothesis of the implication does not apply at \\(n=0\\). Directly, \\(x_{1}=19/6>\\sqrt{10}\\) because \\((19/6)^{2}=361/36>360/36=10\\). The implication then gives\n\\[\n\\sqrt{10}<x_{2}<x_{1},\\qquad \\sqrt{10}<x_{3}<x_{2},\\qquad\\ldots,\n\\]\nso the tail \\((x_{n})_{n\\ge 1}\\) is strictly decreasing and bounded below by \\(\\sqrt{10}\\). A decreasing sequence bounded below converges to some \\(L\\ge\\sqrt{10}\\). Passing to the limit in the recurrence,\n\\[\nL=\\frac12\\Bigl(L+\\frac{10}{L}\\Bigr)\\implies 2L=L+\\frac{10}{L}\\implies L^{2}=10.\n\\]\nThe condition \\(L\\ge\\sqrt{10}>0\\) forces \\(L=\\sqrt{10}\\). (The full sequence from \\(x_{0}\\) is therefore \\(3< \\sqrt{10}< \\cdots < x_{2}< x_{1}\\), and still converges to \\(\\sqrt{10}\\).)\n\n**Final answer.** \\(x_{1}=19/6\\), \\(x_{2}=721/228\\); Newton \\(=\\) Heron; tail \\(n\\ge 1\\) decreases to \\(\\sqrt{10}\\) (note \\(x_{0}=3<\\sqrt{10}\\))",
+    "graderFixtures": [
+      {
+        "id": "calculus-1-173-reviewed-correct",
+        "proofText": "(a) \\(f'(x)=2x\\). With \\(x_{0}=3\\),\n\\[\nx_{1}=3-\\frac{9-10}{6}=3+\\frac16=\\frac{19}{6}.\n\\]\nThen\n\\[\nx_{2}=\\frac{19}{6}-\\frac{\\bigl((19/6)^{2}-10\\bigr)}{19/3}=\\frac{19}{6}-\\frac{1/36}{19/3}=\\frac{19}{6}-\\frac{1}{228}=\\frac{722-1}{228}=\\frac{721}{228}.\n\\]\n\n(b) For \\(x_{n}\\ne 0\\),\n\\[\nx_{n+1}=x_{n}-\\frac{x_{n}^{2}-10}{2x_{n}}=\\frac{2x_{n}^{2}-(x_{n}^{2}-10)}{2x_{n}}=\\frac{x_{n}^{2}+10}{2x_{n}}=\\frac12\\Bigl(x_{n}+\\frac{10}{x_{n}}\\Bigr).\n\\]\n\n(c) Assume \\(x_{n}>\\sqrt{10}\\) (hence \\(x_{n}>0\\)). Then \\(10/x_{n}<\\sqrt{10}<x_{n}\\), so the average \\(x_{n+1}\\) satisfies \\(x_{n+1}<x_{n}\\). For the lower bound,\n\\[\nx_{n+1}-\\sqrt{10}=\\frac{x_{n}+10/x_{n}}{2}-\\sqrt{10}=\\frac{(x_{n}-\\sqrt{10})^{2}}{2x_{n}}>0,\n\\]\nhence \\(x_{n+1}>\\sqrt{10}\\). This proves the claimed implication.\n\nThe opening claim that the sequence *from \\(x_{0}=3\\)* is strictly decreasing and bounded below by \\(\\sqrt{10}\\) needs a one-step correction: \\(x_{0}=3<\\sqrt{10}\\), so the hypothesis of the implication does not apply at \\(n=0\\). Directly, \\(x_{1}=19/6>\\sqrt{10}\\) because \\((19/6)^{2}=361/36>360/36=10\\). The implication then gives\n\\[\n\\sqrt{10}<x_{2}<x_{1},\\qquad \\sqrt{10}<x_{3}<x_{2},\\qquad\\ldots,\n\\]\nso the tail \\((x_{n})_{n\\ge 1}\\) is strictly decreasing and bounded below by \\(\\sqrt{10}\\). A decreasing sequence bounded below converges to some \\(L\\ge\\sqrt{10}\\). Passing to the limit in the recurrence,\n\\[\nL=\\frac12\\Bigl(L+\\frac{10}{L}\\Bigr)\\implies 2L=L+\\frac{10}{L}\\implies L^{2}=10.\n\\]\nThe condition \\(L\\ge\\sqrt{10}>0\\) forces \\(L=\\sqrt{10}\\). (The full sequence from \\(x_{0}\\) is therefore \\(3< \\sqrt{10}< \\cdots < x_{2}< x_{1}\\), and still converges to \\(\\sqrt{10}\\).)\n\n**Final answer.** \\(x_{1}=19/6\\), \\(x_{2}=721/228\\); Newton \\(=\\) Heron; tail \\(n\\ge 1\\) decreases to \\(\\sqrt{10}\\) (note \\(x_{0}=3<\\sqrt{10}\\))",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "calculus-1-173-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "CALC1F173"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/calculus-1/reviewed/reviewed-151-180.md#problem-173",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "CALC1:9915244": {
+    "problemId": "CALC1:9915244",
+    "internalId": "problem-factory:calculus-1:244",
+    "courseId": "calculus-1",
+    "title": "An inverted conical tank (vertex down) has height 12 meters and top radius 6 meters.",
+    "objective": "Solve the stated Calculus I problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 244,
+    "difficulty": 5,
+    "estimatedMinutes": 35,
+    "skillIds": [
+      "integration-applications",
+      "calculus-1-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-calculus-1-244-v1",
+    "rubricId": "proofanvil-factory-calculus-1-244-rubric",
+    "rubricVersion": "v1",
+    "statement": "An inverted conical tank (vertex down) has height \\(12\\) meters and top radius \\(6\\) meters. The tank contains water to a depth of \\(6\\) meters. Water has weight-density \\(9800\\) newtons per cubic meter. Similar triangles relate the water's surface radius \\(r\\) to the water's depth \\(h\\) by \\(\\dfrac{r}{h}=\\dfrac{1}{2}\\).\n\n(a) Express the volume \\(V\\) of water as a function of \\(h\\). At the instant when \\(h=6\\) meters, the water level is falling at \\(\\dfrac{1}{4}\\) meters per minute. Find \\(\\dfrac{dV}{dt}\\) at that instant, including units, and state whether the volume is increasing or decreasing.\n\n(b) A slice of water at height \\(y\\) meters above the vertex, for \\(0\\le y\\le 6\\), is a disk. Find the radius of that disk as a function of \\(y\\), and find the vertical distance the slice must be lifted to reach the top rim of the tank.\n\n(c) Set up and evaluate a definite integral for the work required to pump all of the water currently in the tank over the top rim. Give the exact work in joules.\n\n(d) The average lift of the water that is pumped is\n\\[\n\\frac{\\text{work}}{\\text{weight of water pumped}}.\n\\]\nCompute this average lift exactly, and show that it equals the average value of the lift function \\(12-y\\) on the interval \\(0\\le y\\le 6\\).",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "calculus-1-244-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "calculus-1-244-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-1-244-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-1-244-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "CALC1F244",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "calculus-1-244-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "Similar triangles convert the cone’s volume into a function of depth alone. Work against gravity is the integral of (weight of a slice) times (lift of that slice)."
+      },
+      {
+        "id": "calculus-1-244-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "Write \\(V=\\tfrac13\\pi r^{2}h\\) with \\(r=h/2\\). For work, a slice at height \\(y\\) above the vertex is a disk of radius \\(y/2\\) that must travel to the rim at height \\(12\\)."
+      },
+      {
+        "id": "calculus-1-244-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "Factor constants out of the work integral, leaving an elementary polynomial in \\(y\\). Average lift is work divided by the weight \\(\\delta V\\); compare that quotient to the ordinary average value of the lift function on the occupied interval, and notice whether slice area depends on height."
+      },
+      {
+        "id": "calculus-1-244-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "(i) Substitute \\(r=h/2\\) into the cone volume, then differentiate in \\(t\\). (ii) Radius \\(y/2\\), lift \\(12-y\\). (iii) \\(W=9800\\pi\\int_{0}^{6}(y/2)^{2}(12-y)\\,dy\\). (iv) Divide by \\(9800\\cdot V(6)\\), and separately compute the average value of \\(12-y\\) on \\([0,6]\\).\n\n---"
+      }
+    ],
+    "canonicalSolution": "**(a)** Similar triangles give \\(r=h/2\\), so\n\\[\nV=\\frac13\\pi r^{2}h=\\frac13\\pi\\Bigl(\\frac{h}{2}\\Bigr)^{2}h=\\frac{\\pi h^{3}}{12}.\n\\]\nDifferentiating, \\(\\dfrac{dV}{dt}=\\dfrac{\\pi}{4}h^{2}\\dfrac{dh}{dt}\\). At \\(h=6\\) with \\(\\dfrac{dh}{dt}=-\\dfrac14\\),\n\\[\n\\frac{dV}{dt}=\\frac{\\pi}{4}\\cdot 36\\cdot\\Bigl(-\\frac14\\Bigr)=-\\frac{9\\pi}{4}\n\\]\ncubic meters per minute. The volume is decreasing.\n\n**(b)** By the same similar-triangle relation, a slice at height \\(y\\) has radius \\(y/2\\). The top rim is at height \\(12\\), so the slice must be lifted \\(12-y\\) meters.\n\n**(c)** The slice of thickness \\(dy\\) has volume \\(\\pi(y/2)^{2}\\,dy\\) and weight \\(9800\\pi(y/2)^{2}\\,dy\\). The work is\n\\[\nW=9800\\pi\\cdot\\frac14\\int_{0}^{6}y^{2}(12-y)\\,dy=2450\\pi\\int_{0}^{6}(12y^{2}-y^{3})\\,dy=2450\\pi\\Bigl[4y^{3}-\\frac{y^{4}}{4}\\Bigr]_{0}^{6}.\n\\]\nThe evaluation is \\(2450\\pi\\bigl(4\\cdot 216-1296/4\\bigr)=2450\\pi(864-324)=2450\\pi\\cdot 540=1{,}323{,}000\\pi\\). The work is \\(1{,}323{,}000\\pi\\) joules.\n\n**(d)** The volume of water is \\(V(6)=\\pi\\cdot 216/12=18\\pi\\), so the weight is \\(9800\\cdot 18\\pi=176{,}400\\pi\\) newtons. The average lift is\n\\[\n\\frac{1{,}323{,}000\\pi}{176{,}400\\pi}=\\frac{15}{2}\n\\]\nmeters. This is the volume-weighted mean of the lift \\(12-y\\), in which the weight of each slice is proportional to the slice area \\(\\pi(y/2)^{2}\\).\n\nThe (unweighted) average value of the lift function on \\([0,6]\\) is\n\\[\n\\frac{1}{6}\\int_{0}^{6}(12-y)\\,dy=\\frac{1}{6}\\Bigl[12y-\\frac{y^{2}}{2}\\Bigr]_{0}^{6}=\\frac{54}{6}=9\n\\]\nmeters, which is not equal to \\(15/2\\). The identity claimed in the statement therefore fails: the two averages agree if and only if the horizontal cross-sectional area is independent of height, which it is not for a cone (the slice area grows like \\(y^{2}\\)). Equivalently, \\(15/2=12-\\bar y\\) where \\(\\bar y=9/2\\) is the \\(y\\)-coordinate of the centroid of the conical water body. (The identity does hold for a right cylinder; cf. Problem 252.)\n\n**Final answer.** (a) \\(V=\\pi h^{3}/12\\), \\(\\dfrac{dV}{dt}=-\\dfrac{9\\pi}{4}\\,\\mathrm{m^{3}/min}\\), decreasing. (b) radius \\(y/2\\), lift \\(12-y\\). (c) \\(1{,}323{,}000\\pi\\,\\mathrm{J}\\). (d) average lift \\(\\dfrac{15}{2}\\,\\mathrm{m}\\); this is *not* equal to the unweighted average of \\(12-y\\), which is \\(9\\,\\mathrm{m}\\).",
+    "graderFixtures": [
+      {
+        "id": "calculus-1-244-reviewed-correct",
+        "proofText": "**(a)** Similar triangles give \\(r=h/2\\), so\n\\[\nV=\\frac13\\pi r^{2}h=\\frac13\\pi\\Bigl(\\frac{h}{2}\\Bigr)^{2}h=\\frac{\\pi h^{3}}{12}.\n\\]\nDifferentiating, \\(\\dfrac{dV}{dt}=\\dfrac{\\pi}{4}h^{2}\\dfrac{dh}{dt}\\). At \\(h=6\\) with \\(\\dfrac{dh}{dt}=-\\dfrac14\\),\n\\[\n\\frac{dV}{dt}=\\frac{\\pi}{4}\\cdot 36\\cdot\\Bigl(-\\frac14\\Bigr)=-\\frac{9\\pi}{4}\n\\]\ncubic meters per minute. The volume is decreasing.\n\n**(b)** By the same similar-triangle relation, a slice at height \\(y\\) has radius \\(y/2\\). The top rim is at height \\(12\\), so the slice must be lifted \\(12-y\\) meters.\n\n**(c)** The slice of thickness \\(dy\\) has volume \\(\\pi(y/2)^{2}\\,dy\\) and weight \\(9800\\pi(y/2)^{2}\\,dy\\). The work is\n\\[\nW=9800\\pi\\cdot\\frac14\\int_{0}^{6}y^{2}(12-y)\\,dy=2450\\pi\\int_{0}^{6}(12y^{2}-y^{3})\\,dy=2450\\pi\\Bigl[4y^{3}-\\frac{y^{4}}{4}\\Bigr]_{0}^{6}.\n\\]\nThe evaluation is \\(2450\\pi\\bigl(4\\cdot 216-1296/4\\bigr)=2450\\pi(864-324)=2450\\pi\\cdot 540=1{,}323{,}000\\pi\\). The work is \\(1{,}323{,}000\\pi\\) joules.\n\n**(d)** The volume of water is \\(V(6)=\\pi\\cdot 216/12=18\\pi\\), so the weight is \\(9800\\cdot 18\\pi=176{,}400\\pi\\) newtons. The average lift is\n\\[\n\\frac{1{,}323{,}000\\pi}{176{,}400\\pi}=\\frac{15}{2}\n\\]\nmeters. This is the volume-weighted mean of the lift \\(12-y\\), in which the weight of each slice is proportional to the slice area \\(\\pi(y/2)^{2}\\).\n\nThe (unweighted) average value of the lift function on \\([0,6]\\) is\n\\[\n\\frac{1}{6}\\int_{0}^{6}(12-y)\\,dy=\\frac{1}{6}\\Bigl[12y-\\frac{y^{2}}{2}\\Bigr]_{0}^{6}=\\frac{54}{6}=9\n\\]\nmeters, which is not equal to \\(15/2\\). The identity claimed in the statement therefore fails: the two averages agree if and only if the horizontal cross-sectional area is independent of height, which it is not for a cone (the slice area grows like \\(y^{2}\\)). Equivalently, \\(15/2=12-\\bar y\\) where \\(\\bar y=9/2\\) is the \\(y\\)-coordinate of the centroid of the conical water body. (The identity does hold for a right cylinder; cf. Problem 252.)\n\n**Final answer.** (a) \\(V=\\pi h^{3}/12\\), \\(\\dfrac{dV}{dt}=-\\dfrac{9\\pi}{4}\\,\\mathrm{m^{3}/min}\\), decreasing. (b) radius \\(y/2\\), lift \\(12-y\\). (c) \\(1{,}323{,}000\\pi\\,\\mathrm{J}\\). (d) average lift \\(\\dfrac{15}{2}\\,\\mathrm{m}\\); this is *not* equal to the unweighted average of \\(12-y\\), which is \\(9\\,\\mathrm{m}\\).",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "calculus-1-244-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "CALC1F244"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/calculus-1/reviewed/reviewed-241-270.md#problem-244",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "CALC1:9915266": {
+    "problemId": "CALC1:9915266",
+    "internalId": "problem-factory:calculus-1:266",
+    "courseId": "calculus-1",
+    "title": "A tank is formed by revolving the curve x=\\sqrt{y}, 0\\le y\\le 4, about the y-axis.",
+    "objective": "Solve the stated Calculus I problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 266,
+    "difficulty": 5,
+    "estimatedMinutes": 35,
+    "skillIds": [
+      "intro-sequences-series",
+      "calculus-1-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-calculus-1-266-v1",
+    "rubricId": "proofanvil-factory-calculus-1-266-rubric",
+    "rubricVersion": "v1",
+    "statement": "A tank is formed by revolving the curve \\(x=\\sqrt{y}\\), \\(0\\le y\\le 4\\), about the \\(y\\)-axis. Distances are in meters, so the tank is a bowl of height \\(4\\) meters whose surface radius at height \\(y\\) is \\(\\sqrt{y}\\) meters. Water has weight-density \\(9800\\) newtons per cubic meter. Let \\(h\\) be the depth of water in the tank, \\(0\\le h\\le 4\\).\n\n(a) Using disks, express the volume \\(V(h)\\) of water as a definite integral in the variable \\(y\\), and evaluate it to obtain a closed form. At an instant when \\(h=2\\) meters, water is being pumped in at the constant rate \\(5\\pi\\) cubic meters per minute. Find \\(\\dfrac{dh}{dt}\\) at that instant. Include units.\n\n(b) Find the average value of the radius function \\(\\sqrt{y}\\) on the interval \\(0\\le y\\le 4\\). Then compute \\(\\pi\\bigl(\\text{average radius}\\bigr)^{2}\\cdot 4\\) and compare it with \\(V(4)\\). Explain in one sentence why the two volumes need not agree.\n\n(c) The full tank (\\(h=4\\)) is to be emptied by pumping all of the water over the top rim at \\(y=4\\). A slice at height \\(y\\) is a disk; give its area and its lift distance. Set up and evaluate a definite integral for the work, in joules.\n\n(d) Compute the average lift of the water that is pumped, as work divided by the weight of water in the full tank, and show that it equals the average value of the lift function \\(4-y\\) on \\([0,4]\\).",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "calculus-1-266-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "calculus-1-266-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-1-266-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-1-266-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "CALC1F266",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "calculus-1-266-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "Revolving \\(x=\\sqrt{y}\\) about the \\(y\\)-axis produces disks of radius \\(\\sqrt{y}\\). Related rates uses the resulting volume-depth formula. Work integrates (slice weight) times (lift to the rim)."
+      },
+      {
+        "id": "calculus-1-266-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "\\(V(h)=\\pi\\int_{0}^{h} y\\,dy\\). Average radius is \\(\\frac14\\int_{0}^{4}\\sqrt{y}\\,dy\\). Work uses lift \\(4-y\\) on \\(0\\le y\\le 4\\)."
+      },
+      {
+        "id": "calculus-1-266-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "After obtaining a closed form for \\(V(h)\\), the chain rule at a given \\(h\\) is immediate. For (b) and (d), compare a volume (or a work/weight ratio) built from an average with the corresponding integral that uses the square, or the area-weighting, of the same function."
+      },
+      {
+        "id": "calculus-1-266-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "(i) Evaluate \\(\\pi\\int_{0}^{h} y\\,dy\\), then differentiate in \\(t\\). (ii) Average \\(\\sqrt{y}\\), square, multiply by \\(\\pi\\cdot 4\\), and compare with \\(V(4)\\). (iii) \\(W=9800\\pi\\int_{0}^{4} y(4-y)\\,dy\\). (iv) Divide by \\(9800\\cdot V(4)\\), and separately average \\(4-y\\) on \\([0,4]\\).\n\n---"
+      }
+    ],
+    "canonicalSolution": "**(a)** A disk at height \\(y\\) has radius \\(\\sqrt{y}\\), so\n\\[\nV(h)=\\int_{0}^{h}\\pi y\\,dy=\\frac{\\pi h^{2}}{2}.\n\\]\nDifferentiating, \\(\\dfrac{dV}{dt}=\\pi h\\dfrac{dh}{dt}\\). At the instant \\(h=2\\) with \\(\\dfrac{dV}{dt}=5\\pi\\),\n\\[\n\\pi\\cdot 2\\cdot\\frac{dh}{dt}=5\\pi\\implies\\frac{dh}{dt}=\\frac{5}{2}\n\\]\nmeters per minute.\n\n**(b)** The average radius on \\([0,4]\\) is\n\\[\n\\frac{1}{4}\\int_{0}^{4}y^{1/2}\\,dy=\\frac{1}{4}\\cdot\\frac{2}{3}y^{3/2}\\Big|_{0}^{4}=\\frac{8}{6}=\\frac{4}{3}.\n\\]\nThen \\(\\pi\\bigl(\\tfrac43\\bigr)^{2}\\cdot 4=\\dfrac{64\\pi}{9}\\). The true full volume is \\(V(4)=\\dfrac{\\pi\\cdot 16}{2}=8\\pi=\\dfrac{72\\pi}{9}\\). The two disagree because volume uses the square of the radius, and \\(\\bigl(\\operatorname{avg} r\\bigr)^{2}\\neq\\operatorname{avg}(r^{2})\\) unless \\(r\\) is constant. (Here \\(\\operatorname{avg}(r^{2})=\\operatorname{avg}(y)=2\\), and \\(\\pi\\cdot 2\\cdot 4=8\\pi=V(4)\\).)\n\n**(c)** A slice at height \\(y\\) has area \\(\\pi y\\) and must be lifted \\(4-y\\) meters. The work is\n\\[\nW=9800\\pi\\int_{0}^{4} y(4-y)\\,dy=9800\\pi\\int_{0}^{4}(4y-y^{2})\\,dy=9800\\pi\\Bigl[2y^{2}-\\frac{y^{3}}{3}\\Bigr]_{0}^{4}=9800\\pi\\Bigl(32-\\frac{64}{3}\\Bigr)=9800\\pi\\cdot\\frac{32}{3}=\\frac{313{,}600\\pi}{3}\n\\]\njoules.\n\n**(d)** The weight of the full tank is \\(9800\\cdot V(4)=9800\\cdot 8\\pi=78{,}400\\pi\\) newtons. The average lift is\n\\[\n\\frac{313{,}600\\pi/3}{78{,}400\\pi}=\\frac{4}{3}\n\\]\nmeters. This is the volume-weighted mean of the lift \\(4-y\\). The unweighted average value of \\(4-y\\) on \\([0,4]\\) is\n\\[\n\\frac{1}{4}\\int_{0}^{4}(4-y)\\,dy=\\frac{1}{4}\\Bigl[4y-\\frac{y^{2}}{2}\\Bigr]_{0}^{4}=2\n\\]\nmeters, which is not equal to \\(4/3\\). The identity claimed in the statement therefore fails: slice area \\(\\pi y\\) is not constant, so work/weight weights the lift by area rather than averaging \\(4-y\\) uniformly. (The two averages agree for a right cylinder; cf. Problem 252.)\n\n**Final answer.** (a) \\(V(h)=\\pi h^{2}/2\\); \\(\\dfrac{dh}{dt}=\\dfrac{5}{2}\\,\\mathrm{m/min}\\). (b) avg radius \\(\\dfrac{4}{3}\\); \\(\\dfrac{64\\pi}{9}\\neq 8\\pi\\). (c) area \\(\\pi y\\), lift \\(4-y\\); work \\(\\dfrac{313{,}600\\pi}{3}\\,\\mathrm{J}\\). (d) average lift \\(\\dfrac{4}{3}\\,\\mathrm{m}\\); this is *not* equal to the unweighted average of \\(4-y\\), which is \\(2\\,\\mathrm{m}\\).",
+    "graderFixtures": [
+      {
+        "id": "calculus-1-266-reviewed-correct",
+        "proofText": "**(a)** A disk at height \\(y\\) has radius \\(\\sqrt{y}\\), so\n\\[\nV(h)=\\int_{0}^{h}\\pi y\\,dy=\\frac{\\pi h^{2}}{2}.\n\\]\nDifferentiating, \\(\\dfrac{dV}{dt}=\\pi h\\dfrac{dh}{dt}\\). At the instant \\(h=2\\) with \\(\\dfrac{dV}{dt}=5\\pi\\),\n\\[\n\\pi\\cdot 2\\cdot\\frac{dh}{dt}=5\\pi\\implies\\frac{dh}{dt}=\\frac{5}{2}\n\\]\nmeters per minute.\n\n**(b)** The average radius on \\([0,4]\\) is\n\\[\n\\frac{1}{4}\\int_{0}^{4}y^{1/2}\\,dy=\\frac{1}{4}\\cdot\\frac{2}{3}y^{3/2}\\Big|_{0}^{4}=\\frac{8}{6}=\\frac{4}{3}.\n\\]\nThen \\(\\pi\\bigl(\\tfrac43\\bigr)^{2}\\cdot 4=\\dfrac{64\\pi}{9}\\). The true full volume is \\(V(4)=\\dfrac{\\pi\\cdot 16}{2}=8\\pi=\\dfrac{72\\pi}{9}\\). The two disagree because volume uses the square of the radius, and \\(\\bigl(\\operatorname{avg} r\\bigr)^{2}\\neq\\operatorname{avg}(r^{2})\\) unless \\(r\\) is constant. (Here \\(\\operatorname{avg}(r^{2})=\\operatorname{avg}(y)=2\\), and \\(\\pi\\cdot 2\\cdot 4=8\\pi=V(4)\\).)\n\n**(c)** A slice at height \\(y\\) has area \\(\\pi y\\) and must be lifted \\(4-y\\) meters. The work is\n\\[\nW=9800\\pi\\int_{0}^{4} y(4-y)\\,dy=9800\\pi\\int_{0}^{4}(4y-y^{2})\\,dy=9800\\pi\\Bigl[2y^{2}-\\frac{y^{3}}{3}\\Bigr]_{0}^{4}=9800\\pi\\Bigl(32-\\frac{64}{3}\\Bigr)=9800\\pi\\cdot\\frac{32}{3}=\\frac{313{,}600\\pi}{3}\n\\]\njoules.\n\n**(d)** The weight of the full tank is \\(9800\\cdot V(4)=9800\\cdot 8\\pi=78{,}400\\pi\\) newtons. The average lift is\n\\[\n\\frac{313{,}600\\pi/3}{78{,}400\\pi}=\\frac{4}{3}\n\\]\nmeters. This is the volume-weighted mean of the lift \\(4-y\\). The unweighted average value of \\(4-y\\) on \\([0,4]\\) is\n\\[\n\\frac{1}{4}\\int_{0}^{4}(4-y)\\,dy=\\frac{1}{4}\\Bigl[4y-\\frac{y^{2}}{2}\\Bigr]_{0}^{4}=2\n\\]\nmeters, which is not equal to \\(4/3\\). The identity claimed in the statement therefore fails: slice area \\(\\pi y\\) is not constant, so work/weight weights the lift by area rather than averaging \\(4-y\\) uniformly. (The two averages agree for a right cylinder; cf. Problem 252.)\n\n**Final answer.** (a) \\(V(h)=\\pi h^{2}/2\\); \\(\\dfrac{dh}{dt}=\\dfrac{5}{2}\\,\\mathrm{m/min}\\). (b) avg radius \\(\\dfrac{4}{3}\\); \\(\\dfrac{64\\pi}{9}\\neq 8\\pi\\). (c) area \\(\\pi y\\), lift \\(4-y\\); work \\(\\dfrac{313{,}600\\pi}{3}\\,\\mathrm{J}\\). (d) average lift \\(\\dfrac{4}{3}\\,\\mathrm{m}\\); this is *not* equal to the unweighted average of \\(4-y\\), which is \\(2\\,\\mathrm{m}\\).",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "calculus-1-266-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "CALC1F266"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/calculus-1/reviewed/reviewed-241-270.md#problem-266",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "CALC2:9916151": {
+    "problemId": "CALC2:9916151",
+    "internalId": "problem-factory:calculus-2:151",
+    "courseId": "calculus-2",
+    "title": "Consider the Cartesian line \\sqrt{3}\\, x + y = 6 .",
+    "objective": "Solve the stated Calculus II problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 151,
+    "difficulty": 3,
+    "estimatedMinutes": 25,
+    "skillIds": [
+      "power-taylor-series",
+      "calculus-2-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-calculus-2-151-v1",
+    "rubricId": "proofanvil-factory-calculus-2-151-rubric",
+    "rubricVersion": "v1",
+    "statement": "Consider the Cartesian line \\( \\sqrt{3}\\, x + y = 6 \\).\n\n(a) Convert the equation to polar form and solve for \\( r \\) as a function of \\(\\theta\\) on the set of \\(\\theta\\) for which \\( r>0 \\).\n\n(b) Rewrite that polar equation in the form \\( r = p\\sec(\\theta-\\alpha) \\) for an explicit constant \\( p>0 \\) and an explicit angle \\(\\alpha\\in(-\\pi,\\pi]\\).\n\n(c) Find the polar coordinates \\((r,\\theta)\\) with \\( r>0 \\) of the point on the line nearest the pole, and give the corresponding Cartesian coordinates.\n\n(d) Convert the Cartesian point \\( (3,\\, 3\\sqrt{3}) \\) to polar coordinates with \\( r>0 \\) and \\(\\theta\\in(-\\pi,\\pi]\\), and verify that this point lies on the line.",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "calculus-2-151-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "calculus-2-151-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-2-151-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-2-151-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "CALC2F151",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "calculus-2-151-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "Substitute \\(x=r\\cos\\theta\\) and \\(y=r\\sin\\theta\\), then factor \\(r\\). The linear combination of cosine and sine is a single shifted cosine."
+      },
+      {
+        "id": "calculus-2-151-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "The amplitude of \\(\\sqrt{3}\\cos\\theta+\\sin\\theta\\) is \\(2\\). The distance from the pole to the line is the constant \\(p\\) in the secant form."
+      },
+      {
+        "id": "calculus-2-151-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "The nearest point lies on the normal ray \\(\\theta=\\alpha\\) at distance \\(p\\)."
+      },
+      {
+        "id": "calculus-2-151-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "(i) Factor \\(r(\\sqrt{3}\\cos\\theta+\\sin\\theta)=6\\). (ii) Rewrite the parenthesis as \\(2\\cos(\\theta-\\pi/6)\\). (iii) Read \\(p\\) and \\(\\alpha\\) from the secant form, and convert that polar pair. (iv) Convert the named Cartesian point and test it in the original line equation.\n\n---"
+      }
+    ],
+    "canonicalSolution": "(a) Substituting \\(x=r\\cos\\theta\\) and \\(y=r\\sin\\theta\\) yields\n\\[\nr\\bigl(\\sqrt{3}\\cos\\theta+\\sin\\theta\\bigr)=6.\n\\]\nThe trigonometric factor rewrites as\n\\[\n\\sqrt{3}\\cos\\theta+\\sin\\theta=2\\Bigl(\\frac{\\sqrt{3}}{2}\\cos\\theta+\\frac12\\sin\\theta\\Bigr)=2\\cos\\Bigl(\\theta-\\frac{\\pi}{6}\\Bigr),\n\\]\nso\n\\[\nr=\\frac{3}{\\cos(\\theta-\\pi/6)}=3\\sec\\Bigl(\\theta-\\frac{\\pi}{6}\\Bigr),\n\\]\non the set of \\(\\theta\\) for which \\(\\cos(\\theta-\\pi/6)>0\\), i.e. \\(\\bigl|\\theta-\\pi/6\\bigr|<\\pi/2\\).\n\n(b) The form of (a) is already \\(r=p\\sec(\\theta-\\alpha)\\) with \\(p=3\\) and \\(\\alpha=\\pi/6\\).\n\n(c) The (perpendicular) distance from the pole to the line \\(\\sqrt{3}\\,x+y-6=0\\) is \\(6/\\sqrt{3+1}=3\\). The nearest point is therefore the polar pair \\(\\bigl(3,\\pi/6\\bigr)\\), with Cartesian coordinates\n\\[\n\\Bigl(3\\cos\\frac{\\pi}{6},\\,3\\sin\\frac{\\pi}{6}\\Bigr)=\\Bigl(\\frac{3\\sqrt{3}}{2},\\,\\frac32\\Bigr).\n\\]\n(This point satisfies \\(\\sqrt{3}\\cdot(3\\sqrt{3}/2)+3/2=6\\).)\n\n(d) For \\(\\bigl(3,\\,3\\sqrt{3}\\bigr)\\) one has \\(r=\\sqrt{9+27}=6\\) and \\(\\theta=\\arctan(\\sqrt{3})=\\pi/3\\) (first quadrant), so the polar pair is \\(\\bigl(6,\\pi/3\\bigr)\\). Substituting into the line,\n\\[\n\\sqrt{3}\\cdot 3+3\\sqrt{3}=6\\sqrt{3}\\ne 6.\n\\]\nThe given point does **not** lie on the line. (Equivalently, \\(3\\sec(\\pi/3-\\pi/6)=3\\sec(\\pi/6)=2\\sqrt{3}\\ne 6\\). A point that does lie on the line at angle \\(\\pi/3\\) is \\(\\bigl(\\sqrt{3},\\,3\\bigr)\\).)\n\n**Final answer.** (a) \\(r=3\\sec(\\theta-\\pi/6)\\) for \\(\\lvert\\theta-\\pi/6\\rvert<\\pi/2\\). (b) \\(p=3\\), \\(\\alpha=\\pi/6\\). (c) \\(\\bigl(3,\\pi/6\\bigr)\\), \\(\\bigl(3\\sqrt{3}/2,\\,3/2\\bigr)\\). (d) \\(\\bigl(6,\\pi/3\\bigr)\\); the point is **not** on the line.",
+    "graderFixtures": [
+      {
+        "id": "calculus-2-151-reviewed-correct",
+        "proofText": "(a) Substituting \\(x=r\\cos\\theta\\) and \\(y=r\\sin\\theta\\) yields\n\\[\nr\\bigl(\\sqrt{3}\\cos\\theta+\\sin\\theta\\bigr)=6.\n\\]\nThe trigonometric factor rewrites as\n\\[\n\\sqrt{3}\\cos\\theta+\\sin\\theta=2\\Bigl(\\frac{\\sqrt{3}}{2}\\cos\\theta+\\frac12\\sin\\theta\\Bigr)=2\\cos\\Bigl(\\theta-\\frac{\\pi}{6}\\Bigr),\n\\]\nso\n\\[\nr=\\frac{3}{\\cos(\\theta-\\pi/6)}=3\\sec\\Bigl(\\theta-\\frac{\\pi}{6}\\Bigr),\n\\]\non the set of \\(\\theta\\) for which \\(\\cos(\\theta-\\pi/6)>0\\), i.e. \\(\\bigl|\\theta-\\pi/6\\bigr|<\\pi/2\\).\n\n(b) The form of (a) is already \\(r=p\\sec(\\theta-\\alpha)\\) with \\(p=3\\) and \\(\\alpha=\\pi/6\\).\n\n(c) The (perpendicular) distance from the pole to the line \\(\\sqrt{3}\\,x+y-6=0\\) is \\(6/\\sqrt{3+1}=3\\). The nearest point is therefore the polar pair \\(\\bigl(3,\\pi/6\\bigr)\\), with Cartesian coordinates\n\\[\n\\Bigl(3\\cos\\frac{\\pi}{6},\\,3\\sin\\frac{\\pi}{6}\\Bigr)=\\Bigl(\\frac{3\\sqrt{3}}{2},\\,\\frac32\\Bigr).\n\\]\n(This point satisfies \\(\\sqrt{3}\\cdot(3\\sqrt{3}/2)+3/2=6\\).)\n\n(d) For \\(\\bigl(3,\\,3\\sqrt{3}\\bigr)\\) one has \\(r=\\sqrt{9+27}=6\\) and \\(\\theta=\\arctan(\\sqrt{3})=\\pi/3\\) (first quadrant), so the polar pair is \\(\\bigl(6,\\pi/3\\bigr)\\). Substituting into the line,\n\\[\n\\sqrt{3}\\cdot 3+3\\sqrt{3}=6\\sqrt{3}\\ne 6.\n\\]\nThe given point does **not** lie on the line. (Equivalently, \\(3\\sec(\\pi/3-\\pi/6)=3\\sec(\\pi/6)=2\\sqrt{3}\\ne 6\\). A point that does lie on the line at angle \\(\\pi/3\\) is \\(\\bigl(\\sqrt{3},\\,3\\bigr)\\).)\n\n**Final answer.** (a) \\(r=3\\sec(\\theta-\\pi/6)\\) for \\(\\lvert\\theta-\\pi/6\\rvert<\\pi/2\\). (b) \\(p=3\\), \\(\\alpha=\\pi/6\\). (c) \\(\\bigl(3,\\pi/6\\bigr)\\), \\(\\bigl(3\\sqrt{3}/2,\\,3/2\\bigr)\\). (d) \\(\\bigl(6,\\pi/3\\bigr)\\); the point is **not** on the line.",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "calculus-2-151-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "CALC2F151"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/calculus-2/reviewed/reviewed-151-180.md#problem-152",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "CALC2:9916179": {
+    "problemId": "CALC2:9916179",
+    "internalId": "problem-factory:calculus-2:179",
+    "courseId": "calculus-2",
+    "title": "Trace the Archimedean spiral r=\\theta for 0\\le\\theta\\le 4\\pi .",
+    "objective": "Solve the stated Calculus II problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 179,
+    "difficulty": 3,
+    "estimatedMinutes": 25,
+    "skillIds": [
+      "power-taylor-series",
+      "calculus-2-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-calculus-2-179-v1",
+    "rubricId": "proofanvil-factory-calculus-2-179-rubric",
+    "rubricVersion": "v1",
+    "statement": "Trace the Archimedean spiral \\( r=\\theta \\) for \\( 0\\le\\theta\\le 4\\pi \\). You may use the antiderivative\n\\[\n\\int\\sqrt{\\theta^{2}+1}\\,d\\theta=\\frac\\theta2\\sqrt{\\theta^{2}+1}+\\frac12\\ln\\bigl(\\theta+\\sqrt{\\theta^{2}+1}\\bigr)+C.\n\\]\n\n(a) Compute the exact polar area swept over the first turn \\( 0\\le\\theta\\le 2\\pi \\) and over the second turn \\( 2\\pi\\le\\theta\\le 4\\pi \\).\n\n(b) The two turns bound an annular-type region consisting of those points that lie outside the first turn and inside the second turn. Express the exact area of that region as a difference of polar integrals, and evaluate it.\n\n(c) Write the polar arc-length integrand for \\( r=\\theta \\), and compute the exact length of the second turn \\( 2\\pi\\le\\theta\\le 4\\pi \\).\n\n(d) Find \\( dy/dx \\) at \\(\\theta=3\\pi/2 \\), give the corresponding Cartesian point on the second turn, and write an equation of the tangent line there.",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "calculus-2-179-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "calculus-2-179-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-2-179-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "calculus-2-179-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "CALC2F179",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "calculus-2-179-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "Polar area on an interval is \\(\\frac12\\int\\theta^{2}\\,d\\theta\\). The region between turns, along a fixed geometric ray, runs from radius \\(\\theta\\) to radius \\(\\theta+2\\pi\\)."
+      },
+      {
+        "id": "calculus-2-179-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "The second-turn polar integral includes the disk-like region of the first turn, so the annulus is the difference of the two swept areas (equivalently \\(\\frac12\\int_{0}^{2\\pi}\\bigl((\\theta+2\\pi)^{2}-\\theta^{2}\\bigr)\\,d\\theta\\)). The named angle \\(\\theta=3\\pi/2\\) occurs on the first turn; the second-turn point with the same geometric argument is one full turn later."
+      },
+      {
+        "id": "calculus-2-179-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "On the negative \\(y\\)-axis the cosine vanishes, so the polar-slope formula reduces to a ratio of \\(r'\\) and \\(r\\)."
+      },
+      {
+        "id": "calculus-2-179-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "(i) Evaluate \\(\\frac16\\theta^{3}\\) on \\(\\bigl[0,2\\pi\\bigr]\\) and on \\(\\bigl[2\\pi,4\\pi\\bigr]\\). (ii) Subtract, or expand \\((\\theta+2\\pi)^{2}-\\theta^{2}\\). (iii) Insert the given antiderivative on \\(\\bigl[2\\pi,4\\pi\\bigr]\\). (iv) Evaluate the polar slope formula at \\(\\theta=7\\pi/2\\)."
+      }
+    ],
+    "canonicalSolution": "(a) The polar area on an interval is \\(\\frac12\\int\\theta^{2}\\,d\\theta=\\theta^{3}/6\\). Over the first turn,\n\\[\nA_{1}=\\frac16(2\\pi)^{3}=\\frac{4\\pi^{3}}{3}.\n\\]\nOver the second turn,\n\\[\nA_{2}=\\frac16\\bigl((4\\pi)^{3}-(2\\pi)^{3}\\bigr)=\\frac{56\\pi^{3}}{6}=\\frac{28\\pi^{3}}{3}.\n\\]\n\n(b) Along each geometric ray of angle \\(\\vartheta\\in[0,2\\pi)\\), the first turn has radius \\(\\vartheta\\) and the second turn has radius \\(\\vartheta+2\\pi\\). The annular region is\n\\[\n\\frac12\\int_{0}^{2\\pi}\\bigl((\\theta+2\\pi)^{2}-\\theta^{2}\\bigr)\\,d\\theta=\\frac12\\int_{0}^{2\\pi}(4\\pi\\theta+4\\pi^{2})\\,d\\theta=8\\pi^{3}.\n\\]\nEquivalently, the second-turn integral \\(A_{2}\\) includes the first-turn region, so the same area is \\(A_{2}-A_{1}=28\\pi^{3}/3-4\\pi^{3}/3=8\\pi^{3}\\).\n\n(c) With \\(r=\\theta\\) and \\(r'=1\\), the arc-length integrand is \\(\\sqrt{\\theta^{2}+1}\\). The length of the second turn is\n\\begin{align*}\nL\n&=\\int_{2\\pi}^{4\\pi}\\sqrt{\\theta^{2}+1}\\,d\\theta\n=\\Biggl[\\frac\\theta2\\sqrt{\\theta^{2}+1}+\\frac12\\ln\\bigl(\\theta+\\sqrt{\\theta^{2}+1}\\bigr)\\Biggr]_{2\\pi}^{4\\pi}\\\\\n&=2\\pi\\sqrt{16\\pi^{2}+1}-\\pi\\sqrt{4\\pi^{2}+1}+\\frac12\\ln\\frac{4\\pi+\\sqrt{16\\pi^{2}+1}}{2\\pi+\\sqrt{4\\pi^{2}+1}}.\n\\end{align*}\n\n(d) The parameter \\(\\theta=3\\pi/2\\) lies on the first turn. The second-turn point on the same geometric ray (the negative \\(y\\)-axis) is \\(\\theta=7\\pi/2\\), with \\(r=7\\pi/2\\). At this value, \\(r'=1\\), \\(\\sin(7\\pi/2)=\\sin(3\\pi/2)=-1\\), and \\(\\cos(7\\pi/2)=0\\), so\n\\[\n\\frac{dy}{dx}=\\frac{1\\cdot(-1)+(7\\pi/2)\\cdot 0}{1\\cdot 0-(7\\pi/2)\\cdot(-1)}=-\\frac{2}{7\\pi}.\n\\]\nThe Cartesian point is \\(\\bigl(0,\\,-7\\pi/2\\bigr)\\), and the tangent is\n\\[\ny+\\frac{7\\pi}{2}=-\\frac{2}{7\\pi}x.\n\\]\n(For the record, the first-turn point at \\(\\theta=3\\pi/2\\) is \\(\\bigl(0,-3\\pi/2\\bigr)\\) with slope \\(-2/(3\\pi)\\).)\n\n**Final answer.** (a) First turn \\(4\\pi^{3}/3\\); second turn \\(28\\pi^{3}/3\\). (b) \\(8\\pi^{3}\\). (c) Integrand \\(\\sqrt{\\theta^{2}+1}\\); length \\(2\\pi\\sqrt{16\\pi^{2}+1}-\\pi\\sqrt{4\\pi^{2}+1}+\\frac12\\ln\\dfrac{4\\pi+\\sqrt{16\\pi^{2}+1}}{2\\pi+\\sqrt{4\\pi^{2}+1}}\\). (d) Second-turn point \\(\\bigl(0,-7\\pi/2\\bigr)\\), slope \\(-2/(7\\pi)\\); \\(y+7\\pi/2=-(2/(7\\pi))x\\).",
+    "graderFixtures": [
+      {
+        "id": "calculus-2-179-reviewed-correct",
+        "proofText": "(a) The polar area on an interval is \\(\\frac12\\int\\theta^{2}\\,d\\theta=\\theta^{3}/6\\). Over the first turn,\n\\[\nA_{1}=\\frac16(2\\pi)^{3}=\\frac{4\\pi^{3}}{3}.\n\\]\nOver the second turn,\n\\[\nA_{2}=\\frac16\\bigl((4\\pi)^{3}-(2\\pi)^{3}\\bigr)=\\frac{56\\pi^{3}}{6}=\\frac{28\\pi^{3}}{3}.\n\\]\n\n(b) Along each geometric ray of angle \\(\\vartheta\\in[0,2\\pi)\\), the first turn has radius \\(\\vartheta\\) and the second turn has radius \\(\\vartheta+2\\pi\\). The annular region is\n\\[\n\\frac12\\int_{0}^{2\\pi}\\bigl((\\theta+2\\pi)^{2}-\\theta^{2}\\bigr)\\,d\\theta=\\frac12\\int_{0}^{2\\pi}(4\\pi\\theta+4\\pi^{2})\\,d\\theta=8\\pi^{3}.\n\\]\nEquivalently, the second-turn integral \\(A_{2}\\) includes the first-turn region, so the same area is \\(A_{2}-A_{1}=28\\pi^{3}/3-4\\pi^{3}/3=8\\pi^{3}\\).\n\n(c) With \\(r=\\theta\\) and \\(r'=1\\), the arc-length integrand is \\(\\sqrt{\\theta^{2}+1}\\). The length of the second turn is\n\\begin{align*}\nL\n&=\\int_{2\\pi}^{4\\pi}\\sqrt{\\theta^{2}+1}\\,d\\theta\n=\\Biggl[\\frac\\theta2\\sqrt{\\theta^{2}+1}+\\frac12\\ln\\bigl(\\theta+\\sqrt{\\theta^{2}+1}\\bigr)\\Biggr]_{2\\pi}^{4\\pi}\\\\\n&=2\\pi\\sqrt{16\\pi^{2}+1}-\\pi\\sqrt{4\\pi^{2}+1}+\\frac12\\ln\\frac{4\\pi+\\sqrt{16\\pi^{2}+1}}{2\\pi+\\sqrt{4\\pi^{2}+1}}.\n\\end{align*}\n\n(d) The parameter \\(\\theta=3\\pi/2\\) lies on the first turn. The second-turn point on the same geometric ray (the negative \\(y\\)-axis) is \\(\\theta=7\\pi/2\\), with \\(r=7\\pi/2\\). At this value, \\(r'=1\\), \\(\\sin(7\\pi/2)=\\sin(3\\pi/2)=-1\\), and \\(\\cos(7\\pi/2)=0\\), so\n\\[\n\\frac{dy}{dx}=\\frac{1\\cdot(-1)+(7\\pi/2)\\cdot 0}{1\\cdot 0-(7\\pi/2)\\cdot(-1)}=-\\frac{2}{7\\pi}.\n\\]\nThe Cartesian point is \\(\\bigl(0,\\,-7\\pi/2\\bigr)\\), and the tangent is\n\\[\ny+\\frac{7\\pi}{2}=-\\frac{2}{7\\pi}x.\n\\]\n(For the record, the first-turn point at \\(\\theta=3\\pi/2\\) is \\(\\bigl(0,-3\\pi/2\\bigr)\\) with slope \\(-2/(3\\pi)\\).)\n\n**Final answer.** (a) First turn \\(4\\pi^{3}/3\\); second turn \\(28\\pi^{3}/3\\). (b) \\(8\\pi^{3}\\). (c) Integrand \\(\\sqrt{\\theta^{2}+1}\\); length \\(2\\pi\\sqrt{16\\pi^{2}+1}-\\pi\\sqrt{4\\pi^{2}+1}+\\frac12\\ln\\dfrac{4\\pi+\\sqrt{16\\pi^{2}+1}}{2\\pi+\\sqrt{4\\pi^{2}+1}}\\). (d) Second-turn point \\(\\bigl(0,-7\\pi/2\\bigr)\\), slope \\(-2/(7\\pi)\\); \\(y+7\\pi/2=-(2/(7\\pi))x\\).",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "calculus-2-179-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "CALC2F179"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/calculus-2/reviewed/reviewed-151-180.md#problem-180",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  },
+  "MVC:9917254": {
+    "problemId": "MVC:9917254",
+    "internalId": "problem-factory:multivariable-vector-calculus:254",
+    "courseId": "multivariable-vector-calculus",
+    "title": "Let S be the portion of the plane x+y+z=1 lying in the first octant, oriented with the upward normal (positive \\mat…",
+    "objective": "Solve the stated Multivariable and Vector Calculus problem and justify the governing setup, intermediate work, and final result.",
+    "curriculumOrder": 254,
+    "difficulty": 5,
+    "estimatedMinutes": 35,
+    "skillIds": [
+      "surface-integrals-divergence-stokes",
+      "multivariable-vector-calculus-problem-solving"
+    ],
+    "prerequisiteProblemIds": [],
+    "reviewRelationshipIds": [],
+    "status": "published",
+    "graderReadiness": "grading_ready",
+    "problemVersion": "proofanvil-factory-multivariable-vector-calculus-254-v1",
+    "rubricId": "proofanvil-factory-multivariable-vector-calculus-254-rubric",
+    "rubricVersion": "v1",
+    "statement": "Let \\(S\\) be the portion of the plane \\(x+y+z=1\\) lying in the first octant, oriented with the upward normal (positive \\(\\mathbf{k}\\)-component).\n\n(a) Find the vertices of \\(S\\) and compute its surface area by viewing \\(S\\) as a graph over the \\(xy\\)-plane.\n\n(b) Evaluate the scalar surface integral \\(\\displaystyle\\iint_{S}xyz\\,dS\\).\n\n(c) Find the average value of \\(xyz\\) on \\(S\\).\n\n(d) Compute the flux of \\(\\mathbf{F}=\\langle 1,1,1\\rangle\\) through \\(S\\) with the given orientation, and confirm that the value equals \\(\\sqrt{3}\\) times the area of the projected triangle in the \\(xy\\)-plane.",
+    "permittedResults": [],
+    "acceptableStrategies": [
+      {
+        "id": "multivariable-vector-calculus-254-reviewed-solution-route",
+        "description": "Use any mathematically and physically equivalent route that establishes the requested quantities with consistent assumptions, equations, units, and interpretation."
+      }
+    ],
+    "milestones": [
+      {
+        "id": "multivariable-vector-calculus-254-setup",
+        "criterion": "Identifies the governing principles, variables, assumptions, and equations needed by the statement.",
+        "required": true,
+        "weight": 0.3,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "multivariable-vector-calculus-254-derivation",
+        "criterion": "Carries the calculation or derivation through with logically connected and technically correct intermediate work.",
+        "required": true,
+        "weight": 0.45,
+        "category": "mathematical",
+        "fatalIfNotMet": true
+      },
+      {
+        "id": "multivariable-vector-calculus-254-result",
+        "criterion": "States every requested final result with appropriate units, conditions, and interpretation.",
+        "required": true,
+        "weight": 0.25,
+        "category": "exposition",
+        "fatalIfNotMet": false
+      }
+    ],
+    "commonErrors": [
+      {
+        "code": "MVCF254",
+        "description": "The response omits the governing setup or gives a final result unsupported by a consistent derivation.",
+        "consequence": "The requested result is not established even if an isolated number or formula happens to match."
+      }
+    ],
+    "hintTree": [
+      {
+        "id": "multivariable-vector-calculus-254-hint-1",
+        "level": 1,
+        "kind": "orientation",
+        "content": "The first-octant intercepts of \\(x+y+z=1\\) form an equilateral triangle in the plane; graphs over the \\(xy\\)-simplex have a constant area factor coming from \\(\\lvert\\langle 1,1,1\\rangle\\rvert\\)."
+      },
+      {
+        "id": "multivariable-vector-calculus-254-hint-2",
+        "level": 2,
+        "kind": "theorem",
+        "content": "Write \\(z=1-x-y\\) over \\(D=\\{x\\ge 0,\\,y\\ge 0,\\,x+y\\le 1\\}\\). Form the graph normal \\(\\langle -g_{x},-g_{y},1\\rangle\\) and the corresponding area element."
+      },
+      {
+        "id": "multivariable-vector-calculus-254-hint-3",
+        "level": 3,
+        "kind": "construction",
+        "content": "The integral \\(\\iint_{D}xy(1-x-y)\\,dA\\) is a Dirichlet-type integral on the standard \\(2\\)-simplex. For the flux, \\(\\mathbf{F}\\) is parallel to the plane’s normal, so the graph integrand is constant."
+      },
+      {
+        "id": "multivariable-vector-calculus-254-hint-4",
+        "level": 4,
+        "kind": "construction",
+        "content": "After computing area \\(\\sqrt{3}/2\\), reduce (b) to \\(\\sqrt{3}\\) times \\(\\int_{0}^{1}\\int_{0}^{1-x}xy(1-x-y)\\,dy\\,dx\\). The inner antiderivative produces \\(\\frac{x}{6}(1-x)^{3}\\); the remaining beta-type integral is \\(1/120\\). For (d), the flux integrand is \\(3\\), so the flux is \\(3\\operatorname{Area}(D)=\\frac{3}{2}\\). Compare this with \\(\\sqrt{3}\\) times the projected area: that product is the surface area of \\(S\\), not the flux.\n\n---"
+      }
+    ],
+    "canonicalSolution": "(a) The vertices are the intercepts \\((1,0,0)\\), \\((0,1,0)\\), and \\((0,0,1)\\). Over \\(D\\), one has \\(\\lvert\\mathbf{r}_{x}\\times\\mathbf{r}_{y}\\rvert=\\sqrt{1+1+1}=\\sqrt{3}\\), so\n\\[\n\\operatorname{Area}(S)=\\sqrt{3}\\cdot\\operatorname{Area}(D)=\\sqrt{3}\\cdot\\frac12=\\frac{\\sqrt{3}}{2}.\n\\]\n\n(b) On \\(S\\), \\(z=1-x-y\\) and \\(dS=\\sqrt{3}\\,dA\\), hence\n\\[\n\\iint_{S}xyz\\,dS=\\sqrt{3}\\iint_{D}xy(1-x-y)\\,dA.\n\\]\nThe inner integral is\n\\[\n\\int_{0}^{1-x}(xy-x^{2}y-xy^{2})\\,dy=\\frac{x}{6}(1-x)^{3},\n\\]\nand \\(\\int_{0}^{1}\\frac{x}{6}(1-x)^{3}\\,dx=\\frac{1}{6}\\int_{0}^{1}(t^{3}-t^{4})\\,dt=\\frac{1}{120}\\) (via \\(t=1-x\\)). Thus\n\\[\n\\iint_{S}xyz\\,dS=\\frac{\\sqrt{3}}{120}.\n\\]\n\n(c) The average value is \\(\\bigl(\\sqrt{3}/120\\bigr)\\big/\\bigl(\\sqrt{3}/2\\bigr)=1/60\\).\n\n(d) The graph flux integrand is \\(\\mathbf{F}\\cdot\\langle 1,1,1\\rangle=3\\), so\n\\[\n\\iint_{S}\\mathbf{F}\\cdot d\\mathbf{S}=\\iint_{D}3\\,dA=\\frac{3}{2}.\n\\]\nThe value equals \\(3\\) times the area of the projected triangle, and also equals \\(\\lvert\\mathbf{F}\\rvert\\) times the surface area \\(\\sqrt{3}\\cdot\\frac{\\sqrt{3}}{2}=\\frac{3}{2}\\). It does *not* equal \\(\\sqrt{3}\\) times the projected area \\(\\frac12\\): that product is \\(\\sqrt{3}/2\\), which is the surface area of \\(S\\) rather than the flux. The claimed comparison in the statement therefore conflates the graph Jacobian \\(\\sqrt{3}\\) with the constant integrand \\(3=\\mathbf{F}\\cdot\\langle 1,1,1\\rangle\\). The flux is \\(3\\operatorname{Area}(D)=\\frac{3}{2}\\).\n\n**Final answer.** (a) vertices \\((1,0,0)\\), \\((0,1,0)\\), \\((0,0,1)\\); area \\(\\sqrt{3}/2\\). (b) \\(\\sqrt{3}/120\\). (c) \\(1/60\\). (d) flux \\(3/2\\) (equals \\(3\\operatorname{Area}(D)\\), not \\(\\sqrt{3}\\operatorname{Area}(D)\\))",
+    "graderFixtures": [
+      {
+        "id": "multivariable-vector-calculus-254-reviewed-correct",
+        "proofText": "(a) The vertices are the intercepts \\((1,0,0)\\), \\((0,1,0)\\), and \\((0,0,1)\\). Over \\(D\\), one has \\(\\lvert\\mathbf{r}_{x}\\times\\mathbf{r}_{y}\\rvert=\\sqrt{1+1+1}=\\sqrt{3}\\), so\n\\[\n\\operatorname{Area}(S)=\\sqrt{3}\\cdot\\operatorname{Area}(D)=\\sqrt{3}\\cdot\\frac12=\\frac{\\sqrt{3}}{2}.\n\\]\n\n(b) On \\(S\\), \\(z=1-x-y\\) and \\(dS=\\sqrt{3}\\,dA\\), hence\n\\[\n\\iint_{S}xyz\\,dS=\\sqrt{3}\\iint_{D}xy(1-x-y)\\,dA.\n\\]\nThe inner integral is\n\\[\n\\int_{0}^{1-x}(xy-x^{2}y-xy^{2})\\,dy=\\frac{x}{6}(1-x)^{3},\n\\]\nand \\(\\int_{0}^{1}\\frac{x}{6}(1-x)^{3}\\,dx=\\frac{1}{6}\\int_{0}^{1}(t^{3}-t^{4})\\,dt=\\frac{1}{120}\\) (via \\(t=1-x\\)). Thus\n\\[\n\\iint_{S}xyz\\,dS=\\frac{\\sqrt{3}}{120}.\n\\]\n\n(c) The average value is \\(\\bigl(\\sqrt{3}/120\\bigr)\\big/\\bigl(\\sqrt{3}/2\\bigr)=1/60\\).\n\n(d) The graph flux integrand is \\(\\mathbf{F}\\cdot\\langle 1,1,1\\rangle=3\\), so\n\\[\n\\iint_{S}\\mathbf{F}\\cdot d\\mathbf{S}=\\iint_{D}3\\,dA=\\frac{3}{2}.\n\\]\nThe value equals \\(3\\) times the area of the projected triangle, and also equals \\(\\lvert\\mathbf{F}\\rvert\\) times the surface area \\(\\sqrt{3}\\cdot\\frac{\\sqrt{3}}{2}=\\frac{3}{2}\\). It does *not* equal \\(\\sqrt{3}\\) times the projected area \\(\\frac12\\): that product is \\(\\sqrt{3}/2\\), which is the surface area of \\(S\\) rather than the flux. The claimed comparison in the statement therefore conflates the graph Jacobian \\(\\sqrt{3}\\) with the constant integrand \\(3=\\mathbf{F}\\cdot\\langle 1,1,1\\rangle\\). The flux is \\(3\\operatorname{Area}(D)=\\frac{3}{2}\\).\n\n**Final answer.** (a) vertices \\((1,0,0)\\), \\((0,1,0)\\), \\((0,0,1)\\); area \\(\\sqrt{3}/2\\). (b) \\(\\sqrt{3}/120\\). (c) \\(1/60\\). (d) flux \\(3/2\\) (equals \\(3\\operatorname{Area}(D)\\), not \\(\\sqrt{3}\\operatorname{Area}(D)\\))",
+        "expectedVerdict": "correct",
+        "expectedErrorCodes": []
+      },
+      {
+        "id": "multivariable-vector-calculus-254-unsupported-answer",
+        "proofText": "I assert the final answer without deriving it.",
+        "expectedVerdict": "revision_required",
+        "expectedErrorCodes": [
+          "MVCF254"
+        ]
+      }
+    ],
+    "provenance": {
+      "sourceType": "ai_generated_original",
+      "sourceLocator": "course-pipeline/multivariable-vector-calculus/reviewed/reviewed-241-270.md#problem-254",
+      "author": "ProofAnvil problem factory",
+      "rightsStatus": "approved_original",
+      "reviewNote": "Owner-directed original problem-bank production; solution and hints were independently reviewed under the repair-in-place policy before atomic course publication.",
+      "citation": null,
+      "adaptationNotes": "Generated from an original problem statement without external textbook, homework, exam, or institutional source material."
+    }
+  }
+}

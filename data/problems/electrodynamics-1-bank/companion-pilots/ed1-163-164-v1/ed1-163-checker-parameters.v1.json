@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v3",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:163",
+    "internalId": "PB-ORIGINAL:ED1-163",
+    "problemVersion": "proofbound-ed1-163-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+  },
+  "answerFormSha256": "c86ffbc8f986361456434ac775ff2549dd7135ce60e496e41e72c81e3cce9572",
+  "inputParserSha256": "7c9c5316f1fae01818140c18ec5a99bcb72c3b42ad85ec7f93ea409da05964c4",
+  "checkerId": "checker.ed1.163.distributional-sheet-source",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "distributional-coefficient",
+      "expected": 1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": [
+        {
+          "expected": 0.5,
+          "absoluteTolerance": 1e-12,
+          "relativeTolerance": 0,
+          "errorCode": "EDE163A"
+        }
+      ]
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "distributional-source",
+      "expectedChoiceIds": [
+        "source:rho_equals_sigma_delta_z"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "source:rho_equals_sigma_delta_z",
+          "errorCode": null
+        },
+        {
+          "choiceId": "source:rho_equals_half_sigma_delta_z",
+          "errorCode": "EDE163A"
+        },
+        {
+          "choiceId": "source:rho_equals_zero",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "slab-face-orientations",
+      "expectedChoiceIds": [
+        "orientation:top_e_plus_n_plus_bottom_e_minus_n_minus"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "orientation:top_e_plus_n_plus_bottom_e_minus_n_minus",
+          "errorCode": null
+        },
+        {
+          "choiceId": "orientation:top_e_plus_n_plus_bottom_e_minus_n_plus",
+          "errorCode": "EDE163B"
+        },
+        {
+          "choiceId": "orientation:top_e_minus_n_plus_bottom_e_plus_n_minus",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "slab-flux-ledger",
+      "expectedChoiceIds": [
+        "flux:top_positive_plus_bottom_positive"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "flux:top_positive_plus_bottom_positive",
+          "errorCode": null
+        },
+        {
+          "choiceId": "flux:top_positive_minus_bottom_positive",
+          "errorCode": "EDE163B"
+        },
+        {
+          "choiceId": "flux:top_positive_only",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "unit-audit",
+      "expectedChoiceIds": [
+        "units:delta_per_metre_rho_coulomb_per_cubic_metre"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "units:delta_per_metre_rho_coulomb_per_cubic_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "units:delta_dimensionless_rho_coulomb_per_square_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "units:delta_per_metre_rho_coulomb_per_square_metre",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "punctured-space-audit",
+      "expectedChoiceIds": [
+        "audit:zero_away_from_sheet_singular_on_full_space"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "audit:zero_away_from_sheet_singular_on_full_space",
+          "errorCode": null
+        },
+        {
+          "choiceId": "audit:zero_away_from_sheet_implies_zero_distribution",
+          "errorCode": null
+        },
+        {
+          "choiceId": "audit:nonzero_constant_away_from_sheet",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-163-M1",
+      "partIds": [
+        "distributional-coefficient",
+        "distributional-source"
+      ]
+    },
+    {
+      "milestoneId": "ED1-163-M2",
+      "partIds": [
+        "slab-face-orientations",
+        "slab-flux-ledger"
+      ]
+    },
+    {
+      "milestoneId": "ED1-163-M3",
+      "partIds": [
+        "unit-audit",
+        "punctured-space-audit"
+      ]
+    }
+  ]
+}

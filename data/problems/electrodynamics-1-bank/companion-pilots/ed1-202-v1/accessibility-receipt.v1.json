@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-accessibility-receipt.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "rendererId": "multipart_v1",
+  "visualDependency": "none",
+  "keyboardAnswerable": true,
+  "colorIndependent": true,
+  "screenReaderMath": "both",
+  "requiredChecks": [
+    "every control has a programmatic label",
+    "all choices are operable by keyboard without pointer input",
+    "focus order follows response-part order",
+    "validation errors identify their response part in text",
+    "correctness is never communicated by color alone",
+    "mathematical labels expose MathML or equivalent spoken math"
+  ],
+  "executionDisposition": "held_must_be_reproduced_by_browser_test_before_registration",
+  "readinessAuthority": false
+}

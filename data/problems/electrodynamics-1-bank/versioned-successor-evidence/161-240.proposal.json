@@ -1,0 +1,3975 @@
+{
+  "schemaVersion": "proofanvil.ed1-versioned-successor-proposal.v2",
+  "status": "superseding_proposal_only_not_admitted_final_scope_authority_rebound",
+  "proposalId": "ed1-successor-proposals-161-240-superseding-v2-final-authority-v2-2026-08-11",
+  "createdAt": "2026-08-11",
+  "courseId": "electrodynamics-1",
+  "range": "161-240",
+  "binding": {
+    "checkedInManifestPath": "data/problems/checked-in-packet-manifest.json",
+    "checkedInManifestSha256": "6118f1497514797d8fe31ddcfdb8efcd19bb3bf5dd5962640fc1b23e05159cef",
+    "packetFilePath": "data/problems/electrodynamics-1-bank/packets.json",
+    "packetFileSha256": "46868455fb087013e6833699cea4674abd3e8c1b2809d4f80de5d18a02bfca78",
+    "sourceShardPath": "data/problems/electrodynamics-1-bank/part-161-240.json",
+    "sourceShardSha256": "7f6568bbd6a4edf627000458b857ed1858a3ef9a93329b8e27e404b6e2ce6075",
+    "languageAuditPath": "data/problems/electrodynamics-1-bank/language-audit.v1.json",
+    "languageAuditSha256": "f9de3344d15f8a9ee5c366bfa36708984596032e88e73083b5d59d41dffc6591",
+    "batchBindings": {
+      "161-200": "5ce48fc32c22dedab77d0cac68afc79872f3bd8fdb65b9ab40b3c4f69ee096ed",
+      "201-240": "cf82c0dd591fb409cbd2eb328607314e8b943400b94840b0db80a221ebe9278d"
+    },
+    "candidateBindingScheme": "proofanvil.ed1-successor-proposal-binding.v2",
+    "candidateBindingSha256": "59026f5b2f779e00b2f0b759f293b8c2d653b4f17d37169795bad9e5650af5e3",
+    "candidateBindingCanonicalByteLength": 21500,
+    "canonicalPacketDigestScheme": "proofbound.checked-in-canonical-packet.sha256.v1",
+    "finalSlotAuthorityPath": "data/test-finals/electrodynamics-1-slot-authority.json",
+    "finalSlotAuthoritySha256": "58f33ed0f294ae33fc1bf5b422989874dbc233b199a380ad1e5b90265aa824db",
+    "revisionFixtureAuditPath": "data/problems/electrodynamics-1-bank/revision-fixture-audit.v1.json",
+    "revisionFixtureAuditSha256": "ac8d0db149f65db6c4a362d624fc64ae119750929919e9951fdebb363aa392a5",
+    "scopeAuthorityPath": "data/problems/electrodynamics-1-bank/versioned-successor-scope-authority.v2.json",
+    "scopeAuthoritySha256": "bd769958c9b45c5d7738a05e2b982364ad11dafda5e81686fc99a3764b583a92",
+    "scopeAuthorityArtifactSha256": "1a36ba04ddf4ae4c3f8daa92a41cb15a9db9e87db9019a9b1279de9571dfb330"
+  },
+  "scope": {
+    "derivation": "exact_match_final_language_audit_and_packet_impact",
+    "publicProblemIds": [
+      "ED:161",
+      "ED:163",
+      "ED:164",
+      "ED:167",
+      "ED:175",
+      "ED:179",
+      "ED:180",
+      "ED:183",
+      "ED:184",
+      "ED:185",
+      "ED:186",
+      "ED:187",
+      "ED:188",
+      "ED:191",
+      "ED:193",
+      "ED:194",
+      "ED:195",
+      "ED:196",
+      "ED:197",
+      "ED:199",
+      "ED:200",
+      "ED:202",
+      "ED:204",
+      "ED:205",
+      "ED:206",
+      "ED:207",
+      "ED:208",
+      "ED:209",
+      "ED:210",
+      "ED:212",
+      "ED:213",
+      "ED:214",
+      "ED:215",
+      "ED:217",
+      "ED:218",
+      "ED:222",
+      "ED:227",
+      "ED:228",
+      "ED:229",
+      "ED:230",
+      "ED:233",
+      "ED:234",
+      "ED:235",
+      "ED:236",
+      "ED:237",
+      "ED:238",
+      "ED:239",
+      "ED:240"
+    ],
+    "problemOnly": [
+      "ED:167"
+    ],
+    "rubricOnly": [
+      "ED:163",
+      "ED:175",
+      "ED:179",
+      "ED:183",
+      "ED:184",
+      "ED:185",
+      "ED:186",
+      "ED:191",
+      "ED:194",
+      "ED:195",
+      "ED:196",
+      "ED:197",
+      "ED:200",
+      "ED:202",
+      "ED:204",
+      "ED:207",
+      "ED:208",
+      "ED:209",
+      "ED:210",
+      "ED:212",
+      "ED:214",
+      "ED:218",
+      "ED:222",
+      "ED:227",
+      "ED:228",
+      "ED:229",
+      "ED:230",
+      "ED:233",
+      "ED:234",
+      "ED:235",
+      "ED:236",
+      "ED:237",
+      "ED:239"
+    ],
+    "problemAndRubric": [
+      "ED:161",
+      "ED:164",
+      "ED:180",
+      "ED:187",
+      "ED:188",
+      "ED:193",
+      "ED:199",
+      "ED:205",
+      "ED:206",
+      "ED:213",
+      "ED:215",
+      "ED:217",
+      "ED:238",
+      "ED:240"
+    ]
+  },
+  "invariants": [
+    "No current source, packet, catalog, manifest, builder, curriculum, final-slot, recovery, staging, or remote artifact is modified.",
+    "Each edit is an exact path-bound leaf replacement or an ordered list of exact single-occurrence substring replacements within one leaf.",
+    "Every candidate preserves physics, difficulty, estimated time, semantic skill coverage, prerequisites, review relationships, final position and duration, and grading intent except for the explicitly listed language, notation, skill-ID, or rubric-fixture alignment repair.",
+    "Whenever the source solution changes, the canonical solution and positive grader fixture must remain byte-identical after the same replacement list is applied; flawed fixtures and expected error codes remain unchanged except for an explicit exact-code alignment repair whose expected error code itself is preserved.",
+    "A candidate is a held proposal and has no admission, current-version, publication, grader-readiness, completion, or deployment authority.",
+    "No deterministic-runtime, Lean, Coach, accessibility, or exam-alignment claim is made by this proposal."
+  ],
+  "records": [
+    {
+      "publicProblemId": "ED:161",
+      "ordinal": 161,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace assessment-style audit wording with a direct verification objective"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "narrow the flawed fixture to EDE161A alone by retaining the same-normal pillbox error without also assigning the full jump to each side"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:161",
+        "internalId": "PB-ORIGINAL:ED1-161",
+        "problemVersion": "proofbound-ed1-161-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "36855e5ff62c470612a643836b9ac3e6fd01b762c4bcf30a4588445824c225ca",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:161",
+        "internalId": "PB-ORIGINAL:ED1-161",
+        "problemVersion": "proofbound-ed1-161-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-161-v1",
+          "after": "proofbound-ed1-161-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/0/objective",
+          "packetRecordPaths": [
+            "/objective"
+          ],
+          "operation": "replace_leaf",
+          "before": "Use a guided Gaussian pillbox to obtain the signed normal-field jump, then apply isolated-sheet symmetry and audit the resulting field magnitude.",
+          "after": "Use a Gaussian pillbox to obtain the signed normal-field jump, then apply isolated-sheet symmetry and verify the resulting field magnitude, direction, and units."
+        },
+        {
+          "sourcePath": "/problems/0/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Both pillbox faces use $+\\hat{\\mathbf z}$, so $E_{+z}+E_{-z}=\\sigma/\\epsilon_0$. Symmetry then makes each field have magnitude $\\sigma/\\epsilon_0$, giving $452\\ \\mathrm{V\\,m^{-1}}$ on each side.",
+          "after": "Take $+\\hat{\\mathbf z}$ as the outward normal on both flat pillbox faces. Gauss's law then gives $A(E_{+z}+E_{-z})=\\sigma A/\\epsilon_0$. With the supplied symmetry $E_{-z}=-E_{+z}$, the left side vanishes, so this same-normal flux calculation cannot recover the nonzero field of the charged sheet."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-161-correct",
+        "positiveFixtureDecision": "unchanged",
+        "flawedFixtureId": "ed1-161-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE161A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE161A"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "The opposite pillbox normals give n dot (E_plus-E_minus)=sigma/epsilon_0; isolated-sheet symmetry splits the jump equally and points both fields away from positive charge.",
+        "numericalOracle": "4.00e-9/(2*8.8541878128e-12)=225.8818135 V/m, which rounds to 226 V/m."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "36855e5ff62c470612a643836b9ac3e6fd01b762c4bcf30a4588445824c225ca",
+        "outputCandidateCanonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+      }
+    },
+    {
+      "publicProblemId": "ED:163",
+      "ordinal": 163,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE163A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:163",
+        "internalId": "PB-ORIGINAL:ED1-163",
+        "problemVersion": "proofbound-ed1-163-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "ffdb2cb9843e3ba6a3acb24f6ebd4f67d78441ffbe0b264d09a0fb741b76ccd3",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:163",
+        "internalId": "PB-ORIGINAL:ED1-163",
+        "problemVersion": "proofbound-ed1-163-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/2/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The field is constant for $z>0$ and for $z<0$, so its divergence is zero everywhere. Therefore Gauss's law gives $\\rho=0$.",
+          "after": "Distributionally, use\n$$\\frac{d}{dz}\\operatorname{sgn}(z)=\\delta(z).$$\nThen\n$$\\boldsymbol\\nabla\\cdot\\mathbf E=\\frac{\\sigma}{2\\epsilon_0}\\delta(z),$$\nso Gauss's law gives $\\rho(\\mathbf r)=\\tfrac12\\sigma\\delta(z)$. Thus the distributional source contains only half of the stated sheet charge."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-163-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-163-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE163A_only_response",
+        "expectedErrorCodes": [
+          "EDE163A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE163A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "ffdb2cb9843e3ba6a3acb24f6ebd4f67d78441ffbe0b264d09a0fb741b76ccd3",
+        "outputCandidateCanonicalPacketSha256": "88da737892287ed3b1304e26c866e6deccdf64b1526f2c27a3e23db3b4720996"
+      }
+    },
+    {
+      "publicProblemId": "ED:164",
+      "ordinal": 164,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace generated-sounding datum language with standard planar-interface terminology"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the unbound all-fields-continuous fixture with the exact EDE164A cross-product-orientation error"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:164",
+        "internalId": "PB-ORIGINAL:ED1-164",
+        "problemVersion": "proofbound-ed1-164-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "4c098944dd57425375b975237f0e959a315773aa65c77bbe547f47c46c462e71",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:164",
+        "internalId": "PB-ORIGINAL:ED1-164",
+        "problemVersion": "proofbound-ed1-164-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-164-v1",
+          "after": "proofbound-ed1-164-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/3/objective",
+          "packetRecordPaths": [
+            "/objective"
+          ],
+          "operation": "replace_leaf",
+          "before": "Apply the four supplied macroscopic jump conditions to a compact oblique interface datum while keeping free sources, constitutive laws, and signs distinct.",
+          "after": "Apply the four supplied macroscopic boundary conditions to fields at a planar interface while keeping free sources, constitutive relations, and sign conventions distinct."
+        },
+        {
+          "sourcePath": "/problems/3/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "All components of E and H are continuous unless a magnetic monopole is present. Therefore $\\mathbf E_2=\\mathbf E_1$ and $\\mathbf H_2=\\mathbf H_1$ regardless of the free sources.",
+          "after": "Tangential $\\mathbf E$ continuity and the normal $\\mathbf D$ jump give $\\mathbf E_2=(3\\hat{\\mathbf x}+2\\hat{\\mathbf z})\\ \\mathrm{kV\\,m^{-1}}$. For the magnetic jump, use $\\mathbf H_{2\\parallel}-\\mathbf H_{1\\parallel}=\\hat{\\mathbf n}\\times\\mathbf K_f=\\hat{\\mathbf y}\\ \\mathrm{A\\,m^{-1}}$, so $H_{2y}=3\\ \\mathrm{A\\,m^{-1}}$. Normal $\\mathbf B$ continuity gives $H_{2z}=-2\\ \\mathrm{A\\,m^{-1}}$, hence $\\mathbf H_2=(3\\hat{\\mathbf y}-2\\hat{\\mathbf z})\\ \\mathrm{A\\,m^{-1}}$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-164-correct",
+        "positiveFixtureDecision": "unchanged",
+        "flawedFixtureId": "ed1-164-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE164A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE164A"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Tangential E continuity and the normal D jump give E_2=(3 xhat+2 zhat) kV/m; K_f cross n=-yhat A/m and normal B continuity give H_2=(yhat-2 zhat) A/m."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "4c098944dd57425375b975237f0e959a315773aa65c77bbe547f47c46c462e71",
+        "outputCandidateCanonicalPacketSha256": "b83a46870322de207f662e18ae40b83aa71dfa3e56454ff2651e0fc864891ada"
+      }
+    },
+    {
+      "publicProblemId": "ED:167",
+      "ordinal": 167,
+      "scopeDisposition": "problem_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "notation_mismatch",
+          "disposition": "replace the malformed cylindrical area element with an oriented vector area element at r_0"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:167",
+        "internalId": "PB-ORIGINAL:ED1-167",
+        "problemVersion": "proofbound-ed1-167-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "b2496a8336ce6924de0da78445de7d036759529a9752c3532450f7915dded430",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:167",
+        "internalId": "PB-ORIGINAL:ED1-167",
+        "problemVersion": "proofbound-ed1-167-v2",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "2ff6818e4a99b61223e025fe5910682be96a6815e77d64b2093096ad80a8121e",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-167-v1",
+          "after": "proofbound-ed1-167-v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/6/permittedResults/2",
+          "packetRecordPaths": [
+            "/permittedResults/2"
+          ],
+          "operation": "replace_leaf",
+          "before": "Cylindrical cut area element at fixed radius is $r,dphi,dz$.",
+          "after": "For the cylindrical cut at $r=r_0$ with normal $+\\hat{\\mathbf r}$, $d\\mathbf a=+\\hat{\\mathbf r}\\,r_0\\,d\\phi\\,dz$."
+        }
+      ],
+      "fixtureDisposition": "unchanged",
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "E=V rhat/[r ln(b/a)] and d a=+rhat r_0 dphi dz cancel the radius exactly in the displacement-current integral.",
+        "numericalOracle": "I_D=5.0161896e-5 A and J_D(2.00 mm)=7.9835137e-3 A/m^2, agreeing with 50.2 microampere and 7.98e-3 A/m^2."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "b2496a8336ce6924de0da78445de7d036759529a9752c3532450f7915dded430",
+        "outputCandidateCanonicalPacketSha256": "2ff6818e4a99b61223e025fe5910682be96a6815e77d64b2093096ad80a8121e"
+      }
+    },
+    {
+      "publicProblemId": "ED:175",
+      "ordinal": 175,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "isolate EDE175A's reversed cross-product divergence identity while retaining every free-current, polarization, and magnetization transfer term"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:175",
+        "internalId": "PB-ORIGINAL:ED1-175",
+        "problemVersion": "proofbound-ed1-175-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "ae58e2aa04fa44b64d423e7285231b85be619444c630e0193dcac54ba9053b30",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:175",
+        "internalId": "PB-ORIGINAL:ED1-175",
+        "problemVersion": "proofbound-ed1-175-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "3a15c2dbb9250c6c0a71b956a3cdaa6cc4f9574234b1280fe922260e205bbd54",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/14/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "After writing $\\mathbf D=\\epsilon_0\\mathbf E+\\mathbf P$, define the polarization energy as $u_P=\\mathbf E\\cdot\\mathbf P/2$. Then $\\mathbf E\\cdot\\dot{\\mathbf P}=\\dot u_P$ for any material, so its integral over a period is zero because $\\mathbf E$ and $\\mathbf P$ return to their initial values. Therefore the prescribed phase lag cannot transfer net energy to the material.",
+          "after": "Use\n$$\\boldsymbol\\nabla\\cdot(\\mathbf E\\times\\mathbf H)=\\mathbf E\\cdot(\\boldsymbol\\nabla\\times\\mathbf H)-\\mathbf H\\cdot(\\boldsymbol\\nabla\\times\\mathbf E).$$\nSubstitution of Maxwell's curl equations gives\n$$\\boldsymbol\\nabla\\cdot\\mathbf S=\\mathbf J_f\\cdot\\mathbf E+\\mathbf E\\cdot\\partial_t\\mathbf D+\\mathbf H\\cdot\\partial_t\\mathbf B.$$\nAfter expanding $\\mathbf D$ and $\\mathbf B$, I obtain\n$$\\partial_tu_{\\mathrm v}-\\boldsymbol\\nabla\\cdot\\mathbf S=-\\left(\\mathbf J_f\\cdot\\mathbf E+\\mathbf E\\cdot\\dot{\\mathbf P}+\\mu_0\\mathbf H\\cdot\\dot{\\mathbf M}\\right).$$\nThus I interpret positive outward Poynting flux as increasing the electromagnetic field energy."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-175-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-175-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE175A_only_response",
+        "expectedErrorCodes": [
+          "EDE175A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed_exact_A_only",
+        "evidence": "The response reverses the two curl terms in the divergence identity and consequently reverses the Poynting-flux interpretation. It retains the full arbitrary-M transfer term and makes no material-energy assumption from EDE175B."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "ae58e2aa04fa44b64d423e7285231b85be619444c630e0193dcac54ba9053b30",
+        "outputCandidateCanonicalPacketSha256": "3a15c2dbb9250c6c0a71b956a3cdaa6cc4f9574234b1280fe922260e205bbd54"
+      }
+    },
+    {
+      "publicProblemId": "ED:179",
+      "ordinal": 179,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE179A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:179",
+        "internalId": "PB-ORIGINAL:ED1-179",
+        "problemVersion": "proofbound-ed1-179-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "179d3f1b32f42384f1338bd1e163f41aea2ddf16a2db951e23239b2c7eb3e196",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:179",
+        "internalId": "PB-ORIGINAL:ED1-179",
+        "problemVersion": "proofbound-ed1-179-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "dc7bfbcbe2f17f2258cd15d510822ecb1fa2390e5ca54fb11426eaaf9e6728e6",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/18/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Take $\\mathbf T$ to be the usual Maxwell stress tensor $\\boldsymbol\\sigma$. Its divergence is $\\rho\\mathbf E+\\mathbf J\\times\\mathbf B+\\partial_t(\\epsilon_0\\mathbf E\\times\\mathbf B)$, so moving no terms gives $\\partial_t\\mathbf g+\\boldsymbol\\nabla\\cdot\\mathbf T=-\\mathbf f_L$. In the uniform crossed-field region all derivatives vanish; therefore every surface traction $\\mathbf T\\cdot\\hat{\\mathbf n}$ vanishes and there is no need to examine the six faces.",
+          "after": "Identify the problem's momentum-flux tensor directly with the conventional Maxwell stress tensor, $\\mathbf T=\\boldsymbol\\sigma$, without a sign reversal. The local balance is therefore\n$$\\partial_t\\mathbf g+\\boldsymbol\\nabla\\cdot\\mathbf T=-\\mathbf f_L.$$\nThus the conventional stress itself supplies the flux tensor appearing with the plus-divergence convention in the stated equation."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-179-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-179-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE179A_only_response",
+        "expectedErrorCodes": [
+          "EDE179A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE179A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "179d3f1b32f42384f1338bd1e163f41aea2ddf16a2db951e23239b2c7eb3e196",
+        "outputCandidateCanonicalPacketSha256": "dc7bfbcbe2f17f2258cd15d510822ecb1fa2390e5ca54fb11426eaaf9e6728e6"
+      }
+    },
+    {
+      "publicProblemId": "ED:180",
+      "ordinal": 180,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace ledger metaphors with angular-momentum balance language"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "narrow the flawed fixture to the missing coordinate-factor derivative in EDE180A and remove the separate sign errors from EDE180B"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:180",
+        "internalId": "PB-ORIGINAL:ED1-180",
+        "problemVersion": "proofbound-ed1-180-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "31e0052067e7c2998f81e57974cabd5e0ed6562f81b90c727a2707572876030c",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:180",
+        "internalId": "PB-ORIGINAL:ED1-180",
+        "problemVersion": "proofbound-ed1-180-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "be4adf58bf482973de4797403d3675d57f656abf7c4b0a036493cfec1593745a",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-180-v1",
+          "after": "proofbound-ed1-180-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/19/tags/2",
+          "packetRecordPaths": [
+            "/skillIds/3"
+          ],
+          "operation": "replace_leaf",
+          "before": "faraday-boundary-torque-ledger",
+          "after": "faraday-boundary-torque-balance"
+        },
+        {
+          "sourcePath": "/problems/19/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Reproduce the same sign ledger from the radial angular-momentum flux.",
+              "after": "Verify the same sign relation using the radial angular-momentum flux."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/19/commonErrors/1/consequence",
+          "packetRecordPaths": [
+            "/commonErrors/1/consequence"
+          ],
+          "operation": "replace_leaf",
+          "before": "The stored angular momentum or one boundary-torque contribution receives the wrong sign, preventing the shell and field angular-momentum ledgers from closing.",
+          "after": "The stored angular momentum or one boundary-torque contribution receives the wrong sign, so the shell torque no longer balances the rate of change of field angular momentum."
+        },
+        {
+          "sourcePath": "/problems/19/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Multiplying $\\partial_tg_l+\\partial_jT_{lj}=-f_l$ by $\\epsilon_{ikl}x_k$ immediately gives $\\partial_t\\ell_i+\\partial_j(\\epsilon_{ikl}x_kT_{lj})=-\\tau_i$, because the position vector is only a coordinate label and contributes no derivative. Thus every stress tensor conserves angular momentum. In the coaxial fields, $\\hat{\\mathbf r}\\times\\hat{\\mathbf z}=\\hat{\\boldsymbol\\phi}$, so the field angular momentum points along $+\\hat{\\mathbf z}$. The inner cylindrical boundary also has outward normal $+\\hat{\\mathbf r}$, making both radial flux contributions have the same surface orientation.",
+          "after": "Multiplying $\\partial_tg_l+\\partial_jT_{lj}=-f_l$ by $\\epsilon_{ikl}x_k$ immediately gives $\\partial_t\\ell_i+\\partial_j(\\epsilon_{ikl}x_kT_{lj})=-\\tau_i$, because $x_k$ is only a coordinate label and contributes no derivative. Therefore this angular-momentum balance holds for every stress tensor, whether or not $T_{ij}$ is symmetric."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-180-correct",
+        "positiveFixtureDecision": "unchanged",
+        "flawedFixtureId": "ed1-180-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE180A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE180A"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "For lambda>0 and B_z>0, E_r cross B_z gives negative azimuthal field momentum and negative L_z. During the ramp E_phi=-(r/2) dot B, so the inner torque is negative, the larger outer torque positive, and their positive sum equals -dL_field/dt."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "31e0052067e7c2998f81e57974cabd5e0ed6562f81b90c727a2707572876030c",
+        "outputCandidateCanonicalPacketSha256": "be4adf58bf482973de4797403d3675d57f656abf7c4b0a036493cfec1593745a"
+      }
+    },
+    {
+      "publicProblemId": "ED:183",
+      "ordinal": 183,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE183A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:183",
+        "internalId": "PB-ORIGINAL:ED1-183",
+        "problemVersion": "proofbound-ed1-183-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "6b10ec1497c7b50edeb8c4a65b240a4097e6e0ef32987bced0caa476e739373c",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:183",
+        "internalId": "PB-ORIGINAL:ED1-183",
+        "problemVersion": "proofbound-ed1-183-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "59a6709f91c386aaf6bbb6e6e3300e8ecee4a831c9646e3d05190ea716caff7f",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/22/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "From $\\mathbf E=-\\nabla\\phi-\\partial_t\\mathbf A$, one has $\\nabla\\cdot\\mathbf E=-\\nabla^2\\phi+\\partial_t(\\nabla\\cdot\\mathbf A)$. The Lorenz condition therefore gives $(\\nabla^2+c^{-2}\\partial_t^2)\\phi=-\\rho/\\epsilon_0$, and an analogous substitution gives $(\\nabla^2+c^{-2}\\partial_t^2)\\mathbf A=-\\mu_0\\mathbf J$. Taking the divergence of Ampere's law after omitting the displacement term gives $\\nabla\\cdot\\mathbf J=0$, which supplies the required compatibility condition.",
+          "after": "From $\\mathbf E=-\\boldsymbol\\nabla\\phi-\\partial_t\\mathbf A$, take\n$$\\boldsymbol\\nabla\\cdot\\mathbf E=-\\nabla^2\\phi+\\partial_t(\\boldsymbol\\nabla\\cdot\\mathbf A).$$\nUsing the Lorenz condition then gives\n$$(\\nabla^2+c^{-2}\\partial_t^2)\\phi=-\\rho/\\epsilon_0.$$\nRetaining the displacement-current term in Ampere-Maxwell's law and taking its divergence gives the usual continuity equation."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-183-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-183-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE183A_only_response",
+        "expectedErrorCodes": [
+          "EDE183A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE183A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "6b10ec1497c7b50edeb8c4a65b240a4097e6e0ef32987bced0caa476e739373c",
+        "outputCandidateCanonicalPacketSha256": "59a6709f91c386aaf6bbb6e6e3300e8ecee4a831c9646e3d05190ea716caff7f"
+      }
+    },
+    {
+      "publicProblemId": "ED:184",
+      "ordinal": 184,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE184A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:184",
+        "internalId": "PB-ORIGINAL:ED1-184",
+        "problemVersion": "proofbound-ed1-184-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "7f0b998910349b7e6149c1a19092614d57cd6632951e757394915b18abf89ba7",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:184",
+        "internalId": "PB-ORIGINAL:ED1-184",
+        "problemVersion": "proofbound-ed1-184-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "8df7b2a9fed8db4a69dbad3d58b4c688584cc6e1b7ba5b3175e73be2c574d4db",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/23/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "A gauge transformation preserves $\\mathbf E$ and $\\mathbf B$. The Lorenz functional changes by $\\Box\\chi$, so any $\\chi$ satisfying $\\Box\\chi=0$ is an allowed gauge function for the conducting box. In particular, $\\chi=\\chi_0\\cos(kx-ckt)$ is admissible. Therefore the transformed potentials automatically satisfy the same conditions $\\phi=0$ and $\\mathbf A_{\\mathrm{tangential}}=0$ on every wall, and no separate boundary calculation is necessary.",
+          "after": "Use the transformation\n$$\\mathbf A'=\\mathbf A+\\boldsymbol\\nabla\\chi,\\qquad \\phi'=\\phi+\\partial_t\\chi.$$\nBecause the two added terms are derivatives of the same scalar, they cancel in $-\\boldsymbol\\nabla\\phi'-\\partial_t\\mathbf A'$, while $\\boldsymbol\\nabla\\times\\mathbf A'=\\boldsymbol\\nabla\\times\\mathbf A$. Hence this plus-sign transformation preserves both fields."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-184-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-184-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE184A_only_response",
+        "expectedErrorCodes": [
+          "EDE184A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE184A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "7f0b998910349b7e6149c1a19092614d57cd6632951e757394915b18abf89ba7",
+        "outputCandidateCanonicalPacketSha256": "8df7b2a9fed8db4a69dbad3d58b4c688584cc6e1b7ba5b3175e73be2c574d4db"
+      }
+    },
+    {
+      "publicProblemId": "ED:185",
+      "ordinal": 185,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE185A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:185",
+        "internalId": "PB-ORIGINAL:ED1-185",
+        "problemVersion": "proofbound-ed1-185-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "c194498b9ea5161b3cf822c1c36b9cb9d20b4c988c44c38e8a270b3d53313f54",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:185",
+        "internalId": "PB-ORIGINAL:ED1-185",
+        "problemVersion": "proofbound-ed1-185-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "dcc399e40ad798399d35e47922cd27f95b0e4223bc4ad0530526245c8e604aa7",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/24/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Because $U$ is simply connected and $\\nabla\\cdot\\mathbf B=0$, there must be one global vector potential $\\mathbf A$ on all of $U$. Faraday's law gives $\\nabla\\times(\\mathbf E+\\partial_t\\mathbf A)=0$, so define $\\phi=\\int_{\\mathbf r_*}^{\\mathbf r}(\\mathbf E+\\partial_t\\mathbf A)\\cdot d\\boldsymbol\\ell$. Then $\\nabla\\phi=\\mathbf E+\\partial_t\\mathbf A$, which shows $\\mathbf E=-\\nabla\\phi-\\partial_t\\mathbf A$. Thus simple connectedness is sufficient for both potentials, even if the domain contains an excluded point carrying nonzero magnetic flux.",
+          "after": "Because $U$ is simply connected and $\\boldsymbol\\nabla\\cdot\\mathbf B=0$, there is a smooth global vector potential $\\mathbf A$ on all of $U$. Faraday's law makes $\\mathbf E+\\partial_t\\mathbf A$ curl-free, so define\n$$\\phi(\\mathbf r,t)=-\\int_{\\mathbf r_*}^{\\mathbf r}(\\mathbf E+\\partial_t\\mathbf A)\\cdot d\\boldsymbol\\ell.$$\nThen $\\mathbf E=-\\boldsymbol\\nabla\\phi-\\partial_t\\mathbf A$, completing the global construction."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-185-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-185-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE185A_only_response",
+        "expectedErrorCodes": [
+          "EDE185A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE185A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "c194498b9ea5161b3cf822c1c36b9cb9d20b4c988c44c38e8a270b3d53313f54",
+        "outputCandidateCanonicalPacketSha256": "dcc399e40ad798399d35e47922cd27f95b0e4223bc4ad0530526245c8e604aa7"
+      }
+    },
+    {
+      "publicProblemId": "ED:186",
+      "ordinal": 186,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE186A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:186",
+        "internalId": "PB-ORIGINAL:ED1-186",
+        "problemVersion": "proofbound-ed1-186-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "f659cde05c0c963b4348ed6a1fde33ac77a057c8676c06e27b9cd3bb58368946",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:186",
+        "internalId": "PB-ORIGINAL:ED1-186",
+        "problemVersion": "proofbound-ed1-186-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "e147c205e92e71c50218e860a8c244cf8fef3917a5f0bf410f0c1a914167dab1",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/25/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Using $\\nabla\\cdot(\\mathbf E\\times\\mathbf B)=\\mathbf E\\cdot(\\nabla\\times\\mathbf B)-\\mathbf B\\cdot(\\nabla\\times\\mathbf E)$ and substituting Maxwell's equations gives $\\partial_tu+\\nabla\\cdot\\mathbf S=+\\mathbf J\\cdot\\mathbf E$. After integration, the positive outward surface integral is the power supplied to the volume. In the Ohmic cylinder, $\\mathbf S$ points outward because both $\\mathbf E$ and $\\mathbf B$ follow the current, so the positive outward Poynting flux supplies the positive heat $\\sigma E_0^2V$.",
+          "after": "Use\n$$\\boldsymbol\\nabla\\cdot(\\mathbf E\\times\\mathbf B)=\\mathbf E\\cdot(\\boldsymbol\\nabla\\times\\mathbf B)-\\mathbf B\\cdot(\\boldsymbol\\nabla\\times\\mathbf E).$$\nMaxwell's equations then give\n$$\\partial_tu+\\boldsymbol\\nabla\\cdot\\mathbf S=+\\mathbf J\\cdot\\mathbf E.$$\nAfter integration with the outward normal, $\\int_V\\mathbf J\\cdot\\mathbf E\\,dV=dU_{\\rm field}/dt+\\oint_{\\partial V}\\mathbf S\\cdot\\mathbf n\\,dA$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-186-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-186-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE186A_only_response",
+        "expectedErrorCodes": [
+          "EDE186A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE186A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "f659cde05c0c963b4348ed6a1fde33ac77a057c8676c06e27b9cd3bb58368946",
+        "outputCandidateCanonicalPacketSha256": "e147c205e92e71c50218e860a8c244cf8fef3917a5f0bf410f0c1a914167dab1"
+      }
+    },
+    {
+      "publicProblemId": "ED:187",
+      "ordinal": 187,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace audit and ledger language with SI-unit verification and energy balance"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "narrow the flawed fixture to the Faraday-sign error in EDE187A while using the correct cylindrical sidewall area"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:187",
+        "internalId": "PB-ORIGINAL:ED1-187",
+        "problemVersion": "proofbound-ed1-187-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "3ff28c3e0ed0c39a648dcf052ebb8456665ce83fc3d98fc421d4081d82e215eb",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:187",
+        "internalId": "PB-ORIGINAL:ED1-187",
+        "problemVersion": "proofbound-ed1-187-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "5aab602ccdf7c721bef46b5cffb65bdb45706c9c6c2b033046f87343064720e3",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-187-v1",
+          "after": "proofbound-ed1-187-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/26/tags/2",
+          "packetRecordPaths": [
+            "/skillIds/3"
+          ],
+          "operation": "replace_leaf",
+          "before": "inward-poynting-ledger",
+          "after": "inward-poynting-flux"
+        },
+        {
+          "sourcePath": "/problems/26/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "audit its SI dimensions",
+              "after": "verify its SI dimensions"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/26/solution",
+          "packetRecordPaths": [
+            "/canonicalSolution",
+            "/graderFixtures/0/proofText"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "The equality is the leading magnetoquasistatic ledger;",
+              "after": "This equality is the leading-order magnetoquasistatic energy balance;"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/26/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Ampere's law gives $\\mathbf B=\\mu_0nI\\hat{\\mathbf z}$. For a rising current, Faraday's law gives $E_\\phi=+(\\mu_0n\\dot I/2)r$, so $\\mathbf S(a)=(\\mu_0n^2a/2)I\\dot I\\hat{\\mathbf r}$ and energy flows outward. Multiplying this by the solenoid cross-sectional area gives $P/L=\\pi a^2S_r$, which is the electromagnetic power associated with the growing field.",
+          "after": "Ampere's law gives $\\mathbf B=\\mu_0nI\\hat{\\mathbf z}$. For a rising current, take Faraday's law to give $E_\\phi=+(\\mu_0n\\dot I/2)r$. Then $\\mathbf S(a)=(\\mu_0n^2a/2)I\\dot I\\hat{\\mathbf r}$ points outward. Integrating over the cylindrical sidewall, $2\\pi aL$, therefore gives outward power per unit length $2\\pi aS_r$ while the magnetic field is growing."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-187-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-187-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE187A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE187A"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "For dot I>0, E_phi(a)<0 and B_z>0, hence S_r=(E_phi phihat cross B_z zhat)/mu_0<0. The inward sidewall power per length equals d[mu_0 n^2 pi a^2 I^2/2]/dt."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "3ff28c3e0ed0c39a648dcf052ebb8456665ce83fc3d98fc421d4081d82e215eb",
+        "outputCandidateCanonicalPacketSha256": "5aab602ccdf7c721bef46b5cffb65bdb45706c9c6c2b033046f87343064720e3"
+      }
+    },
+    {
+      "publicProblemId": "ED:188",
+      "ordinal": 188,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace ledger and close metaphors with explicit Poynting-theorem verification"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "narrow the flawed fixture to the omitted-displacement-current error in EDE188A without the separate field-energy exponent error"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:188",
+        "internalId": "PB-ORIGINAL:ED1-188",
+        "problemVersion": "proofbound-ed1-188-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "2864d5b961f9f05a1bc04f984a30e7988a3ed31258cef8a84783d77e058583cc",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:188",
+        "internalId": "PB-ORIGINAL:ED1-188",
+        "problemVersion": "proofbound-ed1-188-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "dc7d256a6bba095dd3b4051eda7adcb47579e7735f1b4380e0782e98226e1956",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-188-v1",
+          "after": "proofbound-ed1-188-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/27/tags/2",
+          "packetRecordPaths": [
+            "/skillIds/3"
+          ],
+          "operation": "replace_leaf",
+          "before": "local-joule-energy-ledger",
+          "after": "local-joule-energy-balance"
+        },
+        {
+          "sourcePath": "/problems/27/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Close Poynting's theorem for both an arbitrary shell",
+              "after": "Verify Poynting's theorem for both an arbitrary shell"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/27/rubricCriteria/2",
+          "packetRecordPaths": [
+            "/milestones/2/criterion"
+          ],
+          "operation": "replace_leaf",
+          "before": "Shows pointwise cancellation of conduction and displacement currents, concludes $\\mathbf H=\\mathbf S=0$ under the stated symmetry, and closes the partial-shell and full-gap Poynting ledgers with valid dimensional and limiting checks.",
+          "after": "Shows pointwise cancellation of conduction and displacement currents, concludes $\\mathbf H=\\mathbf S=0$ under the stated symmetry, and verifies Poynting's theorem for the partial shell and full gap with valid dimensional and limiting checks."
+        },
+        {
+          "sourcePath": "/problems/27/commonErrors/1/consequence",
+          "packetRecordPaths": [
+            "/commonErrors/1/consequence"
+          ],
+          "operation": "replace_leaf",
+          "before": "The resulting $-dU_E/dt$ is smaller than the Joule power by a factor of two, so the energy ledger fails.",
+          "after": "The resulting $-dU_E/dt$ is smaller than the Joule power by a factor of two, so the energy balance fails."
+        },
+        {
+          "sourcePath": "/problems/27/solution",
+          "packetRecordPaths": [
+            "/canonicalSolution",
+            "/graderFixtures/0/proofText"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "The same equation with $R=b$ closes the full-gap volume and surface ledger.",
+              "after": "The same equation with $R=b$ verifies Poynting's theorem for the full gap."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/27/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Gauss's law gives $E=Q/(4\\pi\\epsilon r^2)$ and $Q=Q_0e^{-t/\\tau}$ with $\\tau=\\epsilon/\\sigma$. Since the energy follows the discharge exponential, $U_E(t)=U_E(0)e^{-t/\\tau}$. The radial conduction current enclosed by a circular Ampere loop is $I=\\sigma Q/\\epsilon$, so $H_\\phi=I/(2\\pi r)$. This magnetic field produces a nonzero Poynting flux through each nested sphere, and that surface flux supplies the Joule heat.",
+          "after": "Gauss's law gives $E=Q/(4\\pi\\epsilon r^2)$ and the radial conduction current has magnitude $I=\\sigma Q/\\epsilon$. Omitting displacement current, treat this spherically distributed radial current as a straight wire and write $H_\\phi=I/(2\\pi r)$. The resulting nonzero magnetic field then produces a spurious Poynting flux through the nested spheres."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-188-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-188-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE188A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE188A"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Q decays as exp(-sigma t/epsilon), so U_E decays at twice that exponent. J+partial_t D cancels pointwise; exact spherical symmetry with no imposed or trapped field gives H=S=0 and -dU_E/dt=P_J locally and globally."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "2864d5b961f9f05a1bc04f984a30e7988a3ed31258cef8a84783d77e058583cc",
+        "outputCandidateCanonicalPacketSha256": "dc7d256a6bba095dd3b4051eda7adcb47579e7735f1b4380e0782e98226e1956"
+      }
+    },
+    {
+      "publicProblemId": "ED:191",
+      "ordinal": 191,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE191A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:191",
+        "internalId": "PB-ORIGINAL:ED1-191",
+        "problemVersion": "proofbound-ed1-191-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "4ca12747bb225db281ee935639a71656dd8fbc564b2217e0de76c992550af19a",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:191",
+        "internalId": "PB-ORIGINAL:ED1-191",
+        "problemVersion": "proofbound-ed1-191-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "6212002f0e592e49de72c4837b847038f66014b3c201e839111b7c7cce6cf918",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/30/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Define $\\mathbf E_\\theta=\\mathbf E\\cos\\theta+\\mathbf B\\sin\\theta$ and $\\mathbf B_\\theta=\\mathbf B\\cos\\theta-\\mathbf E\\sin\\theta$. Since this is a rotation, $E_\\theta^2+B_\\theta^2=E^2+B^2$, so the electromagnetic energy is invariant. With sources, choose $\\rho_\\theta=\\rho\\cos\\theta$ and $\\mathbf J_\\theta=\\mathbf J\\cos\\theta$. The rotated Gauss and Ampere laws then have the same form, and Faraday's law remains source-free because ordinary electric current appears only in Ampere's law. Therefore the full Maxwell equations with electric sources have continuous duality symmetry.",
+          "after": "For source-free fields, define the duality rotation without rescaling the magnetic field:\n$$\\mathbf E_\\theta=\\mathbf E\\cos\\theta+\\mathbf B\\sin\\theta,\\qquad\n\\mathbf B_\\theta=\\mathbf B\\cos\\theta-\\mathbf E\\sin\\theta.$$\nThis is an orthogonal rotation, so $E_\\theta^2+B_\\theta^2=E^2+B^2$, and the source-free curl equations retain their form."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-191-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-191-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE191A_only_response",
+        "expectedErrorCodes": [
+          "EDE191A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE191A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "4ca12747bb225db281ee935639a71656dd8fbc564b2217e0de76c992550af19a",
+        "outputCandidateCanonicalPacketSha256": "6212002f0e592e49de72c4837b847038f66014b3c201e839111b7c7cce6cf918"
+      }
+    },
+    {
+      "publicProblemId": "ED:193",
+      "ordinal": 193,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "name the Poynting theorem and power conservation directly"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "isolate EDE193A's forward equal-electric-amplitude/equal-power impedance mistake and remove all reverse, two-port-losslessness, and coherent-column conclusions"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:193",
+        "internalId": "PB-ORIGINAL:ED1-193",
+        "problemVersion": "proofbound-ed1-193-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "f37d40a99494a7046bba6fe9d49e6bacb3dac81d1ad174a9298d40b65f52e345",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:193",
+        "internalId": "PB-ORIGINAL:ED1-193",
+        "problemVersion": "proofbound-ed1-193-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "cd28d4259aed5708a5c059eddebfb938b92ae82170d596c8dc3625b2dc7b6ee8",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-193-v1",
+          "after": "proofbound-ed1-193-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/32/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Apply the source-free, lossless Poynting ledger to arbitrary simultaneous incidence",
+              "after": "Apply the source-free, lossless Poynting theorem to arbitrary simultaneous incidence"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/32/rubricCriteria/1",
+          "packetRecordPaths": [
+            "/milestones/1/criterion"
+          ],
+          "operation": "replace_leaf",
+          "before": "Uses the Poynting ledger for arbitrary coherent incidence to establish $S^\\dagger S=I$ and explicitly demonstrates the nonorthogonality of the proposed scattering columns.",
+          "after": "Uses power conservation for arbitrary coherent incidence to establish $S^\\dagger S=I$ and explicitly demonstrates the nonorthogonality of the proposed scattering columns."
+        },
+        {
+          "sourcePath": "/problems/32/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The transmitted electric field has the same amplitude as the incident electric field, so its power is unchanged regardless of the media on the two sides. In the reverse experiment all incident power is reflected, so that experiment also conserves energy. A magnetic bias can break reciprocity, after which $t_{21}=1$ and $t_{12}=0$ are allowed without loss, gain, or any additional channel. Therefore the proposed boundary rule is physically consistent.",
+          "after": "For forward incidence, the transmitted electric field has the same amplitude as the incident electric field. Therefore $|E_t|^2=|E_i|^2$, so I conclude that the transmitted power equals the incident power for every pair of positive impedances $\\eta_1$ and $\\eta_2$. Hence the forward experiment is lossless."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-193-correct",
+        "positiveFixtureDecision": "unchanged",
+        "flawedFixtureId": "ed1-193-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE193A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE193A"
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed_exact_A_only",
+        "evidence": "The response makes exactly the forward electric-amplitude-for-power substitution forbidden by EDE193A. It makes no claim about reverse reflection, nonreciprocity, two-port losslessness, or scattering-column orthogonality from EDE193B."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "f37d40a99494a7046bba6fe9d49e6bacb3dac81d1ad174a9298d40b65f52e345",
+        "outputCandidateCanonicalPacketSha256": "cd28d4259aed5708a5c059eddebfb938b92ae82170d596c8dc3625b2dc7b6ee8"
+      }
+    },
+    {
+      "publicProblemId": "ED:194",
+      "ordinal": 194,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE194A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:194",
+        "internalId": "PB-ORIGINAL:ED1-194",
+        "problemVersion": "proofbound-ed1-194-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "0e5dc6cda26a3366f995453381e5039ef67d8447bee6e10090a4709e31e59744",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:194",
+        "internalId": "PB-ORIGINAL:ED1-194",
+        "problemVersion": "proofbound-ed1-194-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "13171db8af19b32c2437069561cf0b663b401a7c3766d829f2b51dba60d7b0df",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/33/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Integrating $\\partial_t\\rho+\\nabla\\cdot\\mathbf J=0$ over any fixed volume shows that the divergence term contributes nothing because it is a boundary term. Therefore $dQ_V/dt=0$ for every volume, including $V_+$. Conversely, if the total charge over all space is constant, then $\\int\\partial_t\\rho\\,d^3r=0$, so $\\partial_t\\rho=0$ at every point and the local continuity equation follows with $\\mathbf J=0$. Thus global constancy and local continuity are equivalent without any boundary condition.",
+          "after": "If the total charge is constant, then\n$$0=\\frac{d}{dt}\\int_{\\mathbb R^3}\\rho\\,d^3r=\\int_{\\mathbb R^3}\\partial_t\\rho\\,d^3r.$$\nThe integral can vanish only if $\\partial_t\\rho=0$ pointwise. Taking $\\mathbf J=\\mathbf0$ therefore gives $\\partial_t\\rho+\\boldsymbol\\nabla\\cdot\\mathbf J=0$ everywhere, so global charge constancy proves the local continuity equation."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-194-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-194-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE194A_only_response",
+        "expectedErrorCodes": [
+          "EDE194A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE194A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "0e5dc6cda26a3366f995453381e5039ef67d8447bee6e10090a4709e31e59744",
+        "outputCandidateCanonicalPacketSha256": "13171db8af19b32c2437069561cf0b663b401a7c3766d829f2b51dba60d7b0df"
+      }
+    },
+    {
+      "publicProblemId": "ED:195",
+      "ordinal": 195,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE195A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:195",
+        "internalId": "PB-ORIGINAL:ED1-195",
+        "problemVersion": "proofbound-ed1-195-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "a60f16e21d8e20ac19d704dfd8c3bd15dc6b5b0020702bbb4a1c32a993f92e1a",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:195",
+        "internalId": "PB-ORIGINAL:ED1-195",
+        "problemVersion": "proofbound-ed1-195-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "c4ca12983f8fdd388995e5c3dde374cebf60b15a05e4b5cc226215466aee9c62",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/34/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Take the symmetric equations to be $\\nabla\\cdot\\mathbf B=\\rho_m$ and $\\nabla\\times\\mathbf E=-\\partial_t\\mathbf B-\\mathbf J_m$, because magnetic sources should enter exactly as electric sources do. Now rotate only the fields according to $\\mathbf E'=\\mathbf E\\cos\\theta+c\\mathbf B\\sin\\theta$ and $c\\mathbf B'=c\\mathbf B\\cos\\theta-\\mathbf E\\sin\\theta$, leaving all sources fixed. Since sines and cosines merely form linear combinations of Maxwell's equations, the ordinary equations with $\\rho_m=\\mathbf J_m=0$ are invariant for every $\\theta$, even in the presence of electric charge and current.",
+          "after": "Introduce magnetic sources symmetrically by writing\n$$\\boldsymbol\\nabla\\cdot\\mathbf B=\\rho_m,\\qquad\n\\boldsymbol\\nabla\\times\\mathbf E=-\\partial_t\\mathbf B-\\mathbf J_m.$$\nTaking the divergence of the second equation and differentiating the first gives\n$$\\partial_t\\rho_m+\\boldsymbol\\nabla\\cdot\\mathbf J_m=0,$$\nwhich is the magnetic-source continuity law."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-195-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-195-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE195A_only_response",
+        "expectedErrorCodes": [
+          "EDE195A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE195A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "a60f16e21d8e20ac19d704dfd8c3bd15dc6b5b0020702bbb4a1c32a993f92e1a",
+        "outputCandidateCanonicalPacketSha256": "c4ca12983f8fdd388995e5c3dde374cebf60b15a05e4b5cc226215466aee9c62"
+      }
+    },
+    {
+      "publicProblemId": "ED:196",
+      "ordinal": 196,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE196A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:196",
+        "internalId": "PB-ORIGINAL:ED1-196",
+        "problemVersion": "proofbound-ed1-196-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "360319985799dd6a4f88e0a597670d50510dfb5503053e879fd137ea62f25677",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:196",
+        "internalId": "PB-ORIGINAL:ED1-196",
+        "problemVersion": "proofbound-ed1-196-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "8efe415ddfbc882d1e2f72d1af3ab3e9b9d50d3f6bac68ebaca4104b38aff6e6",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/35/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Both devices have $\\delta\\ll1$, so electromagnetic propagation is instantaneous and every time derivative in Maxwell's equations may be deleted. The reduced equations are therefore $\\nabla\\times\\mathbf E=0$ and $\\nabla\\times\\mathbf B=\\mu_0\\mathbf J$ for both devices. Device A may still have its stated time-varying charge because Gauss's law independently sets $\\nabla\\cdot\\mathbf E=\\rho/\\epsilon_0$, while Device B may still have its stated inductive electric field. Since the reduced Ampere law contains the full conduction current, continuity and the complete electric-plus-magnetic energy balance remain automatic.",
+          "after": "Since $\\delta=L/(cT)\\ll1$ in both devices, delete both time-derivative terms from Maxwell's curl equations. The common leading system is therefore\n$$\\boldsymbol\\nabla\\times\\mathbf E=0,\\qquad\n\\boldsymbol\\nabla\\times\\mathbf B=\\mu_0\\mathbf J.$$\nNo separate comparison with $s=cB_0/E_0$ or $\\eta=J_0T/(\\epsilon_0E_0)$ is needed."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-196-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-196-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE196A_only_response",
+        "expectedErrorCodes": [
+          "EDE196A"
+        ]
+      },
+      "finalsCalibrationDisposition": {
+        "currentFinalSlot": "ed1-final-b-severe-challenge-v1 position 6",
+        "blueprintDurationMinutes": 480,
+        "decision": "preserve_position_duration_and_difficulty_retarget_exact_versions_after_admission",
+        "proposedProblemVersion": "proofbound-ed1-196-v1",
+        "proposedRubricVersion": "v2",
+        "reason": "Only the revision fixture is isolated to EDE196A; the prompt, canonical solution, difficulty 4, estimated time 45 minutes, and scoring requirements remain unchanged."
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE196A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "360319985799dd6a4f88e0a597670d50510dfb5503053e879fd137ea62f25677",
+        "outputCandidateCanonicalPacketSha256": "8efe415ddfbc882d1e2f72d1af3ab3e9b9d50d3f6bac68ebaca4104b38aff6e6"
+      }
+    },
+    {
+      "publicProblemId": "ED:197",
+      "ordinal": 197,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE197A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:197",
+        "internalId": "PB-ORIGINAL:ED1-197",
+        "problemVersion": "proofbound-ed1-197-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e5fd17a8c6bce6bff663bc1b6d24945a51573cb81bc6c3be20a88895cb0c2c91",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:197",
+        "internalId": "PB-ORIGINAL:ED1-197",
+        "problemVersion": "proofbound-ed1-197-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "a7b084c9255eabb464d2c3240a99955a65a0ed546f60c9fc780887ba887b5295",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/36/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Because $\\beta\\kappa=\\delta^2\\ll1$, both $\\beta$ and $\\kappa$ may be set to zero simultaneously. Maxwell's equations then reduce to $\\nabla\\times\\mathbf E=0$ and $\\nabla\\times\\mathbf B=\\mu\\mathbf J$ for every slowly varying device. A capacitor may still charge because Gauss's law permits a time-dependent $\\rho$, while an inductor may still store $B^2/(2\\mu)$ even though Faraday's law has become electrostatic. The omitted terms and both omitted energy derivatives are automatically of order $\\delta^2$, independent of device impedance.",
+          "after": "The relation $\\beta\\kappa=\\delta^2\\ll1$ implies that both $\\beta$ and $\\kappa$ are small. Set both to zero at leading order, obtaining\n$$\\boldsymbol\\nabla\\times\\mathbf E=0,\\qquad\n\\boldsymbol\\nabla\\times\\mathbf B=\\mu\\mathbf J.$$\nThus one universal electroquasistatic-and-magnetoquasistatic reduction applies whenever $\\delta\\ll1$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-197-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-197-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE197A_only_response",
+        "expectedErrorCodes": [
+          "EDE197A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE197A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "e5fd17a8c6bce6bff663bc1b6d24945a51573cb81bc6c3be20a88895cb0c2c91",
+        "outputCandidateCanonicalPacketSha256": "a7b084c9255eabb464d2c3240a99955a65a0ed546f60c9fc780887ba887b5295"
+      }
+    },
+    {
+      "publicProblemId": "ED:199",
+      "ordinal": 199,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace packet-wide ledger saturation with standard balance-law terminology"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "narrow the flawed fixture to the missing normal advective current in EDE199A and remove the separate tangential-work error from EDE199B"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:199",
+        "internalId": "PB-ORIGINAL:ED1-199",
+        "problemVersion": "proofbound-ed1-199-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "209a965b3b9841a57eb8bf991bb4a3a891fe3f489e7c8663b1a0c76a290a2ff3",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:199",
+        "internalId": "PB-ORIGINAL:ED1-199",
+        "problemVersion": "proofbound-ed1-199-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "b9ed826e01af8abae4f701e1100cf5afbf9b4d6b2897f998e50dbc67669a0bd6",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-199-v1",
+          "after": "proofbound-ed1-199-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/38/tags/1",
+          "packetRecordPaths": [
+            "/skillIds/2"
+          ],
+          "operation": "replace_leaf",
+          "before": "poynting-mechanical-ledger",
+          "after": "moving-interface-energy-momentum-balance"
+        },
+        {
+          "sourcePath": "/problems/38/title",
+          "packetRecordPaths": [
+            "/title"
+          ],
+          "operation": "replace_leaf",
+          "before": "A moving material interface closes charge, energy, and momentum ledgers together",
+          "after": "Charge, energy, and momentum balance at a moving material interface"
+        },
+        {
+          "sourcePath": "/problems/38/objective",
+          "packetRecordPaths": [
+            "/objective"
+          ],
+          "operation": "replace_leaf",
+          "before": "Derive moving-interface charge and field jump laws in the laboratory frame and connect them consistently to electromagnetic energy, momentum, and mechanical work ledgers.",
+          "after": "Derive moving-interface charge and field jump laws in the laboratory frame and relate them consistently to electromagnetic energy and momentum balance and to mechanical work."
+        },
+        {
+          "sourcePath": "/problems/38/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "For an unambiguous energy and momentum ledger,",
+              "after": "For unambiguous energy and momentum balance laws,"
+            },
+            {
+              "before": "one independent algebraic consistency relation between the jump laws and the energy ledger.",
+              "after": "one independent algebraic consistency relation between the jump laws and the energy balance."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/38/strategy",
+          "packetRecordPaths": [
+            "/acceptableStrategies/0/description"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "give convention-independent ledgers.",
+              "after": "give convention-independent balance laws."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/38/rubricCriteria/1",
+          "packetRecordPaths": [
+            "/milestones/1/criterion"
+          ],
+          "operation": "replace_leaf",
+          "before": "Constructs the moving energy and momentum pillbox ledgers with correct signs, average-field surface force and power, and a clear distinction between $p_s$ and $u\\mathbf n\\cdot\\mathbf f_s$",
+          "after": "Constructs the moving-pillbox energy and momentum balances with correct signs, average-field surface force and power, and a clear distinction between $p_s$ and $u\\mathbf n\\cdot\\mathbf f_s$"
+        },
+        {
+          "sourcePath": "/problems/38/commonErrors/1/consequence",
+          "packetRecordPaths": [
+            "/commonErrors/1/consequence"
+          ],
+          "operation": "replace_leaf",
+          "before": "Tangential carrier work is lost, so the mechanical ledger no longer matches the moving-pillbox Poynting balance.",
+          "after": "Tangential carrier work is lost, so the mechanical work term no longer matches the moving-pillbox Poynting balance."
+        },
+        {
+          "sourcePath": "/problems/38/solution",
+          "packetRecordPaths": [
+            "/canonicalSolution",
+            "/graderFixtures/0/proofText"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "For the convention-independent energy ledger,",
+              "after": "For the convention-independent energy balance,"
+            },
+            {
+              "before": "The ledgers reduce to",
+              "after": "The balance laws reduce to"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/38/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Write the surface current as only $\\mathbf K_f\\delta(z-ut)$. Ampere-Maxwell then gives $\\mathbf n\\times[\\mathbf H]=\\mathbf K_f-u[\\mathbf D]$, which is taken as the complete jump condition even though its right-hand side can have a normal component. For energy, the sheet receives the mechanical power $u\\mathbf n\\cdot\\mathbf f_s$ because the interface moves at speed $u$; therefore this quantity is substituted directly for $\\mathbf j_s\\cdot\\mathbf E_{\\rm av}$ even when $\\mathbf K_f\\ne0$. The resulting Poynting jump is asserted to be $\\mathbf n\\cdot[\\mathbf S]-u[w]=-u\\mathbf n\\cdot\\mathbf f_s$.",
+          "after": "Represent the moving sheet current as only $\\mathbf K_f\\delta(z-ut)$, with no normal advective term. Ampere-Maxwell then gives $\\mathbf n\\times[\\mathbf H]=\\mathbf K_f-u[\\mathbf D]$. Take this as the complete jump condition even though its right-hand side can retain a normal component when $\\mathbf n\\cdot[\\mathbf D]\\ne0$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-199-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-199-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE199A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE199A"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Distributional differentiation requires the normal advective current u sigma_f n; after Gauss-law cancellation the Ampere-Maxwell jump is tangential. Reynolds transport gives n dot [S]-u[w]=-p_s and [T] dot n+u[g]=f_s with the stated normal and sign conventions."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "209a965b3b9841a57eb8bf991bb4a3a891fe3f489e7c8663b1a0c76a290a2ff3",
+        "outputCandidateCanonicalPacketSha256": "b9ed826e01af8abae4f701e1100cf5afbf9b4d6b2897f998e50dbc67669a0bd6"
+      }
+    },
+    {
+      "publicProblemId": "ED:200",
+      "ordinal": 200,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE200A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:200",
+        "internalId": "PB-ORIGINAL:ED1-200",
+        "problemVersion": "proofbound-ed1-200-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "f7cb9806589f1cba880556cf528728e3c596ca05563d75e5d25b2b5a0a699419",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:200",
+        "internalId": "PB-ORIGINAL:ED1-200",
+        "problemVersion": "proofbound-ed1-200-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "a629709ba9d356844eb1c4c72ce6e68bd758998a1f395dc2ecebfb47096aee7e",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/39/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The Faraday residual is nonzero, so charge cannot be conserved and the derived $\\rho_0$ and $\\mathbf J_0$ must violate continuity. The sole offending feature is the term proportional to $\\beta$, so set $\\beta=0$ while leaving $q=1-r^2/a^2$. Then $\\nabla\\cdot\\mathbf B=0$ and Faraday's law holds, which proves the entire field configuration is valid without surface sources. Since $q=0$ on $r=a$, both fields are assumed to vanish there; the nonzero value of $\\nabla q$ at the boundary is ignored.",
+          "after": "The proposed fields have a nonzero Faraday residual. Therefore the charge and current defined from Gauss-electric and Ampere-Maxwell cannot obey\n$$\\partial_t\\rho_0+\\boldsymbol\\nabla\\cdot\\mathbf J_0=0.$$\nThe homogeneous Faraday-law failure directly forces a failure of electric charge continuity in the inhomogeneous sector."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-200-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-200-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE200A_only_response",
+        "expectedErrorCodes": [
+          "EDE200A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE200A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "f7cb9806589f1cba880556cf528728e3c596ca05563d75e5d25b2b5a0a699419",
+        "outputCandidateCanonicalPacketSha256": "a629709ba9d356844eb1c4c72ce6e68bd758998a1f395dc2ecebfb47096aee7e"
+      }
+    },
+    {
+      "publicProblemId": "ED:202",
+      "ordinal": 202,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE202A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:202",
+        "internalId": "PB-ORIGINAL:ED1-202",
+        "problemVersion": "proofbound-ed1-202-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "00c0ac7cc30089641f99f6470d91b39af8e8edee1cbc0efc96812b7d3eb6c1f8",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:202",
+        "internalId": "PB-ORIGINAL:ED1-202",
+        "problemVersion": "proofbound-ed1-202-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/41/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Since B and H are both magnetic fields, either measured ratio is an impedance. The agreement of their numerical prefixes after converting to microtesla shows that the permeability factor may be ignored.",
+          "after": "The ratio of the measured electric and magnetic-flux amplitudes is\n$$\\frac{E_0}{B_0},$$\nand this quantity is the intrinsic wave impedance. It should therefore be reported in ohms and used directly as the material's impedance."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-202-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-202-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE202A_only_response",
+        "expectedErrorCodes": [
+          "EDE202A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE202A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "00c0ac7cc30089641f99f6470d91b39af8e8edee1cbc0efc96812b7d3eb6c1f8",
+        "outputCandidateCanonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+      }
+    },
+    {
+      "publicProblemId": "ED:204",
+      "ordinal": 204,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "isolate EDE204A's wrong time-derivative sign while preserving the statement's exact fields and amplitudes and making no pulse-energy claim"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:204",
+        "internalId": "PB-ORIGINAL:ED1-204",
+        "problemVersion": "proofbound-ed1-204-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "51b9ed6c3eb3b36e02c9cb3410768f2f0db8e8f2af63dd7a34cdb08f3f6a9467",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:204",
+        "internalId": "PB-ORIGINAL:ED1-204",
+        "problemVersion": "proofbound-ed1-204-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "c7f39cc6f3dd93ba9047288f126c4d97289dd5667c03c75f4aeb958d8919214c",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/43/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Any function of $z-vt$ satisfies Maxwell's equations, even with a longitudinal electric component. The magnetic energy may be omitted because B is smaller than E by a factor v.",
+          "after": "Let $\\xi=z-vt$. I use\n$$\\partial_t f(\\xi)=+v f'(\\xi).$$\nKeeping exactly the stated fields\n$$\\mathbf E=\\hat{\\mathbf x}f(\\xi),\\qquad \\mathbf B=\\frac1v\\hat{\\mathbf y}f(\\xi),$$\nI substitute this time derivative together with $\\partial_z f(\\xi)=f'(\\xi)$ into Faraday's and Ampere-Maxwell laws and conclude that both curl equations are satisfied."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-204-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-204-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE204A_only_response",
+        "expectedErrorCodes": [
+          "EDE204A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed_exact_A_only",
+        "evidence": "The only introduced mechanism is the wrong positive sign in d f(z-vt)/dt. The exact stated E and B fields are retained; no undefined amplitude, flipped B convention, longitudinal component, or electric-only energy claim appears."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "51b9ed6c3eb3b36e02c9cb3410768f2f0db8e8f2af63dd7a34cdb08f3f6a9467",
+        "outputCandidateCanonicalPacketSha256": "c7f39cc6f3dd93ba9047288f126c4d97289dd5667c03c75f4aeb958d8919214c"
+      }
+    },
+    {
+      "publicProblemId": "ED:205",
+      "ordinal": 205,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "notation_mismatch",
+          "disposition": "distinguish the vector wavevector and its unit direction from scalar wavenumber k"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:205",
+        "internalId": "PB-ORIGINAL:ED1-205",
+        "problemVersion": "proofbound-ed1-205-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "3269d2a2291b7980a3a7536d8113ff8dba79466dcfea805c78b68492d2c38a60",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:205",
+        "internalId": "PB-ORIGINAL:ED1-205",
+        "problemVersion": "proofbound-ed1-205-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "46dc4ed691e86fcbdd11bc176150756e1f15d22a176d90459e5595fce905a0f5",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-205-v1",
+          "after": "proofbound-ed1-205-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/44/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Orthogonally project it onto the plane perpendicular to k.",
+              "after": "Orthogonally project it onto the plane perpendicular to $\\mathbf k$."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/44/strategy",
+          "packetRecordPaths": [
+            "/acceptableStrategies/0/description"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Remove only the component parallel to k,",
+              "after": "Remove only the component parallel to $\\mathbf k$,"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/44/commonErrors/1/description",
+          "packetRecordPaths": [
+            "/commonErrors/1/description"
+          ],
+          "operation": "replace_leaf",
+          "before": "Uses E cross k rather than k cross E.",
+          "after": "Uses $\\mathbf E_0\\times\\hat{\\mathbf k}$ rather than $\\hat{\\mathbf k}\\times\\mathbf E_0$."
+        }
+      ],
+      "fixtureDisposition": "unchanged",
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Gauss law requires vector k dot E_0=0, so only the z component is removed. The admissible B_0=(1/v) zhat cross E_0 has the stated component signs.",
+        "numericalOracle": "E_r/v=3.00/(c/2)=2.0013846e-8 T; the displayed magnetic components follow by multiplying -(2-i) xhat+(1+i) yhat."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "3269d2a2291b7980a3a7536d8113ff8dba79466dcfea805c78b68492d2c38a60",
+        "outputCandidateCanonicalPacketSha256": "46dc4ed691e86fcbdd11bc176150756e1f15d22a176d90459e5595fce905a0f5"
+      }
+    },
+    {
+      "publicProblemId": "ED:206",
+      "ordinal": 206,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "notation_mismatch",
+          "disposition": "retain C_A and C_B labels everywhere so convention B is not confused with magnetic field B"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "narrow the flawed fixture to the unconjugated-amplitude error in EDE206A while reversing both derivative signs consistently"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:206",
+        "internalId": "PB-ORIGINAL:ED1-206",
+        "problemVersion": "proofbound-ed1-206-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "15a33433658c10ca337cdc1688adc0c8749788c2e9415f7801f7fd3d8af0c1c7",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:206",
+        "internalId": "PB-ORIGINAL:ED1-206",
+        "problemVersion": "proofbound-ed1-206-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "d47fd5b093c319c000c1057dd090c8e5c1970bcc70e86f9a43108f2b6c21beb8",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-206-v1",
+          "after": "proofbound-ed1-206-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/45/strategy",
+          "packetRecordPaths": [
+            "/acceptableStrategies/0/description"
+          ],
+          "operation": "replace_leaf",
+          "before": "Derive the derivative signs as a pair. Since the exponent in B is the negative of the exponent in A, use complex-conjugate amplitudes to preserve real fields.",
+          "after": "Derive the derivative signs as a pair. Since $C_B=C_A^*$ pointwise, use complex-conjugate amplitudes to preserve the real fields."
+        },
+        {
+          "sourcePath": "/problems/45/hints/0",
+          "packetRecordPaths": [
+            "/hintTree/0/content"
+          ],
+          "operation": "replace_leaf",
+          "before": "Under A, $(\\partial_z,\\partial_t)\\to(ik,-i\\omega)$; under B they become $(-ik,+i\\omega)$.",
+          "after": "Under $C_A$, $(\\partial_z,\\partial_t)\\to(ik,-i\\omega)$; under $C_B$, they become $(-ik,+i\\omega)$."
+        },
+        {
+          "sourcePath": "/problems/45/solution",
+          "packetRecordPaths": [
+            "/canonicalSolution",
+            "/graderFixtures/0/proofText"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Under A,",
+              "after": "Under convention $C_A$,"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/45/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The exponent can be reversed while the same complex amplitudes are retained because only the real part matters. Changing the spatial derivative sign alone then reverses B but not the physical wave.",
+          "after": "Under $C_A$, $(\\partial_z,\\partial_t)\\to(ik,-i\\omega)$, while under $C_B$ both signs reverse to $(-ik,+i\\omega)$. Keep $\\mathbf E_B=\\mathbf E_A$ and $\\mathbf B_B=\\mathbf B_A$ without conjugating either amplitude, because reversing the exponential does not change the real part of a phasor field."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-206-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-206-revision",
+        "flawedFixtureDecision": "rewrite_to_instantiate_only_EDE206A",
+        "expectedErrorCodesDecision": "preserve_exactly_EDE206A"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Because C_B=C_A* pointwise, conjugating both E and B amplitudes preserves the real fields. The resulting instantaneous S_z is proportional to 16 cos^2(theta)+9 sin^2(theta), which is strictly positive."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "15a33433658c10ca337cdc1688adc0c8749788c2e9415f7801f7fd3d8af0c1c7",
+        "outputCandidateCanonicalPacketSha256": "d47fd5b093c319c000c1057dd090c8e5c1970bcc70e86f9a43108f2b6c21beb8"
+      }
+    },
+    {
+      "publicProblemId": "ED:207",
+      "ordinal": 207,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "isolate EDE207A's every-nonzero-phase-is-circular claim while retaining the declared -z viewing direction and making no handedness claim"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:207",
+        "internalId": "PB-ORIGINAL:ED1-207",
+        "problemVersion": "proofbound-ed1-207-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "020ff00da3e94cd4d808afc8ed909e951a8414921cf15004ce0172e5255db926",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:207",
+        "internalId": "PB-ORIGINAL:ED1-207",
+        "problemVersion": "proofbound-ed1-207-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "066b5cfd75acd607a75dbe41bafca386039af61dc350de3042f41e5b26222b11",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/46/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Any nonzero delta makes the components out of phase, so the path is a circle. Rotation sense is intrinsic and does not depend on which side the observer views from.",
+          "after": "Using the stated viewing direction along $-\\hat{\\mathbf z}$, I take every nonzero phase offset to put the two transverse components out of phase. I therefore conclude that the locus is a circle for every $\\delta\\ne0$. I keep the specified viewing direction fixed and make no separate handedness determination."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-207-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-207-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE207A_only_response",
+        "expectedErrorCodes": [
+          "EDE207A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed_exact_A_only",
+        "evidence": "The response explicitly retains the problem's -z viewing direction and commits only the phase-classification error in EDE207A. It neither changes the view nor reports a rotation sense, excluding EDE207B."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "020ff00da3e94cd4d808afc8ed909e951a8414921cf15004ce0172e5255db926",
+        "outputCandidateCanonicalPacketSha256": "066b5cfd75acd607a75dbe41bafca386039af61dc350de3042f41e5b26222b11"
+      }
+    },
+    {
+      "publicProblemId": "ED:208",
+      "ordinal": 208,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE208A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:208",
+        "internalId": "PB-ORIGINAL:ED1-208",
+        "problemVersion": "proofbound-ed1-208-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "21671ed6957e1bf7f2fc7fcb0a47bbd94fd7597bcb7fa32f57489e3a2bdb34f9",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:208",
+        "internalId": "PB-ORIGINAL:ED1-208",
+        "problemVersion": "proofbound-ed1-208-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "2b9053151cc3eb4a55bf551c76a667bf53dd3aa5861d386bcc085d317c46d8b7",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/47/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The norm is $|2|+|i|=3$, so the normalized vector is $(2,i)/3$. Multiplying by an overall phase changes the component phase lag and therefore changes the ellipse.",
+          "after": "Normalize the Jones vector by the sum of component magnitudes:\n$$\\lVert(2,i)\\rVert=|2|+|i|=3,\\qquad\n\\hat{\\mathbf e}=\\frac{1}{3}(2,i).$$\nAn overall phase multiplies both components equally and leaves the polarization ellipse unchanged, so this normalized vector may be used directly to obtain its semiaxes."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-208-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-208-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE208A_only_response",
+        "expectedErrorCodes": [
+          "EDE208A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE208A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "21671ed6957e1bf7f2fc7fcb0a47bbd94fd7597bcb7fa32f57489e3a2bdb34f9",
+        "outputCandidateCanonicalPacketSha256": "2b9053151cc3eb4a55bf551c76a667bf53dd3aa5861d386bcc085d317c46d8b7"
+      }
+    },
+    {
+      "publicProblemId": "ED:209",
+      "ordinal": 209,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE209A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:209",
+        "internalId": "PB-ORIGINAL:ED1-209",
+        "problemVersion": "proofbound-ed1-209-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "79b2440c2969697e44bec811dba9e53bf1b658692018b9b1489bd83a008dcab4",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:209",
+        "internalId": "PB-ORIGINAL:ED1-209",
+        "problemVersion": "proofbound-ed1-209-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/48/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Since $E_y$ is imaginary, the state is circular. Its normalized Stokes vector is $(3,0,4)$, whose length is five, so the sphere has radius five.",
+          "after": "Define the cross Stokes parameters without conjugating the first Jones component:\n$$S_2=2\\operatorname{Re}(E_xE_y),\\qquad\nS_3=2\\operatorname{Im}(E_xE_y).$$\nUnder a common phase $E_x,E_y\\mapsto e^{i\\alpha}E_x,e^{i\\alpha}E_y$, these coordinates acquire the phase $e^{2i\\alpha}$, so the Stokes point and polarization state rotate with the common Jones phase."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-209-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-209-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE209A_only_response",
+        "expectedErrorCodes": [
+          "EDE209A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE209A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "79b2440c2969697e44bec811dba9e53bf1b658692018b9b1489bd83a008dcab4",
+        "outputCandidateCanonicalPacketSha256": "f0f88b308ab59206eef6550c0a0ff38bb2fe22d0354efcd7e27d316efe517ecd"
+      }
+    },
+    {
+      "publicProblemId": "ED:210",
+      "ordinal": 210,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE210A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:210",
+        "internalId": "PB-ORIGINAL:ED1-210",
+        "problemVersion": "proofbound-ed1-210-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "acf04361121eeee96a6df795b8914b0b56617c9a3cb11dfa31c7b0319103071b",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:210",
+        "internalId": "PB-ORIGINAL:ED1-210",
+        "problemVersion": "proofbound-ed1-210-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/49/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The Stokes vector is an ordinary transverse vector, so rotating axes by theta changes its angle by theta. Therefore the new normalized coordinates are cosine and sine of $25^\\circ$, not $50^\\circ$.",
+          "after": "When the transverse coordinate axes rotate counterclockwise by $\\theta$, add the rotation to the ellipse angle:\n$$\\psi'=\\psi+\\theta.$$\nThe transformed linear Stokes coordinates are therefore\n$$\\frac{S_1'}{S_0}=\\cos(2\\psi'),\\qquad\n\\frac{S_2'}{S_0}=\\sin(2\\psi'),$$\nwith the required double-angle dependence retained."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-210-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-210-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE210A_only_response",
+        "expectedErrorCodes": [
+          "EDE210A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE210A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "acf04361121eeee96a6df795b8914b0b56617c9a3cb11dfa31c7b0319103071b",
+        "outputCandidateCanonicalPacketSha256": "30701b4693a2ac21f3a60343cb717f350e9c6b4164d739db877250b8d759eaf7"
+      }
+    },
+    {
+      "publicProblemId": "ED:212",
+      "ordinal": 212,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE212A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:212",
+        "internalId": "PB-ORIGINAL:ED1-212",
+        "problemVersion": "proofbound-ed1-212-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "b7dc39bbfd405d62511591a26b1979c9dd9042c7a35ab7521d5c6cb8b96aa0f5",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:212",
+        "internalId": "PB-ORIGINAL:ED1-212",
+        "problemVersion": "proofbound-ed1-212-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "5e5302aadccbcd8885dd7fc9741f894cfee237ffa7614179ea47f4d1631f2f05",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/51/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Because E and H are in phase, their numerical amplitudes are equal. The electric and magnetic energies are therefore equal without any material factors, and the average intensity is $E_0H_0$.",
+          "after": "Use the correct impedance relation $H_0=E_0/\\eta$, but average the squared peak fields without the factor from $\\langle\\cos^2\\rangle$. Then\n$$\\langle S\\rangle=E_0H_0,\\qquad\n\\langle u_E\\rangle=\\frac{\\epsilon E_0^2}{2},\\qquad\n\\langle u_H\\rangle=\\frac{\\mu H_0^2}{2},$$\nso both average intensity and total average energy density are twice their usual values."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-212-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-212-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE212A_only_response",
+        "expectedErrorCodes": [
+          "EDE212A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE212A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "b7dc39bbfd405d62511591a26b1979c9dd9042c7a35ab7521d5c6cb8b96aa0f5",
+        "outputCandidateCanonicalPacketSha256": "5e5302aadccbcd8885dd7fc9741f894cfee237ffa7614179ea47f4d1631f2f05"
+      }
+    },
+    {
+      "publicProblemId": "ED:213",
+      "ordinal": 213,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace ledger terminology with separate energy and momentum balances"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE213A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:213",
+        "internalId": "PB-ORIGINAL:ED1-213",
+        "problemVersion": "proofbound-ed1-213-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "b537fa5290945058081ebc49b756dfacf9988d802bad296bd71e368f475319c2",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:213",
+        "internalId": "PB-ORIGINAL:ED1-213",
+        "problemVersion": "proofbound-ed1-213-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "c58f25fd6df9852e96fa22164b842537462d1844420135e3cb3481e790c9928b",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-213-v1",
+          "after": "proofbound-ed1-213-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/52/tags/1",
+          "packetRecordPaths": [
+            "/skillIds/2"
+          ],
+          "operation": "replace_leaf",
+          "before": "pulse-momentum-ledger",
+          "after": "pulse-momentum-balance"
+        },
+        {
+          "sourcePath": "/problems/52/objective",
+          "packetRecordPaths": [
+            "/objective"
+          ],
+          "operation": "replace_leaf",
+          "before": "Derive normal radiation pressure from vacuum field momentum and the Maxwell stress tensor, then reconcile the different absorber and mirror forces with complete energy and momentum ledgers.",
+          "after": "Derive normal radiation pressure from vacuum field momentum and the Maxwell stress tensor, then reconcile the different absorber and mirror forces with separate energy and momentum balances."
+        },
+        {
+          "sourcePath": "/problems/52/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "close separate energy and momentum ledgers for the absorber and mirror.",
+              "after": "write separate energy and momentum balances for the absorber and mirror."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/52/rubricCriteria/2",
+          "packetRecordPaths": [
+            "/milestones/2/criterion"
+          ],
+          "operation": "replace_leaf",
+          "before": "Calculates both finite-panel ledgers with correct SI units and distinguishes stress-based pressure from a dimensional identification with energy density.",
+          "after": "Calculates both finite-panel energy and momentum balances with correct SI units and distinguishes stress-based pressure from a dimensional identification with energy density."
+        },
+        {
+          "sourcePath": "/problems/52/hints/2",
+          "packetRecordPaths": [
+            "/hintTree/2/content"
+          ],
+          "operation": "replace_leaf",
+          "before": "In the pulse ledger, reflected energy travels in $-\\hat{\\mathbf z}$, so its momentum has the opposite sign even though its energy remains positive.",
+          "after": "In the pulse momentum balance, reflected energy travels in $-\\hat{\\mathbf z}$, so its momentum has the opposite sign even though its energy remains positive."
+        },
+        {
+          "sourcePath": "/problems/52/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Since pressure and energy density both have units $\\mathrm{J\\,m^{-3}}$, one may set $p=\\langle u\\rangle=I/c$ for any illuminated surface. A reflected pulse still has positive energy $U$, so its momentum after reflection is also $+U/c$. Its momentum therefore does not change, and a perfect mirror experiences the same pressure $I/c$ as an absorber.",
+          "after": "The incident pulse carries momentum $+U/c$ along $+\\hat{\\mathbf z}$. Because the reflected pulse still has positive energy $U$, assign it momentum $+U/c$ as well, despite its propagation in $-\\hat{\\mathbf z}$. Its momentum is then unchanged by reflection, so the mirror receives zero impulse."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-213-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-213-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE213A_only_response",
+        "expectedErrorCodes": [
+          "EDE213A"
+        ]
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Absorption transfers U/c and specular reflection transfers 2U/c because the reflected field momentum is negative. Maxwell stress gives p=(I_i+I_r-I_t)/c.",
+        "numericalOracle": "For I=1.50e4 W/m^2, A=0.0600 m^2, and 20.0 s: U=1.80e4 J, p_abs=5.00346e-5 Pa, F_abs=3.00208e-6 N, with reflection exactly twice these pressure, force, and impulse values."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "b537fa5290945058081ebc49b756dfacf9988d802bad296bd71e368f475319c2",
+        "outputCandidateCanonicalPacketSha256": "c58f25fd6df9852e96fa22164b842537462d1844420135e3cb3481e790c9928b"
+      }
+    },
+    {
+      "publicProblemId": "ED:214",
+      "ordinal": 214,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE214A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:214",
+        "internalId": "PB-ORIGINAL:ED1-214",
+        "problemVersion": "proofbound-ed1-214-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e8e8393bbc63639b59ccd2b4c81481a3d9c68ea1a0d155af14b8fc424a3d2461",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:214",
+        "internalId": "PB-ORIGINAL:ED1-214",
+        "problemVersion": "proofbound-ed1-214-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "11488f4bda2ef27282b7b4221f765b731010a6476ee26ab2cfd0788744662c93",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/53/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The average energy density is just the electric part, $\\langle u\\rangle=\\epsilon E_0^2/4$. Since $H_0=E_0\\sqrt{\\epsilon/\\mu}$, the average Poynting flux is $\\langle S\\rangle=E_0^2\\sqrt{\\epsilon/\\mu}/2$. Therefore $\\langle S\\rangle/\\langle u\\rangle=2/\\sqrt{\\mu\\epsilon}$. This argument uses only the values of $\\epsilon$ and $\\mu$, so the same expression remains valid if they are frequency-dependent or complex in a lossy material.",
+          "after": "For the stated real, lossless, frequency-independent medium, retain only the electric contribution\n$$\\langle u\\rangle=\\frac{\\epsilon E_0^2}{4}.$$\nSince $\\langle S\\rangle=E_0^2\\sqrt{\\epsilon/\\mu}/2$, the energy velocity is\n$$\\frac{\\langle S\\rangle}{\\langle u\\rangle}=\\frac{2}{\\sqrt{\\mu\\epsilon}}=2v.$$"
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-214-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-214-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE214A_only_response",
+        "expectedErrorCodes": [
+          "EDE214A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE214A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "e8e8393bbc63639b59ccd2b4c81481a3d9c68ea1a0d155af14b8fc424a3d2461",
+        "outputCandidateCanonicalPacketSha256": "11488f4bda2ef27282b7b4221f765b731010a6476ee26ab2cfd0788744662c93"
+      }
+    },
+    {
+      "publicProblemId": "ED:215",
+      "ordinal": 215,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace audit language with direct SI-unit verification"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:215",
+        "internalId": "PB-ORIGINAL:ED1-215",
+        "problemVersion": "proofbound-ed1-215-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e2d8dd2f1cd366ff771e617ddc9e7824a89e152d2add4a9767a3b5c1cf004dcb",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:215",
+        "internalId": "PB-ORIGINAL:ED1-215",
+        "problemVersion": "proofbound-ed1-215-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "68e23e8e3b8f6f518ad30850af6fe24ce1ac51560b3e22fccf07345fbc84f81d",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-215-v1",
+          "after": "proofbound-ed1-215-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/54/tags/2",
+          "packetRecordPaths": [
+            "/skillIds/3"
+          ],
+          "operation": "replace_leaf",
+          "before": "plane-wave-energy-audit",
+          "after": "plane-wave-energy-unit-checks"
+        },
+        {
+          "sourcePath": "/problems/54/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Audit the SI units and positivity",
+              "after": "Verify the SI units and positivity"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/54/solution",
+          "packetRecordPaths": [
+            "/canonicalSolution",
+            "/graderFixtures/0/proofText"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "The SI audits are",
+              "after": "The SI unit checks are"
+            }
+          ]
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-215-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-215-revision",
+        "flawedFixtureDecision": "unchanged"
+      },
+      "finalsCalibrationDisposition": {
+        "currentFinalSlot": "ed1-final-a-on-level-v1 position 8",
+        "blueprintDurationMinutes": 330,
+        "decision": "preserve_position_duration_and_difficulty_retarget_exact_versions_after_admission",
+        "proposedProblemVersion": "proofbound-ed1-215-v2",
+        "proposedRubricVersion": "v2",
+        "reason": "Only wording changes; all mathematics, difficulty 3, estimated time 36 minutes, objective substance, and scoring requirements remain unchanged."
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "The two curl equations give eta=mu v=1/(epsilon v), B_0=E_0/v, equal electric and magnetic average energies, and <S>=v<u>.",
+        "numericalOracle": "epsilon=2.00e-11 F/m, mu=1.25e-6 H/m, H_0=0.480 A/m, B_0=6.00e-7 T, <u>=1.44e-7 J/m^3, and <S>=28.8 W/m^2."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "e2d8dd2f1cd366ff771e617ddc9e7824a89e152d2add4a9767a3b5c1cf004dcb",
+        "outputCandidateCanonicalPacketSha256": "68e23e8e3b8f6f518ad30850af6fe24ce1ac51560b3e22fccf07345fbc84f81d"
+      }
+    },
+    {
+      "publicProblemId": "ED:217",
+      "ordinal": 217,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "nonstandard_terminology",
+          "disposition": "reserve reactive power for the imaginary complex-Poynting quantity and call the real time-domain effect oscillatory instantaneous energy flow"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:217",
+        "internalId": "PB-ORIGINAL:ED1-217",
+        "problemVersion": "proofbound-ed1-217-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "6e3cae9ac6a3725d83b4197fd7128c248cea026bfb0589e9cd3960067265a386",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:217",
+        "internalId": "PB-ORIGINAL:ED1-217",
+        "problemVersion": "proofbound-ed1-217-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "dd331478567468c482da787d7d4a8d46a61d0d6fa593829f43b47f6dc7f298b3",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-217-v1",
+          "after": "proofbound-ed1-217-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/56/tags/2",
+          "packetRecordPaths": [
+            "/skillIds/3"
+          ],
+          "operation": "replace_leaf",
+          "before": "reactive-flux-reversal",
+          "after": "standing-wave-energy-flow-reversal"
+        },
+        {
+          "sourcePath": "/problems/56/title",
+          "packetRecordPaths": [
+            "/title"
+          ],
+          "operation": "replace_leaf",
+          "before": "Reactive Poynting flow reverses twice per cycle",
+          "after": "Standing-wave Poynting flow oscillates at twice the field frequency"
+        },
+        {
+          "sourcePath": "/problems/56/objective",
+          "packetRecordPaths": [
+            "/objective"
+          ],
+          "operation": "replace_leaf",
+          "before": "Prove pointwise energy conservation in an equal-amplitude electromagnetic standing wave and distinguish vanishing time-averaged transport from nonzero instantaneous reactive flow.",
+          "after": "Prove pointwise energy conservation in an equal-amplitude electromagnetic standing wave and distinguish vanishing time-averaged transport from nonzero instantaneous oscillatory energy flow."
+        },
+        {
+          "sourcePath": "/problems/56/rubricCriteria/2",
+          "packetRecordPaths": [
+            "/milestones/2/criterion"
+          ],
+          "operation": "replace_leaf",
+          "before": "Identifies all flux maxima and directions and accurately distinguishes twice-frequency reactive oscillation from zero time-averaged transport.",
+          "after": "Identifies all flux maxima and directions and accurately distinguishes twice-frequency instantaneous energy-flow oscillation from zero time-averaged transport."
+        },
+        {
+          "sourcePath": "/problems/56/commonErrors/0/consequence",
+          "packetRecordPaths": [
+            "/commonErrors/0/consequence"
+          ],
+          "operation": "replace_leaf",
+          "before": "This removes the reactive energy exchange and prevents the pointwise Poynting balance from being demonstrated.",
+          "after": "This removes the local oscillatory energy exchange and prevents the pointwise Poynting balance from being demonstrated."
+        },
+        {
+          "sourcePath": "/problems/56/solution",
+          "packetRecordPaths": [
+            "/canonicalSolution",
+            "/graderFixtures/0/proofText"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "two complete reactive-flow oscillations",
+              "after": "two complete energy-flow oscillations"
+            },
+            {
+              "before": "within each reactive-flow period",
+              "after": "within each energy-flow period"
+            }
+          ]
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-217-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-217-revision",
+        "flawedFixtureDecision": "unchanged"
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "S_z=(E_0^2/eta) sin(2kz) sin(2 omega t) is a real instantaneous Poynting flux. It has period T/2 and zero time average; it is not the imaginary part of the complex Poynting vector conventionally associated with reactive power."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "6e3cae9ac6a3725d83b4197fd7128c248cea026bfb0589e9cd3960067265a386",
+        "outputCandidateCanonicalPacketSha256": "dd331478567468c482da787d7d4a8d46a61d0d6fa593829f43b47f6dc7f298b3"
+      }
+    },
+    {
+      "publicProblemId": "ED:218",
+      "ordinal": 218,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE218A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:218",
+        "internalId": "PB-ORIGINAL:ED1-218",
+        "problemVersion": "proofbound-ed1-218-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "81d0b876d232a3ed78392373dd6bb9dee04a2035355a40148e380460da0ff738",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:218",
+        "internalId": "PB-ORIGINAL:ED1-218",
+        "problemVersion": "proofbound-ed1-218-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "efec2176c9629ff6db68f67d2ef05faf16b22754e09e2ebdb462d7a08494088b",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/57/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The SWR directly compares the two traveling-wave amplitudes, so $E_+/E_-=3$. Both waves contribute positive average intensity regardless of direction, giving $8.00=(E_+^2+E_-^2)/(2\\eta)$. With $\\eta=200\\ \\Omega$, this yields $E_-=\\sqrt{320}\\ \\mathrm{V/m}=17.9\\ \\mathrm{V/m}$ and $E_+=53.7\\ \\mathrm{V/m}$.",
+          "after": "The measured standing-wave ratio gives\n$$3=\\frac{E_++E_-}{E_+-E_-},\\qquad E_+=2E_-.$$\nAssign the backward wave the same magnetic-field sign as the forward wave, so both directed powers add:\n$$8.00=\\frac{E_+^2+E_-^2}{2\\eta}.$$\nFor $\\eta=200\\ \\Omega$, this gives $E_-=25.3\\ \\mathrm{V/m}$ and $E_+=50.6\\ \\mathrm{V/m}$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-218-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-218-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE218A_only_response",
+        "expectedErrorCodes": [
+          "EDE218A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE218A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "81d0b876d232a3ed78392373dd6bb9dee04a2035355a40148e380460da0ff738",
+        "outputCandidateCanonicalPacketSha256": "efec2176c9629ff6db68f67d2ef05faf16b22754e09e2ebdb462d7a08494088b"
+      }
+    },
+    {
+      "publicProblemId": "ED:222",
+      "ordinal": 222,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE222A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:222",
+        "internalId": "PB-ORIGINAL:ED1-222",
+        "problemVersion": "proofbound-ed1-222-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "8461d6bac6b3760b91fa180ff9dc1570ee4de80dca2c7177855d42e1714734d4",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:222",
+        "internalId": "PB-ORIGINAL:ED1-222",
+        "problemVersion": "proofbound-ed1-222-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "24985c9519c528897333b8dd595c651e8cd2e897d0afbb5280bffc0ce5e08fe6",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/61/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "A PEC simply sends back the negative of the incident electric vector, so the reflected amplitude is $-E_0(\\cos\\theta\\,\\hat{\\mathbf x}-\\sin\\theta\\,\\hat{\\mathbf z})$. Its tangential component cancels the incident field, and its normal component cancels the incident normal component as well. Hence $\\sigma=0$. The magnetic fields still add, giving $\\mathbf K=(2E_0/Z_0)\\cos(kx\\sin\\theta-\\omega t)\\hat{\\mathbf x}$. Surface continuity is satisfied because $\\partial\\sigma/\\partial t=0$.",
+          "after": "A perfect conductor reverses the entire incident electric vector:\n$$\\mathbf E_r=-E_0(\\cos\\theta\\,\\hat{\\mathbf x}-\\sin\\theta\\,\\hat{\\mathbf z}).$$\nBoth tangential and normal components then cancel at the surface, so the induced surface charge density is $\\sigma=0$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-222-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-222-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE222A_only_response",
+        "expectedErrorCodes": [
+          "EDE222A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE222A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "8461d6bac6b3760b91fa180ff9dc1570ee4de80dca2c7177855d42e1714734d4",
+        "outputCandidateCanonicalPacketSha256": "24985c9519c528897333b8dd595c651e8cd2e897d0afbb5280bffc0ce5e08fe6"
+      }
+    },
+    {
+      "publicProblemId": "ED:227",
+      "ordinal": 227,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE227A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:227",
+        "internalId": "PB-ORIGINAL:ED1-227",
+        "problemVersion": "proofbound-ed1-227-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "1e1c6069d96a555410e98fca8087389ee909d9be4dd7c0de790b898906b3d3a0",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:227",
+        "internalId": "PB-ORIGINAL:ED1-227",
+        "problemVersion": "proofbound-ed1-227-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "a3b984fb350abce9337a0c0ac311f0ea708ea915fda1bbdf2bf2563bee5b1bb4",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/66/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "At the angle satisfying $\\tan\\theta_B=n_2/n_1$, the p coefficient vanishes and the transmitted amplitude is $t_p=0.750$. Therefore the transmitted power fraction is simply $|t_p|^2=0.5625$. Since the reflected fraction is zero, the remaining $0.4375$ of the incident power is absorbed at the interface even though both dielectrics were declared lossless.",
+          "after": "For the requested p polarization, use the s-polarized amplitude coefficient\n$$r_p=\\frac{\\eta_2\\cos\\theta_i-\\eta_1\\cos\\theta_t}\n{\\eta_2\\cos\\theta_i+\\eta_1\\cos\\theta_t},\\qquad t_p=1+r_p.$$\nConvert the transmitted amplitude to power with\n$$T=\\frac{\\eta_1\\cos\\theta_t}{\\eta_2\\cos\\theta_i}|t_p|^2,$$\nand take $R=|r_p|^2$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-227-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-227-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE227A_only_response",
+        "expectedErrorCodes": [
+          "EDE227A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE227A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "1e1c6069d96a555410e98fca8087389ee909d9be4dd7c0de790b898906b3d3a0",
+        "outputCandidateCanonicalPacketSha256": "a3b984fb350abce9337a0c0ac311f0ea708ea915fda1bbdf2bf2563bee5b1bb4"
+      }
+    },
+    {
+      "publicProblemId": "ED:228",
+      "ordinal": 228,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE228A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:228",
+        "internalId": "PB-ORIGINAL:ED1-228",
+        "problemVersion": "proofbound-ed1-228-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "811f05d3dffaa372e8d98f824031bab1bc5cdeea2f6f2014d371c392fee4f30b",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:228",
+        "internalId": "PB-ORIGINAL:ED1-228",
+        "problemVersion": "proofbound-ed1-228-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "2de937f3a975d98dc885f8c7eac19aaed7ff5d5205bc776d6ca13e092ddc1705",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/67/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Above the critical angle take $k_{tz}=-i\\kappa$, which gives the required transmitted decay $e^{-\\kappa z}$. The boundary equations then give $r_s=(k_{z1}+i\\kappa)/(k_{z1}-i\\kappa)$ and a positive reflection phase. Since the transmitted magnetic field has normal-interface magnitude $|H_{t,x}|=\\kappa|E_t|/(\\mu_0\\omega)$, its normal average power is $\\langle S_{t,z}\\rangle=|E_t||H_{t,x}|/2>0$. Thus some average energy continually crosses into medium 2 during total internal reflection.",
+          "after": "With the declared factor $e^{i\\mathbf k\\cdot\\mathbf r-i\\omega t}$, choose\n$$k_{tz}=-i\\kappa,\\qquad \\kappa>0.$$\nThe transmitted factor is then $e^{+\\kappa z}$, which is the admissible passive-half-space evanescent branch for $z>0$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-228-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-228-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE228A_only_response",
+        "expectedErrorCodes": [
+          "EDE228A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE228A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "811f05d3dffaa372e8d98f824031bab1bc5cdeea2f6f2014d371c392fee4f30b",
+        "outputCandidateCanonicalPacketSha256": "2de937f3a975d98dc885f8c7eac19aaed7ff5d5205bc776d6ca13e092ddc1705"
+      }
+    },
+    {
+      "publicProblemId": "ED:229",
+      "ordinal": 229,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE229A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:229",
+        "internalId": "PB-ORIGINAL:ED1-229",
+        "problemVersion": "proofbound-ed1-229-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "57b2aaa414f1e344e2d7f316a0761e12aca5cb6134b929dcc7b76cb1c1869e26",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:229",
+        "internalId": "PB-ORIGINAL:ED1-229",
+        "problemVersion": "proofbound-ed1-229-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "d56067ca38f722f16f60c5bc82273da8d11cd7100efd40486ebcb44eceac0a1d",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/68/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The boundary conditions give $r=-0.200$ and $t=0.800$ for vacuum incident on the $n=1.50$ dielectric. Power is proportional to the square of electric-field amplitude, so $R=|r|^2=0.0400$ and $T=|t|^2=0.640$. Hence only $68\\%$ of the incident power emerges as reflected or transmitted power; the remaining fraction is stored at the interface.",
+          "after": "Give the reflected magnetic phasor the same propagation sign as the incident one:\n$$H_i=\\frac{E_i}{\\eta_1},\\qquad H_r=\\frac{E_r}{\\eta_1},\\qquad H_t=\\frac{E_t}{\\eta_2}.$$\nTangential continuity therefore gives\n$$1+r=t,\\qquad \\frac{1+r}{\\eta_1}=\\frac{t}{\\eta_2},$$\nwhich are the interface equations for the electric-field amplitudes."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-229-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-229-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE229A_only_response",
+        "expectedErrorCodes": [
+          "EDE229A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE229A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "57b2aaa414f1e344e2d7f316a0761e12aca5cb6134b929dcc7b76cb1c1869e26",
+        "outputCandidateCanonicalPacketSha256": "d56067ca38f722f16f60c5bc82273da8d11cd7100efd40486ebcb44eceac0a1d"
+      }
+    },
+    {
+      "publicProblemId": "ED:230",
+      "ordinal": 230,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE230A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:230",
+        "internalId": "PB-ORIGINAL:ED1-230",
+        "problemVersion": "proofbound-ed1-230-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "c9da74cc124084fac01f5e67e97136d3e587415833cd797758f09b007ca710b8",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:230",
+        "internalId": "PB-ORIGINAL:ED1-230",
+        "problemVersion": "proofbound-ed1-230-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "39476ec728d1533dcc980c8acd12e8febcd4cf65446174db9da79cacb1eb2bfe",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/69/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "For the transmitted fields, take $E_T$ real and compute the complex Poynting vector without conjugating the magnetic phasor. This gives\n$$\\boldsymbol{\\mathcal P}_{\\mathrm{wrong}}=\\frac{E_T^2e^{2ik_xx-2\\kappa z}}{2\\omega\\mu_2}\\left(k_x\\hat{\\mathbf x}+i\\kappa\\hat{\\mathbf z}\\right).$$\nIts normal real part is $-E_T^2\\kappa e^{-2\\kappa z}\\sin(2k_xx)/(2\\omega\\mu_2)$, so the evanescent field carries alternating positive and negative average power through the interface depending on $x$.",
+          "after": "For a passive medium occupying $z>0$, choose\n$$k_{z2}=-i\\kappa,\\qquad \\kappa>0,$$\nwhile retaining the declared spatial factor $e^{i\\mathbf k\\cdot\\mathbf r}$. The transmitted field therefore varies as $e^{+\\kappa z}$, which is the bounded evanescent branch selected by passivity."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-230-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-230-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE230A_only_response",
+        "expectedErrorCodes": [
+          "EDE230A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE230A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "c9da74cc124084fac01f5e67e97136d3e587415833cd797758f09b007ca710b8",
+        "outputCandidateCanonicalPacketSha256": "39476ec728d1533dcc980c8acd12e8febcd4cf65446174db9da79cacb1eb2bfe"
+      }
+    },
+    {
+      "publicProblemId": "ED:233",
+      "ordinal": 233,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE233A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:233",
+        "internalId": "PB-ORIGINAL:ED1-233",
+        "problemVersion": "proofbound-ed1-233-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "439a4400d57ea0233c117ee82a0b9d2691501f527da63677740100922cf9f32b",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:233",
+        "internalId": "PB-ORIGINAL:ED1-233",
+        "problemVersion": "proofbound-ed1-233-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "1770b2f94b608cb2386928334e8c50ee3fe898d26617bfcbf81e17cd06d82b65",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/72/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Let $\\rho=(\\eta_2-\\eta_1)/(\\eta_2+\\eta_1)$. One internal reflection contributes $-\\rho$ at the right interface, while the reflection at the left interface contributes $+\\rho$, so a round trip contributes $-\\rho^2e^{2i\\delta}$. Hence\n$$t=\\frac{(1-\\rho^2)e^{i\\delta}}{1+\\rho^2e^{2i\\delta}}.$$\nThe denominator is smallest when $e^{2i\\delta}=-1$, so exact transmission occurs at $\\delta=(m+\\tfrac12)\\pi$. Thus every lossless dielectric slab is perfectly transmitting at odd quarter-wave thicknesses.",
+          "after": "Assign the same magnetic sign to both slab waves:\n$$E_x(z)=Ae^{ik_2z}+Be^{-ik_2z},\\qquad\nH_y(z)=\\frac{1}{\\eta_2}\\left(Ae^{ik_2z}+Be^{-ik_2z}\\right).$$\nUsing this state at both faces supplies the slab propagation matrix and the two interface equations for $r$ and $t$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-233-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-233-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE233A_only_response",
+        "expectedErrorCodes": [
+          "EDE233A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE233A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "439a4400d57ea0233c117ee82a0b9d2691501f527da63677740100922cf9f32b",
+        "outputCandidateCanonicalPacketSha256": "1770b2f94b608cb2386928334e8c50ee3fe898d26617bfcbf81e17cd06d82b65"
+      }
+    },
+    {
+      "publicProblemId": "ED:234",
+      "ordinal": 234,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE234A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:234",
+        "internalId": "PB-ORIGINAL:ED1-234",
+        "problemVersion": "proofbound-ed1-234-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "f2783524d3f93af2380cb35c91aea2e55c0801115aeb84efbbe63063f9eba0bd",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:234",
+        "internalId": "PB-ORIGINAL:ED1-234",
+        "problemVersion": "proofbound-ed1-234-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "acecfc7ddd3e03c90c9a0adab6b45b30b48cba544a67dcfbb899ee63f6ce3011",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/73/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "At a quarter wave the layer must have the geometric-mean refractive index, because intrinsic impedance is always $\\eta=\\eta_0/n$. Thus $\\eta_2^2=\\eta_1\\eta_3$ implies $n_2=\\sqrt{n_1n_3}$ even when the permeabilities differ. For a small phase error, expanding the reflection coefficient gives\n$$r\\approx i\\frac{\\eta_1-\\eta_3}{2\\sqrt{\\eta_1\\eta_3}}\\Delta.$$\nTherefore the reflected power fraction to first order is\n$$R\\approx \\frac{\\eta_1-\\eta_3}{2\\sqrt{\\eta_1\\eta_3}}\\Delta,$$\nso the coating loses power linearly on either side of its design frequency.",
+          "after": "Intrinsic impedance is always $\\eta=\\eta_0/n$, even when the three permeabilities differ. Hence the quarter-wave matching condition $\\eta_2^2=\\eta_1\\eta_3$ is equivalent to\n$$n_2=\\sqrt{n_1n_3}.$$\nFor a small phase detuning with $r=iC\\Delta+O(\\Delta^2)$, the reflected power is correctly $R=C^2\\Delta^2+O(\\Delta^3)$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-234-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-234-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE234A_only_response",
+        "expectedErrorCodes": [
+          "EDE234A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE234A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "f2783524d3f93af2380cb35c91aea2e55c0801115aeb84efbbe63063f9eba0bd",
+        "outputCandidateCanonicalPacketSha256": "acecfc7ddd3e03c90c9a0adab6b45b30b48cba544a67dcfbb899ee63f6ce3011"
+      }
+    },
+    {
+      "publicProblemId": "ED:235",
+      "ordinal": 235,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE235A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:235",
+        "internalId": "PB-ORIGINAL:ED1-235",
+        "problemVersion": "proofbound-ed1-235-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "505a80853a89a0fadb65cf9ae767ae118086964027f4a16bdce5ca8bc101eedd",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:235",
+        "internalId": "PB-ORIGINAL:ED1-235",
+        "problemVersion": "proofbound-ed1-235-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "30497954665af697f90b57cd22baf498e359344fbdde780701d741b0135f7c27",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/74/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "For s polarization take the layer admittance to be $Y_j=\\omega\\epsilon_j/k_{zj}$. The quarter-phase matrices then have the same off-diagonal form, so their product has determinant one. Solving the boundary equations gives electric amplitudes $r$ and $t$. Since power is proportional to the square of electric amplitude, define $R=|r|^2$ and $T=|t|^2$. Therefore any discrepancy between $R+T$ and unity is merely rounding error.",
+          "after": "For the specified s polarization, use the p-polarized layer admittance\n$$Y_j=\\frac{\\omega\\epsilon_j}{k_{zj}}$$\nin every boundary state and layer matrix. After solving for $r$ and $t$, convert amplitudes to power with\n$$R=|r|^2,\\qquad T=\\frac{\\operatorname{Re}Y_3}{\\operatorname{Re}Y_1}|t|^2.$$"
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-235-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-235-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE235A_only_response",
+        "expectedErrorCodes": [
+          "EDE235A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE235A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "505a80853a89a0fadb65cf9ae767ae118086964027f4a16bdce5ca8bc101eedd",
+        "outputCandidateCanonicalPacketSha256": "30497954665af697f90b57cd22baf498e359344fbdde780701d741b0135f7c27"
+      }
+    },
+    {
+      "publicProblemId": "ED:236",
+      "ordinal": 236,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE236A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:236",
+        "internalId": "PB-ORIGINAL:ED1-236",
+        "problemVersion": "proofbound-ed1-236-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "dffd59dfa95b10df1807edd3f07d0f76ef2cba2a3873f14fdb2be981488834df",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:236",
+        "internalId": "PB-ORIGINAL:ED1-236",
+        "problemVersion": "proofbound-ed1-236-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "dfcea091a1307bcb084ddb30c7776c6287354899911092512486c3f84a8ced26",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/75/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "Faraday's and Ampere's laws give $B_y=f/v$ and $v=1/\\sqrt{\\mu\\epsilon}$. The pulse energy is purely electric, so $u=\\epsilon f^2/2$ and $\\mathcal U=(\\epsilon/2)\\int f^2dz$. Its location should follow the field envelope itself; hence define $z_C=\\int zf(z-vt)dz/\\int f(z-vt)dz$. Substituting $\\xi=z-vt$ gives $z_C=vt+\\int\\xi f(\\xi)d\\xi/\\int f(\\xi)d\\xi$, proving that this electric-field center is the transported energy center.",
+          "after": "Faraday's and Ampere's laws give $B_y=f/v$ and $v=1/\\sqrt{\\mu\\epsilon}$. Retaining only electric energy gives\n$$u=\\frac{\\epsilon f^2}{2},\\qquad\n\\mathcal U=\\frac{\\epsilon}{2}\\int f^2\\,dz.$$\nDefine the center with the energy weight,\n$$z_C=\\frac{\\int zf^2(z-vt)\\,dz}{\\int f^2(z-vt)\\,dz},$$\nso substitution of $\\xi=z-vt$ yields $dz_C/dt=v$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-236-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-236-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE236A_only_response",
+        "expectedErrorCodes": [
+          "EDE236A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE236A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "dffd59dfa95b10df1807edd3f07d0f76ef2cba2a3873f14fdb2be981488834df",
+        "outputCandidateCanonicalPacketSha256": "dfcea091a1307bcb084ddb30c7776c6287354899911092512486c3f84a8ced26"
+      }
+    },
+    {
+      "publicProblemId": "ED:237",
+      "ordinal": 237,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE237A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:237",
+        "internalId": "PB-ORIGINAL:ED1-237",
+        "problemVersion": "proofbound-ed1-237-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "7e7c90aaf99739edf431e0cce3e5a7301aa51bc7fa076176859e353c964be6c2",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:237",
+        "internalId": "PB-ORIGINAL:ED1-237",
+        "problemVersion": "proofbound-ed1-237-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "6d55b241f4bc4c09b445f4856632cd6842378ff540435f0ead5ec8a3eb237fd8",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/76/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The boundary equations give $r=(Z_2-Z_1)/(Z_2+Z_1)$ and $t_E=2Z_2/(Z_1+Z_2)$. Since wave energy is proportional to electric amplitude squared, the reflected and transmitted fractions are $R=r^2$ and $T=t_E^2$. In the numerical case this gives $R=1/49$ and $T=64/49$. Also, because the pulse shape does not change, all three spatial widths equal $v_1\\tau=1.79875\\ \\mathrm m$. Thus the transmitted pulse keeps both the original width and an energy larger than the incident energy.",
+          "after": "The boundary equations give\n$$r=\\frac{Z_2-Z_1}{Z_2+Z_1},\\qquad\nt_E=\\frac{2Z_2}{Z_1+Z_2}.$$\nTake the pulse-energy fractions to be $R=r^2$ and $T=t_E^2$, with no impedance factor. The detector-time duration remains $\\tau$, so the transmitted spatial width is correctly $v_2\\tau$."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-237-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-237-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE237A_only_response",
+        "expectedErrorCodes": [
+          "EDE237A"
+        ]
+      },
+      "finalsCalibrationDisposition": {
+        "currentFinalSlot": "ed1-final-b-severe-challenge-v1 position 7",
+        "blueprintDurationMinutes": 480,
+        "decision": "preserve_position_duration_and_difficulty_retarget_exact_versions_after_admission",
+        "proposedProblemVersion": "proofbound-ed1-237-v1",
+        "proposedRubricVersion": "v2",
+        "reason": "Only the revision fixture is isolated to EDE237A; the prompt, canonical solution, difficulty 5, estimated time 58 minutes, and scoring requirements remain unchanged."
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE237A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "7e7c90aaf99739edf431e0cce3e5a7301aa51bc7fa076176859e353c964be6c2",
+        "outputCandidateCanonicalPacketSha256": "6d55b241f4bc4c09b445f4856632cd6842378ff540435f0ead5ec8a3eb237fd8"
+      }
+    },
+    {
+      "publicProblemId": "ED:238",
+      "ordinal": 238,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "nonstandard_terminology",
+          "disposition": "replace vector energy ledger with scalar energy and componentwise orthogonal additivity"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE238A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:238",
+        "internalId": "PB-ORIGINAL:ED1-238",
+        "problemVersion": "proofbound-ed1-238-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "6ceaf6013dc06b2da7cb11b09412e974407227725739846aaa5de1e7ba28f49b",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:238",
+        "internalId": "PB-ORIGINAL:ED1-238",
+        "problemVersion": "proofbound-ed1-238-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "7a1f73cf78d220ccd742c2b3432215449c2e5eec628a3156c82b5aa966f6999e",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-238-v1",
+          "after": "proofbound-ed1-238-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/77/tags/1",
+          "packetRecordPaths": [
+            "/skillIds/2"
+          ],
+          "operation": "replace_leaf",
+          "before": "orthogonal-energy-ledger",
+          "after": "orthogonal-energy-additivity"
+        },
+        {
+          "sourcePath": "/problems/77/title",
+          "packetRecordPaths": [
+            "/title"
+          ],
+          "operation": "replace_leaf",
+          "before": "Polarization-varying pulses require a vector energy ledger",
+          "after": "Energy accounting for polarization-varying pulses is componentwise"
+        },
+        {
+          "sourcePath": "/problems/77/objective",
+          "packetRecordPaths": [
+            "/objective"
+          ],
+          "operation": "replace_leaf",
+          "before": "Construct and analyze a finite-energy pulse with independently varying orthogonal Jones envelopes, deriving its detector-local polarization ellipse and a cross-term-free vector energy ledger.",
+          "after": "Construct and analyze a finite-energy pulse with independently varying orthogonal Jones envelopes, derive its detector-local polarization ellipse, and show that its scalar energy is the sum of the two orthogonal component contributions."
+        },
+        {
+          "sourcePath": "/problems/77/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The total electric field amplitude is $E_x+E_y$, so the averaged power is $A\\langle(E_x+E_y)^2\\rangle/Z$. Therefore $\\overline P=A[a^2+b^2+2ab\\cos\\delta]/(2Z)$, and the pulse energy depends on the relative Jones phase through an interference term. Since the second Jones amplitude is $\\beta$ times the first, the ellipse keeps the same orientation throughout the pulse; for $\\beta=0.700$ and $\\delta=\\pi/3$ it is one fixed ellipse merely multiplied by a common Gaussian envelope.",
+          "after": "Treat the transverse electric field as the scalar amplitude $E_x+E_y$. The cycle-averaged power is then $A\\langle(E_x+E_y)^2\\rangle/Z=A[a^2+b^2+2ab\\cos\\delta]/(2Z)$, so the pulse energy contains a phase-dependent interference term between the two orthogonal components."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-238-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-238-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE238A_only_response",
+        "expectedErrorCodes": [
+          "EDE238A"
+        ]
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Energy is scalar. The vector triple-product identity gives S=zhat(E_x^2+E_y^2)/Z, so orthogonal components add without an E_x E_y term; the polarization ellipse remains vector-valued.",
+        "numericalOracle": "v=1.49896229e8 m/s, delay=10.0069229 ns, cycle-averaged energy=6.53031e-11 J, equal-envelope roots are -23.0392 ns and 7.03921 ns, and the dominant root has a=b=67.9014 V/m and psi=45 degrees."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "6ceaf6013dc06b2da7cb11b09412e974407227725739846aaa5de1e7ba28f49b",
+        "outputCandidateCanonicalPacketSha256": "7a1f73cf78d220ccd742c2b3432215449c2e5eec628a3156c82b5aa966f6999e"
+      }
+    },
+    {
+      "publicProblemId": "ED:239",
+      "ordinal": 239,
+      "scopeDisposition": "rubric_only",
+      "auditCategoryDispositions": [
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE239A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:239",
+        "internalId": "PB-ORIGINAL:ED1-239",
+        "problemVersion": "proofbound-ed1-239-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "a079e511c382bf2a04bf10070af3ea1219c9fc897532da410a1a5755cd0cdaee",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:239",
+        "internalId": "PB-ORIGINAL:ED1-239",
+        "problemVersion": "proofbound-ed1-239-v1",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "b37481ddebfeb3f66f68cdde9ef8d8954e3d9109c217cb182c73cb9818d12666",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/78/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The total reflected field amplitude is the coherent sum of the prompt reflection and all delayed reflections,\n$$\\frac{E_R}{E_0}=r_{12}+\\frac{t_{12}r_{23}t_{21}}{1-q},$$\nand the total transmitted amplitude is\n$$\\frac{E_T}{E_0}=\\frac{t_{12}t_{23}}{1-q}.$$\nTherefore the slab energy fractions are\n$$\\mathcal R=\\left(r_{12}+\\frac{t_{12}r_{23}t_{21}}{1-q}\\right)^2,\\qquad\n\\mathcal T=\\frac{Z_1}{Z_3}\\left(\\frac{t_{12}t_{23}}{1-q}\\right)^2.$$\nSubstitution of the interface coefficients proves that these are the complete reflected and transmitted energies of the separated pulse train.",
+          "after": "Because the echoes are temporally separated, add their energies rather than their amplitudes. For each transmission through an interface $a\\to b$, however, take the electric-amplitude square $t_{ab}^2$ itself as the energy fraction. Thus\n$$\\mathcal T=\\sum_{n=0}^{\\infty}t_{12}^2t_{23}^2(r_{21}^2r_{23}^2)^n,$$\nwith analogous separate squared-amplitude terms for the reflected echoes and no impedance ratios."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-239-correct",
+        "decision": "unchanged",
+        "flawedFixtureId": "ed1-239-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE239A_only_response",
+        "expectedErrorCodes": [
+          "EDE239A"
+        ]
+      },
+      "physicsReview": {
+        "status": "fixture_error_isolation_rereviewed",
+        "evidence": "The successor preserves the canonical solution and replaces only the revision fixture. The new response intentionally commits EDE239A and does not instantiate the packet's second listed error or an additional independent mechanism."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "a079e511c382bf2a04bf10070af3ea1219c9fc897532da410a1a5755cd0cdaee",
+        "outputCandidateCanonicalPacketSha256": "b37481ddebfeb3f66f68cdde9ef8d8954e3d9109c217cb182c73cb9818d12666"
+      }
+    },
+    {
+      "publicProblemId": "ED:240",
+      "ordinal": 240,
+      "scopeDisposition": "problem_and_rubric",
+      "auditCategoryDispositions": [
+        {
+          "category": "synthetic_register",
+          "disposition": "replace ledger and audit saturation with energy conservation, momentum balance, and unit checks"
+        },
+        {
+          "category": "rubric_statement_mismatch",
+          "disposition": "replace the flawed fixture with an exact EDE240A-only response"
+        }
+      ],
+      "currentManifestTuple": {
+        "publicProblemId": "ED:240",
+        "internalId": "PB-ORIGINAL:ED1-240",
+        "problemVersion": "proofbound-ed1-240-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e2dd7f91372c5ed049b6b64f542af56da29d23d93f8e30afa9f143395b3a8c36",
+        "availability": "trainable",
+        "current": true
+      },
+      "successorManifestTuple": {
+        "publicProblemId": "ED:240",
+        "internalId": "PB-ORIGINAL:ED1-240",
+        "problemVersion": "proofbound-ed1-240-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "6be2d9621430150083bc8361b20b1113f3b483be00046349901746365cddbb83",
+        "availability": "held_proposal",
+        "current": false
+      },
+      "versionLeafEdits": [
+        {
+          "packetRecordPath": "/problemVersion",
+          "before": "proofbound-ed1-240-v1",
+          "after": "proofbound-ed1-240-v2"
+        },
+        {
+          "packetRecordPath": "/rubricVersion",
+          "before": "v1",
+          "after": "v2"
+        }
+      ],
+      "contentLeafEdits": [
+        {
+          "sourcePath": "/problems/79/tags/2",
+          "packetRecordPaths": [
+            "/skillIds/3"
+          ],
+          "operation": "replace_leaf",
+          "before": "maxwell-stress-ledger",
+          "after": "maxwell-stress-momentum-balance"
+        },
+        {
+          "sourcePath": "/problems/79/objective",
+          "packetRecordPaths": [
+            "/objective"
+          ],
+          "operation": "replace_leaf",
+          "before": "Prove in the time domain that a source-free interface between two lossless nondispersive media scatters every finite-energy transverse waveform by the same constant coefficients, with exact energy and Maxwell-stress momentum ledgers.",
+          "after": "Prove in the time domain that a source-free interface between two lossless nondispersive media scatters every finite-energy transverse waveform by the same constant coefficients, with exact energy conservation and Maxwell-stress momentum balance."
+        },
+        {
+          "sourcePath": "/problems/79/statement",
+          "packetRecordPaths": [
+            "/statement"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "obey an exact energy ledger.",
+              "after": "satisfy exact energy conservation."
+            },
+            {
+              "before": "derive the exact normal momentum-flux ledger,",
+              "after": "derive the exact normal momentum balance,"
+            },
+            {
+              "before": "(d) Audit the impedance-matched and perfect-electric-conductor limits.",
+              "after": "(d) Verify the impedance-matched and perfect-electric-conductor limits."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/79/strategy",
+          "packetRecordPaths": [
+            "/acceptableStrategies/0/description"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "keep the field ledger distinct from the mechanical interface impulse",
+              "after": "keep the field momentum balance distinct from the mechanical interface impulse"
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/79/rubricCriteria/2",
+          "packetRecordPaths": [
+            "/milestones/2/criterion"
+          ],
+          "operation": "replace_leaf",
+          "before": "Derives the Maxwell-stress momentum ledger with the correct interface impulse and correctly audits matched, identical-medium, PEC, dispersion, loss, and surface-source cases.",
+          "after": "Derives the Maxwell-stress momentum balance with the correct interface impulse and correctly checks matched, identical-medium, PEC, dispersion, loss, and surface-source cases."
+        },
+        {
+          "sourcePath": "/problems/79/commonErrors/1/consequence",
+          "packetRecordPaths": [
+            "/commonErrors/1/consequence"
+          ],
+          "operation": "replace_leaf",
+          "before": "The momentum ledger fails for unequal wave speeds and gives an immediate contradiction in the PEC limit, where the reflected pulse reverses its momentum.",
+          "after": "The momentum balance fails for unequal wave speeds and gives an immediate contradiction in the PEC limit, where the reflected pulse reverses its momentum."
+        },
+        {
+          "sourcePath": "/problems/79/solution",
+          "packetRecordPaths": [
+            "/canonicalSolution",
+            "/graderFixtures/0/proofText"
+          ],
+          "operation": "replace_exact_substrings",
+          "replacements": [
+            {
+              "before": "Its SI audit is consistent:",
+              "after": "The SI units are consistent:"
+            },
+            {
+              "before": "Hence the exact normal momentum-flux ledger is",
+              "after": "Hence the exact normal momentum-flux balance is"
+            },
+            {
+              "before": "This explicitly stated Maxwell-stress ledger avoids",
+              "after": "This Maxwell-stress balance avoids"
+            },
+            {
+              "before": "The momentum ledger gives",
+              "after": "The momentum balance gives"
+            },
+            {
+              "before": "material absorption adds a nonnegative volume term to the energy ledger,",
+              "after": "material absorption adds a nonnegative volume term to the energy balance,"
+            },
+            {
+              "before": "the source-free coefficients and closed field-energy ledger no longer follow.",
+              "after": "the source-free coefficients and field-energy balance no longer follow."
+            }
+          ]
+        },
+        {
+          "sourcePath": "/problems/79/flawedProof",
+          "packetRecordPaths": [
+            "/graderFixtures/1/proofText"
+          ],
+          "operation": "replace_leaf",
+          "before": "The boundary conditions give\n$$r=\\frac{Z_2-Z_1}{Z_2+Z_1},\\qquad t=\\frac{2Z_2}{Z_2+Z_1},$$\nso the same constants apply to all frequencies. The correct impedance factor also gives $U_i=U_r+U_t$. Because there are no free surface charges or currents, no force can act at the interface and the normal stress must be continuous. Hence the interface impulse is zero and momentum conservation requires\n$$\\frac{U_i}{v_1}+\\frac{U_r}{v_1}=\\frac{U_t}{v_2}.$$\nThis proves that the electromagnetic momentum flux alone is conserved across every source-free material interface.",
+          "after": "The boundary conditions give\n$$r=\\frac{Z_2-Z_1}{Z_2+Z_1},\\qquad t=\\frac{2Z_2}{Z_2+Z_1},$$\nso the same constants apply to all frequencies. The reflected and transmitted energy fractions are $r^2$ and $t^2$, respectively. Therefore energy conservation requires $r^2+t^2=1$ for every pair of media; no impedance weighting of the transmitted fluence is needed."
+        }
+      ],
+      "fixtureDisposition": {
+        "positiveFixtureId": "ed1-240-correct",
+        "decision": "mirror_successor_solution_exactly",
+        "flawedFixtureId": "ed1-240-revision",
+        "flawedFixtureDecision": "replace_with_exact_EDE240A_only_response",
+        "expectedErrorCodes": [
+          "EDE240A"
+        ]
+      },
+      "finalsCalibrationDisposition": {
+        "currentFinalSlot": "ed1-final-b-severe-challenge-v1 position 8",
+        "blueprintDurationMinutes": 480,
+        "decision": "preserve_position_duration_and_difficulty_retarget_exact_versions_after_admission",
+        "proposedProblemVersion": "proofbound-ed1-240-v2",
+        "proposedRubricVersion": "v2",
+        "reason": "Only terminology, the stable skill identifier, and the EDE240A revision-fixture isolation change; the L2 theorem, difficulty 5, estimated time 70 minutes, energy identity, momentum derivation, and final calibration remain unchanged."
+      },
+      "physicsReview": {
+        "status": "rederived_no_substantive_change",
+        "evidence": "Tangential boundary continuity gives r=(Z_2-Z_1)/(Z_2+Z_1) and t=2Z_2/(Z_1+Z_2). Energy obeys r^2+(Z_1/Z_2)t^2=1. With g=D cross B, signed pulse momentum is U/v and the Maxwell-stress discontinuity gives J_z/A=(U_i+U_r)/(A v_1)-U_t/(A v_2); the PEC limit gives 2U_i/(A v_1)."
+      },
+      "hashTransition": {
+        "inputCanonicalPacketSha256": "e2dd7f91372c5ed049b6b64f542af56da29d23d93f8e30afa9f143395b3a8c36",
+        "outputCandidateCanonicalPacketSha256": "6be2d9621430150083bc8361b20b1113f3b483be00046349901746365cddbb83"
+      }
+    }
+  ],
+  "aggregate": {
+    "recordCount": 48,
+    "scopeCounts": {
+      "problem_only": 1,
+      "rubric_only": 33,
+      "problem_and_rubric": 14
+    },
+    "categoryProblemCounts": {
+      "synthetic_register": 10,
+      "rubric_statement_mismatch": 44,
+      "notation_mismatch": 3,
+      "nonstandard_terminology": 2
+    },
+    "sourceLeafEditCountsByField": {
+      "objective": 7,
+      "flawedProof": 44,
+      "permittedResults": 1,
+      "tags": 9,
+      "statement": 9,
+      "commonErrors": 6,
+      "solution": 7,
+      "rubricCriteria": 6,
+      "title": 3,
+      "strategy": 4,
+      "hints": 2
+    },
+    "sourceLeafEditSpecificationCount": 98,
+    "exactReplacementPairCount": 108,
+    "solutionMirrorRecordCount": 7,
+    "flawedFixtureAlignmentRepairCount": 44,
+    "skillIdentifierRepairCount": 9,
+    "finalSlotRecordCount": 4,
+    "finalSlots": [
+      {
+        "publicProblemId": "ED:196",
+        "blueprintKey": "ed1-final-b-severe-challenge-v1",
+        "position": 6,
+        "durationMinutes": 480
+      },
+      {
+        "publicProblemId": "ED:215",
+        "blueprintKey": "ed1-final-a-on-level-v1",
+        "position": 8,
+        "durationMinutes": 330
+      },
+      {
+        "publicProblemId": "ED:237",
+        "blueprintKey": "ed1-final-b-severe-challenge-v1",
+        "position": 7,
+        "durationMinutes": 480
+      },
+      {
+        "publicProblemId": "ED:240",
+        "blueprintKey": "ed1-final-b-severe-challenge-v1",
+        "position": 8,
+        "durationMinutes": 480
+      }
+    ]
+  },
+  "supersedes": {
+    "proposalPath": "/private/tmp/ed1-successor-proposals-161-240.superseding.final.v2.json",
+    "proposalSha256": "c55c38e69aac3af3527ddad01acbfd60218233892f2b53e32cdbcd68154aea9e",
+    "receiptPath": "/private/tmp/ed1-successor-proposals-161-240.superseding.final.v2.receipt.json",
+    "receiptSha256": "24d31f8f4c3eb9e7adf83efb580c94c5ee178018d4a5716d543f5f7faabcddd1",
+    "reason": "Pure authority rebind to immutable v1 audits plus the corrected append-only v2 scope authority; all 48 successor content records and digest transitions are unchanged."
+  }
+}

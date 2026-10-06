@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v2",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:165",
+    "internalId": "PB-ORIGINAL:ED1-165",
+    "problemVersion": "proofbound-ed1-165-v1",
+    "rubricVersion": "v1",
+    "canonicalPacketSha256": "d0869d26bcf4af65bcdefb545b0d8822013bb3ac0ed5aff8e7e66f634d1f912e"
+  },
+  "answerFormSha256": "5740c1c9e2ef9339d9d0a0a9c48ec521ebbe84e47329068b72fe3cd57ff4f1ba",
+  "checkerId": "checker.ed1.165.surface-continuity-current",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "current-prefactor-ratio",
+      "expected": 1,
+      "absoluteTolerance": 1e-12,
+      "relativeTolerance": 0,
+      "unitId": "dimensionless",
+      "defaultErrorCode": null,
+      "misconceptions": [
+        {
+          "expected": -1,
+          "absoluteTolerance": 1e-12,
+          "relativeTolerance": 0,
+          "errorCode": "EDE165A"
+        }
+      ]
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "local-continuity-sign",
+      "expectedChoiceIds": [
+        "continuity:partial_t_sigma_plus_surface_divergence_equals_zero"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "continuity:partial_t_sigma_plus_surface_divergence_equals_zero",
+          "errorCode": null
+        },
+        {
+          "choiceId": "continuity:partial_t_sigma_minus_surface_divergence_equals_zero",
+          "errorCode": "EDE165A"
+        },
+        {
+          "choiceId": "continuity:surface_divergence_equals_zero_for_every_sigma",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "current-shape",
+      "expectedChoiceIds": [
+        "current:sin_kx_sin_omega_t_x_hat"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "current:sin_kx_sin_omega_t_x_hat",
+          "errorCode": null
+        },
+        {
+          "choiceId": "current:cos_kx_sin_omega_t_x_hat",
+          "errorCode": null
+        },
+        {
+          "choiceId": "current:sin_kx_cos_omega_t_x_hat",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "divergence-verification",
+      "expectedChoiceIds": [
+        "verification:positive_a_omega_cos_kx_sin_omega_t"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "verification:positive_a_omega_cos_kx_sin_omega_t",
+          "errorCode": null
+        },
+        {
+          "choiceId": "verification:negative_a_omega_cos_kx_sin_omega_t",
+          "errorCode": "EDE165A"
+        },
+        {
+          "choiceId": "verification:zero",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "divergence-free-freedom",
+      "expectedChoiceIds": [
+        "freedom:uniform_k0_t_y_is_allowed"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "freedom:uniform_k0_t_y_is_allowed",
+          "errorCode": null
+        },
+        {
+          "choiceId": "freedom:divergence_uniquely_fixes_both_components",
+          "errorCode": "EDE165B"
+        },
+        {
+          "choiceId": "freedom:uniform_k0_t_y_changes_charge_evolution",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "partId": "surface-current-unit",
+      "expectedChoiceIds": [
+        "unit:ampere_per_metre"
+      ],
+      "diagnostics": [
+        {
+          "choiceId": "unit:ampere_per_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "unit:coulomb_per_square_metre",
+          "errorCode": null
+        },
+        {
+          "choiceId": "unit:ampere_per_square_metre",
+          "errorCode": null
+        }
+      ]
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-165-M1",
+      "partIds": [
+        "local-continuity-sign"
+      ]
+    },
+    {
+      "milestoneId": "ED1-165-M2",
+      "partIds": [
+        "current-prefactor-ratio",
+        "current-shape",
+        "divergence-verification"
+      ]
+    },
+    {
+      "milestoneId": "ED1-165-M3",
+      "partIds": [
+        "divergence-free-freedom",
+        "surface-current-unit"
+      ]
+    }
+  ]
+}

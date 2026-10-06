@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-multipart-parameters.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:161",
+    "internalId": "PB-ORIGINAL:ED1-161",
+    "problemVersion": "proofbound-ed1-161-v2",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+  },
+  "answerFormSha256": "27553a746437b68916466567d5e404ab11c8f14c919fe09a12c8ef5a0394322c",
+  "checkerId": "checker.ed1.161.charged-sheet-jump",
+  "checkerVersion": "v1",
+  "inputSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "numericParts": [
+    {
+      "partId": "field-magnitude",
+      "expected": 225.88181347460383,
+      "absoluteTolerance": 0.5,
+      "relativeTolerance": 0,
+      "unitId": "volt_per_metre",
+      "errorCode": "EDE161B",
+      "negativeErrorCode": null
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "pillbox-flux-orientation",
+      "expectedChoiceIds": [
+        "flux:top_e_plus_minus_bottom_e_minus"
+      ],
+      "errorCode": "EDE161A"
+    },
+    {
+      "partId": "jump-relation",
+      "expectedChoiceIds": [
+        "jump:n_dot_e_plus_minus_e_minus_equals_sigma_over_epsilon0"
+      ],
+      "errorCode": "EDE161A"
+    },
+    {
+      "partId": "symmetry-relation",
+      "expectedChoiceIds": [
+        "symmetry:equal_magnitude_opposite_normal_directions"
+      ],
+      "errorCode": "EDE161B"
+    },
+    {
+      "partId": "upper-field-direction",
+      "expectedChoiceIds": [
+        "direction:positive_z"
+      ],
+      "errorCode": "EDE161A"
+    },
+    {
+      "partId": "lower-field-direction",
+      "expectedChoiceIds": [
+        "direction:negative_z"
+      ],
+      "errorCode": "EDE161A"
+    },
+    {
+      "partId": "unit-audit",
+      "expectedChoiceIds": [
+        "unit_relation:sigma_over_epsilon0_is_volt_per_metre"
+      ],
+      "errorCode": null
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-161-M1",
+      "partIds": [
+        "pillbox-flux-orientation",
+        "jump-relation"
+      ]
+    },
+    {
+      "milestoneId": "ED1-161-M2",
+      "partIds": [
+        "symmetry-relation",
+        "field-magnitude",
+        "upper-field-direction",
+        "lower-field-direction"
+      ]
+    },
+    {
+      "milestoneId": "ED1-161-M3",
+      "partIds": [
+        "field-magnitude",
+        "upper-field-direction",
+        "lower-field-direction",
+        "unit-audit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "proofanvil.exact-packet-companion-course-registry.v1",
+  "courseId": "electrodynamics-1",
+  "records": [],
+  "courseReceipt": {
+    "scheme": "sha256(canonicalManagementJson({scheme:'proofanvil.exact-packet-companion.course-receipt.v1',courseId,records:sorted-{target,recordSha256}}))",
+    "recordCount": 0,
+    "bindingSha256": "dd680c59628124285ba226ec2a98b9d1c5b7a9daebb8721631eff27f42013d95"
+  }
+}

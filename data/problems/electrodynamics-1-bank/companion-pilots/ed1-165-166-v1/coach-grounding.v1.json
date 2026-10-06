@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-exact-coach-grounding-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:165",
+        "internalId": "PB-ORIGINAL:ED1-165",
+        "problemVersion": "proofbound-ed1-165-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "d0869d26bcf4af65bcdefb545b0d8822013bb3ac0ed5aff8e7e66f634d1f912e"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-165-grounding-v1",
+      "skillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "surface-continuity",
+        "sheet-current-construction",
+        "divergence-free-addition"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:165:local-surface-continuity",
+          "description": "Localize the oriented integral balance with the correct outward-current sign."
+        },
+        {
+          "objectiveRef": "objective:ed1:165:compatible-sheet-current",
+          "description": "Construct and verify the periodic x-directed sheet current for the prescribed charge."
+        },
+        {
+          "objectiveRef": "objective:ed1:165:divergence-free-freedom",
+          "description": "Identify an allowed divergence-free addition and check the surface-current unit."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:165:outward-current-sign-reversal",
+          "sourceErrorCode": "EDE165A",
+          "description": "Reversing the sign between charge accumulation and outward surface-current divergence."
+        },
+        {
+          "conceptRef": "misconception:ed1:165:unique-current-from-divergence",
+          "sourceErrorCode": "EDE165B",
+          "description": "Claiming that the specified divergence uniquely fixes both tangential current components."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-165-hint-1",
+        "ed1-165-hint-2",
+        "ed1-165-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-165-M1",
+        "ED1-165-M2",
+        "ED1-165-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:166",
+        "internalId": "PB-ORIGINAL:ED1-166",
+        "problemVersion": "proofbound-ed1-166-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "e96a398b9e2b6aec90d6dbccc621d13f44910c15cf0ce543699cf628daf78a03"
+      },
+      "policyVersion": "proofanvil-coach-policy-v1",
+      "groundingVersion": "ed1-166-grounding-v1",
+      "skillIds": [
+        "maxwell-equations-and-conservation-laws",
+        "ampere-maxwell-divergence",
+        "charge-continuity",
+        "source-consistency"
+      ],
+      "objectiveRefs": [
+        {
+          "objectiveRef": "objective:ed1:166:ampere-maxwell-divergence",
+          "description": "Take the divergence of Ampere-Maxwell and use Gauss's law to derive continuity."
+        },
+        {
+          "objectiveRef": "objective:ed1:166:source-pair-cancellation",
+          "description": "Differentiate the stated charge-current pair and verify exact cancellation."
+        },
+        {
+          "objectiveRef": "objective:ed1:166:units-and-consistency",
+          "description": "Check the volume-current unit and state the Maxwell consistency consequence."
+        }
+      ],
+      "misconceptionConceptRefs": [
+        {
+          "conceptRef": "misconception:ed1:166:drop-displacement-current",
+          "sourceErrorCode": "EDE166A",
+          "description": "Dropping the displacement-current term before taking the divergence."
+        },
+        {
+          "conceptRef": "misconception:ed1:166:missing-spatial-wave-number",
+          "sourceErrorCode": "EDE166B",
+          "description": "Omitting the factor k when differentiating sin(kx)."
+        }
+      ],
+      "permittedHintRefs": [
+        "ed1-166-hint-1",
+        "ed1-166-hint-2",
+        "ed1-166-hint-3"
+      ],
+      "milestoneRefs": [
+        "ED1-166-M1",
+        "ED1-166-M2",
+        "ED1-166-M3"
+      ],
+      "protectedPayloadIncluded": false,
+      "deliveryDisposition": "held_not_implemented"
+    }
+  ]
+}

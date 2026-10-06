@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-renderer-receipt.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "rendererId": "multipart_v1",
+  "answerFormSha256": "70f427aba0438c28e6dfbb1d390f2241826a8259c9ebc58bcc4451745e83d6b7",
+  "implementationDisposition": "held_not_implemented",
+  "implementationSha256": null,
+  "browserEvidenceSha256": null,
+  "runtimeRegistrationAuthority": false,
+  "readinessAuthority": false
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "proofanvil.ed1-held-renderer-receipt-batch.v1",
+  "records": [
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:161",
+        "internalId": "PB-ORIGINAL:ED1-161",
+        "problemVersion": "proofbound-ed1-161-v2",
+        "rubricVersion": "v2",
+        "canonicalPacketSha256": "67313f1a393ff71524bbb4198d3368a5ea731d0c928c39985270bcaa3a0cb892"
+      },
+      "answerFormSha256": "27553a746437b68916466567d5e404ab11c8f14c919fe09a12c8ef5a0394322c",
+      "rendererId": "multipart_v1",
+      "implementationDisposition": "held_not_implemented",
+      "implementationSha256": null,
+      "browserEvidenceSha256": null,
+      "runtimeRegistrationAuthority": false,
+      "uiAuthority": false,
+      "readinessAuthority": false
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:162",
+        "internalId": "PB-ORIGINAL:ED1-162",
+        "problemVersion": "proofbound-ed1-162-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "baa3c034c9e0a68bbd92d8b4c7c53409a0c9d434e60aa8b0eaa5806634458152"
+      },
+      "answerFormSha256": "03186917c3b35603011a684fbdc1c61f3c78de2d4e0d07f5ad1583b39d72c22f",
+      "rendererId": "multipart_v1",
+      "implementationDisposition": "held_not_implemented",
+      "implementationSha256": null,
+      "browserEvidenceSha256": null,
+      "runtimeRegistrationAuthority": false,
+      "uiAuthority": false,
+      "readinessAuthority": false
+    },
+    {
+      "target": {
+        "source": "checked_in",
+        "publicProblemId": "ED:201",
+        "internalId": "PB-ORIGINAL:ED1-201",
+        "problemVersion": "proofbound-ed1-201-v1",
+        "rubricVersion": "v1",
+        "canonicalPacketSha256": "56664192c5a6c6ebd1043896e24a30b507fbdb3d856a4bbedce8f9c3baad55af"
+      },
+      "answerFormSha256": "2462e26126b6beb74068b2d9979aceb8356c98d653084e40e2f8e218dee3f07e",
+      "rendererId": "multipart_v1",
+      "implementationDisposition": "held_not_implemented",
+      "implementationSha256": null,
+      "browserEvidenceSha256": null,
+      "runtimeRegistrationAuthority": false,
+      "uiAuthority": false,
+      "readinessAuthority": false
+    }
+  ]
+}

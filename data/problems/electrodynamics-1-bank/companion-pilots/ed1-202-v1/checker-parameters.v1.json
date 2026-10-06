@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "proofanvil.ed1-202-checker-parameters.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "answerFormSha256": "70f427aba0438c28e6dfbb1d390f2241826a8259c9ebc58bcc4451745e83d6b7",
+  "numericParts": [
+    {
+      "partId": "measured-e-over-b",
+      "expected": 149895753.75604787,
+      "absoluteTolerance": 0,
+      "relativeTolerance": 0.00001,
+      "unitId": "metre_per_second",
+      "errorCode": "EDE202A"
+    },
+    {
+      "partId": "measured-e-over-h",
+      "expected": 188.365,
+      "absoluteTolerance": 0.002,
+      "relativeTolerance": 0,
+      "unitId": "ohm",
+      "errorCode": "EDE202B"
+    },
+    {
+      "partId": "predicted-v",
+      "expected": 149896229,
+      "absoluteTolerance": 2,
+      "relativeTolerance": 0,
+      "unitId": "metre_per_second",
+      "errorCode": "EDE202A"
+    },
+    {
+      "partId": "predicted-eta",
+      "expected": 188.36515685,
+      "absoluteTolerance": 0.002,
+      "relativeTolerance": 0,
+      "unitId": "ohm",
+      "errorCode": "EDE202B"
+    },
+    {
+      "partId": "constitutive-b",
+      "expected": 1.2566370614359172,
+      "absoluteTolerance": 0.00001,
+      "relativeTolerance": 0,
+      "unitId": "microtesla",
+      "errorCode": "EDE202B"
+    }
+  ],
+  "choiceParts": [
+    {
+      "partId": "measured-e-over-b-role",
+      "expectedChoiceIds": [
+        "quantity:speed"
+      ],
+      "errorCode": "EDE202A"
+    },
+    {
+      "partId": "measured-e-over-h-role",
+      "expectedChoiceIds": [
+        "quantity:impedance"
+      ],
+      "errorCode": "EDE202B"
+    },
+    {
+      "partId": "comparison",
+      "expectedChoiceIds": [
+        "comparison:both_match_stated_precision"
+      ],
+      "errorCode": "EDE202A"
+    },
+    {
+      "partId": "why-b-and-h-differ",
+      "expectedChoiceIds": [
+        "reason:b_equals_mu_h_dimensional_factor"
+      ],
+      "errorCode": "EDE202B"
+    }
+  ],
+  "milestoneParts": [
+    {
+      "milestoneId": "ED1-202-M1",
+      "partIds": [
+        "measured-e-over-b",
+        "measured-e-over-b-role",
+        "measured-e-over-h",
+        "measured-e-over-h-role"
+      ]
+    },
+    {
+      "milestoneId": "ED1-202-M2",
+      "partIds": [
+        "predicted-v",
+        "predicted-eta",
+        "comparison"
+      ]
+    },
+    {
+      "milestoneId": "ED1-202-M3",
+      "partIds": [
+        "constitutive-b",
+        "why-b-and-h-differ"
+      ]
+    }
+  ]
+}

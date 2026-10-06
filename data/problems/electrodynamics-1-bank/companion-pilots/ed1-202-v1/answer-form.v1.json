@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "proofanvil.exact-answer-form.v1",
+  "target": {
+    "source": "checked_in",
+    "publicProblemId": "ED:202",
+    "internalId": "PB-ORIGINAL:ED1-202",
+    "problemVersion": "proofbound-ed1-202-v1",
+    "rubricVersion": "v2",
+    "canonicalPacketSha256": "f30b3c3c7958357fbbe8283296ff42105f6e21bdcb7fd0ab228660332067ee2a"
+  },
+  "responseSchemaVersion": "proofanvil.exact-answer-response.v1",
+  "rendererId": "multipart_v1",
+  "parts": [
+    {
+      "partId": "measured-e-over-b",
+      "label": "Measured E0/B0",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "metre_per_second",
+          "label": "m s^-1"
+        }
+      ]
+    },
+    {
+      "partId": "measured-e-over-b-role",
+      "label": "What physical quantity is E0/B0?",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "quantity:speed",
+          "label": "A speed"
+        },
+        {
+          "choiceId": "quantity:impedance",
+          "label": "An impedance"
+        },
+        {
+          "choiceId": "quantity:permeability",
+          "label": "A permeability"
+        }
+      ]
+    },
+    {
+      "partId": "measured-e-over-h",
+      "label": "Measured E0/H0",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "ohm",
+          "label": "ohm"
+        }
+      ]
+    },
+    {
+      "partId": "measured-e-over-h-role",
+      "label": "What physical quantity is E0/H0?",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "quantity:speed",
+          "label": "A speed"
+        },
+        {
+          "choiceId": "quantity:impedance",
+          "label": "An impedance"
+        },
+        {
+          "choiceId": "quantity:permeability",
+          "label": "A permeability"
+        }
+      ]
+    },
+    {
+      "partId": "predicted-v",
+      "label": "Predicted wave speed v",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "metre_per_second",
+          "label": "m s^-1"
+        }
+      ]
+    },
+    {
+      "partId": "predicted-eta",
+      "label": "Predicted wave impedance eta",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "ohm",
+          "label": "ohm"
+        }
+      ]
+    },
+    {
+      "partId": "comparison",
+      "label": "How do the two measured ratios compare with the independent predictions?",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "comparison:both_match_stated_precision",
+          "label": "Both match to the stated precision"
+        },
+        {
+          "choiceId": "comparison:only_speed_matches",
+          "label": "Only the speed matches"
+        },
+        {
+          "choiceId": "comparison:only_impedance_matches",
+          "label": "Only the impedance matches"
+        },
+        {
+          "choiceId": "comparison:neither_matches",
+          "label": "Neither matches"
+        }
+      ]
+    },
+    {
+      "partId": "constitutive-b",
+      "label": "B0 computed from mu0 mu_r H0",
+      "responseKind": "numeric",
+      "inputMode": "decimal",
+      "unitChoices": [
+        {
+          "unitId": "microtesla",
+          "label": "microtesla"
+        }
+      ]
+    },
+    {
+      "partId": "why-b-and-h-differ",
+      "label": "Why is replacing H by B in an impedance calculation not harmless?",
+      "responseKind": "choice_ids",
+      "minimumSelections": 1,
+      "maximumSelections": 1,
+      "choices": [
+        {
+          "choiceId": "reason:b_equals_mu_h_dimensional_factor",
+          "label": "B = mu H, and the dimensional permeability factor changes both the numerical ratio and its SI unit"
+        },
+        {
+          "choiceId": "reason:b_and_h_same_quantity",
+          "label": "B and H are the same SI quantity, so only their symbols differ"
+        },
+        {
+          "choiceId": "reason:micro_prefix_cancels_mu",
+          "label": "The microtesla prefix cancels the permeability factor"
+        },
+        {
+          "choiceId": "reason:e_over_b_is_impedance",
+          "label": "E/B is the impedance because B is the magnetic field"
+        }
+      ]
+    }
+  ]
+}
